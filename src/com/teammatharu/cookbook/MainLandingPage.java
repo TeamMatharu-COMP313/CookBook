@@ -13,6 +13,7 @@ public class MainLandingPage extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main_landing_page);
         
+        
     }
 
 
