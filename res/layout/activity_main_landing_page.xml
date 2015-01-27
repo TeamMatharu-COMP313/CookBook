@@ -7,7 +7,7 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.teammatharu.cookbook.MainLandingPage"
-    android:background="#000000">
+>
 
     <ScrollView
         android:id="@+id/scrollView1"
@@ -28,14 +28,14 @@
 
                 <ImageView
                     android:id="@+id/imageView1"
-                    android:layout_width="81dp"
-                    android:layout_height="81dp"
+                    android:layout_width="200dp"
+                    android:layout_height="200dp"
                     android:layout_gravity="center"
                     android:layout_marginBottom="20dp"
-                    android:src="@drawable/ic_launcher" />
+                     />
 
                 <Button
-                    android:id="@+id/btn1"
+                    android:id="@+id/btnCourses"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_gravity="center"
@@ -47,7 +47,7 @@
                     />
 
                 <Button
-                    android:id="@+id/btn2"
+                    android:id="@+id/btnMeals"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_gravity="center"
@@ -58,7 +58,7 @@
                     android:textStyle="bold"/>
 
                 <Button
-                    android:id="@+id/btn3"
+                    android:id="@+id/btnMain_Ingredients"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_gravity="center"
@@ -69,7 +69,7 @@
                     android:textStyle="bold"/>
 
                 <Button
-                    android:id="@+id/btn4"
+                    android:id="@+id/btnOcc_Cooking"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_gravity="center"
