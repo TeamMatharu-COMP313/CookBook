@@ -5,6 +5,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.TextView;
 
 public class Sub_Meal_Page extends Activity {
 
@@ -12,6 +13,16 @@ public class Sub_Meal_Page extends Activity {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_sub__meal__page);
+
+		// 1. get passed intent
+        Intent intent = getIntent();
+		// 2. get message value from intent
+        String message = intent.getStringExtra("arg");
+        
+        // 3. show message on textView
+        TextView enteredValue = (TextView) findViewById(R.id.textView1);
+        enteredValue.setText(message);
+
 	}
 
 	@Override

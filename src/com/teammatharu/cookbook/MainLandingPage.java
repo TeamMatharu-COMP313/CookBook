@@ -13,7 +13,7 @@ import android.widget.ImageView;
 import com.koushikdutta.urlimageviewhelper.UrlImageViewHelper;
 
 public class MainLandingPage extends Activity {
-
+	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
@@ -34,6 +34,12 @@ public class MainLandingPage extends Activity {
 				// TODO Auto-generated method stub
 				Intent activityCourse = new Intent(MainLandingPage.this,
 						Sub_Meal_Page.class);
+				// 2. put key/value data
+				activityCourse.putExtra("arg", "asasasasasa");
+				// 3. or you can add data to a bundle
+		        Bundle extras = new Bundle();
+		        // 4. add bundle to intent
+		        activityCourse.putExtras(extras);
 				MainLandingPage.this.startActivity(activityCourse);
 				finish();
 			}
