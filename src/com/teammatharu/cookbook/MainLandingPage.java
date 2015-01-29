@@ -13,7 +13,7 @@ import android.widget.ImageView;
 import com.koushikdutta.urlimageviewhelper.UrlImageViewHelper;
 
 public class MainLandingPage extends Activity {
-	
+
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
@@ -35,16 +35,23 @@ public class MainLandingPage extends Activity {
 				Intent activityCourse = new Intent(MainLandingPage.this,
 						Sub_Meal_Page.class);
 				// 2. put key/value data
-				activityCourse.putExtra("arg", "asasasasasa");
+				activityCourse.putExtra("bt1", "Appetizers and Snacks");
+				activityCourse.putExtra("bt2", "Bread Recipes");
+				activityCourse.putExtra("bt3", "Desserts");
+				activityCourse.putExtra("bt4", "Drinks");
+				activityCourse.putExtra("bt5", "Main Dishes");
+				activityCourse.putExtra("bt6", "Salad Recipes");
+				activityCourse.putExtra("bt7", "Side Dishes");
+				activityCourse.putExtra("bt8", "Soups, Stews and Chili");
 				// 3. or you can add data to a bundle
-		        Bundle extras = new Bundle();
-		        // 4. add bundle to intent
-		        activityCourse.putExtras(extras);
+				Bundle extras = new Bundle();
+				// 4. add bundle to intent
+				activityCourse.putExtras(extras);
 				MainLandingPage.this.startActivity(activityCourse);
 				finish();
 			}
 		});
-		
+
 		Button bMeal = (Button) findViewById(R.id.btnMeals);
 		bMeal.setOnClickListener(new OnClickListener() {
 
@@ -57,7 +64,7 @@ public class MainLandingPage extends Activity {
 				finish();
 			}
 		});
-		
+
 		Button bMain_Ingredients = (Button) findViewById(R.id.btnMain_Ingredients);
 		bMain_Ingredients.setOnClickListener(new OnClickListener() {
 
@@ -70,7 +77,7 @@ public class MainLandingPage extends Activity {
 				finish();
 			}
 		});
-		
+
 		Button bOcc_Cooking = (Button) findViewById(R.id.btnOcc_Cooking);
 		bOcc_Cooking.setOnClickListener(new OnClickListener() {
 
