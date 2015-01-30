@@ -7,7 +7,8 @@
     <uses-sdk
         android:minSdkVersion="16"
         android:targetSdkVersion="16" />
-    <uses-permission android:name="android.permission.INTERNET"/>
+
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <application
         android:allowBackup="true"
@@ -26,6 +27,10 @@
         <activity
             android:name=".Sub_Meal_Page"
             android:label="@string/title_activity_sub__meal__page" >
+        </activity>
+        <activity
+            android:name=".Sub_Menu_Page"
+            android:label="@string/title_activity_sub__menu__page" >
         </activity>
     </application>
 
