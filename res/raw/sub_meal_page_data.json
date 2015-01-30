@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 "btnname_submenu":[
 {"bt1":"Appetizers and Snacks"},
 {"bt2":"Bread Recipes"}
@@ -8,3 +9,33 @@
 {"bt7":"Side Recipes"}
 {"bt8":"Soups, Stews, and Chili"}
 ]
+=======
+{
+   "btnname_submenu": [
+       {
+           "bt1": "AppetizersandSnacks"
+       },
+       {
+           "bt2": "BreadRecipes"
+       }, 
+       {
+           "bt3": "Desserts"
+       },
+       {
+           "bt4": "Drinks"
+       },
+       {
+           "bt5": "MainDishes"
+       },
+       {
+           "bt6": "SaladRecipes"
+       },
+       {
+           "bt7": "SideRecipes"
+       },
+       {
+           "bt8": "Soups, Stews and Chili"
+       }
+   ]
+}
+>>>>>>> 9dc5887f6e5a7fb86383347d6f902e9e8faea4d3
