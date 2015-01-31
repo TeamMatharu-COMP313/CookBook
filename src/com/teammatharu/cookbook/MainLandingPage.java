@@ -1,6 +1,8 @@
 package com.teammatharu.cookbook;
 
 import android.app.Activity;
+import android.app.AlertDialog;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
@@ -97,6 +99,33 @@ public class MainLandingPage extends Activity {
 		// Inflate the menu; this adds items to the action bar if it is present.
 		getMenuInflater().inflate(R.menu.main_landing_page, menu);
 		return true;
+	}
+	
+	@Override
+    public void onBackPressed() {
+        new AlertDialog.Builder(this).setIcon(android.R.drawable.ic_dialog_alert).setTitle("Exit")
+                .setMessage("Are you sure you wanna quit?")
+                .setPositiveButton("yes", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+
+                        Intent intent = new Intent(Intent.ACTION_MAIN);
+                        intent.addCategory(Intent.CATEGORY_HOME);
+                        intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+                        startActivity(intent);                
+                        finish();
+                		
+                    }
+                }).setNegativeButton("no", null).show();
+    } 
+
+	
+	@Override
+	protected void onDestroy() {
+		// TODO Auto-generated method stub
+		android.os.Process.killProcess(android.os.Process.myPid());
+		super.onDestroy();	
+		
 	}
 
 	@Override
