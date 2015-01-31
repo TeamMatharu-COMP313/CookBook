@@ -1,0 +1,30 @@
+{
+"btnname_sub_menu_page_brekfastbrunch":[
+{"bt1_submeal":"Breakfast Drinks"},
+{"bt2_submeal":"Breakfast Egg Recipes"},
+{"bt3_submeal":"Breakfast Meat and Seafood"},
+{"bt4_submeal":"Crepes"},
+{"bt5_submeal":"French Toast"},
+{"bt6_submeal":"Pancakes"},
+{"bt7_submeal":"Waffles"}
+
+],
+
+
+"btnname_sub_menu_page_lunch":[
+{"bt1_submeal":"Burgers"},
+{"bt2_submeal":"Burritos"},
+{"bt3_submeal":"Healthy Lunches"},
+{"bt4_submeal":"Macaroni and Cheese"},
+{"bt5_submeal":"Pizza"},
+{"bt6_submeal":"Sandwiches and Wraps"}
+],
+
+
+
+"btnname_sub_menu_page_dinner":[
+{"bt1_submeal":"All Main Dishes"},
+{"bt2_submeal":"Healthy Main Dishes"},
+{"bt3_submeal":"Dish Salad"},
+{"bt4_submeal":"Vegetarian Dishes"}
+]}
