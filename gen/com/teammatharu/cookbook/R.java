@@ -54,7 +54,7 @@ public final class R {
         public static final int sub__meal__page=0x7f080003;
     }
     public static final class raw {
-        public static final int sub_meal_page_data=0x7f040000;
+        public static final int sub_meal_page_data_courses=0x7f040000;
     }
     public static final class string {
         public static final int action_settings=0x7f060002;

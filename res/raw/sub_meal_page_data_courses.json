@@ -1,0 +1,76 @@
+{
+    "btnname_submenu_courses": [
+        {
+            "bt1": "AppetizersandSnacks"
+        },
+        {
+            "bt2": "BreadRecipes"
+        },
+        {
+            "bt3": "Desserts"
+        },
+        {
+            "bt4": "Drinks"
+        },
+        {
+            "bt5": "MainDishes"
+        },
+        {
+            "bt6": "SaladRecipes"
+        },
+        {
+            "bt7": "SideRecipes"
+        },
+        {
+            "bt8": "Soups, Stews and Chili"
+        }
+    ],
+    "btnname_submenu_mainingredients": [
+        {
+            "bt1": "Fruits and Vegetables"
+        },
+        {
+            "bt2": "Meat and Poultry"
+        },
+        {
+            "bt3": "Pasta and Noodles"
+        },
+        {
+            "bt4": "Seafood Recipes"
+        }
+    ],
+    "btnname_submenu_meals": [
+        {
+            "bt1": "Breakfast and Brunch"
+        },
+        {
+            "bt2": "Dinner Recipes"
+        },
+        {
+            "bt3": "Lunch Recipes"
+        }
+    ],
+    "btnname_submenu_occassion_stye": [
+        {
+            "bt1": "BBQ & Grilling"
+        },
+        {
+            "bt2": "Everyday Cooking"
+        },
+        {
+            "bt3": "Healthy Recipes"
+        },
+        {
+            "bt4": "Holidays and Events"
+        },
+        {
+            "bt5": "Ingredients"
+        },
+        {
+            "bt6": "U.S. Recipes"
+        },
+        {
+            "bt7": "World Cuisine"
+        }
+    ]
+}
