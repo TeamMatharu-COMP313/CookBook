@@ -64,12 +64,12 @@
 
 "btnname_sub_menu_page_worldcuisine":[
 {"bt1_submeal":"Asian Recipes"},
-{"bt1_submeal":"Australian Recipes"},
-{"bt1_submeal":"Chinese Recipes"},
-{"bt1_submeal":"French Recipes"},
-{"bt1_submeal":"Italian Recipes"},
-{"bt1_submeal":"Latin American Recipes"},
-{"bt1_submeal":"Mexican Recipes"}
+{"bt2_submeal":"Australian Recipes"},
+{"bt3_submeal":"Chinese Recipes"},
+{"bt4_submeal":"French Recipes"},
+{"bt5_submeal":"Italian Recipes"},
+{"bt6_submeal":"Latin American Recipes"},
+{"bt7_submeal":"Mexican Recipes"}
 ]}
 
 
