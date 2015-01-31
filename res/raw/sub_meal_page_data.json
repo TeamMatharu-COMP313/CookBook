@@ -1,41 +1,77 @@
-<<<<<<< HEAD
-"btnname_submenu":[
-{"bt1":"Appetizers and Snacks"},
-{"bt2":"Bread Recipes"}
-{"bt3":"Desserts"}
-{"bt4":"Drinks"}
-{"bt5":"Main Dishes"}
-{"bt6":"Salad Recipes"}
-{"bt7":"Side Recipes"}
-{"bt8":"Soups, Stews, and Chili"}
-]
-=======
+
 {
-   "btnname_submenu": [
-       {
-           "bt1": "AppetizersandSnacks"
-       },
-       {
-           "bt2": "BreadRecipes"
-       }, 
-       {
-           "bt3": "Desserts"
-       },
-       {
-           "bt4": "Drinks"
-       },
-       {
-           "bt5": "MainDishes"
-       },
-       {
-           "bt6": "SaladRecipes"
-       },
-       {
-           "bt7": "SideRecipes"
-       },
-       {
-           "bt8": "Soups, Stews and Chili"
-       }
-   ]
+    "btnname_submenu": [
+        {
+            "bt1": "AppetizersandSnacks"
+        },
+        {
+            "bt2": "BreadRecipes"
+        },
+        {
+            "bt3": "Desserts"
+        },
+        {
+            "bt4": "Drinks"
+        },
+        {
+            "bt5": "MainDishes"
+        },
+        {
+            "bt6": "SaladRecipes"
+        },
+        {
+            "bt7": "SideRecipes"
+        },
+        {
+            "bt8": "Soups, Stews and Chili"
+        }
+    ],
+    "btnname_submenu_MainIngredients": [
+        {
+            "bt1": "Fruits and Vegetables"
+        },
+        {
+            "bt2": "Meat and Poultry"
+        },
+        {
+            "bt3": "Pasta and Noodles"
+        },
+        {
+            "bt4": "Seafood Recipes"
+        }
+    ],
+    "btnname_submenu_Meals": [
+        {
+            "bt1": "Breakfast and Brunch"
+        },
+        {
+            "bt2": "Dinner Recipes"
+        },
+        {
+            "bt3": "Lunch Recipes"
+        }
+    ],
+    "btnname_submenu_Occassion_Stye": [
+        {
+            "bt1": "BBQ & Grilling"
+        },
+        {
+            "bt2": "Everyday Cooking"
+        },
+        {
+            "bt3": "Healthy Recipes"
+        },
+        {
+            "bt4": "Holidays and Events"
+        },
+        {
+            "bt5": "Ingredients"
+        },
+        {
+            "bt6": "U.S. Recipes"
+        },
+        {
+            "bt7": "World Cuisine"
+        }
+    ]
 }
->>>>>>> 9dc5887f6e5a7fb86383347d6f902e9e8faea4d3

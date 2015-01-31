@@ -5,8 +5,11 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+<<<<<<< HEAD
+=======
 import android.view.View;
 import android.view.View.OnClickListener;
+>>>>>>> d7a94aa9358b4757dc45046f669d2a379e0d717c
 import android.widget.Button;
 import android.widget.ImageView;
 
