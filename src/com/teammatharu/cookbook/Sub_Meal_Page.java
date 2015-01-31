@@ -186,20 +186,20 @@ public class Sub_Meal_Page extends Activity {
 				Intent activityCourse = new Intent(Sub_Meal_Page.this,
 						Sub_Menu_Page.class);
 				// 2. put key/value data
-				activityCourse.putExtra("bt1_submeal", "");
-				activityCourse.putExtra("bt2_submeal", "");
-				activityCourse.putExtra("bt3_submeal", "");
-				activityCourse.putExtra("bt4_submeal", "");
-				activityCourse.putExtra("bt5_submeal", "");
-				activityCourse.putExtra("bt6_submeal", "");
-				activityCourse.putExtra("bt7_submeal", "");
-				activityCourse.putExtra("bt8_submeal", "");
-				activityCourse.putExtra("bt9_submeal", "");
-				activityCourse.putExtra("bt10_submeal", "");
-				activityCourse.putExtra("bt11_submeal", "");
-				activityCourse.putExtra("bt12_submeal", "");
-				activityCourse.putExtra("bt13_submeal", "");
-				activityCourse.putExtra("bt14_submeal", "");
+				activityCourse.putExtra("bt1_submeal", "Calzones");
+				activityCourse.putExtra("bt2_submeal", "Deep Fried Main Dish");
+				activityCourse.putExtra("bt3_submeal", "Eggplant Parmesan");
+				activityCourse.putExtra("bt4_submeal", "Meatballs");
+				activityCourse.putExtra("bt5_submeal", "Meatloaf Recipes");
+				activityCourse.putExtra("bt6_submeal", "Pasta");
+				activityCourse.putExtra("bt7_submeal", "Ribs");
+				activityCourse.putExtra("bt8_submeal", "Roast");
+				activityCourse.putExtra("bt9_submeal", "Steaks and Chops");
+				activityCourse.putExtra("bt10_submeal", "none");
+				activityCourse.putExtra("bt11_submeal", "none");
+				activityCourse.putExtra("bt12_submeal", "none");
+				activityCourse.putExtra("bt13_submeal", "none");
+				activityCourse.putExtra("bt14_submeal", "none");
 				// 3. or you can add data to a bundle
 				Bundle extras = new Bundle();
 				// 4. add bundle to intent
@@ -216,20 +216,20 @@ public class Sub_Meal_Page extends Activity {
 				Intent activityCourse = new Intent(Sub_Meal_Page.this,
 						Sub_Menu_Page.class);
 				// 2. put key/value data
-				activityCourse.putExtra("bt1_submeal", "");
-				activityCourse.putExtra("bt2_submeal", "");
-				activityCourse.putExtra("bt3_submeal", "");
-				activityCourse.putExtra("bt4_submeal", "");
-				activityCourse.putExtra("bt5_submeal", "");
-				activityCourse.putExtra("bt6_submeal", "");
-				activityCourse.putExtra("bt7_submeal", "");
-				activityCourse.putExtra("bt8_submeal", "");
-				activityCourse.putExtra("bt9_submeal", "");
-				activityCourse.putExtra("bt10_submeal", "");
-				activityCourse.putExtra("bt11_submeal", "");
-				activityCourse.putExtra("bt12_submeal", "");
-				activityCourse.putExtra("bt13_submeal", "");
-				activityCourse.putExtra("bt14_submeal", "");
+				activityCourse.putExtra("bt1_submeal", "Chicken Salad");
+				activityCourse.putExtra("bt2_submeal", "Curry Salad");
+				activityCourse.putExtra("bt3_submeal", "Egg Salad");
+				activityCourse.putExtra("bt4_submeal", "Fruit Salad");
+				activityCourse.putExtra("bt5_submeal", "Green Salad");
+				activityCourse.putExtra("bt6_submeal", "Pasta Salad");
+				activityCourse.putExtra("bt7_submeal", "Seafood Salad");
+				activityCourse.putExtra("bt8_submeal", "Taco Salad");
+				activityCourse.putExtra("bt9_submeal", "Vegetable Salad");
+				activityCourse.putExtra("bt10_submeal", "none");
+				activityCourse.putExtra("bt11_submeal", "none");
+				activityCourse.putExtra("bt12_submeal", "none");
+				activityCourse.putExtra("bt13_submeal", "none");
+				activityCourse.putExtra("bt14_submeal", "none");
 				// 3. or you can add data to a bundle
 				Bundle extras = new Bundle();
 				// 4. add bundle to intent
@@ -246,20 +246,20 @@ public class Sub_Meal_Page extends Activity {
 				Intent activityCourse = new Intent(Sub_Meal_Page.this,
 						Sub_Menu_Page.class);
 				// 2. put key/value data
-				activityCourse.putExtra("bt1_submeal", "");
-				activityCourse.putExtra("bt2_submeal", "");
-				activityCourse.putExtra("bt3_submeal", "");
-				activityCourse.putExtra("bt4_submeal", "");
-				activityCourse.putExtra("bt5_submeal", "");
-				activityCourse.putExtra("bt6_submeal", "");
-				activityCourse.putExtra("bt7_submeal", "");
-				activityCourse.putExtra("bt8_submeal", "");
-				activityCourse.putExtra("bt9_submeal", "");
-				activityCourse.putExtra("bt10_submeal", "");
-				activityCourse.putExtra("bt11_submeal", "");
-				activityCourse.putExtra("bt12_submeal", "");
-				activityCourse.putExtra("bt13_submeal", "");
-				activityCourse.putExtra("bt14_submeal", "");
+				activityCourse.putExtra("bt1_submeal", "Appleasauce Recipes");
+				activityCourse.putExtra("bt2_submeal", "Bean and Pea");
+				activityCourse.putExtra("bt3_submeal", "Dumplings");
+				activityCourse.putExtra("bt4_submeal", "Fries");
+				activityCourse.putExtra("bt5_submeal", "Grain Side Dishes");
+				activityCourse.putExtra("bt6_submeal", "Polenta Recipe");
+				activityCourse.putExtra("bt7_submeal", "Rice");
+				activityCourse.putExtra("bt8_submeal", "Sauces and Condiments");
+				activityCourse.putExtra("bt9_submeal", "Stuffing and Dressings");
+				activityCourse.putExtra("bt10_submeal", "Vegetable Side Dishes");
+				activityCourse.putExtra("bt11_submeal", "none");
+				activityCourse.putExtra("bt12_submeal", "none");
+				activityCourse.putExtra("bt13_submeal", "none");
+				activityCourse.putExtra("bt14_submeal", "none");
 				// 3. or you can add data to a bundle
 				Bundle extras = new Bundle();
 				// 4. add bundle to intent
@@ -276,20 +276,20 @@ public class Sub_Meal_Page extends Activity {
 				Intent activityCourse = new Intent(Sub_Meal_Page.this,
 						Sub_Menu_Page.class);
 				// 2. put key/value data
-				activityCourse.putExtra("bt1_submeal", "");
-				activityCourse.putExtra("bt2_submeal", "");
-				activityCourse.putExtra("bt3_submeal", "");
-				activityCourse.putExtra("bt4_submeal", "");
-				activityCourse.putExtra("bt5_submeal", "");
-				activityCourse.putExtra("bt6_submeal", "");
-				activityCourse.putExtra("bt7_submeal", "");
-				activityCourse.putExtra("bt8_submeal", "");
-				activityCourse.putExtra("bt9_submeal", "");
-				activityCourse.putExtra("bt10_submeal", "");
-				activityCourse.putExtra("bt11_submeal", "");
-				activityCourse.putExtra("bt12_submeal", "");
-				activityCourse.putExtra("bt13_submeal", "");
-				activityCourse.putExtra("bt14_submeal", "");
+				activityCourse.putExtra("bt1_submeal", "Bisque");
+				activityCourse.putExtra("bt2_submeal", "Broth and Stock");
+				activityCourse.putExtra("bt3_submeal", "Chili");
+				activityCourse.putExtra("bt4_submeal", "Chowder");
+				activityCourse.putExtra("bt5_submeal", "Soups");
+				activityCourse.putExtra("bt6_submeal", "Stew");
+				activityCourse.putExtra("bt7_submeal", "none");
+				activityCourse.putExtra("bt8_submeal", "none");
+				activityCourse.putExtra("bt9_submeal", "none");
+				activityCourse.putExtra("bt10_submeal", "none");
+				activityCourse.putExtra("bt11_submeal", "none");
+				activityCourse.putExtra("bt12_submeal", "none");
+				activityCourse.putExtra("bt13_submeal", "none");
+				activityCourse.putExtra("bt14_submeal", "none");
 				// 3. or you can add data to a bundle
 				Bundle extras = new Bundle();
 				// 4. add bundle to intent
