@@ -1,3 +1,33 @@
+<<<<<<< HEAD
+{
+   "btnname_submenu": [
+       {
+           "bt1": "AppetizersandSnacks"
+       },
+       {
+           "bt2": "BreadRecipes"
+       }, 
+       {
+           "bt3": "Desserts"
+       },
+       {
+           "bt4": "Drinks"
+       },
+       {
+           "bt5": "MainDishes"
+       },
+       {
+           "bt6": "SaladRecipes"
+       },
+       {
+           "bt7": "SideRecipes"
+       },
+       {
+           "bt8": "Soups, Stews and Chili"
+       }
+   ]
+}
+=======
 
 {
     "btnname_submenu": [
@@ -75,3 +105,4 @@
         }
     ]
 }
+>>>>>>> f59720ca6d022ab47a12d74d49fd98be5de0653b
