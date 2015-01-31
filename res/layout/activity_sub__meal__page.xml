@@ -25,7 +25,7 @@
                 android:layout_height="250dp"
                 android:layout_gravity="center"
                 android:layout_marginBottom="20dp"
-                android:layout_marginTop="20dp" />
+                android:layout_marginTop="20dp"/>
 
             <Button
                 android:id="@+id/btn1"
@@ -33,12 +33,14 @@
                 android:layout_height="match_parent"
                 android:layout_gravity="center"
                 android:layout_marginBottom="5dp"
-                android:background="@drawable/buttongradient" />
+                android:background="@drawable/buttongradient" 
+                android:textColor="#ffffff"/>
 
             <Button
                 android:id="@+id/btn2"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:layout_height="match_parent" 
+                android:textColor="#ffffff"
                 android:layout_marginBottom="5dp"
                 android:background="@drawable/buttongradient" />
 
@@ -46,27 +48,31 @@
                 android:id="@+id/btn3"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_marginBottom="5dp"
+                android:layout_marginBottom="5dp" 
+                android:textColor="#ffffff"
                 android:background="@drawable/buttongradient" />
 
             <Button
                 android:id="@+id/btn4"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_marginBottom="5dp"
+                android:layout_marginBottom="5dp" 
+                android:textColor="#ffffff"
                 android:background="@drawable/buttongradient" />
 
             <Button
                 android:id="@+id/btn5"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:layout_height="match_parent" 
+                android:textColor="#ffffff"
                 android:layout_marginBottom="5dp"
                 android:background="@drawable/buttongradient" />
 
             <Button
                 android:id="@+id/btn6"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:layout_height="match_parent" 
+                android:textColor="#ffffff"
                 android:layout_marginBottom="5dp"
                 android:background="@drawable/buttongradient" />
 
@@ -74,12 +80,14 @@
                 android:id="@+id/btn7"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_marginBottom="5dp"
+                android:layout_marginBottom="5dp" 
+                android:textColor="#ffffff"
                 android:background="@drawable/buttongradient" />
 
             <Button
                 android:id="@+id/btn8"
-                android:layout_width="match_parent"
+                android:layout_width="match_parent" 
+                android:textColor="#ffffff"
                 android:layout_height="match_parent"
                 android:layout_marginBottom="5dp"
                 android:background="@drawable/buttongradient" />
