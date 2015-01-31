@@ -1,5 +1,6 @@
+
 {
-    "btnname_submenu_courses": [
+    "btnname_submenu": [
         {
             "bt1": "AppetizersandSnacks"
         },
@@ -25,7 +26,7 @@
             "bt8": "Soups, Stews and Chili"
         }
     ],
-    "btnname_submenu_mainingredients": [
+    "btnname_submenu_MainIngredients": [
         {
             "bt1": "Fruits and Vegetables"
         },
@@ -39,7 +40,7 @@
             "bt4": "Seafood Recipes"
         }
     ],
-    "btnname_submenu_meals": [
+    "btnname_submenu_Meals": [
         {
             "bt1": "Breakfast and Brunch"
         },
@@ -50,7 +51,7 @@
             "bt3": "Lunch Recipes"
         }
     ],
-    "btnname_submenu_occassion_stye": [
+    "btnname_submenu_Occassion_Stye": [
         {
             "bt1": "BBQ & Grilling"
         },

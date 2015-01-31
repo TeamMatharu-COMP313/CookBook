@@ -7,5 +7,6 @@
     <string name="title_activity_selection_grid">SelectionGrid</string>
     <string name="title_activity_content">Content</string>
     <string name="title_activity_sub__meal__page">CookBook</string>
+    <string name="title_activity_sub__menu__page">CookBook</string>
 
 </resources>
