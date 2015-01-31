@@ -1,0 +1,40 @@
+{
+"btnname_sub_menu_page_fruitsvegetables":[
+{"bt1_submeal":"Beans and Peas"},
+{"bt2_submeal":"Fruit"},
+{"bt3_submeal":"Mushrooms"},
+{"bt4_submeal":"Vegetables"}
+],
+
+"btnname_sub_menu_page_meat_poultry":[
+{"bt1_submeal":"Beef"},
+{"bt2_submeal":"Chicken"},
+{"bt3_submeal":"Game Meats"},
+{"bt4_submeal":"Lamb"},
+{"bt5_submeal":"Pork"},
+{"bt6_submeal":"Sausage"},
+{"bt7_submeal":"Turkey"}
+],
+
+"btnname_sub_menu_page_pasta_noodles":[
+{"bt1_submeal":"Bow Tie Pasta"},
+{"bt2_submeal":"Eggless Pasta"},
+{"bt3_submeal":"Fresh Semolina & Egg Pasta"},
+{"bt4_submeal":"Gnocchi Pasta"},
+{"bt5_submeal":"Noodles"},
+{"bt6_submeal":"Plain Pasta"},
+{"bt7_submeal":"Shell Pasta"},
+{"bt8_submeal":"Whole Wheat Pasta"}
+],
+
+"btnname_sub_menu_page_seafoodrecipes":[
+{"bt1_submeal":"Fish Recipes"},
+{"bt2_submeal":"Crab Recipes"},
+{"bt3_submeal":"Lobster Recipes"},
+{"bt4_submeal":"Mussel Recipes"},
+{"bt5_submeal":"Octopus and Squid Recipes"},
+{"bt6_submeal":"Oyster Recipes"},
+{"bt7_submeal":"Shrimp Recipes"},
+{"bt8_submeal":"Crawfish Recipes"},
+{"bt9_submeal":"Scallop Recipes"}
+]}

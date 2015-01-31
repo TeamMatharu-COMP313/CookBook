@@ -1,0 +1,98 @@
+{
+"btnname_sub_menu_page_appetizer":[
+{"bt1_submeal":"Antipasto Recipes"},
+{"bt2_submeal":"Bread and Pastry Appetizer"},
+{"bt3_submeal":"Cheese Appetizers"},
+{"bt4_submeal":"Crackers"},
+{"bt5_submeal":"Deviled Eggs"},
+{"bt6_submeal":"Dill Pickle and Sweet Pickles"},
+{"bt7_submeal":"Dips and Spreads"},
+{"bt8_submeal":"Fruit Appetizers"},
+{"bt9_submeal":"Mushroom Appetizers"},
+{"bt10_submeal":"Olive Appetizers"},
+{"bt11_submeal":"Pasta Appetizers"},
+{"bt12_submeal":"pastry Appetizers"},
+{"bt13_submeal":"Seafood Appetizers"},
+{"bt14_submeal":"Spicy Appetizers"}
+],
+
+
+"btnname_sub_menu_page_breadrecipes":[
+{"bt1_submeal":"Pastries"},
+{"bt2_submeal":"Pizza Dough and Crusts"},
+{"bt3_submeal":"Bagels"},
+{"bt4_submeal":"Yeast Bread"}
+],
+
+
+"btnname_sub_menu_page_desserts":[
+{"bt1_submeal":"Cake Recipes"},
+{"bt2_submeal":"Cookies"},
+{"bt3_submeal":"Custards and Pudding"},
+{"bt4_submeal":"Frozen Desserts"},
+{"bt5_submeal":"Fruits Desserts"},
+{"bt6_submeal":"Pie Recipes"}
+],
+
+
+"btnname_sub_menu_page_drinks":[
+{"bt1_submeal":"Beer"},
+{"bt2_submeal":"Cider Drinks"},
+{"bt3_submeal":"Cocktails"},
+{"bt4_submeal":"Coffee"},
+{"bt5_submeal":"Hot Chocolates"},
+{"bt6_submeal":"Juices"},
+{"bt7_submeal":"Mocktails"},
+{"bt8_submeal":"Smoothies"},
+{"bt9_submeal":"Tea"}
+],
+
+
+"btnname_sub_menu_page_maindishes":[
+{"bt1_submeal":"Calzones"},
+{"bt2_submeal":"Deep Fried Main Dish"},
+{"bt3_submeal":"Eggplant Parmesan"},
+{"bt4_submeal":"Meatballs"},
+{"bt5_submeal":"Meatloaf Recipes"},
+{"bt6_submeal":"Pasta"},
+{"bt7_submeal":"Ribs"},
+{"bt8_submeal":"Roast"},
+{"bt9_submeal":"Steaks and Chops"}
+],
+
+
+"btnname_sub_menu_page_salad_recipes":[
+{"bt1_submeal":"Chicken Salad"},
+{"bt2_submeal":"Curry Salad"},
+{"bt3_submeal":"Egg Salad"},
+{"bt4_submeal":"Fruit Salad"},
+{"bt5_submeal":"Green Salad"},
+{"bt6_submeal":"Pasta Salad"},
+{"bt7_submeal":"Seafood Salad"},
+{"bt8_submeal":"Taco Salad"},
+{"bt9_submeal":"Vegetable Salad"}
+],
+
+
+"btnname_sub_menu_page_side_recipes":[
+{"bt1_submeal":"Appleasauce Recipes"},
+{"bt2_submeal":"Bean and Pea"},
+{"bt3_submeal":"Dumplings"},
+{"bt4_submeal":"Fries"},
+{"bt5_submeal":"Grain Side Dishes"},
+{"bt6_submeal":"Polenta Recipe"},
+{"bt7_submeal":"Rice"},
+{"bt8_submeal":"Sauces and Condiments"},
+{"bt9_submeal":"Stuffing and Dressings"},
+{"bt10_submeal":"Vegetable Side Dishes"}
+]
+,
+
+"btnname_sub_menu_page_soups_stews_chili":[
+{"bt1_submeal":"Bisque"},
+{"bt2_submeal":"Broth and Stock"},
+{"bt3_submeal":"Chili"},
+{"bt4_submeal":"Chowder"},
+{"bt5_submeal":"Soups"},
+{"bt6_submeal":"Stew"}
+]}
