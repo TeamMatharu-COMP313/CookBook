@@ -114,19 +114,14 @@ public class MainLandingPage extends Activity {
                         intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
                         startActivity(intent);                
                         finish();
-                		
+                        //System.exit(0);
+                        //android.os.Process.killProcess(Process.)
                     }
                 }).setNegativeButton("no", null).show();
     } 
 
 	
-	@Override
-	protected void onDestroy() {
-		// TODO Auto-generated method stub
-		android.os.Process.killProcess(android.os.Process.myPid());
-		super.onDestroy();	
-		
-	}
+	
 
 	@Override
 	public boolean onOptionsItemSelected(MenuItem item) {
