@@ -88,6 +88,19 @@ public class MainLandingPage extends Activity {
 				// TODO Auto-generated method stub
 				Intent activityCourse = new Intent(MainLandingPage.this,
 						Sub_Meal_Page.class);
+				
+				activityCourse.putExtra("bt1", "BBQ & Grilling");
+				activityCourse.putExtra("bt2", "Everyday Cooking");
+				activityCourse.putExtra("bt3", "Healthy Recipes");
+				activityCourse.putExtra("bt4", "Holidays and Events");
+				activityCourse.putExtra("bt5", "Ingredients");
+				activityCourse.putExtra("bt6", "U.S. Recipes");
+				activityCourse.putExtra("bt7", "Wolrd Cuisine");
+				activityCourse.putExtra("bt8", "Trusted Brands: Recepies and Tips");
+				
+				Bundle extras = new Bundle();
+				
+				activityCourse.putExtras(extras);
 				MainLandingPage.this.startActivity(activityCourse);
 				finish();
 			}
