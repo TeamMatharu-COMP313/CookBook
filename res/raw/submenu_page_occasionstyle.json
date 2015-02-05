@@ -1,0 +1,76 @@
+{
+"btnname_sub_menu_page_bbqgrilling":[
+{"bt1_submeal":"Grilled Beef"},
+{"bt2_submeal":"Grilled Chicken"},
+{"bt3_submeal":"Grilled Fruits"},
+{"bt4_submeal":"Grilled Lamb"},
+{"bt5_submeal":"Grilled Pork"},
+{"bt6_submeal":"Grilled Salads"},
+{"bt7_submeal":"Grilled Seafood"},
+{"bt8_submeal":"Grilled Turkey"},
+{"bt9_submeal":"Grilled vegetables"}
+],
+
+"btnname_sub_menu_page_everydycooking":[
+{"bt1_submeal":"Budget Cooking"},
+{"bt2_submeal":"Comfort Food"},
+{"bt3_submeal":" Convenience Cooking"},
+{"bt4_submeal":"Gourmet Recipes"},
+{"bt5_submeal":"Kosher Recipes"},
+{"bt6_submeal":"Pressure Cooker Recipes"},
+{"bt7_submeal":"Seasonal Cooking"}
+]
+,
+
+"btnname_sub_menu_page_healthyrecipes":[
+{"bt1_submeal":"Healthy Appetizers"},
+{"bt2_submeal":"Healthy Desserts"},
+{"bt3_submeal":"Healthy Lunches"},
+{"bt4_submeal":"Healthy Salads"},
+{"bt5_submeal":"Healthy Soups"},
+{"bt6_submeal":"Low-Calorie Recipes"}
+],
+
+
+"btnname_sub_menu_page_holidayevents":[
+{"bt1_submeal":"Easter Recipes"},
+{"bt2_submeal":"Events and Gatherings"},
+{"bt3_submeal":"Kwanzaa Recipes"},
+{"bt4_submeal":"Purim Recipes"},
+{"bt5_submeal":"Ramadan Recipes"},
+{"bt6_submeal":"Valentine's Day Recipes"}
+],
+
+"btnname_sub_menu_page_ingredients":[
+{"bt1_submeal":"Baking Ingredients"},
+{"bt2_submeal":"Beef"},
+{"bt3_submeal":"Chicken"},
+{"bt4_submeal":"Dairy Products"},
+{"bt5_submeal":"Fish"},
+{"bt6_submeal":"Herbs and Spices"},
+{"bt7_submeal":"Lamb"},
+{"bt8_submeal":"Pork"},
+{"bt9_submeal":"Whole Grains"},
+{"bt10_submeal":"Seafood"}
+],
+
+"btnname_sub_menu_page_usrecipes":[
+{"bt1_submeal":"Jewish Recipes"},
+{"bt2_submeal":"Soul Food Recipes"},
+{"bt3_submeal":"Tex-Mex Recipes"},
+{"bt4_submeal":"Southren Recipes"},
+{"bt5_submeal":"Cajun and Creole Recipes"}
+],
+
+"btnname_sub_menu_page_worldcuisine":[
+{"bt1_submeal":"Asian Recipes"},
+{"bt2_submeal":"Australian Recipes"},
+{"bt3_submeal":"Chinese Recipes"},
+{"bt4_submeal":"French Recipes"},
+{"bt5_submeal":"Italian Recipes"},
+{"bt6_submeal":"Latin American Recipes"},
+{"bt7_submeal":"Mexican Recipes"}
+]}
+
+
+

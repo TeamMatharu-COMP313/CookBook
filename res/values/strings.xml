@@ -4,5 +4,10 @@
     <string name="app_name">CookBook</string>
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
+    <string name="title_activity_selection_grid">SelectionGrid</string>
+    <string name="title_activity_content">Content</string>
+    <string name="title_activity_sub__meal__page">CookBook</string>
+    <string name="title_activity_sub__menu__page">CookBook</string>
+    <string name="title_activity_main__recipe__page">Main_Recipe_Page</string>
 
 </resources>
