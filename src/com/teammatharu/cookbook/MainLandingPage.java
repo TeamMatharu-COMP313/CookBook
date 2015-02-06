@@ -62,6 +62,19 @@ public class MainLandingPage extends Activity {
 				// TODO Auto-generated method stub
 				Intent activityCourse = new Intent(MainLandingPage.this,
 						Sub_Meal_Page.class);
+				// 2. put key/value data
+				activityCourse.putExtra("bt1", "Breakfast and Brunch");
+				activityCourse.putExtra("bt2", "Dinner Recipes");
+				activityCourse.putExtra("bt3", "Lunch Recipes");
+				activityCourse.putExtra("bt4", "none");
+				activityCourse.putExtra("bt5", "none");
+				activityCourse.putExtra("bt6", "none");
+				activityCourse.putExtra("bt7", "none");
+				activityCourse.putExtra("bt8", "none");
+				// 3. or you can add data to a bundle
+				Bundle extras = new Bundle();
+				// 4. add bundle to intent
+				activityCourse.putExtras(extras);
 				MainLandingPage.this.startActivity(activityCourse);
 				finish();
 			}
@@ -88,7 +101,7 @@ public class MainLandingPage extends Activity {
 				// TODO Auto-generated method stub
 				Intent activityCourse = new Intent(MainLandingPage.this,
 						Sub_Meal_Page.class);
-				
+
 				activityCourse.putExtra("bt1", "BBQ & Grilling");
 				activityCourse.putExtra("bt2", "Everyday Cooking");
 				activityCourse.putExtra("bt3", "Healthy Recipes");
@@ -97,9 +110,9 @@ public class MainLandingPage extends Activity {
 				activityCourse.putExtra("bt6", "U.S. Recipes");
 				activityCourse.putExtra("bt7", "Wolrd Cuisine");
 				activityCourse.putExtra("bt8", "none");
-				
+
 				Bundle extras = new Bundle();
-				
+
 				activityCourse.putExtras(extras);
 				MainLandingPage.this.startActivity(activityCourse);
 				finish();
@@ -113,26 +126,29 @@ public class MainLandingPage extends Activity {
 		getMenuInflater().inflate(R.menu.main_landing_page, menu);
 		return true;
 	}
-	
+
 	@Override
-    public void onBackPressed() {
-        new AlertDialog.Builder(this).setIcon(android.R.drawable.ic_dialog_alert).setTitle("Exit")
-                .setMessage("Are you sure you wanna quit?")
-                .setPositiveButton("Yes", new DialogInterface.OnClickListener() {
-                    @Override
-                    public void onClick(DialogInterface dialog, int which) {
+	public void onBackPressed() {
+		new AlertDialog.Builder(this)
+				.setIcon(android.R.drawable.ic_dialog_alert)
+				.setTitle("Exit")
+				.setMessage("Are you sure you wanna quit?")
+				.setPositiveButton("Yes",
+						new DialogInterface.OnClickListener() {
+							@Override
+							public void onClick(DialogInterface dialog,
+									int which) {
 
-                        Intent intent = new Intent(Intent.ACTION_MAIN);
-                        intent.addCategory(Intent.CATEGORY_HOME);
-                        intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-                        startActivity(intent);                
-                        finish();
-                        //System.exit(0);
-                        //android.os.Process.killProcess(Process.)
-                    }
-                }).setNegativeButton("No", null).show();
-    } 
-
+								Intent intent = new Intent(Intent.ACTION_MAIN);
+								intent.addCategory(Intent.CATEGORY_HOME);
+								intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+								startActivity(intent);
+								finish();
+								// System.exit(0);
+								// android.os.Process.killProcess(Process.)
+							}
+						}).setNegativeButton("No", null).show();
+	}
 
 	@Override
 	public boolean onOptionsItemSelected(MenuItem item) {
