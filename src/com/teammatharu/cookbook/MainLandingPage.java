@@ -96,7 +96,7 @@ public class MainLandingPage extends Activity {
 				activityCourse.putExtra("bt5", "Ingredients");
 				activityCourse.putExtra("bt6", "U.S. Recipes");
 				activityCourse.putExtra("bt7", "Wolrd Cuisine");
-				activityCourse.putExtra("bt8", "Trusted Brands: Recepies and Tips");
+				activityCourse.putExtra("bt8", "none");
 				
 				Bundle extras = new Bundle();
 				
@@ -133,8 +133,6 @@ public class MainLandingPage extends Activity {
                 }).setNegativeButton("No", null).show();
     } 
 
-	
-	
 
 	@Override
 	public boolean onOptionsItemSelected(MenuItem item) {

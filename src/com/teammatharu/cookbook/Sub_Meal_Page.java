@@ -56,6 +56,57 @@ public class Sub_Meal_Page extends Activity {
 		bt7.setText(message7);
 		bt8.setText(message8);
 
+		if (message1.equals("none")) {
+			bt1.setVisibility(View.GONE);
+			} else {
+
+			}
+		
+		if (message2.equals("none")) {
+			bt2.setVisibility(View.GONE);
+			} else {
+
+			}
+
+		if (message3.equals("none")) {
+			bt3.setVisibility(View.GONE);
+			} else {
+
+			}
+
+		if (message4.equals("none")) {
+			bt4.setVisibility(View.GONE);
+			} else {
+
+			}
+
+		if (message5.equals("none")) {
+			bt5.setVisibility(View.GONE);
+			} else {
+
+			}
+
+		if (message6.equals("none")) {
+			bt6.setVisibility(View.GONE);
+			} else {
+
+			}
+
+		if (message7.equals("none")) {
+			bt7.setVisibility(View.GONE);
+			} else {
+
+			}
+
+		if (message8.equals("none")) {
+			bt8.setVisibility(View.GONE);
+			} else {
+
+			}
+
+		
+
+
 		bt1.setOnClickListener(new OnClickListener() {
 
 			@Override
