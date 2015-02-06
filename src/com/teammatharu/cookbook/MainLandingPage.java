@@ -88,6 +88,19 @@ public class MainLandingPage extends Activity {
 				// TODO Auto-generated method stub
 				Intent activityCourse = new Intent(MainLandingPage.this,
 						Sub_Meal_Page.class);
+				// 2. put key/value data
+				activityCourse.putExtra("bt1", "Fruits and Vegetables");
+				activityCourse.putExtra("bt2", "Meat and Poultry");
+				activityCourse.putExtra("bt3", "Pasta and Noodles");
+				activityCourse.putExtra("bt4", "Seafood Recipes");
+				activityCourse.putExtra("bt5", "none");
+				activityCourse.putExtra("bt6", "none");
+				activityCourse.putExtra("bt7", "none");
+				activityCourse.putExtra("bt8", "none");
+				// 3. or you can add data to a bundle
+				Bundle extras = new Bundle();
+				// 4. add bundle to intent
+				activityCourse.putExtras(extras);
 				MainLandingPage.this.startActivity(activityCourse);
 				finish();
 			}
