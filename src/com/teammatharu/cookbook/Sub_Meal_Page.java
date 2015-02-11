@@ -10,6 +10,10 @@ import android.view.View.OnClickListener;
 import android.widget.Button;
 import android.widget.ImageView;
 
+import com.firebase.client.DataSnapshot;
+import com.firebase.client.Firebase;
+import com.firebase.client.FirebaseError;
+import com.firebase.client.ValueEventListener;
 import com.koushikdutta.urlimageviewhelper.UrlImageViewHelper;
 
 public class Sub_Meal_Page extends Activity {
@@ -18,6 +22,9 @@ public class Sub_Meal_Page extends Activity {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_sub__meal__page);
+
+		// Fire Base
+		Firebase.setAndroidContext(this);
 
 		// Declaring
 		Button bt1 = (Button) findViewById(R.id.btn1);
@@ -28,11 +35,27 @@ public class Sub_Meal_Page extends Activity {
 		Button bt6 = (Button) findViewById(R.id.btn6);
 		Button bt7 = (Button) findViewById(R.id.btn7);
 		Button bt8 = (Button) findViewById(R.id.btn8);
-		ImageView imgSubMeal = (ImageView) findViewById(R.id.imageViewSubMeal);
+		final ImageView imgSubMeal = (ImageView) findViewById(R.id.imageViewSubMeal);
 
-		// Logo image for this page (will be same for all menus)
-		UrlImageViewHelper.setUrlDrawable(imgSubMeal,
-				"http://twfoodrestaurant.com/v2images/food.jpg");
+		Firebase fImageSubMealPage = new Firebase(
+				"https://cookbook-teammatharu.firebaseio.com/ImageSubMealPage");
+		fImageSubMealPage.addValueEventListener(new ValueEventListener() {
+
+			@Override
+			public void onDataChange(DataSnapshot arg0) {
+				// TODO Auto-generated method stub
+				String tempImage = (String) arg0.getValue();
+				// Logo image for this page (will be same for all menus)
+				UrlImageViewHelper.setUrlDrawable(imgSubMeal, tempImage);
+
+			}
+
+			@Override
+			public void onCancelled(FirebaseError arg0) {
+				// TODO Auto-generated method stub
+
+			}
+		});
 
 		// 1. get passed intent
 		Intent intent = getIntent();
@@ -58,54 +81,51 @@ public class Sub_Meal_Page extends Activity {
 
 		if (message1.equals("none")) {
 			bt1.setVisibility(View.GONE);
-			} else {
+		} else {
 
-			}
-		
+		}
+
 		if (message2.equals("none")) {
 			bt2.setVisibility(View.GONE);
-			} else {
+		} else {
 
-			}
+		}
 
 		if (message3.equals("none")) {
 			bt3.setVisibility(View.GONE);
-			} else {
+		} else {
 
-			}
+		}
 
 		if (message4.equals("none")) {
 			bt4.setVisibility(View.GONE);
-			} else {
+		} else {
 
-			}
+		}
 
 		if (message5.equals("none")) {
 			bt5.setVisibility(View.GONE);
-			} else {
+		} else {
 
-			}
+		}
 
 		if (message6.equals("none")) {
 			bt6.setVisibility(View.GONE);
-			} else {
+		} else {
 
-			}
+		}
 
 		if (message7.equals("none")) {
 			bt7.setVisibility(View.GONE);
-			} else {
+		} else {
 
-			}
+		}
 
 		if (message8.equals("none")) {
 			bt8.setVisibility(View.GONE);
-			} else {
+		} else {
 
-			}
-
-		
-
+		}
 
 		bt1.setOnClickListener(new OnClickListener() {
 
@@ -148,7 +168,8 @@ public class Sub_Meal_Page extends Activity {
 						Sub_Menu_Page.class);
 				// 2. put key/value data
 				activityCourse.putExtra("bt1_submeal", "Pastries");
-				activityCourse.putExtra("bt2_submeal", "Pizza Dough and Crusts");
+				activityCourse
+						.putExtra("bt2_submeal", "Pizza Dough and Crusts");
 				activityCourse.putExtra("bt3_submeal", "Bagels");
 				activityCourse.putExtra("bt4_submeal", "Yeast Bread");
 				activityCourse.putExtra("bt5_submeal", "none");
@@ -305,8 +326,10 @@ public class Sub_Meal_Page extends Activity {
 				activityCourse.putExtra("bt6_submeal", "Polenta Recipe");
 				activityCourse.putExtra("bt7_submeal", "Rice");
 				activityCourse.putExtra("bt8_submeal", "Sauces and Condiments");
-				activityCourse.putExtra("bt9_submeal", "Stuffing and Dressings");
-				activityCourse.putExtra("bt10_submeal", "Vegetable Side Dishes");
+				activityCourse
+						.putExtra("bt9_submeal", "Stuffing and Dressings");
+				activityCourse
+						.putExtra("bt10_submeal", "Vegetable Side Dishes");
 				activityCourse.putExtra("bt11_submeal", "none");
 				activityCourse.putExtra("bt12_submeal", "none");
 				activityCourse.putExtra("bt13_submeal", "none");

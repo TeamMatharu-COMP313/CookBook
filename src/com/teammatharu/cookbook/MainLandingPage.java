@@ -12,6 +12,10 @@ import android.view.View.OnClickListener;
 import android.widget.Button;
 import android.widget.ImageView;
 
+import com.firebase.client.DataSnapshot;
+import com.firebase.client.Firebase;
+import com.firebase.client.FirebaseError;
+import com.firebase.client.ValueEventListener;
 import com.koushikdutta.urlimageviewhelper.UrlImageViewHelper;
 
 public class MainLandingPage extends Activity {
@@ -21,11 +25,30 @@ public class MainLandingPage extends Activity {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main_landing_page);
 
+		// Fire Base
+		Firebase.setAndroidContext(this);
+
 		// Fetching Image from Cloud
-		ImageView imgLogo = (ImageView) findViewById(R.id.imageView1);
-		UrlImageViewHelper
-				.setUrlDrawable(imgLogo,
-						"http://s23.postimg.org/gzn9lk2h7/cookbooklogoimagemainpage.png");
+		final ImageView imgLogo = (ImageView) findViewById(R.id.imageView1);
+		Firebase fImageMainLandingPage = new Firebase(
+				"https://cookbook-teammatharu.firebaseio.com/ImageMainLandingPage");
+
+		fImageMainLandingPage.addValueEventListener(new ValueEventListener() {
+
+			@Override
+			public void onDataChange(DataSnapshot arg0) {
+				// TODO Auto-generated method stub
+				String tempImage = (String) arg0.getValue();
+				//Assigning Image to Image view
+				UrlImageViewHelper.setUrlDrawable(imgLogo, tempImage);
+			}
+
+			@Override
+			public void onCancelled(FirebaseError arg0) {
+				// TODO Auto-generated method stub
+
+			}
+		});
 
 		// Button Code
 		Button bCourse = (Button) findViewById(R.id.btnCourses);
