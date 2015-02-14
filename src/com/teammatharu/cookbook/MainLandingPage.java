@@ -39,7 +39,7 @@ public class MainLandingPage extends Activity {
 			public void onDataChange(DataSnapshot arg0) {
 				// TODO Auto-generated method stub
 				String tempImage = (String) arg0.getValue();
-				//Assigning Image to Image view
+				// Assigning Image to Image view
 				UrlImageViewHelper.setUrlDrawable(imgLogo, tempImage);
 			}
 
@@ -47,33 +47,6 @@ public class MainLandingPage extends Activity {
 			public void onCancelled(FirebaseError arg0) {
 				// TODO Auto-generated method stub
 
-			}
-		});
-
-		// Button Code
-		Button bCourse = (Button) findViewById(R.id.btnCourses);
-		bCourse.setOnClickListener(new OnClickListener() {
-
-			@Override
-			public void onClick(View v) {
-				// TODO Auto-generated method stub
-				Intent activityCourse = new Intent(MainLandingPage.this,
-						Sub_Meal_Page.class);
-				// 2. put key/value data
-				activityCourse.putExtra("bt1", "Appetizers and Snacks");
-				activityCourse.putExtra("bt2", "Bread Recipes");
-				activityCourse.putExtra("bt3", "Desserts");
-				activityCourse.putExtra("bt4", "Drinks");
-				activityCourse.putExtra("bt5", "Main Dishes");
-				activityCourse.putExtra("bt6", "Salad Recipes");
-				activityCourse.putExtra("bt7", "Side Dishes");
-				activityCourse.putExtra("bt8", "Soups, Stews and Chili");
-				// 3. or you can add data to a bundle
-				Bundle extras = new Bundle();
-				// 4. add bundle to intent
-				activityCourse.putExtras(extras);
-				MainLandingPage.this.startActivity(activityCourse);
-				finish();
 			}
 		});
 
@@ -94,6 +67,43 @@ public class MainLandingPage extends Activity {
 				activityCourse.putExtra("bt6", "none");
 				activityCourse.putExtra("bt7", "none");
 				activityCourse.putExtra("bt8", "none");
+				activityCourse.putExtra("cookbook_MainLanding", "Meals");
+				// 3. or you can add data to a bundle
+				Bundle extras = new Bundle();
+				// 4. add bundle to intent
+				activityCourse.putExtras(extras);
+				MainLandingPage.this.startActivity(activityCourse);
+				finish();
+			}
+		});
+
+		// Button Code
+		final Button bCourse = (Button) findViewById(R.id.btnCourses);
+		bCourse.setOnClickListener(new OnClickListener() {
+
+			@Override
+			public void onClick(View v) {
+				// TODO Auto-generated method stub
+
+				String b1MainLandingFirebase = bCourse.getText().toString();
+				// System.out.print(b1Firebase);
+				// Log.d("b1Firebase", b1Firebase);
+
+				Firebase bCourseFirebase = new Firebase(
+						"https://cookbook-teammatharu.firebaseio.com/b1MainLandingFirebase");
+
+				Intent activityCourse = new Intent(MainLandingPage.this,
+						Sub_Meal_Page.class);
+				// 2. put key/value data
+				activityCourse.putExtra("bt1", "Appetizers and Snacks");
+				activityCourse.putExtra("bt2", "Bread Recipes");
+				activityCourse.putExtra("bt3", "Desserts");
+				activityCourse.putExtra("bt4", "Drinks");
+				activityCourse.putExtra("bt5", "Main Dishes");
+				activityCourse.putExtra("bt6", "Salad Recipes");
+				activityCourse.putExtra("bt7", "Side Dishes");
+				activityCourse.putExtra("bt8", "Soups, Stews and Chili");
+				activityCourse.putExtra("cookbook_MainLanding", "Courses");
 				// 3. or you can add data to a bundle
 				Bundle extras = new Bundle();
 				// 4. add bundle to intent
@@ -120,6 +130,8 @@ public class MainLandingPage extends Activity {
 				activityCourse.putExtra("bt6", "none");
 				activityCourse.putExtra("bt7", "none");
 				activityCourse.putExtra("bt8", "none");
+				activityCourse.putExtra("cookbook_MainLanding",
+						"Main Ingredients");
 				// 3. or you can add data to a bundle
 				Bundle extras = new Bundle();
 				// 4. add bundle to intent
@@ -146,6 +158,8 @@ public class MainLandingPage extends Activity {
 				activityCourse.putExtra("bt6", "U.S. Recipes");
 				activityCourse.putExtra("bt7", "Wolrd Cuisine");
 				activityCourse.putExtra("bt8", "none");
+				activityCourse.putExtra("cookbook_MainLanding",
+						"Occasions and Cooking Style");
 
 				Bundle extras = new Bundle();
 

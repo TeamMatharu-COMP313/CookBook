@@ -11,6 +11,7 @@ public class Main_Recipe_Page extends Activity {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main__recipe__page);
+
 	}
 
 	@Override
