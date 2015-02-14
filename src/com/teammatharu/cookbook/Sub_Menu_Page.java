@@ -9,6 +9,10 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
 
+import com.firebase.client.DataSnapshot;
+import com.firebase.client.Firebase;
+import com.firebase.client.FirebaseError;
+import com.firebase.client.ValueEventListener;
 import com.koushikdutta.urlimageviewhelper.UrlImageViewHelper;
 
 public class Sub_Menu_Page extends Activity {
@@ -33,13 +37,27 @@ public class Sub_Menu_Page extends Activity {
 		Button bt12_submeal = (Button) findViewById(R.id.btnmenu12);
 		Button bt13_submeal = (Button) findViewById(R.id.btnmenu13);
 		Button bt14_submeal = (Button) findViewById(R.id.btnmenu14);
-		ImageView imgSubMenu = (ImageView) findViewById(R.id.imageViewSubMenu);
+		final ImageView imgSubMenu = (ImageView) findViewById(R.id.imageViewSubMenu);
 
 		// Logo image for this page (will be same for all menus)
-		UrlImageViewHelper
-				.setUrlDrawable(
-						imgSubMenu,
-						"http://www.gamesforboys.net/category/wp-content/thumbs/custom/M/Make-a-tasty-meal-on-games-for-boys.jpg");
+		Firebase fImageSubMenuPage = new Firebase(
+				"https://cookbook-teammatharu.firebaseio.com/ImageSubMenuPage");
+		fImageSubMenuPage.addValueEventListener(new ValueEventListener() {
+
+			@Override
+			public void onDataChange(DataSnapshot arg0) {
+				// TODO Auto-generated method stub
+				String tempImage = (String) arg0.getValue();
+				// Logo image for this page (will be same for all menus)
+				UrlImageViewHelper.setUrlDrawable(imgSubMenu, tempImage);
+			}
+
+			@Override
+			public void onCancelled(FirebaseError arg0) {
+				// TODO Auto-generated method stub
+
+			}
+		});
 
 		// 1. get passed intent
 		Intent intent = getIntent();
