@@ -156,6 +156,8 @@ public class Sub_Meal_Page extends Activity {
 					activityCourse.putExtra("bt12_submeal", "none");
 					activityCourse.putExtra("bt13_submeal", "none");
 					activityCourse.putExtra("bt14_submeal", "none");
+					activityCourse.putExtra("cookbook_SubMeal", "Meals");
+					activityCourse.putExtra("cookbook_MainLanding", "Meals");
 
 					// 3. or you can add data to a bundle
 					Bundle extras = new Bundle();
@@ -187,6 +189,8 @@ public class Sub_Meal_Page extends Activity {
 					activityCourse.putExtra("bt13_submeal",
 							"Seafood Appetizers");
 					activityCourse.putExtra("bt14_submeal", "Spicy Appetizers");
+					activityCourse.putExtra("cookbook_SubMeal", "Courses");
+					activityCourse.putExtra("cookbook_MainLanding", "Courses");
 
 					// 3. or you can add data to a bundle
 					Bundle extras = new Bundle();
@@ -213,6 +217,8 @@ public class Sub_Meal_Page extends Activity {
 					activityCourse.putExtra("bt12_submeal", "none");
 					activityCourse.putExtra("bt13_submeal", "none");
 					activityCourse.putExtra("bt14_submeal", "none");
+					activityCourse.putExtra("cookbook_SubMeal", "Main Ingredients");
+					activityCourse.putExtra("cookbook_MainLanding", "Main Ingredients");
 
 					// 3. or you can add data to a bundle
 					Bundle extras = new Bundle();
@@ -241,6 +247,8 @@ public class Sub_Meal_Page extends Activity {
 					activityCourse.putExtra("bt12_submeal", "none");
 					activityCourse.putExtra("bt13_submeal", "none");
 					activityCourse.putExtra("bt14_submeal", "none");
+					activityCourse.putExtra("cookbook_SubMeal", "Occasions and Cooking Style");
+					activityCourse.putExtra("cookbook_MainLanding", "Occasions and Cooking Style");
 
 					// 3. or you can add data to a bundle
 					Bundle extras = new Bundle();
@@ -277,6 +285,8 @@ public class Sub_Meal_Page extends Activity {
 					activityCourse.putExtra("bt12_submeal", "none");
 					activityCourse.putExtra("bt13_submeal", "none");
 					activityCourse.putExtra("bt14_submeal", "none");
+					activityCourse.putExtra("cookbook_SubMeal", "Meals");
+					activityCourse.putExtra("cookbook_MainLanding", "Meals");
 					// 3. or you can add data to a bundle
 					Bundle extras = new Bundle();
 					// 4. add bundle to intent
@@ -302,6 +312,8 @@ public class Sub_Meal_Page extends Activity {
 					activityCourse.putExtra("bt12_submeal", "none");
 					activityCourse.putExtra("bt13_submeal", "none");
 					activityCourse.putExtra("bt14_submeal", "none");
+					activityCourse.putExtra("cookbook_SubMeal", "Courses");
+					activityCourse.putExtra("cookbook_MainLanding", "Courses");
 					// 3. or you can add data to a bundle
 					Bundle extras = new Bundle();
 					// 4. add bundle to intent
@@ -326,6 +338,8 @@ public class Sub_Meal_Page extends Activity {
 					activityCourse.putExtra("bt12_submeal", "none");
 					activityCourse.putExtra("bt13_submeal", "none");
 					activityCourse.putExtra("bt14_submeal", "none");
+					activityCourse.putExtra("cookbook_SubMeal", "Main Ingredients");
+					activityCourse.putExtra("cookbook_MainLanding", "Main Ingredients");
 					// 3. or you can add data to a bundle
 					Bundle extras = new Bundle();
 					// 4. add bundle to intent
@@ -353,6 +367,8 @@ public class Sub_Meal_Page extends Activity {
 					activityCourse.putExtra("bt12_submeal", "none");
 					activityCourse.putExtra("bt13_submeal", "none");
 					activityCourse.putExtra("bt14_submeal", "none");
+					activityCourse.putExtra("cookbook_SubMeal", "Occasions and Cooking Style");
+					activityCourse.putExtra("cookbook_MainLanding", "Occasions and Cooking Style");
 					// 3. or you can add data to a bundle
 					Bundle extras = new Bundle();
 					// 4. add bundle to intent
@@ -388,6 +404,8 @@ public class Sub_Meal_Page extends Activity {
 					activityCourse.putExtra("bt12_submeal", "none");
 					activityCourse.putExtra("bt13_submeal", "none");
 					activityCourse.putExtra("bt14_submeal", "none");
+					activityCourse.putExtra("cookbook_SubMeal", "Meals");
+					activityCourse.putExtra("cookbook_MainLanding", "Meals");
 					// 3. or you can add data to a bundle
 					Bundle extras = new Bundle();
 					// 4. add bundle to intent
@@ -413,6 +431,8 @@ public class Sub_Meal_Page extends Activity {
 					activityCourse.putExtra("bt12_submeal", "none");
 					activityCourse.putExtra("bt13_submeal", "none");
 					activityCourse.putExtra("bt14_submeal", "none");
+					activityCourse.putExtra("cookbook_SubMeal", "Courses");
+					activityCourse.putExtra("cookbook_MainLanding", "Courses");
 					// 3. or you can add data to a bundle
 					Bundle extras = new Bundle();
 					// 4. add bundle to intent
@@ -438,6 +458,8 @@ public class Sub_Meal_Page extends Activity {
 					activityCourse.putExtra("bt12_submeal", "none");
 					activityCourse.putExtra("bt13_submeal", "none");
 					activityCourse.putExtra("bt14_submeal", "none");
+					activityCourse.putExtra("cookbook_SubMeal", "Main Ingredients");
+					activityCourse.putExtra("cookbook_MainLanding", "Main Ingredients");
 					// 3. or you can add data to a bundle
 					Bundle extras = new Bundle();
 					// 4. add bundle to intent
@@ -465,6 +487,8 @@ public class Sub_Meal_Page extends Activity {
 					activityCourse.putExtra("bt12_submeal", "none");
 					activityCourse.putExtra("bt13_submeal", "none");
 					activityCourse.putExtra("bt14_submeal", "none");
+					activityCourse.putExtra("cookbook_SubMeal", "Occasions and Cooking Style");
+					activityCourse.putExtra("cookbook_MainLanding", "Occasions and Cooking Style");
 					// 3. or you can add data to a bundle
 					Bundle extras = new Bundle();
 					// 4. add bundle to intent
@@ -499,6 +523,8 @@ public class Sub_Meal_Page extends Activity {
 					activityCourse.putExtra("bt12_submeal", "none");
 					activityCourse.putExtra("bt13_submeal", "none");
 					activityCourse.putExtra("bt14_submeal", "none");
+					activityCourse.putExtra("cookbook_SubMeal", "Meals");
+					activityCourse.putExtra("cookbook_MainLanding", "Meals");
 					// 3. or you can add data to a bundle
 					Bundle extras = new Bundle();
 					// 4. add bundle to intent
@@ -523,6 +549,8 @@ public class Sub_Meal_Page extends Activity {
 					activityCourse.putExtra("bt12_submeal", "none");
 					activityCourse.putExtra("bt13_submeal", "none");
 					activityCourse.putExtra("bt14_submeal", "none");
+					activityCourse.putExtra("cookbook_SubMeal", "Courses");
+					activityCourse.putExtra("cookbook_MainLanding", "Courses");
 					// 3. or you can add data to a bundle
 					Bundle extras = new Bundle();
 					// 4. add bundle to intent
@@ -548,6 +576,8 @@ public class Sub_Meal_Page extends Activity {
 					activityCourse.putExtra("bt12_submeal", "none");
 					activityCourse.putExtra("bt13_submeal", "none");
 					activityCourse.putExtra("bt14_submeal", "none");
+					activityCourse.putExtra("cookbook_SubMeal", "Main Ingredients");
+					activityCourse.putExtra("cookbook_MainLanding", "Main Ingredients");
 					// 3. or you can add data to a bundle
 					Bundle extras = new Bundle();
 					// 4. add bundle to intent
@@ -575,6 +605,8 @@ public class Sub_Meal_Page extends Activity {
 					activityCourse.putExtra("bt12_submeal", "none");
 					activityCourse.putExtra("bt13_submeal", "none");
 					activityCourse.putExtra("bt14_submeal", "none");
+					activityCourse.putExtra("cookbook_SubMeal", "Occasions and Cooking Style");
+					activityCourse.putExtra("cookbook_MainLanding", "Occasions and Cooking Style");
 					// 3. or you can add data to a bundle
 					Bundle extras = new Bundle();
 					// 4. add bundle to intent
@@ -609,6 +641,8 @@ public class Sub_Meal_Page extends Activity {
 					activityCourse.putExtra("bt12_submeal", "none");
 					activityCourse.putExtra("bt13_submeal", "none");
 					activityCourse.putExtra("bt14_submeal", "none");
+					activityCourse.putExtra("cookbook_SubMeal", "Meals");
+					activityCourse.putExtra("cookbook_MainLanding", "Meals");
 					// 3. or you can add data to a bundle
 					Bundle extras = new Bundle();
 					// 4. add bundle to intent
@@ -634,6 +668,8 @@ public class Sub_Meal_Page extends Activity {
 					activityCourse.putExtra("bt12_submeal", "none");
 					activityCourse.putExtra("bt13_submeal", "none");
 					activityCourse.putExtra("bt14_submeal", "none");
+					activityCourse.putExtra("cookbook_SubMeal", "Courses");
+					activityCourse.putExtra("cookbook_MainLanding", "Courses");
 					// 3. or you can add data to a bundle
 					Bundle extras = new Bundle();
 					// 4. add bundle to intent
@@ -658,6 +694,8 @@ public class Sub_Meal_Page extends Activity {
 					activityCourse.putExtra("bt12_submeal", "none");
 					activityCourse.putExtra("bt13_submeal", "none");
 					activityCourse.putExtra("bt14_submeal", "none");
+					activityCourse.putExtra("cookbook_SubMeal", "Main Ingredients");
+					activityCourse.putExtra("cookbook_MainLanding", "Main Ingredients");
 					// 3. or you can add data to a bundle
 					Bundle extras = new Bundle();
 					// 4. add bundle to intent
@@ -684,6 +722,8 @@ public class Sub_Meal_Page extends Activity {
 					activityCourse.putExtra("bt12_submeal", "none");
 					activityCourse.putExtra("bt13_submeal", "none");
 					activityCourse.putExtra("bt14_submeal", "none");
+					activityCourse.putExtra("cookbook_SubMeal", "Occasions and Cooking Style");
+					activityCourse.putExtra("cookbook_MainLanding", "Occasions and Cooking Style");
 					// 3. or you can add data to a bundle
 					Bundle extras = new Bundle();
 					// 4. add bundle to intent
@@ -718,6 +758,8 @@ public class Sub_Meal_Page extends Activity {
 					activityCourse.putExtra("bt12_submeal", "none");
 					activityCourse.putExtra("bt13_submeal", "none");
 					activityCourse.putExtra("bt14_submeal", "none");
+					activityCourse.putExtra("cookbook_SubMeal", "Meals");
+					activityCourse.putExtra("cookbook_MainLanding", "Meals");
 					// 3. or you can add data to a bundle
 					Bundle extras = new Bundle();
 					// 4. add bundle to intent
@@ -742,6 +784,8 @@ public class Sub_Meal_Page extends Activity {
 					activityCourse.putExtra("bt12_submeal", "none");
 					activityCourse.putExtra("bt13_submeal", "none");
 					activityCourse.putExtra("bt14_submeal", "none");
+					activityCourse.putExtra("cookbook_SubMeal", "Courses");
+					activityCourse.putExtra("cookbook_MainLanding", "Courses");
 					// 3. or you can add data to a bundle
 					Bundle extras = new Bundle();
 					// 4. add bundle to intent
@@ -766,6 +810,8 @@ public class Sub_Meal_Page extends Activity {
 					activityCourse.putExtra("bt12_submeal", "none");
 					activityCourse.putExtra("bt13_submeal", "none");
 					activityCourse.putExtra("bt14_submeal", "none");
+					activityCourse.putExtra("cookbook_SubMeal", "Main Ingredients");
+					activityCourse.putExtra("cookbook_MainLanding", "Main Ingredients");
 					// 3. or you can add data to a bundle
 					Bundle extras = new Bundle();
 					// 4. add bundle to intent
@@ -792,6 +838,8 @@ public class Sub_Meal_Page extends Activity {
 					activityCourse.putExtra("bt12_submeal", "none");
 					activityCourse.putExtra("bt13_submeal", "none");
 					activityCourse.putExtra("bt14_submeal", "none");
+					activityCourse.putExtra("cookbook_SubMeal", "Occasions and Cooking Style");
+					activityCourse.putExtra("cookbook_MainLanding", "Occasions and Cooking Style");
 					// 3. or you can add data to a bundle
 					Bundle extras = new Bundle();
 					// 4. add bundle to intent
@@ -826,6 +874,8 @@ public class Sub_Meal_Page extends Activity {
 					activityCourse.putExtra("bt12_submeal", "none");
 					activityCourse.putExtra("bt13_submeal", "none");
 					activityCourse.putExtra("bt14_submeal", "none");
+					activityCourse.putExtra("cookbook_SubMeal", "Meals");
+					activityCourse.putExtra("cookbook_MainLanding", "Meals");
 					// 3. or you can add data to a bundle
 					Bundle extras = new Bundle();
 					// 4. add bundle to intent
@@ -854,6 +904,8 @@ public class Sub_Meal_Page extends Activity {
 					activityCourse.putExtra("bt12_submeal", "none");
 					activityCourse.putExtra("bt13_submeal", "none");
 					activityCourse.putExtra("bt14_submeal", "none");
+					activityCourse.putExtra("cookbook_SubMeal", "Courses");
+					activityCourse.putExtra("cookbook_MainLanding", "Courses");
 					// 3. or you can add data to a bundle
 					Bundle extras = new Bundle();
 					// 4. add bundle to intent
@@ -878,6 +930,8 @@ public class Sub_Meal_Page extends Activity {
 					activityCourse.putExtra("bt12_submeal", "none");
 					activityCourse.putExtra("bt13_submeal", "none");
 					activityCourse.putExtra("bt14_submeal", "none");
+					activityCourse.putExtra("cookbook_SubMeal", "Main Ingredients");
+					activityCourse.putExtra("cookbook_MainLanding", "Main Ingredients");
 					// 3. or you can add data to a bundle
 					Bundle extras = new Bundle();
 					// 4. add bundle to intent
@@ -905,6 +959,8 @@ public class Sub_Meal_Page extends Activity {
 					activityCourse.putExtra("bt12_submeal", "none");
 					activityCourse.putExtra("bt13_submeal", "none");
 					activityCourse.putExtra("bt14_submeal", "none");
+					activityCourse.putExtra("cookbook_SubMeal", "Occasions and Cooking Style");
+					activityCourse.putExtra("cookbook_MainLanding", "Occasions and Cooking Style");
 					// 3. or you can add data to a bundle
 					Bundle extras = new Bundle();
 					// 4. add bundle to intent
@@ -939,6 +995,8 @@ public class Sub_Meal_Page extends Activity {
 					activityCourse.putExtra("bt12_submeal", "none");
 					activityCourse.putExtra("bt13_submeal", "none");
 					activityCourse.putExtra("bt14_submeal", "none");
+					activityCourse.putExtra("cookbook_SubMeal", "Meals");
+					activityCourse.putExtra("cookbook_MainLanding", "Meals");
 					// 3. or you can add data to a bundle
 					Bundle extras = new Bundle();
 					// 4. add bundle to intent
@@ -963,6 +1021,8 @@ public class Sub_Meal_Page extends Activity {
 					activityCourse.putExtra("bt12_submeal", "none");
 					activityCourse.putExtra("bt13_submeal", "none");
 					activityCourse.putExtra("bt14_submeal", "none");
+					activityCourse.putExtra("cookbook_SubMeal", "Courses");
+					activityCourse.putExtra("cookbook_MainLanding", "Courses");
 					// 3. or you can add data to a bundle
 					Bundle extras = new Bundle();
 					// 4. add bundle to intent
@@ -987,6 +1047,8 @@ public class Sub_Meal_Page extends Activity {
 					activityCourse.putExtra("bt12_submeal", "none");
 					activityCourse.putExtra("bt13_submeal", "none");
 					activityCourse.putExtra("bt14_submeal", "none");
+					activityCourse.putExtra("cookbook_SubMeal", "Main Ingredients");
+					activityCourse.putExtra("cookbook_MainLanding", "Main Ingredients");
 					// 3. or you can add data to a bundle
 					Bundle extras = new Bundle();
 					// 4. add bundle to intent
@@ -1012,6 +1074,8 @@ public class Sub_Meal_Page extends Activity {
 					activityCourse.putExtra("bt12_submeal", "none");
 					activityCourse.putExtra("bt13_submeal", "none");
 					activityCourse.putExtra("bt14_submeal", "none");
+					activityCourse.putExtra("cookbook_SubMeal", "Occasions and Cooking Style");
+					activityCourse.putExtra("cookbook_MainLanding", "Occasions and Cooking Style");
 					// 3. or you can add data to a bundle
 					Bundle extras = new Bundle();
 					// 4. add bundle to intent
