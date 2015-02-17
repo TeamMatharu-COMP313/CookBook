@@ -381,6 +381,53 @@ public class Sub_Menu_Page extends Activity {
 						activityCourse.putExtras(extras);
 						Sub_Menu_Page.this.startActivity(activityCourse);
 						finish();
+					} else if (bt1_submeal.getText().toString()
+							.equals("Chicken Salad")) {
+						Intent activityCourse = new Intent(Sub_Menu_Page.this,
+								Main_Recipe_Page.class);
+						// 2. put key/value data
+						activityCourse.putExtra("list1_submenu",
+								"Holiday Chicken Salad");
+						activityCourse.putExtra("list2_submenu",
+								"Sesame Pasta Chicken Salad");
+						activityCourse.putExtra("list3_submenu",
+								"Becky's Chicken Salad");
+						activityCourse.putExtra("list4_submenu",
+								"Fruity Curry Chicken Salad");
+						activityCourse.putExtra("list5_submenu",
+								"Carol's Chicken Salad");
+						activityCourse.putExtra("list6_submenu",
+								"Fruited Curry Chicken Salad");
+						activityCourse.putExtra("list7_submenu",
+								"Chicken Fiesta Salad");
+						activityCourse.putExtra("list8_submenu",
+								"Asian Chicken Salad");
+						activityCourse.putExtra("list9_submenu",
+								"Basic Chicken Salad");
+						activityCourse.putExtra("list10_submenu",
+								"Mediterranean Quinoa Salad");
+						activityCourse.putExtra("list11_submenu",
+								"Chinese Chicken Salad");
+						activityCourse.putExtra("list12_submenu", "Cobb Salad");
+						activityCourse.putExtra("list13_submenu",
+								"Parmesan and Basil Chicken Salad");
+						activityCourse.putExtra("list14_submenu",
+								"Amy's Barbecue Chicken Salad");
+						activityCourse.putExtra("list15_submenu",
+								"Feta Chicken Salad");
+						activityCourse.putExtra("list16_submenu",
+								"Asian Chicken Noodle Salad");
+						activityCourse.putExtra("list17_submenu",
+								"Mandarin Chicken Pasta Salad");
+						activityCourse.putExtra("list18_submenu", "none");
+						activityCourse.putExtra("list19_submenu", "none");
+
+						// 3. or you can add data to a bundle
+						Bundle extras = new Bundle();
+						// 4. add bundle to intent
+						activityCourse.putExtras(extras);
+						Sub_Menu_Page.this.startActivity(activityCourse);
+						finish();
 					}
 
 				} else if (cookbook_subMeal.equals("Main Ingredients")) {
@@ -621,6 +668,51 @@ public class Sub_Menu_Page extends Activity {
 						activityCourse.putExtras(extras);
 						Sub_Menu_Page.this.startActivity(activityCourse);
 						finish();
+					} else if (bt2_submeal.getText().toString()
+							.equals("Curry Salad")) {
+						Intent activityCourse = new Intent(Sub_Menu_Page.this,
+								Main_Recipe_Page.class);
+						// 2. put key/value data
+
+						activityCourse.putExtra("list1_submenu",
+								"Fruited Curry Chicken Salad");
+						activityCourse.putExtra("list2_submenu",
+								"Curry Chicken Salad");
+						activityCourse.putExtra("list3_submenu",
+								"Curried Quinoa Salad with Mango");
+						activityCourse.putExtra("list4_submenu",
+								"Wonderful Chicken Curry Salad");
+						activityCourse.putExtra("list5_submenu",
+								"Curried Chicken and Rice Salad");
+						activityCourse.putExtra("list6_submenu",
+								"Curry Broccoli Salad");
+						activityCourse.putExtra("list7_submenu",
+								"Cinnamon-Curry Tuna Salad");
+						activityCourse.putExtra("list8_submenu",
+								"Curry Pasta Salad");
+						activityCourse.putExtra("list9_submenu",
+								"Curried Tofu Salad");
+						activityCourse.putExtra("list10_submenu",
+								"Curried Potato Salad");
+						activityCourse.putExtra("list11_submenu",
+								"Fruited Tofu Curry Salad");
+						activityCourse.putExtra("list12_submenu",
+								"Curried Salmon Pasta Salad");
+						activityCourse.putExtra("list13_submenu",
+								"Curry Coleslaw");
+						activityCourse.putExtra("list14_submenu",
+								"Fruity Curried Lentil Salad");
+						activityCourse.putExtra("list15_submenu", "none");
+						activityCourse.putExtra("list16_submenu", "none");
+						activityCourse.putExtra("list17_submenu", "none");
+						activityCourse.putExtra("list18_submenu", "none");
+						activityCourse.putExtra("list19_submenu", "none");
+						// 3. or you can add data to a bundle
+						Bundle extras = new Bundle();
+						// 4. add bundle to intent
+						activityCourse.putExtras(extras);
+						Sub_Menu_Page.this.startActivity(activityCourse);
+						finish();
 					}
 				} else if (cookbook_subMeal.equals("Main Ingredients")) {
 					if (bt2_submeal.getText().toString().equals("")) {
@@ -844,6 +936,52 @@ public class Sub_Menu_Page extends Activity {
 						activityCourse.putExtra("list18_submenu", "none");
 						activityCourse.putExtra("list19_submenu", "none");
 
+						// 3. or you can add data to a bundle
+						Bundle extras = new Bundle();
+						// 4. add bundle to intent
+						activityCourse.putExtras(extras);
+						Sub_Menu_Page.this.startActivity(activityCourse);
+						finish();
+					} else if (bt3_submeal.getText().toString()
+							.equals("Egg Salad")) {
+						Intent activityCourse = new Intent(Sub_Menu_Page.this,
+								Main_Recipe_Page.class);
+						// 2. put key/value data
+
+						activityCourse.putExtra("list1_submenu",
+								"Tangy Egg Salad Spread");
+						activityCourse.putExtra("list2_submenu",
+								"Egg Salad with a Kick");
+						activityCourse.putExtra("list3_submenu",
+								"Egg Salad Sandwiches");
+						activityCourse.putExtra("list4_submenu",
+								"Loaded Egg Salad");
+						activityCourse.putExtra("list5_submenu",
+								"Tomato Basil Egg Salad Sandwich");
+						activityCourse.putExtra("list6_submenu",
+								"Easy Egg Salad");
+						activityCourse.putExtra("list7_submenu",
+								"Avocado Egg Salad");
+						activityCourse.putExtra("list8_submenu",
+								"Magical Egg Salad");
+						activityCourse.putExtra("list9_submenu",
+								"Cucumbers And Egg Salad");
+						activityCourse.putExtra("list10_submenu",
+								"Light Avocado Egg Salad");
+						activityCourse.putExtra("list11_submenu",
+								"Shrimp Egg Salad");
+						activityCourse.putExtra("list12_submenu",
+								"Cilantro Egg Salad");
+						activityCourse.putExtra("list13_submenu",
+								"Georgia Cracker Salad");
+						activityCourse.putExtra("list14_submenu",
+								"Yogurt Egg Salad");
+						activityCourse.putExtra("list15_submenu",
+								"Crunchy Egg Salad");
+						activityCourse.putExtra("list16_submenu", "none");
+						activityCourse.putExtra("list17_submenu", "none");
+						activityCourse.putExtra("list18_submenu", "none");
+						activityCourse.putExtra("list19_submenu", "none");
 						// 3. or you can add data to a bundle
 						Bundle extras = new Bundle();
 						// 4. add bundle to intent
@@ -1088,6 +1226,56 @@ public class Sub_Menu_Page extends Activity {
 						activityCourse.putExtras(extras);
 						Sub_Menu_Page.this.startActivity(activityCourse);
 						finish();
+					} else if (bt4_submeal.getText().toString()
+							.equals("Fruit Salad")) {
+						Intent activityCourse = new Intent(Sub_Menu_Page.this,
+								Main_Recipe_Page.class);
+						// 2. put key/value data
+
+						activityCourse.putExtra("list1_submenu",
+								"Spinach and Strawberry Salad");
+						activityCourse.putExtra("list2_submenu",
+								"Easy Apple Coleslaw");
+						activityCourse.putExtra("list3_submenu",
+								"Cranberry and Cilantro Quinoa Salad");
+						activityCourse.putExtra("list4_submenu",
+								"Spring Strawberry Spinach Salad");
+						activityCourse.putExtra("list5_submenu",
+								"Frog Eye Salad");
+						activityCourse.putExtra("list6_submenu",
+								"Fabulous Fruit Salad");
+						activityCourse.putExtra("list7_submenu",
+								"Perfect Summer Fruit Salad");
+						activityCourse.putExtra("list8_submenu",
+								"Tangy Poppy Seed Fruit Salad");
+						activityCourse.putExtra("list9_submenu",
+								"Betsy's Mandarin Orange Salad");
+						activityCourse.putExtra("list10_submenu",
+								"Sweet and Tart Strawberry Salad");
+						activityCourse.putExtra("list11_submenu",
+								"Strawberry, Kiwi, and Spinach Salad");
+						activityCourse.putExtra("list12_submenu",
+								"Watermelon Summer Salad");
+						activityCourse.putExtra("list13_submenu",
+								"Very Easy Fruit Salad");
+						activityCourse.putExtra("list14_submenu",
+								"Spicy Mango Salad");
+						activityCourse.putExtra("list15_submenu",
+								"Mojito Fruit Salad");
+						activityCourse.putExtra("list16_submenu",
+								"Cucumber-Watermelon Salad");
+						activityCourse.putExtra("list17_submenu",
+								"Jenny's Sweet Waldorf Salad");
+						activityCourse.putExtra("list18_submenu",
+								"Fresh Mint and Cilantro Melon Salad");
+						activityCourse.putExtra("list19_submenu",
+								"Parrothead Salad");
+						// 3. or you can add data to a bundle
+						Bundle extras = new Bundle();
+						// 4. add bundle to intent
+						activityCourse.putExtras(extras);
+						Sub_Menu_Page.this.startActivity(activityCourse);
+						finish();
 					}
 				} else if (cookbook_subMeal.equals("Main Ingredients")) {
 					if (bt4_submeal.getText().toString().equals("")) {
@@ -1276,6 +1464,52 @@ public class Sub_Menu_Page extends Activity {
 						activityCourse.putExtra("list13_submenu", "none");
 						activityCourse.putExtra("list14_submenu", "none");
 						activityCourse.putExtra("list15_submenu", "none");
+						activityCourse.putExtra("list16_submenu", "none");
+						activityCourse.putExtra("list17_submenu", "none");
+						activityCourse.putExtra("list18_submenu", "none");
+						activityCourse.putExtra("list19_submenu", "none");
+
+						// 3. or you can add data to a bundle
+						Bundle extras = new Bundle();
+						// 4. add bundle to intent
+						activityCourse.putExtras(extras);
+						Sub_Menu_Page.this.startActivity(activityCourse);
+						finish();
+					} else if (bt5_submeal.getText().toString()
+							.equals("Green Salad")) {
+						Intent activityCourse = new Intent(Sub_Menu_Page.this,
+								Main_Recipe_Page.class);
+						// 2. put key/value data
+
+						activityCourse.putExtra("list1_submenu",
+								"Jamie's Cranberry Spinach Salad");
+						activityCourse.putExtra("list2_submenu",
+								"Roquefort Pear Salad");
+						activityCourse.putExtra("list3_submenu",
+								"Spinach and Strawberry Salad");
+						activityCourse.putExtra("list4_submenu", "BLT Salad");
+						activityCourse.putExtra("list5_submenu",
+								"Spinach and Orzo Salad");
+						activityCourse.putExtra("list6_submenu",
+								"Harvest Salad");
+						activityCourse.putExtra("list7_submenu",
+								"Strawberry and Feta Salad");
+						activityCourse.putExtra("list8_submenu",
+								"Chinese Chicken Salad");
+						activityCourse.putExtra("list9_submenu",
+								"Strawberry Avocado Salad");
+						activityCourse.putExtra("list10_submenu",
+								"Bermuda Spinach Salad");
+						activityCourse.putExtra("list11_submenu",
+								"Green Salad with Cranberry Vinaigrette");
+						activityCourse.putExtra("list12_submenu",
+								"Beet Salad with Goat Cheese");
+						activityCourse.putExtra("list13_submenu",
+								"Spring Strawberry Spinach Salad");
+						activityCourse
+								.putExtra("list14_submenu", "Steak Salad");
+						activityCourse.putExtra("list15_submenu",
+								"Easy Arugula Salad");
 						activityCourse.putExtra("list16_submenu", "none");
 						activityCourse.putExtra("list17_submenu", "none");
 						activityCourse.putExtra("list18_submenu", "none");
@@ -1480,6 +1714,56 @@ public class Sub_Menu_Page extends Activity {
 						activityCourse.putExtras(extras);
 						Sub_Menu_Page.this.startActivity(activityCourse);
 						finish();
+					} else if (bt6_submeal.getText().toString()
+							.equals("Pasta Salad")) {
+						Intent activityCourse = new Intent(Sub_Menu_Page.this,
+								Main_Recipe_Page.class);
+						// 2. put key/value data
+
+						activityCourse.putExtra("list1_submenu",
+								"Classic Macaroni Salad");
+						activityCourse.putExtra("list2_submenu",
+								"Antipasto Pasta Salad");
+						activityCourse.putExtra("list3_submenu",
+								"Black Bean and Couscous Salad");
+						activityCourse.putExtra("list4_submenu",
+								"Amish Macaroni Salad");
+						activityCourse.putExtra("list5_submenu",
+								"Broccoli and Tortellini Salad");
+						activityCourse.putExtra("list6_submenu",
+								"Garden Pasta Salad");
+						activityCourse.putExtra("list7_submenu",
+								"BLT Pasta Salad");
+						activityCourse.putExtra("list8_submenu",
+								"Southwestern Pasta Salad");
+						activityCourse.putExtra("list9_submenu",
+								"Awesome Pasta Salad");
+						activityCourse
+								.putExtra("list10_submenu", "Asian Salad");
+						activityCourse.putExtra("list11_submenu",
+								"Southwestern Pasta Salad");
+						activityCourse.putExtra("list12_submenu",
+								"Tortellini Salad");
+						activityCourse.putExtra("list13_submenu",
+								"Spinach Pasta Salad");
+						activityCourse.putExtra("list14_submenu",
+								"Italian Confetti Pasta Salad");
+						activityCourse.putExtra("list15_submenu",
+								"Sun-Dried Tomato Basil Orzo");
+						activityCourse.putExtra("list16_submenu",
+								"Oriental Cold Noodle Salad");
+						activityCourse.putExtra("list17_submenu",
+								"Seafood Pasta Salad");
+						activityCourse.putExtra("list18_submenu",
+								"Tuna Macaroni Salad");
+						activityCourse.putExtra("list19_submenu",
+								"Tortellini, Steak, and Caesar");
+						// 3. or you can add data to a bundle
+						Bundle extras = new Bundle();
+						// 4. add bundle to intent
+						activityCourse.putExtras(extras);
+						Sub_Menu_Page.this.startActivity(activityCourse);
+						finish();
 					}
 				} else if (cookbook_subMeal.equals("Main Ingredients")) {
 					if (bt6_submeal.getText().toString().equals("")) {
@@ -1620,6 +1904,54 @@ public class Sub_Menu_Page extends Activity {
 						activityCourse.putExtra("list16_submenu", "none");
 						activityCourse.putExtra("list17_submenu", "none");
 						activityCourse.putExtra("list18_submenu", "none");
+						activityCourse.putExtra("list19_submenu", "none");
+
+						// 3. or you can add data to a bundle
+						Bundle extras = new Bundle();
+						// 4. add bundle to intent
+						activityCourse.putExtras(extras);
+						Sub_Menu_Page.this.startActivity(activityCourse);
+						finish();
+					} else if (bt7_submeal.getText().toString()
+							.equals("Seafood Salad")) {
+						Intent activityCourse = new Intent(Sub_Menu_Page.this,
+								Main_Recipe_Page.class);
+						// 2. put key/value data
+						activityCourse.putExtra("list1_submenu",
+								"Barbie's Tuna Salad");
+						activityCourse.putExtra("list2_submenu",
+								"Tuna Fish Salad");
+						activityCourse.putExtra("list3_submenu",
+								"Seafood Pasta Salad");
+						activityCourse.putExtra("list4_submenu",
+								"Shrimply Delicious Shrimp Salad");
+						activityCourse.putExtra("list5_submenu",
+								"Cold Tuna Macaroni Salad");
+						activityCourse.putExtra("list6_submenu",
+								"Zesty Tuna Salad");
+						activityCourse.putExtra("list7_submenu",
+								"California Roll Salad");
+						activityCourse
+								.putExtra("list8_submenu", "Crab Ceviche");
+						activityCourse.putExtra("list9_submenu", "Crab Salad");
+						activityCourse.putExtra("list10_submenu",
+								"Thai Noodle Salad");
+						activityCourse.putExtra("list11_submenu",
+								"Shrimp Couscous Salad");
+						activityCourse.putExtra("list12_submenu",
+								"Tuna Salad With Fresh Dill");
+						activityCourse.putExtra("list13_submenu",
+								"Avocado and Tuna Tapas");
+						activityCourse.putExtra("list14_submenu",
+								"Cinnamon-Curry Tuna Salad");
+						activityCourse.putExtra("list15_submenu",
+								"Salmon Salad");
+						activityCourse.putExtra("list16_submenu",
+								"Smoked Salmon and Egg Salad");
+						activityCourse.putExtra("list17_submenu",
+								"Seafood And Cabbage Salad");
+						activityCourse.putExtra("list18_submenu",
+								"Crabmeat Salad");
 						activityCourse.putExtra("list19_submenu", "none");
 
 						// 3. or you can add data to a bundle
@@ -1781,6 +2113,51 @@ public class Sub_Menu_Page extends Activity {
 						activityCourse.putExtras(extras);
 						Sub_Menu_Page.this.startActivity(activityCourse);
 						finish();
+					} else if (bt8_submeal.getText().toString()
+							.equals("Taco Salad")) {
+						Intent activityCourse = new Intent(Sub_Menu_Page.this,
+								Main_Recipe_Page.class);
+						// 2. put key/value data
+
+						activityCourse.putExtra("list1_submenu",
+								"Sue's Taco Salad");
+						activityCourse.putExtra("list2_submenu",
+								"Corn Chip Salad");
+						activityCourse.putExtra("list3_submenu",
+								"Chicken Fiesta Salad");
+						activityCourse.putExtra("list4_submenu",
+								"Spicy Mexican Salad");
+						activityCourse.putExtra("list5_submenu",
+								"Lazy Katie's Taco Salad");
+						activityCourse.putExtra("list6_submenu",
+								"Corn Chip Salad");
+						activityCourse.putExtra("list7_submenu",
+								"San Antonio Salad");
+						activityCourse.putExtra("list8_submenu",
+								"Italian Taco Salad");
+						activityCourse.putExtra("list9_submenu",
+								"Quick Taco Salad");
+						activityCourse.putExtra("list10_submenu",
+								"Turkey Taco Salad");
+						activityCourse.putExtra("list11_submenu",
+								"Messy Taco Salad");
+						activityCourse.putExtra("list12_submenu",
+								"Confetti Beef Taco Salad");
+						activityCourse.putExtra("list13_submenu",
+								"Grilled Chicken Taco Salad");
+						activityCourse.putExtra("list14_submenu",
+								"Seven Layer Mixed Up Salad");
+						activityCourse.putExtra("list15_submenu", "none");
+						activityCourse.putExtra("list16_submenu", "none");
+						activityCourse.putExtra("list17_submenu", "none");
+						activityCourse.putExtra("list18_submenu", "none");
+						activityCourse.putExtra("list19_submenu", "none");
+						// 3. or you can add data to a bundle
+						Bundle extras = new Bundle();
+						// 4. add bundle to intent
+						activityCourse.putExtras(extras);
+						Sub_Menu_Page.this.startActivity(activityCourse);
+						finish();
 					}
 				} else if (cookbook_subMeal.equals("Main Ingredients")) {
 					if (bt8_submeal.getText().toString().equals("")) {
@@ -1921,6 +2298,53 @@ public class Sub_Menu_Page extends Activity {
 						activityCourse.putExtra("list14_submenu", "none");
 						activityCourse.putExtra("list15_submenu", "none");
 						activityCourse.putExtra("list16_submenu", "none");
+						activityCourse.putExtra("list17_submenu", "none");
+						activityCourse.putExtra("list18_submenu", "none");
+						activityCourse.putExtra("list19_submenu", "none");
+
+						// 3. or you can add data to a bundle
+						Bundle extras = new Bundle();
+						// 4. add bundle to intent
+						activityCourse.putExtras(extras);
+						Sub_Menu_Page.this.startActivity(activityCourse);
+						finish();
+					} else if (bt9_submeal.getText().toString()
+							.equals("Vegetable Salad")) {
+						Intent activityCourse = new Intent(Sub_Menu_Page.this,
+								Main_Recipe_Page.class);
+						// 2. put key/value data
+						activityCourse.putExtra("list1_submenu",
+								"Alyson's Broccoli Salad");
+						activityCourse.putExtra("list2_submenu",
+								"Bodacious Broccoli Salad");
+						activityCourse.putExtra("list3_submenu",
+								"Adrienne's Cucumber Salad");
+						activityCourse.putExtra("list4_submenu",
+								"Fresh Broccoli Salad");
+						activityCourse.putExtra("list5_submenu",
+								"Broccoli and Tortellini Salad");
+						activityCourse.putExtra("list6_submenu",
+								"Asian Coleslaw");
+						activityCourse.putExtra("list7_submenu",
+								"Broccoli and Ramen Noodle Salad");
+						activityCourse.putExtra("list8_submenu",
+								"Black Bean Salad");
+						activityCourse.putExtra("list9_submenu",
+								"Healthy Garden Salad");
+						activityCourse.putExtra("list10_submenu",
+								"Thai Cucumber Salad");
+						activityCourse.putExtra("list11_submenu",
+								"Alyson's Broccoli Salad");
+						activityCourse.putExtra("list12_submenu",
+								"Beet Salad with Goat Cheese");
+						activityCourse.putExtra("list13_submenu",
+								"Roasted Beets with Feta");
+						activityCourse.putExtra("list14_submenu",
+								"Summer Corn Salad");
+						activityCourse.putExtra("list15_submenu",
+								"Broccoli-Cauliflower Salad");
+						activityCourse.putExtra("list16_submenu",
+								"Tangy Cucumber and Avocado Salad");
 						activityCourse.putExtra("list17_submenu", "none");
 						activityCourse.putExtra("list18_submenu", "none");
 						activityCourse.putExtra("list19_submenu", "none");
