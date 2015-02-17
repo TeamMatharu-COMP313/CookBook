@@ -298,6 +298,48 @@ public class Sub_Menu_Page extends Activity {
 						activityCourse.putExtras(extras);
 						Sub_Menu_Page.this.startActivity(activityCourse);
 						finish();
+					} else if (bt1_submeal.getText().toString().equals("Beer")) {
+						Intent activityCourse = new Intent(Sub_Menu_Page.this,
+								Main_Recipe_Page.class);
+						// 2. put key/value data
+
+						activityCourse.putExtra("list1_submenu",
+								"Beer Margaritas");
+						activityCourse.putExtra("list2_submenu",
+								"Yummy Margaritas");
+						activityCourse.putExtra("list3_submenu",
+								"JoeDogg's Spicy Red Beer");
+						activityCourse.putExtra("list4_submenu",
+								"Granny Smackers");
+						activityCourse.putExtra("list5_submenu",
+								"Black and Tan");
+						activityCourse.putExtra("list6_submenu", "Michelada");
+						activityCourse.putExtra("list7_submenu", "Shandy");
+						activityCourse.putExtra("list8_submenu",
+								"Delicious Spicy Micheladas");
+						activityCourse.putExtra("list9_submenu",
+								"Nova Scotia Beer Warmer");
+						activityCourse.putExtra("list10_submenu",
+								"The Red-Headed Step Child");
+						activityCourse.putExtra("list11_submenu",
+								"Pompous Mexican");
+						activityCourse.putExtra("list12_submenu",
+								"Strawberry Beer Margaritas");
+						activityCourse.putExtra("list13_submenu",
+								"Fall Apple Pumpkin Shandy");
+						activityCourse.putExtra("list14_submenu",
+								"Half and Half Cocktail");
+						activityCourse.putExtra("list15_submenu", "none");
+						activityCourse.putExtra("list16_submenu", "none");
+						activityCourse.putExtra("list17_submenu", "none");
+						activityCourse.putExtra("list18_submenu", "none");
+						activityCourse.putExtra("list19_submenu", "none");
+						// 3. or you can add data to a bundle
+						Bundle extras = new Bundle();
+						// 4. add bundle to intent
+						activityCourse.putExtras(extras);
+						Sub_Menu_Page.this.startActivity(activityCourse);
+						finish();
 					}
 
 				} else if (cookbook_subMeal.equals("Main Ingredients")) {
@@ -455,6 +497,49 @@ public class Sub_Menu_Page extends Activity {
 						activityCourse.putExtras(extras);
 						Sub_Menu_Page.this.startActivity(activityCourse);
 						finish();
+					} else if (bt2_submeal.getText().toString()
+							.equals("Cider Drinks")) {
+						Intent activityCourse = new Intent(Sub_Menu_Page.this,
+								Main_Recipe_Page.class);
+						// 2. put key/value data
+						activityCourse.putExtra("list1_submenu",
+								"Hot Spiced Cider");
+						activityCourse.putExtra("list2_submenu",
+								"Hot Apple Cider");
+						activityCourse.putExtra("list3_submenu",
+								"Hot Spiced Cranberry Cider");
+						activityCourse.putExtra("list4_submenu",
+								"Easy Apple Cider");
+						activityCourse.putExtra("list5_submenu",
+								"Apple Pie in a Jar Drink");
+						activityCourse.putExtra("list6_submenu",
+								"Homemade Apple Cider");
+						activityCourse.putExtra("list7_submenu",
+								"Hot Buttered Apple Cider");
+						activityCourse.putExtra("list8_submenu",
+								"Old Virginia Wassail Cider");
+						activityCourse
+								.putExtra("list9_submenu", "Mulled Cider");
+						activityCourse.putExtra("list10_submenu",
+								"Spiked Fall Cider");
+						activityCourse.putExtra("list11_submenu",
+								"Cranberry Wassail");
+						activityCourse.putExtra("list12_submenu",
+								"Mulled Cranberry Cider");
+						activityCourse.putExtra("list13_submenu", "none");
+						activityCourse.putExtra("list14_submenu", "none");
+						activityCourse.putExtra("list15_submenu", "none");
+						activityCourse.putExtra("list16_submenu", "none");
+						activityCourse.putExtra("list17_submenu", "none");
+						activityCourse.putExtra("list18_submenu", "none");
+						activityCourse.putExtra("list19_submenu", "none");
+
+						// 3. or you can add data to a bundle
+						Bundle extras = new Bundle();
+						// 4. add bundle to intent
+						activityCourse.putExtras(extras);
+						Sub_Menu_Page.this.startActivity(activityCourse);
+						finish();
 					}
 				} else if (cookbook_subMeal.equals("Main Ingredients")) {
 					if (bt2_submeal.getText().toString().equals("")) {
@@ -590,6 +675,50 @@ public class Sub_Menu_Page extends Activity {
 						activityCourse.putExtra("list12_submenu", "none");
 						activityCourse.putExtra("list13_submenu", "none");
 						activityCourse.putExtra("list14_submenu", "none");
+						activityCourse.putExtra("list15_submenu", "none");
+						activityCourse.putExtra("list16_submenu", "none");
+						activityCourse.putExtra("list17_submenu", "none");
+						activityCourse.putExtra("list18_submenu", "none");
+						activityCourse.putExtra("list19_submenu", "none");
+
+						// 3. or you can add data to a bundle
+						Bundle extras = new Bundle();
+						// 4. add bundle to intent
+						activityCourse.putExtras(extras);
+						Sub_Menu_Page.this.startActivity(activityCourse);
+						finish();
+					} else if (bt3_submeal.getText().toString()
+							.equals("Cocktails")) {
+						Intent activityCourse = new Intent(Sub_Menu_Page.this,
+								Main_Recipe_Page.class);
+						// 2. put key/value data
+
+						activityCourse.putExtra("list1_submenu", "Mojito");
+						activityCourse.putExtra("list2_submenu",
+								"Tanning Bed Drink");
+						activityCourse.putExtra("list3_submenu",
+								"Easy Frozen Margaritas");
+						activityCourse.putExtra("list4_submenu",
+								"Cranberry Martini");
+						activityCourse.putExtra("list5_submenu",
+								"Tainted Fruit Shots");
+						activityCourse.putExtra("list6_submenu",
+								"Dirty Martini");
+						activityCourse.putExtra("list7_submenu", "Lava Lamps");
+						activityCourse.putExtra("list8_submenu",
+								"Bloody Mary Mix");
+						activityCourse.putExtra("list9_submenu",
+								"Whiskey Slush");
+						activityCourse.putExtra("list10_submenu",
+								"Strawberry Mojito");
+						activityCourse.putExtra("list11_submenu",
+								"Berry Shooters");
+						activityCourse.putExtra("list12_submenu",
+								"Frozen Mojito");
+						activityCourse.putExtra("list13_submenu",
+								"White Russian");
+						activityCourse.putExtra("list14_submenu",
+								"Malibu Bay Breeze");
 						activityCourse.putExtra("list15_submenu", "none");
 						activityCourse.putExtra("list16_submenu", "none");
 						activityCourse.putExtra("list17_submenu", "none");
@@ -758,6 +887,51 @@ public class Sub_Menu_Page extends Activity {
 						activityCourse.putExtras(extras);
 						Sub_Menu_Page.this.startActivity(activityCourse);
 						finish();
+					} else if (bt4_submeal.getText().toString()
+							.equals("Coffee")) {
+						Intent activityCourse = new Intent(Sub_Menu_Page.this,
+								Main_Recipe_Page.class);
+						// 2. put key/value data
+						activityCourse
+								.putExtra("list1_submenu", "Mocha Coffee");
+						activityCourse.putExtra("list2_submenu",
+								"Easy Iced Coffee");
+						activityCourse.putExtra("list3_submenu",
+								"Pumpkin Spiced Latte");
+						activityCourse.putExtra("list4_submenu",
+								"Iced Mocha Fusion Shake");
+						activityCourse.putExtra("list5_submenu",
+								"Gunline Coffee");
+						activityCourse
+								.putExtra("list6_submenu", "Coffee Shake");
+						activityCourse.putExtra("list7_submenu",
+								"Vietnamese Iced Coffee");
+						activityCourse.putExtra("list8_submenu",
+								"Cappuccino on Ice");
+						activityCourse.putExtra("list9_submenu",
+								"Hot Mocha Drink Mix");
+						activityCourse.putExtra("list10_submenu",
+								"Cocoa Coffee Milkshake");
+						activityCourse.putExtra("list11_submenu",
+								"Frozen Caramel Latte");
+						activityCourse.putExtra("list12_submenu",
+								"Coffee Whirl");
+						activityCourse.putExtra("list13_submenu",
+								"Eggnog Latte");
+						activityCourse.putExtra("list14_submenu",
+								"Irish Coffee");
+						activityCourse.putExtra("list15_submenu", "none");
+						activityCourse.putExtra("list16_submenu", "none");
+						activityCourse.putExtra("list17_submenu", "none");
+						activityCourse.putExtra("list18_submenu", "none");
+						activityCourse.putExtra("list19_submenu", "none");
+
+						// 3. or you can add data to a bundle
+						Bundle extras = new Bundle();
+						// 4. add bundle to intent
+						activityCourse.putExtras(extras);
+						Sub_Menu_Page.this.startActivity(activityCourse);
+						finish();
 					}
 				} else if (cookbook_subMeal.equals("Main Ingredients")) {
 					if (bt4_submeal.getText().toString().equals("")) {
@@ -872,6 +1046,51 @@ public class Sub_Menu_Page extends Activity {
 						activityCourse.putExtras(extras);
 						Sub_Menu_Page.this.startActivity(activityCourse);
 						finish();
+					} else if (bt5_submeal.getText().toString()
+							.equals("Hot Chocolates")) {
+						Intent activityCourse = new Intent(Sub_Menu_Page.this,
+								Main_Recipe_Page.class);
+						// 2. put key/value data
+
+						activityCourse.putExtra("list1_submenu",
+								"Creamy Hot Cocoa");
+						activityCourse.putExtra("list2_submenu",
+								"Snow Flake Cocoa");
+						activityCourse.putExtra("list3_submenu",
+								"Easy Mexican Hot Chocolate");
+						activityCourse.putExtra("list4_submenu",
+								"Candy Cane Cocoa");
+						activityCourse.putExtra("list5_submenu",
+								"Delicious Vegan Hot Chocolate");
+						activityCourse.putExtra("list6_submenu",
+								"Mocha Coffee Mix");
+						activityCourse.putExtra("list7_submenu",
+								"Peanut Buttercup Hot Chocolate");
+						activityCourse.putExtra("list8_submenu",
+								"Homestyle Hot Cocoa");
+						activityCourse.putExtra("list9_submenu",
+								"Spiced Hot Chocolate");
+						activityCourse.putExtra("list10_submenu",
+								"Mayan Hot Chocolate");
+						activityCourse.putExtra("list11_submenu",
+								"Mocha au Lait Mix");
+						activityCourse.putExtra("list12_submenu",
+								"Cocoa Sleigh Ride");
+						activityCourse.putExtra("list13_submenu",
+								"Whipped Hot Chocolate");
+						activityCourse.putExtra("list14_submenu",
+								"Kocoa Klastch Blend");
+						activityCourse.putExtra("list15_submenu", "none");
+						activityCourse.putExtra("list16_submenu", "none");
+						activityCourse.putExtra("list17_submenu", "none");
+						activityCourse.putExtra("list18_submenu", "none");
+						activityCourse.putExtra("list19_submenu", "none");
+						// 3. or you can add data to a bundle
+						Bundle extras = new Bundle();
+						// 4. add bundle to intent
+						activityCourse.putExtras(extras);
+						Sub_Menu_Page.this.startActivity(activityCourse);
+						finish();
 					}
 				} else if (cookbook_subMeal.equals("Main Ingredients")) {
 					if (bt5_submeal.getText().toString().equals("")) {
@@ -979,6 +1198,51 @@ public class Sub_Menu_Page extends Activity {
 						activityCourse.putExtras(extras);
 						Sub_Menu_Page.this.startActivity(activityCourse);
 						finish();
+					} else if (bt6_submeal.getText().toString()
+							.equals("Juices")) {
+						Intent activityCourse = new Intent(Sub_Menu_Page.this,
+								Main_Recipe_Page.class);
+						// 2. put key/value data
+						activityCourse.putExtra("list1_submenu",
+								"Healthy Green Juice");
+						activityCourse.putExtra("list2_submenu",
+								"Watermelon Agua Fresca");
+						activityCourse.putExtra("list3_submenu",
+								"Breakfast Zinger Juice");
+						activityCourse.putExtra("list4_submenu",
+								"Tropical Carrot-Apple Juice");
+						activityCourse.putExtra("list5_submenu",
+								"Cucumber Cooler");
+						activityCourse.putExtra("list6_submenu",
+								"Agua de Jamaica");
+						activityCourse.putExtra("list7_submenu",
+								"Carrot and Orange Juice");
+						activityCourse.putExtra("list8_submenu",
+								"Brown Sugar and Honey Limeadev");
+						activityCourse.putExtra("list9_submenu",
+								"Cool Fizzies for the Kiddies");
+						activityCourse.putExtra("list10_submenu",
+								"Green Lemonade");
+						activityCourse.putExtra("list11_submenu",
+								"Strawberry Soda Syrup");
+						activityCourse.putExtra("list12_submenu",
+								"Fresh, Homemade Apple Juice");
+						activityCourse.putExtra("list13_submenu",
+								"Banana Juice");
+						activityCourse
+								.putExtra("list14_submenu", "Orange Fizz");
+						activityCourse.putExtra("list15_submenu", "none");
+						activityCourse.putExtra("list16_submenu", "none");
+						activityCourse.putExtra("list17_submenu", "none");
+						activityCourse.putExtra("list18_submenu", "none");
+						activityCourse.putExtra("list19_submenu", "none");
+
+						// 3. or you can add data to a bundle
+						Bundle extras = new Bundle();
+						// 4. add bundle to intent
+						activityCourse.putExtras(extras);
+						Sub_Menu_Page.this.startActivity(activityCourse);
+						finish();
 					}
 				} else if (cookbook_subMeal.equals("Main Ingredients")) {
 					if (bt6_submeal.getText().toString().equals("")) {
@@ -1034,6 +1298,49 @@ public class Sub_Menu_Page extends Activity {
 								"Chicken Wing Di");
 						activityCourse.putExtra("list14_submenu",
 								"Best Guacamole");
+						activityCourse.putExtra("list15_submenu", "none");
+						activityCourse.putExtra("list16_submenu", "none");
+						activityCourse.putExtra("list17_submenu", "none");
+						activityCourse.putExtra("list18_submenu", "none");
+						activityCourse.putExtra("list19_submenu", "none");
+
+						// 3. or you can add data to a bundle
+						Bundle extras = new Bundle();
+						// 4. add bundle to intent
+						activityCourse.putExtras(extras);
+						Sub_Menu_Page.this.startActivity(activityCourse);
+						finish();
+					} else if (bt7_submeal.getText().toString()
+							.equals("Mocktails")) {
+						Intent activityCourse = new Intent(Sub_Menu_Page.this,
+								Main_Recipe_Page.class);
+						// 2. put key/value data
+						activityCourse.putExtra("list1_submenu",
+								"Mock Champagne");
+						activityCourse.putExtra("list2_submenu",
+								"Virgin Pina Colada");
+						activityCourse.putExtra("list3_submenu",
+								"Cran-Dandy Cooler");
+						activityCourse.putExtra("list4_submenu",
+								"Cucumber Punch");
+						activityCourse.putExtra("list5_submenu",
+								"Italian Cream Soda");
+						activityCourse.putExtra("list6_submenu",
+								"Shirley Temple");
+						activityCourse.putExtra("list7_submenu", "Cherry Fizz");
+						activityCourse.putExtra("list8_submenu",
+								"Alcohol-Free Mint Julep");
+						activityCourse.putExtra("list9_submenu",
+								"Tornado Twist");
+						activityCourse.putExtra("list10_submenu",
+								"Monica's Baptist Sangria");
+						activityCourse
+								.putExtra("list11_submenu", "Apple Julep");
+						activityCourse.putExtra("list12_submenu",
+								"RaSpBeRrY FiZzLeR");
+						activityCourse.putExtra("list13_submenu",
+								"Michigan Fizz");
+						activityCourse.putExtra("list14_submenu", "Lime Cola");
 						activityCourse.putExtra("list15_submenu", "none");
 						activityCourse.putExtra("list16_submenu", "none");
 						activityCourse.putExtra("list17_submenu", "none");
@@ -1113,6 +1420,51 @@ public class Sub_Menu_Page extends Activity {
 						activityCourse.putExtras(extras);
 						Sub_Menu_Page.this.startActivity(activityCourse);
 						finish();
+					} else if (bt8_submeal.getText().toString()
+							.equals("Smoothies")) {
+						Intent activityCourse = new Intent(Sub_Menu_Page.this,
+								Main_Recipe_Page.class);
+						// 2. put key/value data
+						activityCourse.putExtra("list1_submenu",
+								"Berry Delicious");
+						activityCourse.putExtra("list2_submenu",
+								"Kiwi Strawberry Smoothie");
+						activityCourse.putExtra("list3_submenu",
+								"Chocolate Banana Smoothie");
+						activityCourse.putExtra("list4_submenu",
+								"Breakfast Banana Green Smoothie");
+						activityCourse.putExtra("list5_submenu",
+								"Purple Monstrosity Fruit Smoothie");
+						activityCourse.putExtra("list6_submenu",
+								"Peanut Butter and Banana Smoothie");
+						activityCourse.putExtra("list7_submenu",
+								"Gloomy Day Smoothie");
+						activityCourse.putExtra("list8_submenu",
+								"Kale and Banana Smoothie");
+						activityCourse.putExtra("list9_submenu",
+								"Avocado Smoothie");
+						activityCourse.putExtra("list10_submenu",
+								"Triple Threat Fruit Smoothie");
+						activityCourse.putExtra("list11_submenu",
+								"Groovie Smoothie");
+						activityCourse.putExtra("list12_submenu",
+								"Heavenly Blueberry Smoothie");
+						activityCourse.putExtra("list13_submenu",
+								"Orange Smoothie");
+						activityCourse.putExtra("list14_submenu",
+								"Green Slime Smoothie");
+						activityCourse.putExtra("list15_submenu", "none");
+						activityCourse.putExtra("list16_submenu", "none");
+						activityCourse.putExtra("list17_submenu", "none");
+						activityCourse.putExtra("list18_submenu", "none");
+						activityCourse.putExtra("list19_submenu", "none");
+
+						// 3. or you can add data to a bundle
+						Bundle extras = new Bundle();
+						// 4. add bundle to intent
+						activityCourse.putExtras(extras);
+						Sub_Menu_Page.this.startActivity(activityCourse);
+						finish();
 					}
 				} else if (cookbook_subMeal.equals("Main Ingredients")) {
 					if (bt8_submeal.getText().toString().equals("")) {
@@ -1174,6 +1526,48 @@ public class Sub_Menu_Page extends Activity {
 						activityCourse.putExtra("list18_submenu", "none");
 						activityCourse.putExtra("list19_submenu", "none");
 
+						// 3. or you can add data to a bundle
+						Bundle extras = new Bundle();
+						// 4. add bundle to intent
+						activityCourse.putExtras(extras);
+						Sub_Menu_Page.this.startActivity(activityCourse);
+						finish();
+					} else if (bt9_submeal.getText().toString().equals("Tea")) {
+						Intent activityCourse = new Intent(Sub_Menu_Page.this,
+								Main_Recipe_Page.class);
+						// 2. put key/value data
+
+						activityCourse
+								.putExtra("list1_submenu", "Chai Tea Mix");
+						activityCourse.putExtra("list2_submenu",
+								"Smooth Sweet Tea");
+						activityCourse.putExtra("list3_submenu",
+								"Boston Iced Tea");
+						activityCourse.putExtra("list4_submenu",
+								"Coffeebar Chai");
+						activityCourse.putExtra("list5_submenu",
+								"Mint Tea Punch");
+						activityCourse.putExtra("list6_submenu",
+								"Honey Lemon Tea");
+						activityCourse.putExtra("list7_submenu", "Russian Tea");
+						activityCourse.putExtra("list8_submenu",
+								"Sweet Lime Iced Tea");
+						activityCourse.putExtra("list9_submenu",
+								"Hot Cranberry Tea");
+						activityCourse.putExtra("list10_submenu",
+								"Lemonade-Mint Iced Tea");
+						activityCourse.putExtra("list11_submenu",
+								"Spiced Tea Mix");
+						activityCourse.putExtra("list12_submenu", "Peach Tea");
+						activityCourse
+								.putExtra("list13_submenu", "Masala Chai");
+						activityCourse.putExtra("list14_submenu",
+								"Green Tea Berry Delight");
+						activityCourse.putExtra("list15_submenu", "none");
+						activityCourse.putExtra("list16_submenu", "none");
+						activityCourse.putExtra("list17_submenu", "none");
+						activityCourse.putExtra("list18_submenu", "none");
+						activityCourse.putExtra("list19_submenu", "none");
 						// 3. or you can add data to a bundle
 						Bundle extras = new Bundle();
 						// 4. add bundle to intent
