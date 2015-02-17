@@ -13,7 +13,6 @@ import android.widget.AdapterView;
 import android.widget.AdapterView.OnItemSelectedListener;
 import android.widget.ArrayAdapter;
 import android.widget.Spinner;
-import android.widget.Toast;
 
 public class Main_Recipe_Page extends Activity {
 
@@ -48,6 +47,7 @@ public class Main_Recipe_Page extends Activity {
 		String message18 = intent.getStringExtra("list18_submenu");
 		String message19 = intent.getStringExtra("list19_submenu");
 
+		
 		// Spinner Drop down elements
 		List<String> categories = new ArrayList<String>();
 		categories.add(message1);
@@ -72,7 +72,8 @@ public class Main_Recipe_Page extends Activity {
 
 		// Creating adapter for spinner
 		ArrayAdapter<String> dataAdapter = new ArrayAdapter<String>(this,
-				android.R.layout.simple_spinner_item, categories);
+				android.R.layout.simple_list_item_1, categories);
+		
 
 		if (message1.equals("none")) {
 			dataAdapter.remove(message1);
@@ -181,7 +182,7 @@ public class Main_Recipe_Page extends Activity {
 					int position, long id) {
 				// TODO Auto-generated method stub
 				// On selecting a spinner item
-				String item = parent.getItemAtPosition(position).toString();
+			// item = parent.getItemAtPosition(position).toString();
 
 			}
 

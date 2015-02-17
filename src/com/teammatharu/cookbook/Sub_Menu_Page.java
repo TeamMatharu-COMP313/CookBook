@@ -340,6 +340,47 @@ public class Sub_Menu_Page extends Activity {
 						activityCourse.putExtras(extras);
 						Sub_Menu_Page.this.startActivity(activityCourse);
 						finish();
+					} else if (bt1_submeal.getText().toString()
+							.equals("Calzones")) {
+						Intent activityCourse = new Intent(Sub_Menu_Page.this,
+								Main_Recipe_Page.class);
+						// 2. put key/value data
+						activityCourse.putExtra("list1_submenu",
+								"Real Italian Calzones");
+						activityCourse.putExtra("list2_submenu",
+								"BBQ Chicken Calzones");
+						activityCourse.putExtra("list3_submenu",
+								"Unbelievable Spinach Calzones");
+						activityCourse.putExtra("list4_submenu",
+								"Bread Machine Calzone");
+						activityCourse.putExtra("list5_submenu", "Stromboli");
+						activityCourse
+								.putExtra("list6_submenu", "Cheese Bread");
+						activityCourse.putExtra("list7_submenu",
+								"Spooky Calzone Snake");
+						activityCourse.putExtra("list8_submenu",
+								"Pepperoni Stromboli");
+						activityCourse.putExtra("list9_submenu",
+								"Mushroom Cheeseburger Calzones");
+						activityCourse.putExtra("list10_submenu",
+								"Meat and Veggie Stromboli");
+						activityCourse.putExtra("list11_submenu",
+								"Quick Spinach-Ricotta Calzones");
+						activityCourse.putExtra("list12_submenu",
+								"Sausage, Spinach and Ricotta Calzone");
+						activityCourse.putExtra("list13_submenu", "none");
+						activityCourse.putExtra("list14_submenu", "none");
+						activityCourse.putExtra("list15_submenu", "none");
+						activityCourse.putExtra("list16_submenu", "none");
+						activityCourse.putExtra("list17_submenu", "none");
+						activityCourse.putExtra("list18_submenu", "none");
+						activityCourse.putExtra("list19_submenu", "none");
+						// 3. or you can add data to a bundle
+						Bundle extras = new Bundle();
+						// 4. add bundle to intent
+						activityCourse.putExtras(extras);
+						Sub_Menu_Page.this.startActivity(activityCourse);
+						finish();
 					}
 
 				} else if (cookbook_subMeal.equals("Main Ingredients")) {
@@ -540,6 +581,46 @@ public class Sub_Menu_Page extends Activity {
 						activityCourse.putExtras(extras);
 						Sub_Menu_Page.this.startActivity(activityCourse);
 						finish();
+					} else if (bt2_submeal.getText().toString()
+							.equals("Deep Fried Main Dish")) {
+						Intent activityCourse = new Intent(Sub_Menu_Page.this,
+								Main_Recipe_Page.class);
+						// 2. put key/value data
+
+						activityCourse.putExtra("list1_submenu",
+								"Chicken Fried Chicken");
+						activityCourse.putExtra("list2_submenu", "Fish Tacos");
+						activityCourse.putExtra("list3_submenu",
+								"The Best Chicken Fried Steak");
+						activityCourse.putExtra("list4_submenu", "Corn Dogs");
+						activityCourse.putExtra("list5_submenu",
+								"Beer Batter Fish Made Great");
+						activityCourse.putExtra("list6_submenu",
+								"Crispy Fried Chicken");
+						activityCourse.putExtra("list7_submenu",
+								"Perfect Sesame Chicken");
+						activityCourse.putExtra("list8_submenu",
+								"Southern Fried Chicken");
+						activityCourse.putExtra("list9_submenu",
+								"Spicy Crispy Beef");
+						activityCourse.putExtra("list10_submenu",
+								"Jeanie's Falafel");
+						activityCourse.putExtra("list11_submenu",
+								"Fried Butterflied Shrimp");
+						activityCourse.putExtra("list12_submenu", "none");
+						activityCourse.putExtra("list13_submenu", "none");
+						activityCourse.putExtra("list14_submenu", "none");
+						activityCourse.putExtra("list15_submenu", "none");
+						activityCourse.putExtra("list16_submenu", "none");
+						activityCourse.putExtra("list17_submenu", "none");
+						activityCourse.putExtra("list18_submenu", "none");
+						activityCourse.putExtra("list19_submenu", "none");
+						// 3. or you can add data to a bundle
+						Bundle extras = new Bundle();
+						// 4. add bundle to intent
+						activityCourse.putExtras(extras);
+						Sub_Menu_Page.this.startActivity(activityCourse);
+						finish();
 					}
 				} else if (cookbook_subMeal.equals("Main Ingredients")) {
 					if (bt2_submeal.getText().toString().equals("")) {
@@ -719,6 +800,44 @@ public class Sub_Menu_Page extends Activity {
 								"White Russian");
 						activityCourse.putExtra("list14_submenu",
 								"Malibu Bay Breeze");
+						activityCourse.putExtra("list15_submenu", "none");
+						activityCourse.putExtra("list16_submenu", "none");
+						activityCourse.putExtra("list17_submenu", "none");
+						activityCourse.putExtra("list18_submenu", "none");
+						activityCourse.putExtra("list19_submenu", "none");
+
+						// 3. or you can add data to a bundle
+						Bundle extras = new Bundle();
+						// 4. add bundle to intent
+						activityCourse.putExtras(extras);
+						Sub_Menu_Page.this.startActivity(activityCourse);
+						finish();
+					} else if (bt3_submeal.getText().toString()
+							.equals("Eggplant Parmesan")) {
+						Intent activityCourse = new Intent(Sub_Menu_Page.this,
+								Main_Recipe_Page.class);
+						// 2. put key/value data
+						activityCourse.putExtra("list1_submenu",
+								"Quick Eggplant Parmesan");
+						activityCourse.putExtra("list2_submenu",
+								"Stuffed Eggplant Parmesan");
+						activityCourse.putExtra("list3_submenu",
+								"Stuffed Eggplant Parmesan Rolls");
+						activityCourse.putExtra("list4_submenu",
+								"Baked Eggplant Parmesan");
+						activityCourse.putExtra("list5_submenu",
+								"Crunchy Eggplant Parmesan");
+						activityCourse.putExtra("list6_submenu",
+								"Eggplant Parmesan Casserole");
+						activityCourse.putExtra("list7_submenu",
+								"No-Frying Eggplant Parmesan");
+						activityCourse.putExtra("list8_submenu", "none");
+						activityCourse.putExtra("list9_submenu", "none");
+						activityCourse.putExtra("list10_submenu", "none");
+						activityCourse.putExtra("list11_submenu", "none");
+						activityCourse.putExtra("list12_submenu", "none");
+						activityCourse.putExtra("list13_submenu", "none");
+						activityCourse.putExtra("list14_submenu", "none");
 						activityCourse.putExtra("list15_submenu", "none");
 						activityCourse.putExtra("list16_submenu", "none");
 						activityCourse.putExtra("list17_submenu", "none");
@@ -932,6 +1051,43 @@ public class Sub_Menu_Page extends Activity {
 						activityCourse.putExtras(extras);
 						Sub_Menu_Page.this.startActivity(activityCourse);
 						finish();
+					} else if (bt4_submeal.getText().toString()
+							.equals("Meatballs")) {
+						Intent activityCourse = new Intent(Sub_Menu_Page.this,
+								Main_Recipe_Page.class);
+						// 2. put key/value data
+						activityCourse.putExtra("list1_submenu",
+								"Meatball Nirvana");
+						activityCourse.putExtra("list2_submenu",
+								"Easy Slow Cooker Meatballs");
+						activityCourse.putExtra("list3_submenu",
+								"BBQ Glazed Homemade Meatballs");
+						activityCourse.putExtra("list4_submenu",
+								"Waikiki Meatballs");
+						activityCourse.putExtra("list5_submenu",
+								"Hazel's Meatballs");
+						activityCourse.putExtra("list6_submenu",
+								"Italian Meatballs");
+						activityCourse.putExtra("list7_submenu", "none");
+						activityCourse.putExtra("list8_submenu", "none");
+						activityCourse.putExtra("list9_submenu", "none");
+						activityCourse.putExtra("list10_submenu", "none");
+						activityCourse.putExtra("list11_submenu", "none");
+						activityCourse.putExtra("list12_submenu", "none");
+						activityCourse.putExtra("list13_submenu", "none");
+						activityCourse.putExtra("list14_submenu", "none");
+						activityCourse.putExtra("list15_submenu", "none");
+						activityCourse.putExtra("list16_submenu", "none");
+						activityCourse.putExtra("list17_submenu", "none");
+						activityCourse.putExtra("list18_submenu", "none");
+						activityCourse.putExtra("list19_submenu", "none");
+
+						// 3. or you can add data to a bundle
+						Bundle extras = new Bundle();
+						// 4. add bundle to intent
+						activityCourse.putExtras(extras);
+						Sub_Menu_Page.this.startActivity(activityCourse);
+						finish();
 					}
 				} else if (cookbook_subMeal.equals("Main Ingredients")) {
 					if (bt4_submeal.getText().toString().equals("")) {
@@ -1091,6 +1247,46 @@ public class Sub_Menu_Page extends Activity {
 						activityCourse.putExtras(extras);
 						Sub_Menu_Page.this.startActivity(activityCourse);
 						finish();
+					} else if (bt5_submeal.getText().toString()
+							.equals("Meatloaf Recipes")) {
+						Intent activityCourse = new Intent(Sub_Menu_Page.this,
+								Main_Recipe_Page.class);
+						// 2. put key/value data
+						activityCourse.putExtra("list1_submenu",
+								"Brown Sugar Meatloaf");
+						activityCourse.putExtra("list2_submenu",
+								"Easy Meatloaf");
+						activityCourse.putExtra("list3_submenu",
+								"Rempel Family Meatloaf");
+						activityCourse.putExtra("list4_submenu",
+								"Mini Meatloaves");
+						activityCourse.putExtra("list5_submenu",
+								"Turkey and Quinoa Meatloaf");
+						activityCourse.putExtra("list6_submenu",
+								"Incredibly Cheesy Turkey Meatloaf");
+						activityCourse.putExtra("list7_submenu",
+								"Tantalizingly Tangy Meatloaf");
+						activityCourse.putExtra("list8_submenu",
+								"Eileen's Meatloaf");
+						activityCourse.putExtra("list9_submenu",
+								"Amish Meatloaf");
+						activityCourse.putExtra("list10_submenu", "none");
+						activityCourse.putExtra("list11_submenu", "none");
+						activityCourse.putExtra("list12_submenu", "none");
+						activityCourse.putExtra("list13_submenu", "none");
+						activityCourse.putExtra("list14_submenu", "none");
+						activityCourse.putExtra("list15_submenu", "none");
+						activityCourse.putExtra("list16_submenu", "none");
+						activityCourse.putExtra("list17_submenu", "none");
+						activityCourse.putExtra("list18_submenu", "none");
+						activityCourse.putExtra("list19_submenu", "none");
+
+						// 3. or you can add data to a bundle
+						Bundle extras = new Bundle();
+						// 4. add bundle to intent
+						activityCourse.putExtras(extras);
+						Sub_Menu_Page.this.startActivity(activityCourse);
+						finish();
 					}
 				} else if (cookbook_subMeal.equals("Main Ingredients")) {
 					if (bt5_submeal.getText().toString().equals("")) {
@@ -1243,6 +1439,47 @@ public class Sub_Menu_Page extends Activity {
 						activityCourse.putExtras(extras);
 						Sub_Menu_Page.this.startActivity(activityCourse);
 						finish();
+					} else if (bt6_submeal.getText().toString().equals("Pasta")) {
+						Intent activityCourse = new Intent(Sub_Menu_Page.this,
+								Main_Recipe_Page.class);
+						// 2. put key/value data
+
+						activityCourse.putExtra("list1_submenu",
+								"Amazing Crab Shells");
+						activityCourse.putExtra("list2_submenu",
+								"Antipasto Pasta Salad");
+						activityCourse.putExtra("list3_submenu",
+								"Black Bean and Couscous Salad");
+						activityCourse.putExtra("list4_submenu",
+								"Amish Macaroni Salad");
+						activityCourse.putExtra("list5_submenu",
+								"Broccoli and Tortellini Salad");
+						activityCourse.putExtra("list6_submenu",
+								"Garden Pasta Salad");
+						activityCourse.putExtra("list7_submenu",
+								"BLT Pasta Salad");
+						activityCourse.putExtra("list8_submenu",
+								"Southwestern Pasta Salad");
+						activityCourse.putExtra("list9_submenu",
+								"Awesome Pasta Salad");
+						activityCourse.putExtra("list10_submenu",
+								"Tortellini Bites");
+						activityCourse.putExtra("list11_submenu",
+								"Cinnamon Snack Mix");
+						activityCourse.putExtra("list12_submenu", "none");
+						activityCourse.putExtra("list13_submenu", "none");
+						activityCourse.putExtra("list14_submenu", "none");
+						activityCourse.putExtra("list15_submenu", "none");
+						activityCourse.putExtra("list16_submenu", "none");
+						activityCourse.putExtra("list17_submenu", "none");
+						activityCourse.putExtra("list18_submenu", "none");
+						activityCourse.putExtra("list19_submenu", "none");
+						// 3. or you can add data to a bundle
+						Bundle extras = new Bundle();
+						// 4. add bundle to intent
+						activityCourse.putExtras(extras);
+						Sub_Menu_Page.this.startActivity(activityCourse);
+						finish();
 					}
 				} else if (cookbook_subMeal.equals("Main Ingredients")) {
 					if (bt6_submeal.getText().toString().equals("")) {
@@ -1341,6 +1578,44 @@ public class Sub_Menu_Page extends Activity {
 						activityCourse.putExtra("list13_submenu",
 								"Michigan Fizz");
 						activityCourse.putExtra("list14_submenu", "Lime Cola");
+						activityCourse.putExtra("list15_submenu", "none");
+						activityCourse.putExtra("list16_submenu", "none");
+						activityCourse.putExtra("list17_submenu", "none");
+						activityCourse.putExtra("list18_submenu", "none");
+						activityCourse.putExtra("list19_submenu", "none");
+
+						// 3. or you can add data to a bundle
+						Bundle extras = new Bundle();
+						// 4. add bundle to intent
+						activityCourse.putExtras(extras);
+						Sub_Menu_Page.this.startActivity(activityCourse);
+						finish();
+					} else if (bt7_submeal.getText().toString().equals("Ribs")) {
+						Intent activityCourse = new Intent(Sub_Menu_Page.this,
+								Main_Recipe_Page.class);
+						// 2. put key/value data
+						activityCourse.putExtra("list1_submenu",
+								"Baby Back Ribs");
+						activityCourse.putExtra("list2_submenu",
+								"Slow-Cooker Barbecue Ribs");
+						activityCourse.putExtra("list3_submenu",
+								"Simple BBQ Ribs");
+						activityCourse.putExtra("list4_submenu",
+								"Sylvia's Ribs");
+						activityCourse.putExtra("list5_submenu",
+								"Barbecue Ribs");
+						activityCourse.putExtra("list6_submenu",
+								"Simple Country Ribs");
+						activityCourse.putExtra("list7_submenu",
+								"Barbequed Ribs");
+						activityCourse.putExtra("list8_submenu", "Honey Ribs");
+						activityCourse.putExtra("list9_submenu",
+								"Texas Pork Ribs");
+						activityCourse.putExtra("list10_submenu", "none");
+						activityCourse.putExtra("list11_submenu", "none");
+						activityCourse.putExtra("list12_submenu", "none");
+						activityCourse.putExtra("list13_submenu", "none");
+						activityCourse.putExtra("list14_submenu", "none");
 						activityCourse.putExtra("list15_submenu", "none");
 						activityCourse.putExtra("list16_submenu", "none");
 						activityCourse.putExtra("list17_submenu", "none");
@@ -1465,6 +1740,47 @@ public class Sub_Menu_Page extends Activity {
 						activityCourse.putExtras(extras);
 						Sub_Menu_Page.this.startActivity(activityCourse);
 						finish();
+					} else if (bt8_submeal.getText().toString().equals("Roast")) {
+						Intent activityCourse = new Intent(Sub_Menu_Page.this,
+								Main_Recipe_Page.class);
+						// 2. put key/value data
+						activityCourse.putExtra("list1_submenu",
+								"Garlic Prime Rib");
+						activityCourse.putExtra("list2_submenu",
+								"Marie's Easy Slow Cooker Pot Roast");
+						activityCourse.putExtra("list3_submenu",
+								"Tangy Slow Cooker Pork Roast");
+						activityCourse.putExtra("list4_submenu",
+								"Herb Roasted Pork");
+						activityCourse.putExtra("list5_submenu",
+								"Burgundy Pork Tenderloin");
+						activityCourse.putExtra("list6_submenu",
+								"Balsamic Roasted Pork Loin");
+						activityCourse.putExtra("list7_submenu",
+								"Chipotle Crusted Pork Tenderloin");
+						activityCourse.putExtra("list8_submenu",
+								"Oven Pot Roast");
+						activityCourse.putExtra("list9_submenu",
+								"Slow Cooker Cranberry Pork");
+						activityCourse.putExtra("list10_submenu",
+								"Easy and Elegant Pork Tenderloin");
+						activityCourse.putExtra("list11_submenu",
+								"Roast Leg of Lamb with Rosemary");
+						activityCourse.putExtra("list12_submenu", "none");
+						activityCourse.putExtra("list13_submenu", "none");
+						activityCourse.putExtra("list14_submenu", "none");
+						activityCourse.putExtra("list15_submenu", "none");
+						activityCourse.putExtra("list16_submenu", "none");
+						activityCourse.putExtra("list17_submenu", "none");
+						activityCourse.putExtra("list18_submenu", "none");
+						activityCourse.putExtra("list19_submenu", "none");
+
+						// 3. or you can add data to a bundle
+						Bundle extras = new Bundle();
+						// 4. add bundle to intent
+						activityCourse.putExtras(extras);
+						Sub_Menu_Page.this.startActivity(activityCourse);
+						finish();
 					}
 				} else if (cookbook_subMeal.equals("Main Ingredients")) {
 					if (bt8_submeal.getText().toString().equals("")) {
@@ -1568,6 +1884,47 @@ public class Sub_Menu_Page extends Activity {
 						activityCourse.putExtra("list17_submenu", "none");
 						activityCourse.putExtra("list18_submenu", "none");
 						activityCourse.putExtra("list19_submenu", "none");
+						// 3. or you can add data to a bundle
+						Bundle extras = new Bundle();
+						// 4. add bundle to intent
+						activityCourse.putExtras(extras);
+						Sub_Menu_Page.this.startActivity(activityCourse);
+						finish();
+					} else if (bt9_submeal.getText().toString()
+							.equals("Steaks and Chops")) {
+						Intent activityCourse = new Intent(Sub_Menu_Page.this,
+								Main_Recipe_Page.class);
+						// 2. put key/value data
+						activityCourse.putExtra("list1_submenu",
+								"Marinated Baked Pork Chops");
+						activityCourse.putExtra("list2_submenu",
+								"Caramel Apple Pork Chops");
+						activityCourse.putExtra("list3_submenu",
+								"Italian Breaded Pork Chops");
+						activityCourse.putExtra("list4_submenu",
+								"Famous Pork Chops");
+						activityCourse.putExtra("list5_submenu",
+								"Mushroom Pork Chops");
+						activityCourse.putExtra("list6_submenu",
+								"Sage Pork Chops");
+						activityCourse.putExtra("list7_submenu",
+								"Sour Cream Pork Chops");
+						activityCourse.putExtra("list8_submenu",
+								"Cola Pork Chops");
+						activityCourse.putExtra("list9_submenu",
+								"Pork Chops with Raspberry Sauce");
+						activityCourse.putExtra("list10_submenu",
+								"Grilled Brown Sugar Pork Chops");
+						activityCourse.putExtra("list11_submenu", "none");
+						activityCourse.putExtra("list12_submenu", "none");
+						activityCourse.putExtra("list13_submenu", "none");
+						activityCourse.putExtra("list14_submenu", "none");
+						activityCourse.putExtra("list15_submenu", "none");
+						activityCourse.putExtra("list16_submenu", "none");
+						activityCourse.putExtra("list17_submenu", "none");
+						activityCourse.putExtra("list18_submenu", "none");
+						activityCourse.putExtra("list19_submenu", "none");
+
 						// 3. or you can add data to a bundle
 						Bundle extras = new Bundle();
 						// 4. add bundle to intent
