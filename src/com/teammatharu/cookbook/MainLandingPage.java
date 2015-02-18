@@ -85,13 +85,6 @@ public class MainLandingPage extends Activity {
 			public void onClick(View v) {
 				// TODO Auto-generated method stub
 
-				String b1MainLandingFirebase = bCourse.getText().toString();
-				// System.out.print(b1Firebase);
-				// Log.d("b1Firebase", b1Firebase);
-
-				Firebase bCourseFirebase = new Firebase(
-						"https://cookbook-teammatharu.firebaseio.com/b1MainLandingFirebase");
-
 				Intent activityCourse = new Intent(MainLandingPage.this,
 						Sub_Meal_Page.class);
 				// 2. put key/value data
