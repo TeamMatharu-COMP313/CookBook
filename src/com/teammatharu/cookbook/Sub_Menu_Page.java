@@ -1552,21 +1552,35 @@ public class Sub_Menu_Page extends Activity {
 						activityCourse.putExtras(extras);
 						Sub_Menu_Page.this.startActivity(activityCourse);
 						finish();
-					} else if (bt4_submeal.getText().toString().equals("Chowder")) {
-						Intent activityCourse = new Intent(Sub_Menu_Page.this, Main_Recipe_Page.class);
+					} else if (bt4_submeal.getText().toString()
+							.equals("Chowder")) {
+						Intent activityCourse = new Intent(Sub_Menu_Page.this,
+								Main_Recipe_Page.class);
 						// 2. put key/value data
-						activityCourse.putExtra("list1_submenu", "Fish Chowder");
-						activityCourse.putExtra("list2_submenu", "Salmon Chowder");
-						activityCourse.putExtra("list3_submenu", "Grandma's Corn Chowder");
-						activityCourse.putExtra("list4_submenu", "Cindy's Awesome Clam Chowder");
-						activityCourse.putExtra("list5_submenu", "Newport Clam Chowder");
-						activityCourse.putExtra("list6_submenu", "Crawfish Chowder");
-						activityCourse.putExtra("list7_submenu", "Vegetable Chowder");
-						activityCourse.putExtra("list8_submenu", "Seafood Chowder");
-						activityCourse.putExtra("list9_submenu", "Chicken and Mushroom Chowder");
-						activityCourse.putExtra("list10_submenu", "Gramma Brown's Corn Chowder");
-						activityCourse.putExtra("list11_submenu", "Corn Chowder with Sausage");
-						activityCourse.putExtra("list12_submenu", "Shrimp Chowder");
+						activityCourse
+								.putExtra("list1_submenu", "Fish Chowder");
+						activityCourse.putExtra("list2_submenu",
+								"Salmon Chowder");
+						activityCourse.putExtra("list3_submenu",
+								"Grandma's Corn Chowder");
+						activityCourse.putExtra("list4_submenu",
+								"Cindy's Awesome Clam Chowder");
+						activityCourse.putExtra("list5_submenu",
+								"Newport Clam Chowder");
+						activityCourse.putExtra("list6_submenu",
+								"Crawfish Chowder");
+						activityCourse.putExtra("list7_submenu",
+								"Vegetable Chowder");
+						activityCourse.putExtra("list8_submenu",
+								"Seafood Chowder");
+						activityCourse.putExtra("list9_submenu",
+								"Chicken and Mushroom Chowder");
+						activityCourse.putExtra("list10_submenu",
+								"Gramma Brown's Corn Chowder");
+						activityCourse.putExtra("list11_submenu",
+								"Corn Chowder with Sausage");
+						activityCourse.putExtra("list12_submenu",
+								"Shrimp Chowder");
 						activityCourse.putExtra("list13_submenu", "none");
 						activityCourse.putExtra("list14_submenu", "none");
 						activityCourse.putExtra("list15_submenu", "none");
@@ -1864,8 +1878,54 @@ public class Sub_Menu_Page extends Activity {
 						activityCourse.putExtras(extras);
 						Sub_Menu_Page.this.startActivity(activityCourse);
 						finish();
-					} else if (bt5_submeal.getText().toString().equals("")) {
-						
+					} else if (bt5_submeal.getText().toString().equals("Soups")) {
+						Intent activityCourse = new Intent(Sub_Menu_Page.this,
+								Main_Recipe_Page.class);
+						// 2. put key/value data
+						activityCourse.putExtra("list1_submenu",
+								"Delicious Ham and Potato Soup");
+						activityCourse.putExtra("list2_submenu",
+								"Slow Cooker Chicken Taco Soup");
+						activityCourse.putExtra("list3_submenu",
+								"Slow-Cooker Chicken Tortilla Soup");
+						activityCourse.putExtra("list4_submenu",
+								"Broccoli Cheese Soup");
+						activityCourse.putExtra("list5_submenu",
+								"Butternut Squash Soup");
+						activityCourse.putExtra("list6_submenu",
+								"Italian Sausage Soup");
+						activityCourse.putExtra("list7_submenu",
+								"Chicken Noodle Soup");
+						activityCourse.putExtra("list8_submenu",
+								"Jamie's Minestrone");
+						activityCourse.putExtra("list9_submenu",
+								"Super-Delicious Zuppa Toscana");
+						activityCourse
+								.putExtra("list10_submenu", "Lentil Soup");
+						activityCourse.putExtra("list11_submenu",
+								"Italian Sausage Soup with Tortellini");
+						activityCourse.putExtra("list12_submenu",
+								"Baked Potato Soup");
+						activityCourse.putExtra("list13_submenu",
+								"Black Bean and Salsa Soup");
+						activityCourse.putExtra("list14_submenu",
+								"Chicken Tortilla Soup");
+						activityCourse.putExtra("list15_submenu",
+								"Hungarian Mushroom Soup");
+						activityCourse.putExtra("list16_submenu",
+								"Cheeseburger Soup");
+						activityCourse.putExtra("list17_submenu",
+								"Mulligatawny Soup");
+						activityCourse.putExtra("list18_submenu",
+								"French Onion Soup Gratinee");
+						activityCourse.putExtra("list19_submenu",
+								"Black Bean Vegetable");
+						// 3. or you can add data to a bundle
+						Bundle extras = new Bundle();
+						// 4. add bundle to intent
+						activityCourse.putExtras(extras);
+						Sub_Menu_Page.this.startActivity(activityCourse);
+						finish();
 					}
 				} else if (cookbook_subMeal.equals("Main Ingredients")) {
 					if (bt5_submeal.getText().toString().equals("")) {
@@ -2135,6 +2195,45 @@ public class Sub_Menu_Page extends Activity {
 						activityCourse.putExtra("list10_submenu", "none");
 						activityCourse.putExtra("list11_submenu", "none");
 						activityCourse.putExtra("list12_submenu", "none");
+						activityCourse.putExtra("list13_submenu", "none");
+						activityCourse.putExtra("list14_submenu", "none");
+						activityCourse.putExtra("list15_submenu", "none");
+						activityCourse.putExtra("list16_submenu", "none");
+						activityCourse.putExtra("list17_submenu", "none");
+						activityCourse.putExtra("list18_submenu", "none");
+						activityCourse.putExtra("list19_submenu", "none");
+						// 3. or you can add data to a bundle
+						Bundle extras = new Bundle();
+						// 4. add bundle to intent
+						activityCourse.putExtras(extras);
+						Sub_Menu_Page.this.startActivity(activityCourse);
+						finish();
+					} else if (bt6_submeal.getText().toString().equals("Stew")) {
+						Intent activityCourse = new Intent(Sub_Menu_Page.this,
+								Main_Recipe_Page.class);
+						// 2. put key/value data
+						activityCourse.putExtra("list1_submenu", "Beef Stew");
+						activityCourse.putExtra("list2_submenu",
+								"Classic Goulash");
+						activityCourse.putExtra("list3_submenu", "Cioppino");
+						activityCourse.putExtra("list4_submenu",
+								"Bubba's Jambalaya");
+						activityCourse.putExtra("list5_submenu",
+								"French Beef Stew");
+						activityCourse.putExtra("list6_submenu",
+								"Easy Cajun Jambalaya");
+						activityCourse.putExtra("list7_submenu",
+								"French Beef Stew");
+						activityCourse.putExtra("list8_submenu",
+								"Frogmore Stew");
+						activityCourse.putExtra("list9_submenu",
+								"Black-Eyed Pea Gumbo");
+						activityCourse.putExtra("list10_submenu",
+								"Brazilian Black Bean Stew");
+						activityCourse.putExtra("list11_submenu",
+								"Irish Lamb Stew");
+						activityCourse.putExtra("list12_submenu",
+								"Goulash Supreme");
 						activityCourse.putExtra("list13_submenu", "none");
 						activityCourse.putExtra("list14_submenu", "none");
 						activityCourse.putExtra("list15_submenu", "none");
