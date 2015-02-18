@@ -60,8 +60,8 @@ public class MainLandingPage extends Activity {
 						Sub_Meal_Page.class);
 				// 2. put key/value data
 				activityCourse.putExtra("bt1", "Breakfast and Brunch");
-				activityCourse.putExtra("bt2", "Dinner Recipes");
-				activityCourse.putExtra("bt3", "Lunch Recipes");
+				activityCourse.putExtra("bt2", "Lunch Recipes");
+				activityCourse.putExtra("bt3", "Dinner Recipes");
 				activityCourse.putExtra("bt4", "none");
 				activityCourse.putExtra("bt5", "none");
 				activityCourse.putExtra("bt6", "none");
