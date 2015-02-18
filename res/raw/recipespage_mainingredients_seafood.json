@@ -1,0 +1,127 @@
+{
+"btnname_recipe_page_seafood_fish":[
+{"bt1_recipepage":"Maple Salmon"},
+{"bt2_recipepage":"Grilled Salmon"},
+{"bt3_recipepage":"Broiled Tilapia Parmesan"},
+{"bt4_recipepage":"Ginger Glazed Mahi Mahi"},
+{"bt5_recipepage":"Lemon Garlic Tilapia"},
+{"bt6_recipepage":"Baked Dijon Salmon"},
+{"bt7_recipepage":"Fish Tacos"},
+{"bt8_recipepage":"Barbie's Tuna Salad"},
+{"bt9_recipepage":"Balsamic-Glazed Salmon Fillets"},
+{"bt10_recipepage":"Tuna Noodle Casserole from Scratch"}
+],
+
+
+"btnname_recipe_page_seafood_crab":[
+{"bt1_recipepage":"Crab Dip"},
+{"bt2_recipepage":"Savory Crab Stuffed Mushrooms"},
+{"bt3_recipepage":"Warm Crab Parmesan Dip"},
+{"bt4_recipepage":"Karyn's Cream of Crab Soup"},
+{"bt5_recipepage":"Baked Seafood Au Gratin"},
+{"bt6_recipepage":"Shrimp and Crab Enchiladas"},
+{"bt7_recipepage":"Hot Crab Dip"},
+{"bt8_recipepage":"King Crab Appetizers"},
+{"bt9_recipepage":"Spicy Maryland Crab Dip"},
+{"bt10_recipepage":"Lori's Famous Crab Cakes"}
+],
+
+
+"btnname_recipe_page_seafood_lobster":[
+{"bt1_recipepage":"Grilled Rock Lobster Tails"},
+{"bt2_recipepage":"Broiled Lobster Tails"},
+{"bt3_recipepage":"Lobster Bisque"},
+{"bt4_recipepage":"Lobster Rolls"},
+{"bt5_recipepage":"Lobster Tails Steamed in Beer"},
+{"bt6_recipepage":"Crab and Lobster Stuffed Mushrooms"},
+{"bt7_recipepage":"Steamed Lobster Tails"},
+{"bt8_recipepage":"Lobster Mornay Sauce"},
+{"bt9_recipepage":"Lobster Colorado"}
+
+],
+
+
+"btnname_recipe_page_seafood_Mussel":[
+{"bt1_recipepage":"Cioppino"},
+{"bt2_recipepage":"Thai Steamed Mussels"},
+{"bt3_recipepage":"Mussels Mariniere"},
+{"bt4_recipepage":"Appetizer Mussels"},
+{"bt5_recipepage":"Drunken Mussels"},
+{"bt6_recipepage":"Love Mussels"},
+{"bt7_recipepage":"Mussels in Curry Cream Sauce"},
+{"bt8_recipepage":"Grilled Mussels with Curry Butter"},
+{"bt9_recipepage":"Mussels Mariniere"},
+{"bt10_recipepage":"Amazing Mussels"}
+],
+
+
+"btnname_recipe_page_seafood_Octopussquid":[
+{"bt1_recipepage":"Grammy's Calamari Salad"},
+{"bt2_recipepage":"Seafood Chowder"},
+{"bt3_recipepage":"Calamari"},
+{"bt4_recipepage":"Buttermilk-Battered Calamari"},
+{"bt5_recipepage":"Shrimp and Octopus Soup"},
+{"bt6_recipepage":"Salt and Pepper Squid"},
+{"bt7_recipepage":"Calamari Macaronatha"},
+{"bt8_recipepage":"Greek Squid (Soupies)"},
+{"bt9_recipepage":"Calamari Salad"},
+{"bt10_recipepage":"Santiago's Stuffed Squid"}
+],
+
+
+"btnname_recipe_page_seafood_Oyster":[
+{"bt1_recipepage":"Oyster Stew"},
+{"bt2_recipepage":"Rockin' Oysters Rockefeller"},
+{"bt3_recipepage":"Elegant Oyster Soup"},
+{"bt4_recipepage":"Oyster and Cornbread Dressing"},
+{"bt5_recipepage":"Smoked Oyster Spread"},
+{"bt6_recipepage":"Dorsey's Fried Oysters"},
+{"bt7_recipepage":"Oyster and Spinach Chowder"},
+{"bt8_recipepage":"Oyster Dressing"},
+{"bt9_recipepage":"Bayou Crostini"},
+{"bt10_recipepage":"Scalloped Oysters"}
+],
+
+
+
+
+"btnname_recipe_page_seafood_Shrimp":[
+{"bt1_recipepage":"Marinated Grilled Shrimp"},
+{"bt2_recipepage":"Szechwan Shrimp"},
+{"bt3_recipepage":"Shrimp Scampi Bake"},
+{"bt4_recipepage":"Peppered Shrimp Alfredo"},
+{"bt5_recipepage":"Shrimp Lemon Pepper Linguini"},
+{"bt6_recipepage":"Grilled Marinated Shrimp"},
+{"bt7_recipepage":"Cajun Seafood Pasta"},
+{"bt8_recipepage":"Creamy Pesto Shrimp"},
+{"bt9_recipepage":"Basil Shrimp"},
+{"bt10_recipepage":"Grilled Shrimp Scampi"}
+],
+
+
+"btnname_recipe_page_seafood_Crawfish":[
+{"bt1_recipepage":"Cajun Crawfish and Shrimp Etouffe"},
+{"bt2_recipepage":"Crawfish Chowder"},
+{"bt3_recipepage":"Louisiana Crawfish Etouffee"},
+{"bt4_recipepage":"Broccoli Crawfish Cheese Soup"},
+{"bt5_recipepage":"Crayfish or Shrimp Pasta"},
+{"bt6_recipepage":"Crawfish Linguine"},
+{"bt7_recipepage":"Crawfish and Corn Soup"},
+{"bt8_recipepage":"Crawfish Pie"},
+{"bt9_recipepage":"Cold Crawfish Dip"},
+{"bt10_recipepage":"Crawfish Cornbread"}
+],
+
+
+"btnname_recipe_page_seafood_Scallop":[
+{"bt1_recipepage":"Baked Scallops"},
+{"bt2_recipepage":"Cioppino"},
+{"bt3_recipepage":"Broiled Scallops"},
+{"bt4_recipepage":"Awesome Baked Sea Scallops"},
+{"bt5_recipepage":"Deb's Scallops Florentine"},
+{"bt6_recipepage":"Seared Sea Scallops"},
+{"bt7_recipepage":"Scallop Scampi"},
+{"bt8_recipepage":"Marinated Scallops Wrapped in Bacon"},
+{"bt9_recipepage":"Seafood Fettuccine"},
+{"bt10_recipepage":"Key West Penne"}
+]}

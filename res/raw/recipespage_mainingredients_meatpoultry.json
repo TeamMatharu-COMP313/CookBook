@@ -1,0 +1,103 @@
+ {
+"btnname_recipe_page_meatpoultry_beef":[
+{"bt1_recipepage":"World's Best Lasagna"},
+{"bt2_recipepage":"Brown Sugar Meatloaf"},
+{"bt3_recipepage":"Baked Ziti"},
+{"bt4_recipepage":"Boilermaker Tailgate Chili"},
+{"bt5_recipepage":"Easy Meatloaf"},
+{"bt6_recipepage":"Burrito Pie"},
+{"bt7_recipepage":"Salisbury Steak"},
+{"bt8_recipepage":"Slow-Cooker Pepper Steak"},
+{"bt9_recipepage":"Rempel Family Meatloaf"},
+{"bt10_recipepage":"Meatball Nirvana"}
+
+],
+
+
+"btnname_recipe_page_meatpoultry_chicken":[
+{"bt1_recipepage":"Slow Cooker Chicken and Dumplings"},
+{"bt2_recipepage":"Slow Cooker Chicken Taco Soup"},
+{"bt3_recipepage":"Chicken Marsala"},
+{"bt4_recipepage":"Baked Teriyaki Chicken"},
+{"bt5_recipepage":"Buffalo Chicken Dip"},
+{"bt6_recipepage":"Salsa Chicken"},
+{"bt7_recipepage":"Braised Balsamic Chicken"},
+{"bt8_recipepage":"Angel Chicken Pasta"},
+{"bt9_recipepage":"Chicken Wings"}
+
+],
+
+
+
+"btnname_recipe_page_meatpoultry_gamemeats":[
+{"bt1_recipepage":"Roasted Duck"},
+{"bt2_recipepage":"Slow Cooker Venison Roast"},
+{"bt3_recipepage":"Deer Chop Hurry"},
+{"bt4_recipepage":"Deer Poppers"},
+{"bt5_recipepage":"Venison Bacon Burgers"},
+{"bt6_recipepage":"Venison Chili"},
+{"bt7_recipepage":"Deer Jerky"},
+{"bt8_recipepage":"Elk Chili"},
+{"bt9_recipepage":"Honey Duck"},
+{"bt10_recipepage":"Peking Duck"}
+],
+
+
+
+"btnname_recipe_page_meatpoultry_lamb":[
+{"bt1_recipepage":"Roasted Rack of Lamb"},
+{"bt2_recipepage":"Irish Lamb Stew"},
+{"bt3_recipepage":"Gyros Burgers"},
+{"bt4_recipepage":"Lamb Tagine"},
+{"bt5_recipepage":"Rosemary Braised Lamb Shanks"},
+{"bt6_recipepage":"Kofta Kebabs"},
+{"bt7_recipepage":"Simple Grilled Lamb Chops"},
+{"bt8_recipepage":"Traditional Gyro Meat"},
+{"bt9_recipepage":"Gyroll"},
+{"bt10_recipepage":"Baked Lamb Chops"},
+{"bt11_recipepage":"Kim's Ultimate Meatloaf"}
+],
+
+
+"btnname_recipe_page_meatpoultry_pork":[
+{"bt1_recipepage":"Italian Sausage Soup"},
+{"bt2_recipepage":"Marinated Baked Pork Chops"},
+{"bt3_recipepage":"Brown Sugar Smokies"},
+{"bt4_recipepage":"Caramel Apple Pork Chops"},
+{"bt5_recipepage":"Super-Delicious Zuppa Toscana"},
+{"bt6_recipepage":"Italian Sausage Soup with Tortellini"},
+{"bt7_recipepage":"Baby Back Ribs"},
+{"bt8_recipepage":"Italian Breaded Pork Chops"},
+{"bt9_recipepage":"Slow-Cooker Barbecue Ribs"},
+{"bt10_recipepage":"Red Skinned Potato Salad"}
+
+],
+
+
+"btnname_recipe_page_meatpoultry_sausage":[
+{"bt1_recipepage":"Italian Sausage, Peppers, and Onions"},
+{"bt2_recipepage":"Baked Penne with Italian Sausage"},
+{"bt3_recipepage":"Breakfast Sausage"},
+{"bt4_recipepage":"Italian Sausage Tortellini Soup"},
+{"bt5_recipepage":"Lentil and Sausage Soup"},
+{"bt6_recipepage":"Beer Brats"},
+{"bt7_recipepage":"Country Sausage Gravy"},
+{"bt8_recipepage":"Wisconsin Bratwurst"},
+{"bt9_recipepage":"Baked Ziti with Sausage"}
+],
+
+
+"btnname_recipe_page_meatpoultry_turkey":[
+{"bt1_recipepage":"Perfect Turkey"},
+{"bt2_recipepage":"Turkey and Quinoa Meatloaf"},
+{"bt3_recipepage":"Simple Turkey Chili"},
+{"bt4_recipepage":"Turkey Burgers"},
+{"bt5_recipepage":"Pumpkin Turkey Chili"},
+{"bt6_recipepage":"Rosemary Roasted Turkey"},
+{"bt7_recipepage":"Easy Herb Roasted Turkey"},
+{"bt8_recipepage":"Maple Roast Turkey"},
+{"bt9_recipepage":"Leftover Turkey Casserole"},
+{"bt10_recipepage":"Turkey Enchiladas"},
+{"bt11_recipepage":"Turkey 'n Stuffing Bake"}
+]}
+

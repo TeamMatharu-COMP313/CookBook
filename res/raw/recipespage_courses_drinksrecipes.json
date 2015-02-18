@@ -1,0 +1,171 @@
+{
+"btnname_recipe_page_drink_beer":[
+{"bt1_recipepage":"Beer Margaritas"},
+{"bt2_recipepage":"Yummy Margaritas"},
+{"bt3_recipepage":"JoeDogg's Spicy Red Beer"},
+{"bt4_recipepage":"Granny Smackers"},
+{"bt5_recipepage":"Black and Tan"},
+{"bt6_recipepage":"Michelada"},
+{"bt7_recipepage":"Shandy"},
+{"bt8_recipepage":"Delicious Spicy Micheladas"},
+{"bt9_recipepage":"Nova Scotia Beer Warmer"},
+{"bt10_recipepage":"The Red-Headed Step Child"},
+{"bt11_recipepage":"Pompous Mexican"},
+{"bt12_recipepage":"Strawberry Beer Margaritas"},
+{"bt13_recipepage":"Fall Apple Pumpkin Shandy"},
+{"bt14_recipepage":"Half and Half Cocktail"}
+],
+
+"btnname_recipe_page_drink_ciderdrinks":[
+{"bt1_recipepage":"Hot Spiced Cider"},
+{"bt2_recipepage":"Hot Apple Cider"},
+{"bt3_recipepage":"Hot Spiced Cranberry Cider"},
+{"bt4_recipepage":"Easy Apple Cider"},
+{"bt5_recipepage":"Apple Pie in a Jar Drink"},
+{"bt6_recipepage":"Homemade Apple Cider"},
+{"bt7_recipepage":"Hot Buttered Apple Cider"},
+{"bt8_recipepage":"Old Virginia Wassail Cider"},
+{"bt9_recipepage":"Mulled Cider"},
+{"bt10_recipepage":"Spiked Fall Cider"},
+{"bt11_recipepage":"Cranberry Wassail"},
+{"bt12_recipepage":"Mulled Cranberry Cider"}
+],
+
+"btnname_recipe_page_drink_cocktails":[
+{"bt1_recipepage":"Mojito"},
+{"bt2_recipepage":"Tanning Bed Drink"},
+{"bt3_recipepage":"Easy Frozen Margaritas"},
+{"bt4_recipepage":"Cranberry Martini"},
+{"bt5_recipepage":"Tainted Fruit Shots"},
+{"bt6_recipepage":"Dirty Martini"},
+{"bt7_recipepage":"Lava Lamps"},
+{"bt8_recipepage":"Bloody Mary Mix"},
+{"bt9_recipepage":"Whiskey Slush"},
+{"bt10_recipepage":"Strawberry Mojito"},
+{"bt11_recipepage":"Berry Shooters"},
+{"bt12_recipepage":"Frozen Mojito"},
+{"bt13_recipepage":"White Russian"},
+{"bt14_recipepage":"Malibu Bay Breeze"}
+],
+
+
+"btnname_recipe_page_drink_coffee":[
+{"bt1_recipepage":"Mocha Coffee"},
+{"bt2_recipepage":"Easy Iced Coffee"},
+{"bt3_recipepage":"Pumpkin Spiced Latte"},
+{"bt4_recipepage":"Iced Mocha Fusion Shake"},
+{"bt5_recipepage":"Gunline Coffee"},
+{"bt6_recipepage":"Coffee Shake"},
+{"bt7_recipepage":"Vietnamese Iced Coffee"},
+{"bt8_recipepage":"Cappuccino on Ice"},
+{"bt9_recipepage":"Hot Mocha Drink Mix"},
+{"bt10_recipepage":"Cocoa Coffee Milkshake"},
+{"bt11_recipepage":"Frozen Caramel Latte"},
+{"bt12_recipepage":"Coffee Whirl"},
+{"bt13_recipepage":"Eggnog Latte"},
+{"bt14_recipepage":"Irish Coffee"}
+],
+
+
+"btnname_recipe_page_drink_hotchocolates":[
+{"bt1_recipepage":"Creamy Hot Cocoa"},
+{"bt2_recipepage":"Snow Flake Cocoa"},
+{"bt3_recipepage":"Easy Mexican Hot Chocolate"},
+{"bt4_recipepage":"Candy Cane Cocoa"},
+{"bt5_recipepage":"Delicious Vegan Hot Chocolate"},
+{"bt6_recipepage":"Mocha Coffee Mix"},
+{"bt7_recipepage":"Peanut Buttercup Hot Chocolate"},
+{"bt8_recipepage":"Homestyle Hot Cocoa"},
+{"bt9_recipepage":"Spiced Hot Chocolate"},
+{"bt10_recipepage":"Mayan Hot Chocolate"},
+{"bt11_recipepage":"Mocha au Lait Mix"},
+{"bt12_recipepage":"Cocoa Sleigh Ride"},
+{"bt13_recipepage":"Whipped Hot Chocolate"},
+{"bt14_recipepage":"Kocoa Klastch Blend"}
+],
+
+
+"btnname_recipe_page_drink_juices":[
+{"bt1_recipepage":"Healthy Green Juice"},
+{"bt2_recipepage":"Watermelon Agua Fresca"},
+{"bt3_recipepage":"Breakfast Zinger Juice"},
+{"bt4_recipepage":"Tropical Carrot-Apple Juice"},
+{"bt5_recipepage":"Cucumber Cooler"},
+{"bt6_recipepage":"Agua de Jamaica "},
+{"bt7_recipepage":"Carrot and Orange Juice"},
+{"bt8_recipepage":"Brown Sugar and Honey Limeade"},
+{"bt9_recipepage":"Cool Fizzies for the Kiddies"},
+{"bt10_recipepage":"Green Lemonade"},
+{"bt11_recipepage":"Strawberry Soda Syrup"},
+{"bt12_recipepage":"Fresh, Homemade Apple Juice"},
+{"bt13_recipepage":"Banana Juice"},
+{"bt14_recipepage":"Orange Fizz"}
+],
+
+
+
+"btnname_recipe_page_drink_mocktails":[
+{"bt1_recipepage":"Mock Champagne"},
+{"bt2_recipepage":"Virgin Pina Colada"},
+{"bt3_recipepage":"Cran-Dandy Cooler"},
+{"bt4_recipepage":"Cucumber Punch"},
+{"bt5_recipepage":"Italian Cream Soda"},
+{"bt6_recipepage":"Shirley Temple"},
+{"bt7_recipepage":"Cherry Fizz"},
+{"bt8_recipepage":"Alcohol-Free Mint Julep"},
+{"bt9_recipepage":"Tornado Twist"},
+{"bt10_recipepage":"Monica's Baptist Sangria"},
+{"bt11_recipepage":"Apple Julep"},
+{"bt12_recipepage":"RaSpBeRrY FiZzLeR"},
+{"bt13_recipepage":"Michigan Fizz"},
+{"bt14_recipepage":"Lime Cola"}
+],
+
+
+
+"btnname_recipe_page_drink_smoothies":[
+{"bt1_recipepage":"Berry Delicious"},
+{"bt2_recipepage":"Kiwi Strawberry Smoothie"},
+{"bt3_recipepage":"Chocolate Banana Smoothie"},
+{"bt4_recipepage":"Breakfast Banana Green Smoothie"},
+{"bt5_recipepage":"Purple Monstrosity Fruit Smoothie"},
+{"bt6_recipepage":"Peanut Butter and Banana Smoothie"},
+{"bt7_recipepage":"Gloomy Day Smoothie"},
+{"bt8_recipepage":"Kale and Banana Smoothie"},
+{"bt9_recipepage":"Avocado Smoothie"},
+{"bt10_recipepage":"Triple Threat Fruit Smoothie"},
+{"bt11_recipepage":"Groovie Smoothie"},
+{"bt12_recipepage":"Heavenly Blueberry Smoothie"},
+{"bt13_recipepage":"Orange Smoothie"},
+{"bt14_recipepage":"Green Slime Smoothie"}
+
+],
+
+
+
+"btnname_recipe_page_drink_tea":[
+{"bt1_recipepage":"Chai Tea Mix"},
+{"bt2_recipepage":"Smooth Sweet Tea"},
+{"bt3_recipepage":"Boston Iced Tea"},
+{"bt4_recipepage":"Coffeebar Chai"},
+{"bt5_recipepage":"Mint Tea Punch"},
+{"bt6_recipepage":"Honey Lemon Tea"},
+{"bt7_recipepage":"Russian Tea"},
+{"bt8_recipepage":"Sweet Lime Iced Tea"},
+{"bt9_recipepage":"Hot Cranberry Tea"},
+{"bt10_recipepage":"Lemonade-Mint Iced Tea"},
+{"bt11_recipepage":"Spiced Tea Mix"},
+{"bt12_recipepage":"Peach Tea"},
+{"bt13_recipepage":"Masala Chai"},
+{"bt14_recipepage":"Green Tea Berry Delight"}
+]}
+
+
+
+
+
+
+
+
+
+
