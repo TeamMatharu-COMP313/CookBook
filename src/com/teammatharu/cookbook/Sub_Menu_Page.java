@@ -768,6 +768,46 @@ public class Sub_Menu_Page extends Activity {
 						activityCourse.putExtras(extras);
 						Sub_Menu_Page.this.startActivity(activityCourse);
 						finish();
+					} else if (bt1_submeal.getText().toString()
+							.equals("Fish Recipes")) {
+						Intent activityCourse = new Intent(Sub_Menu_Page.this,
+								Main_Recipe_Page.class);
+
+						activityCourse
+								.putExtra("list1_submenu", "Maple Salmon");
+						activityCourse.putExtra("list2_submenu",
+								"Grilled Salmon");
+						activityCourse.putExtra("list3_submenu",
+								"Broiled Tilapia Parmesan");
+						activityCourse.putExtra("list4_submenu",
+								"Ginger Glazed Mahi Mahi");
+						activityCourse.putExtra("list5_submenu",
+								"Lemon Garlic Tilapia");
+						activityCourse.putExtra("list6_submenu",
+								"Baked Dijon Salmon");
+						activityCourse.putExtra("list7_submenu", "Fish Tacos");
+						activityCourse.putExtra("list8_submenu",
+								"Barbie's Tuna Salad");
+						activityCourse.putExtra("list9_submenu",
+								"Balsamic-Glazed Salmon Fillets");
+						activityCourse.putExtra("list10_submenu",
+								"Tuna Noodle Casserole from Scratch");
+						activityCourse.putExtra("list11_submenu", "none");
+						activityCourse.putExtra("list12_submenu", "none");
+						activityCourse.putExtra("list13_submenu", "none");
+						activityCourse.putExtra("list14_submenu", "none");
+						activityCourse.putExtra("list15_submenu", "none");
+						activityCourse.putExtra("list16_submenu", "none");
+						activityCourse.putExtra("list17_submenu", "none");
+						activityCourse.putExtra("list18_submenu", "none");
+						activityCourse.putExtra("list19_submenu", "none");
+
+						// 3. or you can add data to a bundle
+						Bundle extras = new Bundle();
+						// 4. add bundle to intent
+						activityCourse.putExtras(extras);
+						Sub_Menu_Page.this.startActivity(activityCourse);
+						finish();
 					}
 				} else if (cookbook_subMeal
 						.equals("Occasions and Cooking Style")) {
@@ -1381,6 +1421,47 @@ public class Sub_Menu_Page extends Activity {
 						activityCourse.putExtras(extras);
 						Sub_Menu_Page.this.startActivity(activityCourse);
 						finish();
+					} else if (bt2_submeal.getText().toString()
+							.equals("Crab Recipes")) {
+						Intent activityCourse = new Intent(Sub_Menu_Page.this,
+								Main_Recipe_Page.class);
+
+						activityCourse.putExtra("list1_submenu", "Crab Dip");
+						activityCourse.putExtra("list2_submenu",
+								"Savory Crab Stuffed Mushrooms");
+						activityCourse.putExtra("list3_submenu",
+								"Warm Crab Parmesan Dip");
+						activityCourse.putExtra("list4_submenu",
+								"Karyn's Cream of Crab Soup");
+						activityCourse.putExtra("list5_submenu",
+								"Baked Seafood Au Gratin");
+						activityCourse.putExtra("list6_submenu",
+								"Shrimp and Crab Enchiladas");
+						activityCourse
+								.putExtra("list7_submenu", "Hot Crab Dip");
+						activityCourse.putExtra("list8_submenu",
+								"King Crab Appetizers");
+						activityCourse.putExtra("list9_submenu",
+								"Spicy Maryland Crab Dip");
+						activityCourse.putExtra("list10_submenu",
+								"Lori's Famous Crab Cakes");
+						activityCourse.putExtra("list11_submenu", "none");
+						activityCourse.putExtra("list12_submenu", "none");
+						activityCourse.putExtra("list13_submenu", "none");
+						activityCourse.putExtra("list14_submenu", "none");
+						activityCourse.putExtra("list15_submenu", "none");
+						activityCourse.putExtra("list16_submenu", "none");
+						activityCourse.putExtra("list17_submenu", "none");
+						activityCourse.putExtra("list18_submenu", "none");
+						activityCourse.putExtra("list19_submenu", "none");
+
+						// 3. or you can add data to a bundle
+						Bundle extras = new Bundle();
+						// 4. add bundle to intent
+						activityCourse.putExtras(extras);
+						Sub_Menu_Page.this.startActivity(activityCourse);
+						finish();
+
 					}
 				} else if (cookbook_subMeal
 						.equals("Occasions and Cooking Style")) {
@@ -1970,6 +2051,46 @@ public class Sub_Menu_Page extends Activity {
 						activityCourse.putExtra("list7_submenu", "none");
 						activityCourse.putExtra("list8_submenu", "none");
 						activityCourse.putExtra("list9_submenu", "none");
+						activityCourse.putExtra("list10_submenu", "none");
+						activityCourse.putExtra("list11_submenu", "none");
+						activityCourse.putExtra("list12_submenu", "none");
+						activityCourse.putExtra("list13_submenu", "none");
+						activityCourse.putExtra("list14_submenu", "none");
+						activityCourse.putExtra("list15_submenu", "none");
+						activityCourse.putExtra("list16_submenu", "none");
+						activityCourse.putExtra("list17_submenu", "none");
+						activityCourse.putExtra("list18_submenu", "none");
+						activityCourse.putExtra("list19_submenu", "none");
+
+						// 3. or you can add data to a bundle
+						Bundle extras = new Bundle();
+						// 4. add bundle to intent
+						activityCourse.putExtras(extras);
+						Sub_Menu_Page.this.startActivity(activityCourse);
+						finish();
+					} else if (bt3_submeal.getText().toString()
+							.equals("Lobster Recipes")) {
+						Intent activityCourse = new Intent(Sub_Menu_Page.this,
+								Main_Recipe_Page.class);
+
+						activityCourse.putExtra("list1_submenu",
+								"Grilled Rock Lobster Tails");
+						activityCourse.putExtra("list2_submenu",
+								"Broiled Lobster Tails");
+						activityCourse.putExtra("list3_submenu",
+								"Lobster Bisque");
+						activityCourse.putExtra("list4_submenu",
+								"Lobster Rolls");
+						activityCourse.putExtra("list5_submenu",
+								"Lobster Tails Steamed in Beer");
+						activityCourse.putExtra("list6_submenu",
+								"Crab and Lobster Stuffed Mushrooms");
+						activityCourse.putExtra("list7_submenu",
+								"Steamed Lobster Tails");
+						activityCourse.putExtra("list8_submenu",
+								"Lobster Mornay Sauce");
+						activityCourse.putExtra("list9_submenu",
+								"Lobster Colorado");
 						activityCourse.putExtra("list10_submenu", "none");
 						activityCourse.putExtra("list11_submenu", "none");
 						activityCourse.putExtra("list12_submenu", "none");
@@ -2596,6 +2717,46 @@ public class Sub_Menu_Page extends Activity {
 						activityCourse.putExtras(extras);
 						Sub_Menu_Page.this.startActivity(activityCourse);
 						finish();
+					} else if (bt4_submeal.getText().toString()
+							.equals("Mussel Recipes")) {
+						Intent activityCourse = new Intent(Sub_Menu_Page.this,
+								Main_Recipe_Page.class);
+
+						activityCourse.putExtra("list1_submenu", "Cioppino");
+						activityCourse.putExtra("list2_submenu",
+								"Thai Steamed Mussels");
+						activityCourse.putExtra("list3_submenu",
+								"Mussels Mariniere");
+						activityCourse.putExtra("list4_submenu",
+								"Appetizer Mussels");
+						activityCourse.putExtra("list5_submenu",
+								"Drunken Mussels");
+						activityCourse
+								.putExtra("list6_submenu", "Love Mussels");
+						activityCourse.putExtra("list7_submenu",
+								"Mussels in Curry Cream Sauce");
+						activityCourse.putExtra("list8_submenu",
+								"Grilled Mussels with Curry Butter");
+						activityCourse.putExtra("list9_submenu",
+								"Mussels Mariniere");
+						activityCourse.putExtra("list10_submenu",
+								"Amazing Mussels");
+						activityCourse.putExtra("list11_submenu", "none");
+						activityCourse.putExtra("list12_submenu", "none");
+						activityCourse.putExtra("list13_submenu", "none");
+						activityCourse.putExtra("list14_submenu", "none");
+						activityCourse.putExtra("list15_submenu", "none");
+						activityCourse.putExtra("list16_submenu", "none");
+						activityCourse.putExtra("list17_submenu", "none");
+						activityCourse.putExtra("list18_submenu", "none");
+						activityCourse.putExtra("list19_submenu", "none");
+
+						// 3. or you can add data to a bundle
+						Bundle extras = new Bundle();
+						// 4. add bundle to intent
+						activityCourse.putExtras(extras);
+						Sub_Menu_Page.this.startActivity(activityCourse);
+						finish();
 					}
 				} else if (cookbook_subMeal
 						.equals("Occasions and Cooking Style")) {
@@ -3085,6 +3246,46 @@ public class Sub_Menu_Page extends Activity {
 						activityCourse.putExtras(extras);
 						Sub_Menu_Page.this.startActivity(activityCourse);
 						finish();
+					} else if (bt5_submeal.getText().toString()
+							.equals("Octopus and Squid Recipes")) {
+						Intent activityCourse = new Intent(Sub_Menu_Page.this,
+								Main_Recipe_Page.class);
+
+						activityCourse.putExtra("list1_submenu",
+								"Grammy's Calamari Salad");
+						activityCourse.putExtra("list2_submenu",
+								"Seafood Chowder");
+						activityCourse.putExtra("list3_submenu", "Calamari");
+						activityCourse.putExtra("list4_submenu",
+								"Buttermilk-Battered Calamari");
+						activityCourse.putExtra("list5_submenu",
+								"Shrimp and Octopus Soup");
+						activityCourse.putExtra("list6_submenu",
+								"Salt and Pepper Squid");
+						activityCourse.putExtra("list7_submenu",
+								"Calamari Macaronatha");
+						activityCourse.putExtra("list8_submenu",
+								"Greek Squid (Soupies)");
+						activityCourse.putExtra("list9_submenu",
+								"Calamari Salad");
+						activityCourse.putExtra("list10_submenu",
+								"Santiago's Stuffed Squid");
+						activityCourse.putExtra("list11_submenu", "none");
+						activityCourse.putExtra("list12_submenu", "none");
+						activityCourse.putExtra("list13_submenu", "none");
+						activityCourse.putExtra("list14_submenu", "none");
+						activityCourse.putExtra("list15_submenu", "none");
+						activityCourse.putExtra("list16_submenu", "none");
+						activityCourse.putExtra("list17_submenu", "none");
+						activityCourse.putExtra("list18_submenu", "none");
+						activityCourse.putExtra("list19_submenu", "none");
+
+						// 3. or you can add data to a bundle
+						Bundle extras = new Bundle();
+						// 4. add bundle to intent
+						activityCourse.putExtras(extras);
+						Sub_Menu_Page.this.startActivity(activityCourse);
+						finish();
 					}
 				} else if (cookbook_subMeal
 						.equals("Occasions and Cooking Style")) {
@@ -3555,6 +3756,46 @@ public class Sub_Menu_Page extends Activity {
 						activityCourse.putExtras(extras);
 						Sub_Menu_Page.this.startActivity(activityCourse);
 						finish();
+					} else if (bt6_submeal.getText().toString()
+							.equals("Oyster Recipes")) {
+						Intent activityCourse = new Intent(Sub_Menu_Page.this,
+								Main_Recipe_Page.class);
+
+						activityCourse.putExtra("list1_submenu", "Oyster Stew");
+						activityCourse.putExtra("list2_submenu",
+								"Rockin' Oysters Rockefeller");
+						activityCourse.putExtra("list3_submenu",
+								"Elegant Oyster Soup");
+						activityCourse.putExtra("list4_submenu",
+								"Oyster and Cornbread Dressing");
+						activityCourse.putExtra("list5_submenu",
+								"Smoked Oyster Spread");
+						activityCourse.putExtra("list6_submenu",
+								"Dorsey's Fried Oysters");
+						activityCourse.putExtra("list7_submenu",
+								"Oyster and Spinach Chowder");
+						activityCourse.putExtra("list8_submenu",
+								"Oyster Dressing");
+						activityCourse.putExtra("list9_submenu",
+								"Bayou Crostini");
+						activityCourse.putExtra("list10_submenu",
+								"Scalloped Oysters");
+						activityCourse.putExtra("list11_submenu", "none");
+						activityCourse.putExtra("list12_submenu", "none");
+						activityCourse.putExtra("list13_submenu", "none");
+						activityCourse.putExtra("list14_submenu", "none");
+						activityCourse.putExtra("list15_submenu", "none");
+						activityCourse.putExtra("list16_submenu", "none");
+						activityCourse.putExtra("list17_submenu", "none");
+						activityCourse.putExtra("list18_submenu", "none");
+						activityCourse.putExtra("list19_submenu", "none");
+
+						// 3. or you can add data to a bundle
+						Bundle extras = new Bundle();
+						// 4. add bundle to intent
+						activityCourse.putExtras(extras);
+						Sub_Menu_Page.this.startActivity(activityCourse);
+						finish();
 					}
 				} else if (cookbook_subMeal
 						.equals("Occasions and Cooking Style")) {
@@ -3906,6 +4147,47 @@ public class Sub_Menu_Page extends Activity {
 						activityCourse.putExtras(extras);
 						Sub_Menu_Page.this.startActivity(activityCourse);
 						finish();
+					} else if (bt7_submeal.getText().toString()
+							.equals("Shrimp Recipes")) {
+						Intent activityCourse = new Intent(Sub_Menu_Page.this,
+								Main_Recipe_Page.class);
+
+						activityCourse.putExtra("list1_submenu",
+								"Marinated Grilled Shrimp");
+						activityCourse.putExtra("list2_submenu",
+								"Szechwan Shrimp");
+						activityCourse.putExtra("list3_submenu",
+								"Shrimp Scampi Bake");
+						activityCourse.putExtra("list4_submenu",
+								"Peppered Shrimp Alfredo");
+						activityCourse.putExtra("list5_submenu",
+								"Shrimp Lemon Pepper Linguini");
+						activityCourse.putExtra("list6_submenu",
+								"Grilled Marinated Shrimp");
+						activityCourse.putExtra("list7_submenu",
+								"Cajun Seafood Pasta");
+						activityCourse.putExtra("list8_submenu",
+								"Creamy Pesto Shrimp");
+						activityCourse
+								.putExtra("list9_submenu", "Basil Shrimp");
+						activityCourse.putExtra("list10_submenu",
+								"Grilled Shrimp Scampi");
+						activityCourse.putExtra("list11_submenu", "none");
+						activityCourse.putExtra("list12_submenu", "none");
+						activityCourse.putExtra("list13_submenu", "none");
+						activityCourse.putExtra("list14_submenu", "none");
+						activityCourse.putExtra("list15_submenu", "none");
+						activityCourse.putExtra("list16_submenu", "none");
+						activityCourse.putExtra("list17_submenu", "none");
+						activityCourse.putExtra("list18_submenu", "none");
+						activityCourse.putExtra("list19_submenu", "none");
+
+						// 3. or you can add data to a bundle
+						Bundle extras = new Bundle();
+						// 4. add bundle to intent
+						activityCourse.putExtras(extras);
+						Sub_Menu_Page.this.startActivity(activityCourse);
+						finish();
 					}
 				} else if (cookbook_subMeal
 						.equals("Occasions and Cooking Style")) {
@@ -4180,6 +4462,47 @@ public class Sub_Menu_Page extends Activity {
 						activityCourse.putExtras(extras);
 						Sub_Menu_Page.this.startActivity(activityCourse);
 						finish();
+					} else if (bt8_submeal.getText().toString()
+							.equals("Crawfish Recipes")) {
+						Intent activityCourse = new Intent(Sub_Menu_Page.this,
+								Main_Recipe_Page.class);
+
+						activityCourse.putExtra("list1_submenu",
+								"Cajun Crawfish and Shrimp Etouffe");
+						activityCourse.putExtra("list2_submenu",
+								"Crawfish Chowder");
+						activityCourse.putExtra("list3_submenu",
+								"Louisiana Crawfish Etouffee");
+						activityCourse.putExtra("list4_submenu",
+								"Broccoli Crawfish Cheese Soup");
+						activityCourse.putExtra("list5_submenu",
+								"Crayfish or Shrimp Pasta");
+						activityCourse.putExtra("list6_submenu",
+								"Crawfish Linguine");
+						activityCourse.putExtra("list7_submenu",
+								"Crawfish and Corn Soup");
+						activityCourse
+								.putExtra("list8_submenu", "Crawfish Pie");
+						activityCourse.putExtra("list9_submenu",
+								"Cold Crawfish Dip");
+						activityCourse.putExtra("list10_submenu",
+								"Crawfish Cornbread");
+						activityCourse.putExtra("list11_submenu", "none");
+						activityCourse.putExtra("list12_submenu", "none");
+						activityCourse.putExtra("list13_submenu", "none");
+						activityCourse.putExtra("list14_submenu", "none");
+						activityCourse.putExtra("list15_submenu", "none");
+						activityCourse.putExtra("list16_submenu", "none");
+						activityCourse.putExtra("list17_submenu", "none");
+						activityCourse.putExtra("list18_submenu", "none");
+						activityCourse.putExtra("list19_submenu", "none");
+
+						// 3. or you can add data to a bundle
+						Bundle extras = new Bundle();
+						// 4. add bundle to intent
+						activityCourse.putExtras(extras);
+						Sub_Menu_Page.this.startActivity(activityCourse);
+						finish();
 					}
 				} else if (cookbook_subMeal
 						.equals("Occasions and Cooking Style")) {
@@ -4414,8 +4737,46 @@ public class Sub_Menu_Page extends Activity {
 						finish();
 					}
 				} else if (cookbook_subMeal.equals("Main Ingredients")) {
-					if (bt9_submeal.getText().toString().equals("")) {
+					if (bt9_submeal.getText().toString()
+							.equals("Scallop Recipes")) {
+						Intent activityCourse = new Intent(Sub_Menu_Page.this,
+								Main_Recipe_Page.class);
 
+						activityCourse.putExtra("list1_submenu",
+								"Baked Scallops");
+						activityCourse.putExtra("list2_submenu", "Cioppino");
+						activityCourse.putExtra("list3_submenu",
+								"Broiled Scallops");
+						activityCourse.putExtra("list4_submenu",
+								"Awesome Baked Sea Scallops");
+						activityCourse.putExtra("list5_submenu",
+								"Deb's Scallops Florentine");
+						activityCourse.putExtra("list6_submenu",
+								"Seared Sea Scallops");
+						activityCourse.putExtra("list7_submenu",
+								"Scallop Scampi");
+						activityCourse.putExtra("list8_submenu",
+								"Marinated Scallops Wrapped in Bacon");
+						activityCourse.putExtra("list9_submenu",
+								"Seafood Fettuccine");
+						activityCourse.putExtra("list10_submenu",
+								"Key West Penne");
+						activityCourse.putExtra("list11_submenu", "none");
+						activityCourse.putExtra("list12_submenu", "none");
+						activityCourse.putExtra("list13_submenu", "none");
+						activityCourse.putExtra("list14_submenu", "none");
+						activityCourse.putExtra("list15_submenu", "none");
+						activityCourse.putExtra("list16_submenu", "none");
+						activityCourse.putExtra("list17_submenu", "none");
+						activityCourse.putExtra("list18_submenu", "none");
+						activityCourse.putExtra("list19_submenu", "none");
+
+						// 3. or you can add data to a bundle
+						Bundle extras = new Bundle();
+						// 4. add bundle to intent
+						activityCourse.putExtras(extras);
+						Sub_Menu_Page.this.startActivity(activityCourse);
+						finish();
 					}
 				} else if (cookbook_subMeal
 						.equals("Occasions and Cooking Style")) {
