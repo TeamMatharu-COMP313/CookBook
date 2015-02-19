@@ -3,9 +3,16 @@ package com.teammatharu.cookbook;
 import java.util.ArrayList;
 import java.util.List;
 
-import android.app.Activity;
+import com.teammatharu.recipefragments.FragmentPageAdapter;
+
 import android.content.Intent;
 import android.os.Bundle;
+import android.app.ActionBar;  
+import android.app.ActionBar.OnNavigationListener;
+import android.app.ActionBar.Tab; 
+import android.app.FragmentTransaction;
+import android.support.v4.app.FragmentActivity;
+import android.support.v4.view.ViewPager;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -14,15 +21,20 @@ import android.widget.AdapterView.OnItemSelectedListener;
 import android.widget.ArrayAdapter;
 import android.widget.Spinner;
 
-public class Main_Recipe_Page extends Activity {
-
+public class Main_Recipe_Page extends FragmentActivity implements ActionBar.TabListener {
+	
+	ActionBar actionbar;  
+    ViewPager viewpager;  
+    FragmentPageAdapter ft;
+    ArrayAdapter<String> dataAdapter;
+	
+	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main__recipe__page);
-
 		// Spinner element
-		Spinner spinner = (Spinner) findViewById(R.id.spinner1);
+	//	Spinner spinner = (Spinner) findViewById(R.id.spinner1);
 
 		// 1. get passed intent
 		Intent intent = getIntent();
@@ -71,7 +83,7 @@ public class Main_Recipe_Page extends Activity {
 		categories.add(message19);
 
 		// Creating adapter for spinner
-		ArrayAdapter<String> dataAdapter = new ArrayAdapter<String>(this,
+		 dataAdapter = new ArrayAdapter<String>(this,
 				android.R.layout.simple_list_item_1, categories);
 		
 
@@ -172,6 +184,7 @@ public class Main_Recipe_Page extends Activity {
 	
 
 
+		/*
 		// attaching data adapter to spinner
 		spinner.setAdapter(dataAdapter);
 
@@ -192,7 +205,47 @@ public class Main_Recipe_Page extends Activity {
 
 			}
 		});
+		*/
 
+		//AFTER SETTING UP THE SPINNER
+		//setting up tab layout
+		viewpager = (ViewPager) findViewById(R.id.pager);  
+        ft = new FragmentPageAdapter(getSupportFragmentManager());  
+        actionbar = getActionBar(); 
+       
+        viewpager.setAdapter(ft);  
+        actionbar.setNavigationMode(ActionBar.NAVIGATION_MODE_TABS);  
+        actionbar.addTab(actionbar.newTab().setText("Image").setTabListener(this));  
+        actionbar.addTab(actionbar.newTab().setText("Ingredients").setTabListener(this));  
+        actionbar.addTab(actionbar.newTab().setText("Directions").setTabListener(this));
+		actionbar.addTab(actionbar.newTab().setText("Videos").setTabListener(this));
+        
+        viewpager.setOnPageChangeListener(new ViewPager.OnPageChangeListener() {  
+            @Override  
+            public void onPageSelected(int arg0) {  
+            actionbar.setSelectedNavigationItem(arg0);  
+            }  
+            @Override  
+            public void onPageScrolled(int arg0, float arg1, int arg2) {  
+                 // TODO Auto-generated method stub  
+            }  
+            @Override  
+            public void onPageScrollStateChanged(int arg0) {  
+                 // TODO Auto-generated method stub  
+            }  
+       }); 
+        
+        /*
+        actionbar.setListNavigationCallbacks(dataAdapter, new OnNavigationListener() {
+			
+			@Override
+			public boolean onNavigationItemSelected(int itemPosition, long itemId) {
+				// TODO Auto-generated method stub
+				return false;
+			}
+		});
+		*/
+		
 	}
 
 	@Override
@@ -221,5 +274,23 @@ public class Main_Recipe_Page extends Activity {
 				MainLandingPage.class);
 		Main_Recipe_Page.this.startActivity(activityIntent);
 		finish();
+	}
+
+	@Override
+	public void onTabReselected(Tab tab, FragmentTransaction ft) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void onTabSelected(Tab tab, FragmentTransaction ft) {
+		// TODO Auto-generated method stub
+		viewpager.setCurrentItem(tab.getPosition());  
+	}
+
+	@Override
+	public void onTabUnselected(Tab tab, FragmentTransaction ft) {
+		// TODO Auto-generated method stub
+		
 	}
 }

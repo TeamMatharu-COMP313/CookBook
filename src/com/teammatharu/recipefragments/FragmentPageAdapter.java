@@ -1,7 +1,7 @@
 /**
  * 
  */
-package com.teammatharu.cookbook.recipefragments;
+package com.teammatharu.recipefragments;
 
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
@@ -27,7 +27,20 @@ public class FragmentPageAdapter extends FragmentPagerAdapter {
 	@Override
 	public Fragment getItem(int arg0) {
 		// TODO Auto-generated method stub
-		return null;
+		 switch (arg0) {  
+		 case 0:
+			 return new RecipeImage();
+		 case 1:
+			 return new RecipeIngredients();
+		 case 2:
+			 return new RecipeDirections();
+		 case 3:
+			 return new RecipeVideo();
+			 
+         default:  
+              break;  
+         }  
+         return null;
 	}
 
 	/* (non-Javadoc)
@@ -36,7 +49,7 @@ public class FragmentPageAdapter extends FragmentPagerAdapter {
 	@Override
 	public int getCount() {
 		// TODO Auto-generated method stub
-		return 0;
+		return 4;
 	}
 
 }

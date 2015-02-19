@@ -9,5 +9,6 @@
     <string name="title_activity_sub__meal__page">CookBook</string>
     <string name="title_activity_sub__menu__page">CookBook</string>
     <string name="title_activity_main__recipe__page">CookBook</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 
 </resources>
