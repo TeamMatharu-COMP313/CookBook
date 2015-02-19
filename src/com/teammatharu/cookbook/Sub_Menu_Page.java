@@ -811,8 +811,46 @@ public class Sub_Menu_Page extends Activity {
 					}
 				} else if (cookbook_subMeal
 						.equals("Occasions and Cooking Style")) {
-					if (bt1_submeal.getText().toString().equals("")) {
+					if (bt1_submeal.getText().toString().equals("Grilled Beef")) {
+						Intent activityCourse = new Intent(Sub_Menu_Page.this,
+								Main_Recipe_Page.class);
+						// 2. put key/value data
 
+						activityCourse.putExtra("list1_submenu",
+								"World's Best Lasagna");
+						activityCourse.putExtra("list2_submenu",
+								"Brown Sugar Meatloaf");
+						activityCourse.putExtra("list3_submenu", "Baked Ziti");
+						activityCourse.putExtra("list4_submenu",
+								"Savory Garlic Marinated Steaks");
+						activityCourse.putExtra("list5_submenu",
+								"Bacon Wrapped Hamburgers");
+						activityCourse.putExtra("list6_submenu",
+								"Steak Tip Marinade");
+						activityCourse.putExtra("list7_submenu",
+								"Asian Beef Skewers");
+						activityCourse.putExtra("list8_submenu",
+								"Smothered Filet Mignon");
+						activityCourse.putExtra("list9_submenu",
+								"Grilled Delmonico Steaks");
+						activityCourse.putExtra("list10_submenu",
+								"London Broil");
+						activityCourse.putExtra("list11_submenu", "none");
+						activityCourse.putExtra("list12_submenu", "none");
+						activityCourse.putExtra("list13_submenu", "none");
+						activityCourse.putExtra("list14_submenu", "none");
+						activityCourse.putExtra("list15_submenu", "none");
+						activityCourse.putExtra("list16_submenu", "none");
+						activityCourse.putExtra("list17_submenu", "none");
+						activityCourse.putExtra("list18_submenu", "none");
+						activityCourse.putExtra("list19_submenu", "none");
+
+						// 3. or you can add data to a bundle
+						Bundle extras = new Bundle();
+						// 4. add bundle to intent
+						activityCourse.putExtras(extras);
+						Sub_Menu_Page.this.startActivity(activityCourse);
+						finish();
 					}
 				}
 
@@ -1465,8 +1503,50 @@ public class Sub_Menu_Page extends Activity {
 					}
 				} else if (cookbook_subMeal
 						.equals("Occasions and Cooking Style")) {
-					if (bt2_submeal.getText().toString().equals("")) {
+					if (bt2_submeal.getText().toString()
+							.equals("Grilled Chicken")) {
+						Intent activityCourse = new Intent(Sub_Menu_Page.this,
+								Main_Recipe_Page.class);
+						// 2. put key/value data
 
+						activityCourse.putExtra("list1_submenu",
+								"Lemon Pepper Grilled Chicken");
+						activityCourse.putExtra("list2_submenu",
+								"Yummy Honey Chicken Kabobs");
+						activityCourse.putExtra("list3_submenu",
+								"Chicken Tikka Masala");
+						activityCourse.putExtra("list4_submenu",
+								"Beer Butt Chicken");
+						activityCourse.putExtra("list5_submenu",
+								"Unbelievable Chicken");
+						activityCourse.putExtra("list6_submenu",
+								"Shoyu Chicken");
+						activityCourse.putExtra("list7_submenu",
+								"Jay's Jerk Chicken");
+						activityCourse.putExtra("list8_submenu",
+								"Spicy Chicken Breasts");
+						activityCourse.putExtra("list9_submenu",
+								"Chicken Souvlaki Gyro Style");
+						activityCourse.putExtra("list10_submenu",
+								"London Broil");
+						activityCourse.putExtra("list11_submenu",
+								"Chicken Satay");
+						activityCourse.putExtra("list12_submenu",
+								"Delectable Marinated Chicken");
+						activityCourse.putExtra("list13_submenu", "none");
+						activityCourse.putExtra("list14_submenu", "none");
+						activityCourse.putExtra("list15_submenu", "none");
+						activityCourse.putExtra("list16_submenu", "none");
+						activityCourse.putExtra("list17_submenu", "none");
+						activityCourse.putExtra("list18_submenu", "none");
+						activityCourse.putExtra("list19_submenu", "none");
+
+						// 3. or you can add data to a bundle
+						Bundle extras = new Bundle();
+						// 4. add bundle to intent
+						activityCourse.putExtras(extras);
+						Sub_Menu_Page.this.startActivity(activityCourse);
+						finish();
 					}
 				}
 			}
@@ -2111,8 +2191,44 @@ public class Sub_Menu_Page extends Activity {
 					}
 				} else if (cookbook_subMeal
 						.equals("Occasions and Cooking Style")) {
-					if (bt3_submeal.getText().toString().equals("")) {
+					if (bt3_submeal.getText().toString()
+							.equals("Grilled Fruits")) {
+						Intent activityCourse = new Intent(Sub_Menu_Page.this,
+								Main_Recipe_Page.class);
+						// 2. put key/value data
 
+						activityCourse.putExtra("list1_submenu",
+								"Barbequed Pineapple");
+						activityCourse.putExtra("list2_submenu",
+								"Grilled Pineapple Slices");
+						activityCourse.putExtra("list3_submenu",
+								"Bellyful of Barbecued Bananas");
+						activityCourse.putExtra("list4_submenu",
+								"Grilled Peaches");
+						activityCourse.putExtra("list5_submenu", "Hobo Pie");
+						activityCourse.putExtra("list6_submenu",
+								"Grilled Fruit Kabobs");
+						activityCourse.putExtra("list7_submenu",
+								"Grilled Pineapple Butterscotch Sundaes");
+						activityCourse.putExtra("list8_submenu", "none");
+						activityCourse.putExtra("list9_submenu", "none");
+						activityCourse.putExtra("list10_submenu", "none");
+						activityCourse.putExtra("list11_submenu", "none");
+						activityCourse.putExtra("list12_submenu", "none");
+						activityCourse.putExtra("list13_submenu", "none");
+						activityCourse.putExtra("list14_submenu", "none");
+						activityCourse.putExtra("list15_submenu", "none");
+						activityCourse.putExtra("list16_submenu", "none");
+						activityCourse.putExtra("list17_submenu", "none");
+						activityCourse.putExtra("list18_submenu", "none");
+						activityCourse.putExtra("list19_submenu", "none");
+
+						// 3. or you can add data to a bundle
+						Bundle extras = new Bundle();
+						// 4. add bundle to intent
+						activityCourse.putExtras(extras);
+						Sub_Menu_Page.this.startActivity(activityCourse);
+						finish();
 					}
 				}
 			}
@@ -2760,8 +2876,48 @@ public class Sub_Menu_Page extends Activity {
 					}
 				} else if (cookbook_subMeal
 						.equals("Occasions and Cooking Style")) {
-					if (bt4_submeal.getText().toString().equals("")) {
+					if (bt4_submeal.getText().toString().equals("Grilled Lamb")) {
+						Intent activityCourse = new Intent(Sub_Menu_Page.this,
+								Main_Recipe_Page.class);
+						// 2. put key/value data
 
+						activityCourse.putExtra("list1_submenu",
+								"Gyros Burgers");
+						activityCourse.putExtra("list2_submenu",
+								"Simple Grilled Lamb Chops");
+						activityCourse
+								.putExtra("list3_submenu", "Kofta Kebabs");
+						activityCourse.putExtra("list4_submenu",
+								"Indian Style Sheekh Kabab");
+						activityCourse.putExtra("list5_submenu", "Dale's Lamb");
+						activityCourse.putExtra("list6_submenu",
+								"Serbian Cevapcici");
+						activityCourse.putExtra("list7_submenu",
+								"Spicy Lamb Patties");
+						activityCourse.putExtra("list8_submenu",
+								"Herbed Lamb Chops");
+						activityCourse.putExtra("list9_submenu",
+								"Lemon and Thyme Lamb Chops");
+						activityCourse.putExtra("list10_submenu",
+								"Grilled Lamb Burgers");
+						activityCourse.putExtra("list11_submenu",
+								"Armenian Shish Kabob");
+						activityCourse.putExtra("list12_submenu",
+								"Chef John's Grilled Lamb Steaks");
+						activityCourse.putExtra("list13_submenu", "none");
+						activityCourse.putExtra("list14_submenu", "none");
+						activityCourse.putExtra("list15_submenu", "none");
+						activityCourse.putExtra("list16_submenu", "none");
+						activityCourse.putExtra("list17_submenu", "none");
+						activityCourse.putExtra("list18_submenu", "none");
+						activityCourse.putExtra("list19_submenu", "none");
+
+						// 3. or you can add data to a bundle
+						Bundle extras = new Bundle();
+						// 4. add bundle to intent
+						activityCourse.putExtras(extras);
+						Sub_Menu_Page.this.startActivity(activityCourse);
+						finish();
 					}
 				}
 			}
@@ -3289,8 +3445,48 @@ public class Sub_Menu_Page extends Activity {
 					}
 				} else if (cookbook_subMeal
 						.equals("Occasions and Cooking Style")) {
-					if (bt5_submeal.getText().toString().equals("")) {
+					if (bt5_submeal.getText().toString().equals("Grilled Pork")) {
+						Intent activityCourse = new Intent(Sub_Menu_Page.this,
+								Main_Recipe_Page.class);
+						// 2. put key/value data
 
+						activityCourse.putExtra("list1_submenu",
+								"Simple Country Ribs");
+						activityCourse.putExtra("list2_submenu",
+								"Fiery Pork Skewers");
+						activityCourse.putExtra("list3_submenu",
+								"North Carolina-Style Pulled Pork");
+						activityCourse.putExtra("list4_submenu",
+								"Grilled Brown Sugar Pork Chops");
+						activityCourse.putExtra("list5_submenu",
+								"Fiery Pork Skewers");
+						activityCourse.putExtra("list6_submenu",
+								"Chipotle Crusted Pork Tenderloin");
+						activityCourse.putExtra("list7_submenu", "Souvlaki");
+						activityCourse.putExtra("list8_submenu",
+								"Marinated Pork Tenderloin");
+						activityCourse.putExtra("list9_submenu",
+								"Grilled Lemon Herb Pork Chops");
+						activityCourse.putExtra("list10_submenu",
+								"Simple Country Ribs");
+						activityCourse.putExtra("list11_submenu",
+								"Cheddar Bacon Hamburgers");
+						activityCourse.putExtra("list12_submenu",
+								"Smoky Grilled Pork Chops");
+						activityCourse.putExtra("list13_submenu", "none");
+						activityCourse.putExtra("list14_submenu", "none");
+						activityCourse.putExtra("list15_submenu", "none");
+						activityCourse.putExtra("list16_submenu", "none");
+						activityCourse.putExtra("list17_submenu", "none");
+						activityCourse.putExtra("list18_submenu", "none");
+						activityCourse.putExtra("list19_submenu", "none");
+
+						// 3. or you can add data to a bundle
+						Bundle extras = new Bundle();
+						// 4. add bundle to intent
+						activityCourse.putExtras(extras);
+						Sub_Menu_Page.this.startActivity(activityCourse);
+						finish();
 					}
 				}
 			}
@@ -3799,8 +3995,50 @@ public class Sub_Menu_Page extends Activity {
 					}
 				} else if (cookbook_subMeal
 						.equals("Occasions and Cooking Style")) {
-					if (bt6_submeal.getText().toString().equals("")) {
+					if (bt6_submeal.getText().toString()
+							.equals("Grilled Salads")) {
+						Intent activityCourse = new Intent(Sub_Menu_Page.this,
+								Main_Recipe_Page.class);
+						// 2. put key/value data
 
+						activityCourse.putExtra("list1_submenu",
+								"BBQ Chicken Salad");
+						activityCourse.putExtra("list2_submenu",
+								"Southwestern Roasted Corn Salad");
+						activityCourse.putExtra("list3_submenu",
+								"Amy's Barbecue Chicken Salad");
+						activityCourse.putExtra("list4_submenu",
+								"Caribbean Chicken Salad");
+						activityCourse.putExtra("list5_submenu",
+								"Chicken Berry Salad");
+						activityCourse.putExtra("list6_submenu",
+								"Flat Iron Steak and Spinach Salad");
+						activityCourse.putExtra("list7_submenu",
+								"Lime Grilled Chicken Caesar Salad");
+						activityCourse.putExtra("list8_submenu",
+								"Grilled Corn Salad");
+						activityCourse.putExtra("list9_submenu",
+								"Grilled Wonton Chicken Salad");
+						activityCourse.putExtra("list10_submenu",
+								"Grilled Vegetable Salad");
+						activityCourse.putExtra("list11_submenu",
+								"Grilled Tuna Salad");
+						activityCourse.putExtra("list12_submenu",
+								"Grilled Pepper Steak Salad");
+						activityCourse.putExtra("list13_submenu", "none");
+						activityCourse.putExtra("list14_submenu", "none");
+						activityCourse.putExtra("list15_submenu", "none");
+						activityCourse.putExtra("list16_submenu", "none");
+						activityCourse.putExtra("list17_submenu", "none");
+						activityCourse.putExtra("list18_submenu", "none");
+						activityCourse.putExtra("list19_submenu", "none");
+
+						// 3. or you can add data to a bundle
+						Bundle extras = new Bundle();
+						// 4. add bundle to intent
+						activityCourse.putExtras(extras);
+						Sub_Menu_Page.this.startActivity(activityCourse);
+						finish();
 					}
 				}
 			}
@@ -4191,8 +4429,50 @@ public class Sub_Menu_Page extends Activity {
 					}
 				} else if (cookbook_subMeal
 						.equals("Occasions and Cooking Style")) {
-					if (bt7_submeal.getText().toString().equals("")) {
+					if (bt7_submeal.getText().toString()
+							.equals("Grilled Seafood")) {
+						Intent activityCourse = new Intent(Sub_Menu_Page.this,
+								Main_Recipe_Page.class);
+						// 2. put key/value data
 
+						activityCourse.putExtra("list1_submenu",
+								"Grilled Salmon");
+						activityCourse
+								.putExtra("list2_submenu", "Basil Shrimp");
+						activityCourse.putExtra("list3_submenu",
+								"Spicy Grilled Shrimp");
+						activityCourse.putExtra("list4_submenu",
+								"Grilled Tilapia with Mango Salsa");
+						activityCourse.putExtra("list5_submenu",
+								"Cedar Planked Salmon");
+						activityCourse.putExtra("list6_submenu",
+								"Heather's Grilled Salmon");
+						activityCourse.putExtra("list7_submenu",
+								"Grilled Fish Steaks");
+						activityCourse.putExtra("list8_submenu",
+								"Slammin' Salmon");
+						activityCourse.putExtra("list9_submenu",
+								"Grilled Sea Bass");
+						activityCourse.putExtra("list10_submenu",
+								"Salmon Tango");
+						activityCourse.putExtra("list11_submenu",
+								"Grilled Swordfish with Rosemary");
+						activityCourse.putExtra("list12_submenu",
+								"Grilled Salmon Kyoto");
+						activityCourse.putExtra("list13_submenu", "none");
+						activityCourse.putExtra("list14_submenu", "none");
+						activityCourse.putExtra("list15_submenu", "none");
+						activityCourse.putExtra("list16_submenu", "none");
+						activityCourse.putExtra("list17_submenu", "none");
+						activityCourse.putExtra("list18_submenu", "none");
+						activityCourse.putExtra("list19_submenu", "none");
+
+						// 3. or you can add data to a bundle
+						Bundle extras = new Bundle();
+						// 4. add bundle to intent
+						activityCourse.putExtras(extras);
+						Sub_Menu_Page.this.startActivity(activityCourse);
+						finish();
 					}
 				}
 			}
@@ -4506,8 +4786,49 @@ public class Sub_Menu_Page extends Activity {
 					}
 				} else if (cookbook_subMeal
 						.equals("Occasions and Cooking Style")) {
-					if (bt8_submeal.getText().toString().equals("")) {
+					if (bt8_submeal.getText().toString()
+							.equals("Grilled Turkey")) {
+						Intent activityCourse = new Intent(Sub_Menu_Page.this,
+								Main_Recipe_Page.class);
+						// 2. put key/value data
 
+						activityCourse.putExtra("list1_submenu",
+								"Perfect Turkey");
+						activityCourse.putExtra("list2_submenu",
+								"Turkey and Quinoa Meatloaf");
+						activityCourse.putExtra("list3_submenu",
+								"Simple Turkey Chili");
+						activityCourse.putExtra("list4_submenu",
+								"Turkey Burgers");
+						activityCourse.putExtra("list5_submenu",
+								"Pumpkin Turkey Chili");
+						activityCourse.putExtra("list6_submenu",
+								"Rosemary Roasted Turkey");
+						activityCourse.putExtra("list7_submenu",
+								"Easy Herb Roasted Turkey");
+						activityCourse.putExtra("list8_submenu",
+								"Maple Roast Turkey");
+						activityCourse.putExtra("list9_submenu",
+								"Leftover Turkey Casserole");
+						activityCourse.putExtra("list10_submenu",
+								"Turkey Enchiladas");
+						activityCourse.putExtra("list11_submenu",
+								"Turkey 'n Stuffing Bake");
+						activityCourse.putExtra("list12_submenu", "none");
+						activityCourse.putExtra("list13_submenu", "none");
+						activityCourse.putExtra("list14_submenu", "none");
+						activityCourse.putExtra("list15_submenu", "none");
+						activityCourse.putExtra("list16_submenu", "none");
+						activityCourse.putExtra("list17_submenu", "none");
+						activityCourse.putExtra("list18_submenu", "none");
+						activityCourse.putExtra("list19_submenu", "none");
+
+						// 3. or you can add data to a bundle
+						Bundle extras = new Bundle();
+						// 4. add bundle to intent
+						activityCourse.putExtras(extras);
+						Sub_Menu_Page.this.startActivity(activityCourse);
+						finish();
 					}
 				}
 			}
@@ -4780,8 +5101,50 @@ public class Sub_Menu_Page extends Activity {
 					}
 				} else if (cookbook_subMeal
 						.equals("Occasions and Cooking Style")) {
-					if (bt9_submeal.getText().toString().equals("")) {
+					if (bt9_submeal.getText().toString()
+							.equals("Grilled vegetables")) {
+						Intent activityCourse = new Intent(Sub_Menu_Page.this,
+								Main_Recipe_Page.class);
+						// 2. put key/value data
 
+						activityCourse.putExtra("list1_submenu",
+								"Grilled Potatoes and Onion");
+						activityCourse.putExtra("list2_submenu",
+								"Grilled Corn on the Cob");
+						activityCourse.putExtra("list3_submenu",
+								"Grilled Garlic Artichokes");
+						activityCourse.putExtra("list4_submenu",
+								"Quick and Easy Grilled Potatoes");
+						activityCourse.putExtra("list5_submenu",
+								"Grilled Yellow Squash");
+						activityCourse.putExtra("list6_submenu",
+								"Marinated Veggies");
+						activityCourse.putExtra("list7_submenu",
+								"Foil Wrapped Veggies");
+						activityCourse.putExtra("list8_submenu",
+								"Eggplant Mixed Grill");
+						activityCourse.putExtra("list9_submenu",
+								"Killer Artichokes");
+						activityCourse.putExtra("list10_submenu",
+								"Barbequed Cabbage");
+						activityCourse.putExtra("list11_submenu",
+								"Campfire Potatoes");
+						activityCourse.putExtra("list12_submenu",
+								"Grilled Zucchini");
+						activityCourse.putExtra("list13_submenu", "none");
+						activityCourse.putExtra("list14_submenu", "none");
+						activityCourse.putExtra("list15_submenu", "none");
+						activityCourse.putExtra("list16_submenu", "none");
+						activityCourse.putExtra("list17_submenu", "none");
+						activityCourse.putExtra("list18_submenu", "none");
+						activityCourse.putExtra("list19_submenu", "none");
+
+						// 3. or you can add data to a bundle
+						Bundle extras = new Bundle();
+						// 4. add bundle to intent
+						activityCourse.putExtras(extras);
+						Sub_Menu_Page.this.startActivity(activityCourse);
+						finish();
 					}
 				}
 			}
