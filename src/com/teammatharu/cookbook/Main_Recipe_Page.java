@@ -22,6 +22,7 @@ public class Main_Recipe_Page extends Activity {
 		setContentView(R.layout.activity_main__recipe__page);
 
 		// Spinner element
+		//yest 
 		Spinner spinner = (Spinner) findViewById(R.id.spinner1);
 
 		// 1. get passed intent
