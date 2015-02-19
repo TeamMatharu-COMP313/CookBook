@@ -23,7 +23,6 @@ public class Main_Recipe_Page extends Activity {
 
 		// Spinner element
 		Spinner spinner = (Spinner) findViewById(R.id.spinner1);
-		
 
 		// 1. get passed intent
 		Intent intent = getIntent();
