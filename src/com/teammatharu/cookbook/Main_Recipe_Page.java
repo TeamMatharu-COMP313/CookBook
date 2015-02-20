@@ -3,9 +3,12 @@ package com.teammatharu.cookbook;
 import java.util.ArrayList;
 import java.util.List;
 
-import android.app.Activity;
+import com.teammatharu.recipefragments.MainRecipeFragment;
+
 import android.content.Intent;
 import android.os.Bundle;
+import android.app.Activity;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -14,13 +17,16 @@ import android.widget.AdapterView.OnItemSelectedListener;
 import android.widget.ArrayAdapter;
 import android.widget.Spinner;
 
-public class Main_Recipe_Page extends Activity {
-
+public class Main_Recipe_Page extends Activity  {
+	
+	
+    ArrayAdapter<String> dataAdapter;
+	
+	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main__recipe__page);
-
 		// Spinner element
 		//yest 
 		Spinner spinner = (Spinner) findViewById(R.id.spinner1);
@@ -28,6 +34,7 @@ public class Main_Recipe_Page extends Activity {
 		// 1. get passed intent
 		Intent intent = getIntent();
 		// 2. get message value from intent
+		String message0="Please Select From This List";
 		String message1 = intent.getStringExtra("list1_submenu");
 		String message2 = intent.getStringExtra("list2_submenu");
 		String message3 = intent.getStringExtra("list3_submenu");
@@ -51,6 +58,7 @@ public class Main_Recipe_Page extends Activity {
 		
 		// Spinner Drop down elements
 		List<String> categories = new ArrayList<String>();
+		categories.add(message0);
 		categories.add(message1);
 		categories.add(message2);
 		categories.add(message3);
@@ -72,7 +80,7 @@ public class Main_Recipe_Page extends Activity {
 		categories.add(message19);
 
 		// Creating adapter for spinner
-		ArrayAdapter<String> dataAdapter = new ArrayAdapter<String>(this,
+		 dataAdapter = new ArrayAdapter<String>(this,
 				android.R.layout.simple_list_item_1, categories);
 		
 
@@ -173,27 +181,42 @@ public class Main_Recipe_Page extends Activity {
 	
 
 
+		
 		// attaching data adapter to spinner
 		spinner.setAdapter(dataAdapter);
 
 		spinner.setOnItemSelectedListener(new OnItemSelectedListener() {
 
+			//int count=0;
 			@Override
 			public void onItemSelected(AdapterView<?> parent, View view,
 					int position, long id) {
 				// TODO Auto-generated method stub
 				// On selecting a spinner item
-			// item = parent.getItemAtPosition(position).toString();
+			//	count++;
+			//	Log.d("on Select",count+"");
+				String item = parent.getItemAtPosition(position).toString();
+				if(item!="Please Select From This List"){
+				Intent i=new Intent(Main_Recipe_Page.this, MainRecipeFragment.class);
+				i.putExtra("item", item);
+				startActivity(i);
+				finish();
+				}
 
 			}
+			
+			
+			
 
 			@Override
 			public void onNothingSelected(AdapterView<?> parent) {
 				// TODO Auto-generated method stub
 
 			}
-		});
 
+		
+		});
+	
 	}
 
 	@Override
@@ -223,4 +246,6 @@ public class Main_Recipe_Page extends Activity {
 		Main_Recipe_Page.this.startActivity(activityIntent);
 		finish();
 	}
+
+	
 }
