@@ -3,16 +3,12 @@ package com.teammatharu.cookbook;
 import java.util.ArrayList;
 import java.util.List;
 
-import com.teammatharu.recipefragments.FragmentPageAdapter;
+import com.teammatharu.recipefragments.MainRecipeFragment;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.app.ActionBar;  
-import android.app.ActionBar.OnNavigationListener;
-import android.app.ActionBar.Tab; 
-import android.app.FragmentTransaction;
-import android.support.v4.app.FragmentActivity;
-import android.support.v4.view.ViewPager;
+import android.app.Activity;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -21,11 +17,9 @@ import android.widget.AdapterView.OnItemSelectedListener;
 import android.widget.ArrayAdapter;
 import android.widget.Spinner;
 
-public class Main_Recipe_Page extends FragmentActivity implements ActionBar.TabListener {
+public class Main_Recipe_Page extends Activity  {
 	
-	ActionBar actionbar;  
-    ViewPager viewpager;  
-    FragmentPageAdapter ft;
+	
     ArrayAdapter<String> dataAdapter;
 	
 	
@@ -34,11 +28,12 @@ public class Main_Recipe_Page extends FragmentActivity implements ActionBar.TabL
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main__recipe__page);
 		// Spinner element
-	//	Spinner spinner = (Spinner) findViewById(R.id.spinner1);
+		Spinner spinner = (Spinner) findViewById(R.id.spinner1);
 
 		// 1. get passed intent
 		Intent intent = getIntent();
 		// 2. get message value from intent
+		String message0="Please Select From This List";
 		String message1 = intent.getStringExtra("list1_submenu");
 		String message2 = intent.getStringExtra("list2_submenu");
 		String message3 = intent.getStringExtra("list3_submenu");
@@ -62,6 +57,7 @@ public class Main_Recipe_Page extends FragmentActivity implements ActionBar.TabL
 		
 		// Spinner Drop down elements
 		List<String> categories = new ArrayList<String>();
+		categories.add(message0);
 		categories.add(message1);
 		categories.add(message2);
 		categories.add(message3);
@@ -184,68 +180,42 @@ public class Main_Recipe_Page extends FragmentActivity implements ActionBar.TabL
 	
 
 
-		/*
+		
 		// attaching data adapter to spinner
 		spinner.setAdapter(dataAdapter);
 
 		spinner.setOnItemSelectedListener(new OnItemSelectedListener() {
 
+			//int count=0;
 			@Override
 			public void onItemSelected(AdapterView<?> parent, View view,
 					int position, long id) {
 				// TODO Auto-generated method stub
 				// On selecting a spinner item
-			// item = parent.getItemAtPosition(position).toString();
+			//	count++;
+			//	Log.d("on Select",count+"");
+				String item = parent.getItemAtPosition(position).toString();
+				if(item!="Please Select From This List"){
+				Intent i=new Intent(Main_Recipe_Page.this, MainRecipeFragment.class);
+				i.putExtra("item", item);
+				startActivity(i);
+				finish();
+				}
 
 			}
+			
+			
+			
 
 			@Override
 			public void onNothingSelected(AdapterView<?> parent) {
 				// TODO Auto-generated method stub
 
 			}
-		});
-		*/
 
-		//AFTER SETTING UP THE SPINNER
-		//setting up tab layout
-		viewpager = (ViewPager) findViewById(R.id.pager);  
-        ft = new FragmentPageAdapter(getSupportFragmentManager());  
-        actionbar = getActionBar(); 
-       
-        viewpager.setAdapter(ft);  
-        actionbar.setNavigationMode(ActionBar.NAVIGATION_MODE_TABS);  
-        actionbar.addTab(actionbar.newTab().setText("Image").setTabListener(this));  
-        actionbar.addTab(actionbar.newTab().setText("Ingredients").setTabListener(this));  
-        actionbar.addTab(actionbar.newTab().setText("Directions").setTabListener(this));
-		actionbar.addTab(actionbar.newTab().setText("Videos").setTabListener(this));
-        
-        viewpager.setOnPageChangeListener(new ViewPager.OnPageChangeListener() {  
-            @Override  
-            public void onPageSelected(int arg0) {  
-            actionbar.setSelectedNavigationItem(arg0);  
-            }  
-            @Override  
-            public void onPageScrolled(int arg0, float arg1, int arg2) {  
-                 // TODO Auto-generated method stub  
-            }  
-            @Override  
-            public void onPageScrollStateChanged(int arg0) {  
-                 // TODO Auto-generated method stub  
-            }  
-       }); 
-        
-        /*
-        actionbar.setListNavigationCallbacks(dataAdapter, new OnNavigationListener() {
-			
-			@Override
-			public boolean onNavigationItemSelected(int itemPosition, long itemId) {
-				// TODO Auto-generated method stub
-				return false;
-			}
-		});
-		*/
 		
+		});
+	
 	}
 
 	@Override
@@ -276,21 +246,5 @@ public class Main_Recipe_Page extends FragmentActivity implements ActionBar.TabL
 		finish();
 	}
 
-	@Override
-	public void onTabReselected(Tab tab, FragmentTransaction ft) {
-		// TODO Auto-generated method stub
-		
-	}
-
-	@Override
-	public void onTabSelected(Tab tab, FragmentTransaction ft) {
-		// TODO Auto-generated method stub
-		viewpager.setCurrentItem(tab.getPosition());  
-	}
-
-	@Override
-	public void onTabUnselected(Tab tab, FragmentTransaction ft) {
-		// TODO Auto-generated method stub
-		
-	}
+	
 }
