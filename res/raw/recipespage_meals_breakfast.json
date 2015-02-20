@@ -1,0 +1,123 @@
+{
+"btnname_recipe_page_breakfast_drinks":[
+{"bt1_recipepage":"Mocha Coffee"},
+{"bt2_recipepage":"Easy Iced Coffee"},
+{"bt3_recipepage":"Pumpkin Spiced Latte"},
+{"bt4_recipepage":"Iced Mocha Fusion Shake"},
+{"bt5_recipepage":"Gunline Coffee"},
+{"bt6_recipepage":"Coffee Shake"},
+
+{"bt7_recipepage":"Peanut Buttercup Hot Chocolate"},
+{"bt8_recipepage":"Homestyle Hot Cocoa"},
+
+{"bt9_recipepage":"Cool Fizzies for the Kiddies"},
+{"bt10_recipepage":"Green Lemonade"},
+{"bt11_recipepage":"Strawberry Soda Syrup"},
+{"bt12_recipepage":"Fresh, Homemade Apple Juice"},
+{"bt13_recipepage":"Banana Juice"},
+{"bt14_recipepage":"Orange Fizz"},
+{"bt15_recipepage":"Lemonade-Mint Iced Tea"},
+{"bt16_recipepage":"Spiced Tea Mix"},
+{"bt17_recipepage":"Peach Tea"},
+{"bt18_recipepage":"Masala Chai"},
+{"bt19_recipepage":"Green Tea Berry Delight"}
+
+],
+
+
+
+"btnname_recipe_page_breakfast_Egg":[
+{"bt1_recipepage":"Tangy Egg Salad Spread"},
+{"bt2_recipepage":"Egg Salad with a Kick"},
+{"bt3_recipepage":"Egg Salad Sandwiches"},
+{"bt4_recipepage":"Loaded Egg Salad"},
+{"bt5_recipepage":"Tomato Basil Egg Salad Sandwich"},
+{"bt6_recipepage":"Easy Egg Salad"},
+{"bt7_recipepage":"Avocado Egg Salad"},
+{"bt8_recipepage":"Magical Egg Salad"},
+{"bt9_recipepage":"Perfect Deviled Eggs"},
+{"bt10_recipepage":"Spicy Deviled Eggs"},
+{"bt11_recipepage":"Guacamole Deviled Eggs"},
+{"bt12_recipepage":"Potato Salad Deviled Eggs"},
+{"bt13_recipepage":"Shrimp and Dill Deviled Eggs"}
+],
+
+
+
+"btnname_recipe_page_breakfast_meatandseafood":[
+{"bt1_recipepage":"Barbie's Tuna Salad"},
+{"bt2_recipepage":"Tuna Fish Salad"},
+{"bt3_recipepage":"Seafood Pasta Salad"},
+{"bt4_recipepage":"Shrimply Delicious Shrimp Salad"},
+{"bt5_recipepage":"Cold Tuna Macaroni Salad"},
+{"bt6_recipepage":"Zesty Tuna Salad"},
+{"bt7_recipepage":"California Roll Salad"},
+{"bt8_recipepage":"Crab Ceviche"},
+{"bt9_recipepage":"Crab Salad"},
+{"bt10_recipepage":"Thai Noodle Salad"},
+{"bt11_recipepage":"Shrimp Couscous Salad"},
+{"bt12_recipepage":"Cobb Salad"},
+{"bt13_recipepage":"Parmesan and Basil Chicken Salad"},
+{"bt14_recipepage":"Amy's Barbecue Chicken Salad"},
+{"bt15_recipepage":"Feta Chicken Salad"},
+{"bt16_recipepage":"Asian Chicken Noodle Salad"},
+{"bt17_recipepage":"Mandarin Chicken Pasta Salad"}
+],
+
+
+
+"btnname_recipe_page_breakfast_crepes":[
+{"bt1_recipepage":"Dessert Crepes"},
+{"bt2_recipepage":"French Crepes"},
+{"bt3_recipepage":"Banana Crepes"},
+{"bt4_recipepage":"Vanilla Crepes"},
+{"bt5_recipepage":"Creamy Strawberry Crepes"},
+{"bt6_recipepage":"Barbarella's German Pancakes"},
+{"bt7_recipepage":"Egg-White Crepes"},
+{"bt8_recipepage":"Chocolate Hazelnut Fruit Crepes"},
+{"bt9_recipepage":"Vegan Crepes"},
+{"bt10_recipepage":"Strawberry Crepes"}
+],
+
+
+
+"btnname_recipe_page_breakfast_frenchtoast":[
+{"bt1_recipepage":"Fluffy French Toast"},
+{"bt2_recipepage":"Creme Brulee French Toast"},
+{"bt3_recipepage":"French Toast Souffle"},
+{"bt4_recipepage":"Orange Pecan French Toast"},
+{"bt5_recipepage":"Blueberry French Toast"},
+{"bt6_recipepage":"Caramelized French Toast"},
+{"bt7_recipepage":"Oven-Baked Caramel French Toast"},
+{"bt8_recipepage":"Ultimate French Toast"}
+
+],
+
+
+
+
+"btnname_recipe_page_breakfast_pancakes":[
+{"bt1_recipepage":"Fluffy Pancakes"},
+{"bt2_recipepage":"Pumpkin Pancakes"},
+{"bt3_recipepage":"Todd's Famous Blueberry Pancakes"},
+{"bt4_recipepage":"Truck-Stop Buttermilk Pancakes"},
+{"bt5_recipepage":"Whole Wheat Blueberry Pancakes"},
+{"bt6_recipepage":"Old-Fashioned Pancakes"},
+{"bt7_recipepage":"Chunky Monkey Pancakes"},
+{"bt8_recipepage":"German Apple Pancake"},
+{"bt9_recipepage":"Oatmeal and Wheat Flour Blueberry Pancakes"}
+
+],
+
+
+
+
+"btnname_recipe_page_breakfast_waffeles":[
+{"bt1_recipepage":"Classic Waffles"},
+{"bt2_recipepage":"Wonderful Waffles"},
+{"bt3_recipepage":"Cinnamon Belgian Waffles"},
+{"bt4_recipepage":"Belgian Waffles"},
+{"bt5_recipepage":"Deluxe Waffles"},
+{"bt6_recipepage":"Mammaw's Waffles"},
+{"bt7_recipepage":"Yeast Waffles"}
+]}
