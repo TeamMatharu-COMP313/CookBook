@@ -2,9 +2,11 @@ package com.teammatharu.recipefragments;
 
 import android.app.Fragment;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.TextView;
 
 import com.teammatharu.cookbook.R;
 
@@ -14,16 +16,28 @@ import com.teammatharu.cookbook.R;
  */
 public class RecipeIngredients extends android.support.v4.app.Fragment {
 
-	public RecipeIngredients() {
+	private String recipeName;
+	
+	public RecipeIngredients(String recipe) {
 		// Required empty public constructor
+		recipeName=recipe;
 	}
 
 	@Override
 	public View onCreateView(LayoutInflater inflater, ViewGroup container,
 			Bundle savedInstanceState) {
 		// Inflate the layout for this fragment
-		return inflater.inflate(R.layout.fragment_recipe_ingredients,
+		View v= inflater.inflate(R.layout.fragment_recipe_ingredients,
 				container, false);
+		
+		
+		TextView t1=(TextView) v.findViewById(R.id.textView1);
+		t1.setText(recipeName);
+		
+		Log.d("TEXTVIEW1", recipeName);
+		
+		
+		return v;
 	}
 
 }

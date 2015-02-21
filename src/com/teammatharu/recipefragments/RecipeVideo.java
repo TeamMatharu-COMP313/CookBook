@@ -3,9 +3,11 @@ package com.teammatharu.recipefragments;
 import com.teammatharu.cookbook.R;
 import android.os.Bundle;
 import android.app.Fragment;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.TextView;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -13,16 +15,26 @@ import android.view.ViewGroup;
  */
 public class RecipeVideo extends android.support.v4.app.Fragment {
 
-	public RecipeVideo() {
+	private String recipeName;
+	public RecipeVideo(String recipe) {
 		// Required empty public constructor
+		recipeName=recipe;
 	}
 
 	@Override
 	public View onCreateView(LayoutInflater inflater, ViewGroup container,
 			Bundle savedInstanceState) {
 		// Inflate the layout for this fragment
-		return inflater.inflate(R.layout.fragment_recipe_video, container,
+		View v= inflater.inflate(R.layout.fragment_recipe_video, container,
 				false);
+		
+		TextView t1=(TextView) v.findViewById(R.id.textView1);
+		t1.setText(recipeName);
+		
+		Log.d("TEXTVIEW1", recipeName);
+		
+		
+		return v;
 	}
 
 }
