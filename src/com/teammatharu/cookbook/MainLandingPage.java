@@ -31,7 +31,7 @@ public class MainLandingPage extends Activity {
 		// Fetching Image from Cloud
 		final ImageView imgLogo = (ImageView) findViewById(R.id.imageView1);
 		Firebase fImageMainLandingPage = new Firebase(
-				"https://cookbook-teammatharu.firebaseio.com/ImageMainLandingPage");
+				"https://cookbook-teammatharu.firebaseio.com/0/ImageMainLandingPage");
 
 		fImageMainLandingPage.addValueEventListener(new ValueEventListener() {
 
