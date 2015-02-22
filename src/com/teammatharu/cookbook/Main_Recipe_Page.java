@@ -17,24 +17,22 @@ import android.widget.AdapterView.OnItemSelectedListener;
 import android.widget.ArrayAdapter;
 import android.widget.Spinner;
 
-public class Main_Recipe_Page extends Activity  {
-	
-	
-    ArrayAdapter<String> dataAdapter;
-	
-	
+public class Main_Recipe_Page extends Activity {
+
+	ArrayAdapter<String> dataAdapter;
+
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main__recipe__page);
 		// Spinner element
-		//yest 
+		// yest
 		Spinner spinner = (Spinner) findViewById(R.id.spinner1);
 
 		// 1. get passed intent
 		Intent intent = getIntent();
 		// 2. get message value from intent
-		String message0="Please Select From This List";
+		String message0 = "Please Select From This List";
 		String message1 = intent.getStringExtra("list1_submenu");
 		String message2 = intent.getStringExtra("list2_submenu");
 		String message3 = intent.getStringExtra("list3_submenu");
@@ -55,7 +53,6 @@ public class Main_Recipe_Page extends Activity  {
 		String message18 = intent.getStringExtra("list18_submenu");
 		String message19 = intent.getStringExtra("list19_submenu");
 
-		
 		// Spinner Drop down elements
 		List<String> categories = new ArrayList<String>();
 		categories.add(message0);
@@ -80,9 +77,8 @@ public class Main_Recipe_Page extends Activity  {
 		categories.add(message19);
 
 		// Creating adapter for spinner
-		 dataAdapter = new ArrayAdapter<String>(this,
+		dataAdapter = new ArrayAdapter<String>(this,
 				android.R.layout.simple_list_item_1, categories);
-		
 
 		if (message1.equals("none")) {
 			dataAdapter.remove(message1);
@@ -178,35 +174,30 @@ public class Main_Recipe_Page extends Activity  {
 		} else {
 
 		}
-	
 
-
-		
 		// attaching data adapter to spinner
 		spinner.setAdapter(dataAdapter);
 
 		spinner.setOnItemSelectedListener(new OnItemSelectedListener() {
 
-			//int count=0;
+			// int count=0;
 			@Override
 			public void onItemSelected(AdapterView<?> parent, View view,
 					int position, long id) {
 				// TODO Auto-generated method stub
 				// On selecting a spinner item
-			//	count++;
-			//	Log.d("on Select",count+"");
+				// count++;
+				// Log.d("on Select",count+"");
 				String item = parent.getItemAtPosition(position).toString();
-				if(item!="Please Select From This List"){
-				Intent i=new Intent(Main_Recipe_Page.this, MainRecipeFragment.class);
-				i.putExtra("item", item);
-				startActivity(i);
-				finish();
+				if (item != "Please Select From This List") {
+					Intent i = new Intent(Main_Recipe_Page.this,
+							MainDetailRecipePage.class);
+					i.putExtra("item", item);
+					startActivity(i);
+					finish();
 				}
 
 			}
-			
-			
-			
 
 			@Override
 			public void onNothingSelected(AdapterView<?> parent) {
@@ -214,9 +205,8 @@ public class Main_Recipe_Page extends Activity  {
 
 			}
 
-		
 		});
-	
+
 	}
 
 	@Override
@@ -247,5 +237,4 @@ public class Main_Recipe_Page extends Activity  {
 		finish();
 	}
 
-	
 }

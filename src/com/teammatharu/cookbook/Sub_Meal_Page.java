@@ -38,7 +38,7 @@ public class Sub_Meal_Page extends Activity {
 		final ImageView imgSubMeal = (ImageView) findViewById(R.id.imageViewSubMeal);
 
 		Firebase fImageSubMealPage = new Firebase(
-				"https://cookbook-teammatharu.firebaseio.com/ImageSubMealPage");
+				"https://cookbook-teammatharu.firebaseio.com/0/ImageSubMealPage");
 		fImageSubMealPage.addValueEventListener(new ValueEventListener() {
 
 			@Override

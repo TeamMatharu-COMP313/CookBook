@@ -1,16 +1,9 @@
 package com.teammatharu.recipefragments;
 
-import com.teammatharu.cookbook.MainLandingPage;
-import com.teammatharu.cookbook.R;
-import com.teammatharu.cookbook.Sub_Menu_Page;
-import com.teammatharu.cookbook.R.id;
-import com.teammatharu.cookbook.R.layout;
-import com.teammatharu.cookbook.R.menu;
-
 import android.app.ActionBar;
-import android.app.FragmentTransaction;
 import android.app.ActionBar.Tab;
 import android.app.ActionBar.TabListener;
+import android.app.FragmentTransaction;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.FragmentActivity;
@@ -18,6 +11,9 @@ import android.support.v4.view.ViewPager;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
+
+import com.teammatharu.cookbook.MainLandingPage;
+import com.teammatharu.cookbook.R;
 
 public class MainRecipeFragment extends FragmentActivity implements TabListener {
 	
@@ -47,7 +43,7 @@ public class MainRecipeFragment extends FragmentActivity implements TabListener 
 		       
 		        viewpager.setAdapter(ft);  
 		        actionbar.setNavigationMode(ActionBar.NAVIGATION_MODE_TABS);  
-		        actionbar.addTab(actionbar.newTab().setText("Image").setTabListener(this));  
+		        actionbar.addTab(actionbar.newTab().setText("Dish").setTabListener(this));  
 		        actionbar.addTab(actionbar.newTab().setText("Ingredients").setTabListener(this));  
 		        actionbar.addTab(actionbar.newTab().setText("Directions").setTabListener(this));
 				actionbar.addTab(actionbar.newTab().setText("Videos").setTabListener(this));

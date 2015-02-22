@@ -42,7 +42,7 @@ public class Sub_Menu_Page extends Activity {
 
 		// Logo image for this page (will be same for all menus)
 		Firebase fImageSubMenuPage = new Firebase(
-				"https://cookbook-teammatharu.firebaseio.com/ImageSubMenuPage");
+				"https://cookbook-teammatharu.firebaseio.com/0/ImageSubMenuPage");
 		fImageSubMenuPage.addValueEventListener(new ValueEventListener() {
 
 			@Override
