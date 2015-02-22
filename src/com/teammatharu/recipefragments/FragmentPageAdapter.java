@@ -12,12 +12,14 @@ import android.support.v4.app.FragmentPagerAdapter;
  *
  */
 public class FragmentPageAdapter extends FragmentPagerAdapter {
-
+	private String recipe;
 	/**
 	 * @param fm
 	 */
-	public FragmentPageAdapter(FragmentManager fm) {
+	public FragmentPageAdapter(FragmentManager fm,String recipeName) {
+		
 		super(fm);
+		recipe=recipeName;
 		// TODO Auto-generated constructor stub
 	}
 
@@ -29,13 +31,13 @@ public class FragmentPageAdapter extends FragmentPagerAdapter {
 		// TODO Auto-generated method stub
 		 switch (arg0) {  
 		 case 0:
-			 return new RecipeImage();
+			 return new RecipeImage(recipe);
 		 case 1:
-			 return new RecipeIngredients();
+			 return new RecipeIngredients(recipe);
 		 case 2:
-			 return new RecipeDirections();
+			 return new RecipeDirections(recipe);
 		 case 3:
-			 return new RecipeVideo();
+			 return new RecipeVideo(recipe);
 			 
          default:  
               break;  
