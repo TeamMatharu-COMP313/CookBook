@@ -6,7 +6,8 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.teammatharu.cookbook.MainDetailRecipePage" >
+    tools:context="com.teammatharu.cookbook.MainDetailRecipePage" 
+    android:background="#37474f">
 
     <ScrollView
         android:id="@+id/scrollView1"
@@ -22,18 +23,20 @@
 
             <ImageView
                 android:id="@+id/imageViewDetailRecipe"
-                android:layout_width="250dp"
-                android:layout_height="250dp"
+                android:layout_width="260dp"
+                android:layout_height="260dp"
                 android:layout_gravity="center"
                 android:layout_marginBottom="20dp"
-                android:layout_marginTop="20dp" />
+                />
 
             <!-- Details of image -->
 
             <TextView
                 android:id="@+id/tvImageDetail"
                 android:layout_width="fill_parent"
-                android:layout_height="wrap_content" />
+                android:layout_height="wrap_content" 
+                android:textColor="#ffffff"
+                android:textSize="15sp"/>
 
             <!-- Ingredients list 1 - 6 -->
 
@@ -41,37 +44,53 @@
                 android:id="@+id/tvIngredients"
                 android:layout_width="fill_parent"
                 android:layout_height="fill_parent"
-                android:text="Ingredients : " />
+                android:text="Ingredients : " 
+                android:textColor="#ffffff"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_marginTop="10dp"/>
 
             <TextView
                 android:id="@+id/tvIngredientsList1"
                 android:layout_width="fill_parent"
-                android:layout_height="fill_parent" />
+                android:layout_height="fill_parent" 
+                android:textColor="#ffffff"
+                android:textSize="15sp"/>
 
             <TextView
                 android:id="@+id/tvIngredientsList2"
                 android:layout_width="fill_parent"
-                android:layout_height="fill_parent" />
+                android:layout_height="fill_parent" 
+                android:textColor="#ffffff"
+                android:textSize="15sp"/>
 
             <TextView
                 android:id="@+id/tvIngredientsList3"
                 android:layout_width="fill_parent"
-                android:layout_height="fill_parent" />
+                android:layout_height="fill_parent" 
+                android:textColor="#ffffff"
+                android:textSize="15sp"/>
 
             <TextView
                 android:id="@+id/tvIngredientsList4"
                 android:layout_width="fill_parent"
-                android:layout_height="fill_parent" />
+                android:layout_height="fill_parent" 
+                android:textColor="#ffffff"
+                android:textSize="15sp"/>
 
             <TextView
                 android:id="@+id/tvIngredientsList5"
                 android:layout_width="fill_parent"
-                android:layout_height="fill_parent" />
+                android:layout_height="fill_parent" 
+                android:textColor="#ffffff"
+                android:textSize="15sp"/>
 
             <TextView
                 android:id="@+id/tvIngredientsList6"
                 android:layout_width="fill_parent"
-                android:layout_height="fill_parent" />
+                android:layout_height="fill_parent" 
+                android:textColor="#ffffff"
+                android:textSize="15sp"/>
 
             <!-- Direction 1 - 6 -->
 
@@ -79,37 +98,53 @@
                 android:id="@+id/tvDirection"
                 android:layout_width="fill_parent"
                 android:layout_height="fill_parent"
-                android:text="Directions : " />
+                android:text="Directions : " 
+                android:textColor="#ffffff"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_marginTop="10dp"/>
 
             <TextView
                 android:id="@+id/tvDirectionList1"
                 android:layout_width="fill_parent"
-                android:layout_height="fill_parent" />
+                android:layout_height="fill_parent" 
+                android:textColor="#ffffff"
+                android:textSize="15sp"/>
 
             <TextView
                 android:id="@+id/tvDirectionList2"
                 android:layout_width="fill_parent"
-                android:layout_height="fill_parent" />
+                android:layout_height="fill_parent" 
+                android:textColor="#ffffff"
+                android:textSize="15sp"/>
 
             <TextView
                 android:id="@+id/tvDirectionList3"
                 android:layout_width="fill_parent"
-                android:layout_height="fill_parent" />
+                android:layout_height="fill_parent" 
+                android:textColor="#ffffff"
+                android:textSize="15sp"/>
 
             <TextView
                 android:id="@+id/tvDirectionList4"
                 android:layout_width="fill_parent"
-                android:layout_height="fill_parent" />
+                android:layout_height="fill_parent" 
+                android:textColor="#ffffff"
+                android:textSize="15sp"/>
 
             <TextView
                 android:id="@+id/tvDirectionList5"
                 android:layout_width="fill_parent"
-                android:layout_height="fill_parent" />
+                android:layout_height="fill_parent" 
+                android:textColor="#ffffff"
+                android:textSize="15sp"/>
 
             <TextView
                 android:id="@+id/tvDirectionList6"
                 android:layout_width="fill_parent"
-                android:layout_height="fill_parent" />
+                android:layout_height="fill_parent" 
+                android:textColor="#ffffff"
+                android:textSize="15sp"/>
 
             <!-- Video Button -->
 
@@ -121,7 +156,8 @@
                 android:layout_marginBottom="5dp"
                 android:background="@drawable/buttongradient"
                 android:text="Watch Video"
-                android:textColor="#ffffff" />
+                android:textColor="#ffffff" 
+                android:layout_marginTop="15dp"/>
         </LinearLayout>
     </ScrollView>
 

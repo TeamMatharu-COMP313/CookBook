@@ -190,8 +190,7 @@ public class Main_Recipe_Page extends Activity {
 				// Log.d("on Select",count+"");
 				String item = parent.getItemAtPosition(position).toString();
 				if (item != "Please Select From This List") {
-					Intent i = new Intent(Main_Recipe_Page.this,
-							MainDetailRecipePage.class);
+					Intent i = new Intent(Main_Recipe_Page.this,MainDetailRecipePage.class);
 					i.putExtra("item", item);
 					startActivity(i);
 					finish();
