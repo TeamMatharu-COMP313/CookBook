@@ -1,0 +1,128 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.teammatharu.cookbook.MainDetailRecipePage" >
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical" >
+
+            <!-- Image for recipe -->
+
+            <ImageView
+                android:id="@+id/imageViewDetailRecipe"
+                android:layout_width="250dp"
+                android:layout_height="250dp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="20dp" />
+
+            <!-- Details of image -->
+
+            <TextView
+                android:id="@+id/tvImageDetail"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" />
+
+            <!-- Ingredients list 1 - 6 -->
+
+            <TextView
+                android:id="@+id/tvIngredients"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:text="Ingredients : " />
+
+            <TextView
+                android:id="@+id/tvIngredientsList1"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent" />
+
+            <TextView
+                android:id="@+id/tvIngredientsList2"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent" />
+
+            <TextView
+                android:id="@+id/tvIngredientsList3"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent" />
+
+            <TextView
+                android:id="@+id/tvIngredientsList4"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent" />
+
+            <TextView
+                android:id="@+id/tvIngredientsList5"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent" />
+
+            <TextView
+                android:id="@+id/tvIngredientsList6"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent" />
+
+            <!-- Direction 1 - 6 -->
+
+            <TextView
+                android:id="@+id/tvDirection"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:text="Directions : " />
+
+            <TextView
+                android:id="@+id/tvDirectionList1"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent" />
+
+            <TextView
+                android:id="@+id/tvDirectionList2"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent" />
+
+            <TextView
+                android:id="@+id/tvDirectionList3"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent" />
+
+            <TextView
+                android:id="@+id/tvDirectionList4"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent" />
+
+            <TextView
+                android:id="@+id/tvDirectionList5"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent" />
+
+            <TextView
+                android:id="@+id/tvDirectionList6"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent" />
+
+            <!-- Video Button -->
+
+            <Button
+                android:id="@+id/btnVideo"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/buttongradient"
+                android:text="Watch Video"
+                android:textColor="#ffffff" />
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>
