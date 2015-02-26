@@ -3634,6 +3634,2697 @@ public class MainDetailRecipePage extends Activity {
 
 				}
 			});
+		} else if (item.equals("Baklava")) {
+			// Action Bar Text
+			setTitle("Baklava");
+			// Image Code
+			Firebase fImageDetailRecipe = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/19/courses_appetizer_pastry_Baklava_image");
+			fImageDetailRecipe.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					String tempImage = (String) arg0.getValue();
+					// Logo image for this page (will be same for all menus)
+					UrlImageViewHelper.setUrlDrawable(imgDetailRecipe,
+							tempImage);
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+			// Image Detail
+			Firebase fImageDetail = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/19/courses_appetizer_pastry_Baklava_image_detail");
+			fImageDetail.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvImgDetail.setVisibility(View.GONE);
+					} else {
+						tvImgDetail.setText((CharSequence) arg0.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+			// Ingredients 6 Lists
+			Firebase fIngredientsList1 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/19/courses_appetizer_pastry_Baklava_ingredients_list1");
+			fIngredientsList1.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvIngredientsList1.setVisibility(View.GONE);
+					} else {
+						tvIngredientsList1.setText((CharSequence) arg0
+								.getValue());
+					}
+
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+
+			Firebase fIngredientsList2 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/19/courses_appetizer_pastry_Baklava_ingredients_list2");
+			fIngredientsList2.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvIngredientsList2.setVisibility(View.GONE);
+					} else {
+						tvIngredientsList2.setText((CharSequence) arg0
+								.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+			Firebase fIngredientsList3 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/19/courses_appetizer_pastry_Baklava_ingredients_list3");
+			fIngredientsList3.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvIngredientsList3.setVisibility(View.GONE);
+					} else {
+						tvIngredientsList3.setText((CharSequence) arg0
+								.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+			Firebase fIngredientsList4 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/19/courses_appetizer_pastry_Baklava_ingredients_list4");
+			fIngredientsList4.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvIngredientsList4.setVisibility(View.GONE);
+					} else {
+						tvIngredientsList4.setText((CharSequence) arg0
+								.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+			Firebase fIngredientsList5 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/19/courses_appetizer_pastry_Baklava_ingredients_list5");
+			fIngredientsList5.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvIngredientsList5.setVisibility(View.GONE);
+					} else {
+						tvIngredientsList5.setText((CharSequence) arg0
+								.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+			Firebase fIngredientsList6 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/19/courses_appetizer_pastry_Baklava_ingredients_list6");
+			fIngredientsList6.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvIngredientsList6.setVisibility(View.GONE);
+					} else {
+						tvIngredientsList6.setText((CharSequence) arg0
+								.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+			// Direction lists
+			final Firebase fDirectionList1 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/19/courses_appetizer_pastry_Baklava_directions_list1");
+			fDirectionList1.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvDirectionList1.setVisibility(View.GONE);
+					} else {
+						tvDirectionList1.setText((CharSequence) arg0.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+
+			final Firebase fDirectionList2 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/19/courses_appetizer_pastry_Baklava_directions_list2");
+			fDirectionList2.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvDirectionList2.setVisibility(View.GONE);
+					} else {
+						tvDirectionList2.setText((CharSequence) arg0.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+
+			final Firebase fDirectionList3 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/19/courses_appetizer_pastry_Baklava_directions_list3");
+			fDirectionList3.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvDirectionList3.setVisibility(View.GONE);
+					} else {
+						tvDirectionList3.setText((CharSequence) arg0.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+
+			final Firebase fDirectionList4 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/19/courses_appetizer_pastry_Baklava_directions_list4");
+			fDirectionList4.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvDirectionList4.setVisibility(View.GONE);
+					} else {
+						tvDirectionList4.setText((CharSequence) arg0.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+
+			final Firebase fDirectionList5 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/19/courses_appetizer_pastry_Baklava_directions_list5");
+			fDirectionList5.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvDirectionList5.setVisibility(View.GONE);
+					} else {
+						tvDirectionList5.setText((CharSequence) arg0.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+
+			final Firebase fDirectionList6 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/19/courses_appetizer_pastry_Baklava_directions_list6");
+			fDirectionList6.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvDirectionList6.setVisibility(View.GONE);
+					} else {
+						tvDirectionList6.setText((CharSequence) arg0.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+		} else if (item.equals("Cream Puffs")) {
+			// Action Bar Text
+			setTitle("Cream Puffs");
+			// Image Code
+			Firebase fImageDetailRecipe = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/20/courses_appetizer_pastry_Cream_Puffs_image");
+			fImageDetailRecipe.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					String tempImage = (String) arg0.getValue();
+					// Logo image for this page (will be same for all menus)
+					UrlImageViewHelper.setUrlDrawable(imgDetailRecipe,
+							tempImage);
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+			// Image Detail
+			Firebase fImageDetail = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/20/courses_appetizer_pastry_Cream_Puffs_image_detail");
+			fImageDetail.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvImgDetail.setVisibility(View.GONE);
+					} else {
+						tvImgDetail.setText((CharSequence) arg0.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+			// Ingredients 6 Lists
+			Firebase fIngredientsList1 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/20/courses_appetizer_pastry_Cream_Puffs_ingredients_list1");
+			fIngredientsList1.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvIngredientsList1.setVisibility(View.GONE);
+					} else {
+						tvIngredientsList1.setText((CharSequence) arg0
+								.getValue());
+					}
+
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+
+			Firebase fIngredientsList2 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/20/courses_appetizer_pastry_Cream_Puffs_ingredients_list2");
+			fIngredientsList2.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvIngredientsList2.setVisibility(View.GONE);
+					} else {
+						tvIngredientsList2.setText((CharSequence) arg0
+								.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+			Firebase fIngredientsList3 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/20/courses_appetizer_pastry_Cream_Puffs_ingredients_list3");
+			fIngredientsList3.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvIngredientsList3.setVisibility(View.GONE);
+					} else {
+						tvIngredientsList3.setText((CharSequence) arg0
+								.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+			Firebase fIngredientsList4 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/20/courses_appetizer_pastry_Cream_Puffs_ingredients_list4");
+			fIngredientsList4.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvIngredientsList4.setVisibility(View.GONE);
+					} else {
+						tvIngredientsList4.setText((CharSequence) arg0
+								.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+			Firebase fIngredientsList5 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/20/courses_appetizer_pastry_Cream_Puffs_ingredients_list5");
+			fIngredientsList5.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvIngredientsList5.setVisibility(View.GONE);
+					} else {
+						tvIngredientsList5.setText((CharSequence) arg0
+								.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+			Firebase fIngredientsList6 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/20/courses_appetizer_pastry_Cream_Puffs_ingredients_list6");
+			fIngredientsList6.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvIngredientsList6.setVisibility(View.GONE);
+					} else {
+						tvIngredientsList6.setText((CharSequence) arg0
+								.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+			// Direction lists
+			final Firebase fDirectionList1 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/20/courses_appetizer_pastry_Cream_Puffs_directions_list1");
+			fDirectionList1.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvDirectionList1.setVisibility(View.GONE);
+					} else {
+						tvDirectionList1.setText((CharSequence) arg0.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+
+			final Firebase fDirectionList2 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/20/courses_appetizer_pastry_Cream_Puffs_directions_list2");
+			fDirectionList2.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvDirectionList2.setVisibility(View.GONE);
+					} else {
+						tvDirectionList2.setText((CharSequence) arg0.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+
+			final Firebase fDirectionList3 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/20/courses_appetizer_pastry_Cream_Puffs_directions_list3");
+			fDirectionList3.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvDirectionList3.setVisibility(View.GONE);
+					} else {
+						tvDirectionList3.setText((CharSequence) arg0.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+
+			final Firebase fDirectionList4 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/20/courses_appetizer_pastry_Cream_Puffs_directions_list4");
+			fDirectionList4.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvDirectionList4.setVisibility(View.GONE);
+					} else {
+						tvDirectionList4.setText((CharSequence) arg0.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+
+			final Firebase fDirectionList5 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/20/courses_appetizer_pastry_Cream_Puffs_directions_list5");
+			fDirectionList5.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvDirectionList5.setVisibility(View.GONE);
+					} else {
+						tvDirectionList5.setText((CharSequence) arg0.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+
+			final Firebase fDirectionList6 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/20/courses_appetizer_pastry_Cream_Puffs_directions_list6");
+			fDirectionList6.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvDirectionList6.setVisibility(View.GONE);
+					} else {
+						tvDirectionList6.setText((CharSequence) arg0.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+		} else if (item.equals("Sweet Dinner Rolls")) {
+			// Action Bar Text
+			setTitle("Sweet Dinner Rolls");
+			// Image Code
+			Firebase fImageDetailRecipe = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/21/courses_appetizer_pastry_Sweet_Dinner_Rolls_image");
+			fImageDetailRecipe.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					String tempImage = (String) arg0.getValue();
+					// Logo image for this page (will be same for all menus)
+					UrlImageViewHelper.setUrlDrawable(imgDetailRecipe,
+							tempImage);
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+			// Image Detail
+			Firebase fImageDetail = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/21/courses_appetizer_pastry_Sweet_Dinner_Rolls_image_detail");
+			fImageDetail.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvImgDetail.setVisibility(View.GONE);
+					} else {
+						tvImgDetail.setText((CharSequence) arg0.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+			// Ingredients 6 Lists
+			Firebase fIngredientsList1 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/21/courses_appetizer_pastry_Sweet_Dinner_Rolls_ingredients_list1");
+			fIngredientsList1.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvIngredientsList1.setVisibility(View.GONE);
+					} else {
+						tvIngredientsList1.setText((CharSequence) arg0
+								.getValue());
+					}
+
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+
+			Firebase fIngredientsList2 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/21/courses_appetizer_pastry_Sweet_Dinner_Rolls_ingredients_list2");
+			fIngredientsList2.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvIngredientsList2.setVisibility(View.GONE);
+					} else {
+						tvIngredientsList2.setText((CharSequence) arg0
+								.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+			Firebase fIngredientsList3 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/21/courses_appetizer_pastry_Sweet_Dinner_Rolls_ingredients_list3");
+			fIngredientsList3.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvIngredientsList3.setVisibility(View.GONE);
+					} else {
+						tvIngredientsList3.setText((CharSequence) arg0
+								.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+			Firebase fIngredientsList4 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/21/courses_appetizer_pastry_Sweet_Dinner_Rolls_ingredients_list4");
+			fIngredientsList4.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvIngredientsList4.setVisibility(View.GONE);
+					} else {
+						tvIngredientsList4.setText((CharSequence) arg0
+								.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+			Firebase fIngredientsList5 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/21/courses_appetizer_pastry_Sweet_Dinner_Rolls_ingredients_list5");
+			fIngredientsList5.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvIngredientsList5.setVisibility(View.GONE);
+					} else {
+						tvIngredientsList5.setText((CharSequence) arg0
+								.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+			Firebase fIngredientsList6 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/21/courses_appetizer_pastry_Sweet_Dinner_Rolls_ingredients_list6");
+			fIngredientsList6.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvIngredientsList6.setVisibility(View.GONE);
+					} else {
+						tvIngredientsList6.setText((CharSequence) arg0
+								.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+			// Direction lists
+			final Firebase fDirectionList1 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/21/courses_appetizer_pastry_Sweet_Dinner_Rolls_directions_list1");
+			fDirectionList1.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvDirectionList1.setVisibility(View.GONE);
+					} else {
+						tvDirectionList1.setText((CharSequence) arg0.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+
+			final Firebase fDirectionList2 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/21/courses_appetizer_pastry_Sweet_Dinner_Rolls_directions_list2");
+			fDirectionList2.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvDirectionList2.setVisibility(View.GONE);
+					} else {
+						tvDirectionList2.setText((CharSequence) arg0.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+
+			final Firebase fDirectionList3 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/21/courses_appetizer_pastry_Sweet_Dinner_Rolls_directions_list3");
+			fDirectionList3.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvDirectionList3.setVisibility(View.GONE);
+					} else {
+						tvDirectionList3.setText((CharSequence) arg0.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+
+			final Firebase fDirectionList4 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/21/courses_appetizer_pastry_Sweet_Dinner_Rolls_directions_list4");
+			fDirectionList4.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvDirectionList4.setVisibility(View.GONE);
+					} else {
+						tvDirectionList4.setText((CharSequence) arg0.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+
+			final Firebase fDirectionList5 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/21/courses_appetizer_pastry_Sweet_Dinner_Rolls_directions_list5");
+			fDirectionList5.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvDirectionList5.setVisibility(View.GONE);
+					} else {
+						tvDirectionList5.setText((CharSequence) arg0.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+
+			final Firebase fDirectionList6 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/21/courses_appetizer_pastry_Sweet_Dinner_Rolls_directions_list6");
+			fDirectionList6.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvDirectionList6.setVisibility(View.GONE);
+					} else {
+						tvDirectionList6.setText((CharSequence) arg0.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+		} else if (item.equals("Churros")) {
+			// Action Bar Text
+			setTitle("Churros");
+			// Image Code
+			Firebase fImageDetailRecipe = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/22/courses_appetizer_pastry_Churros_image");
+			fImageDetailRecipe.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					String tempImage = (String) arg0.getValue();
+					// Logo image for this page (will be same for all menus)
+					UrlImageViewHelper.setUrlDrawable(imgDetailRecipe,
+							tempImage);
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+			// Image Detail
+			Firebase fImageDetail = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/22/courses_appetizer_pastry_Churros_image_detail");
+			fImageDetail.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvImgDetail.setVisibility(View.GONE);
+					} else {
+						tvImgDetail.setText((CharSequence) arg0.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+			// Ingredients 6 Lists
+			Firebase fIngredientsList1 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/22/courses_appetizer_pastry_Churros_ingredients_list1");
+			fIngredientsList1.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvIngredientsList1.setVisibility(View.GONE);
+					} else {
+						tvIngredientsList1.setText((CharSequence) arg0
+								.getValue());
+					}
+
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+
+			Firebase fIngredientsList2 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/22/courses_appetizer_pastry_Churros_ingredients_list2");
+			fIngredientsList2.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvIngredientsList2.setVisibility(View.GONE);
+					} else {
+						tvIngredientsList2.setText((CharSequence) arg0
+								.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+			Firebase fIngredientsList3 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/22/courses_appetizer_pastry_Churros_ingredients_list3");
+			fIngredientsList3.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvIngredientsList3.setVisibility(View.GONE);
+					} else {
+						tvIngredientsList3.setText((CharSequence) arg0
+								.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+			Firebase fIngredientsList4 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/22/courses_appetizer_pastry_Churros_ingredients_list4");
+			fIngredientsList4.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvIngredientsList4.setVisibility(View.GONE);
+					} else {
+						tvIngredientsList4.setText((CharSequence) arg0
+								.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+			Firebase fIngredientsList5 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/22/courses_appetizer_pastry_Churros_ingredients_list5");
+			fIngredientsList5.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvIngredientsList5.setVisibility(View.GONE);
+					} else {
+						tvIngredientsList5.setText((CharSequence) arg0
+								.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+			Firebase fIngredientsList6 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/22/courses_appetizer_pastry_Churros_ingredients_list6");
+			fIngredientsList6.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvIngredientsList6.setVisibility(View.GONE);
+					} else {
+						tvIngredientsList6.setText((CharSequence) arg0
+								.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+			// Direction lists
+			final Firebase fDirectionList1 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/22/courses_appetizer_pastry_Churros_directions_list1");
+			fDirectionList1.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvDirectionList1.setVisibility(View.GONE);
+					} else {
+						tvDirectionList1.setText((CharSequence) arg0.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+
+			final Firebase fDirectionList2 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/22/courses_appetizer_pastry_Churros_directions_list2");
+			fDirectionList2.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvDirectionList2.setVisibility(View.GONE);
+					} else {
+						tvDirectionList2.setText((CharSequence) arg0.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+
+			final Firebase fDirectionList3 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/22/courses_appetizer_pastry_Churros_directions_list3");
+			fDirectionList3.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvDirectionList3.setVisibility(View.GONE);
+					} else {
+						tvDirectionList3.setText((CharSequence) arg0.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+
+			final Firebase fDirectionList4 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/22/courses_appetizer_pastry_Churros_directions_list4");
+			fDirectionList4.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvDirectionList4.setVisibility(View.GONE);
+					} else {
+						tvDirectionList4.setText((CharSequence) arg0.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+
+			final Firebase fDirectionList5 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/22/courses_appetizer_pastry_Churros_directions_list5");
+			fDirectionList5.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvDirectionList5.setVisibility(View.GONE);
+					} else {
+						tvDirectionList5.setText((CharSequence) arg0.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+
+			final Firebase fDirectionList6 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/22/courses_appetizer_pastry_Churros_directions_list6");
+			fDirectionList6.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvDirectionList6.setVisibility(View.GONE);
+					} else {
+						tvDirectionList6.setText((CharSequence) arg0.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+		} else if (item.equals("Cinnamon Rolls")) {
+			// Action Bar Text
+			setTitle("Cinnamon Rolls");
+			// Image Code
+			Firebase fImageDetailRecipe = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/23/courses_appetizer_pastry_Cinnamon_Rolls_image");
+			fImageDetailRecipe.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					String tempImage = (String) arg0.getValue();
+					// Logo image for this page (will be same for all menus)
+					UrlImageViewHelper.setUrlDrawable(imgDetailRecipe,
+							tempImage);
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+			// Image Detail
+			Firebase fImageDetail = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/23/courses_appetizer_pastry_Cinnamon_Rolls_image_detail");
+			fImageDetail.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvImgDetail.setVisibility(View.GONE);
+					} else {
+						tvImgDetail.setText((CharSequence) arg0.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+			// Ingredients 6 Lists
+			Firebase fIngredientsList1 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/23/courses_appetizer_pastry_Cinnamon_Rolls_ingredients_list1");
+			fIngredientsList1.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvIngredientsList1.setVisibility(View.GONE);
+					} else {
+						tvIngredientsList1.setText((CharSequence) arg0
+								.getValue());
+					}
+
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+
+			Firebase fIngredientsList2 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/23/courses_appetizer_pastry_Cinnamon_Rolls_ingredients_list2");
+			fIngredientsList2.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvIngredientsList2.setVisibility(View.GONE);
+					} else {
+						tvIngredientsList2.setText((CharSequence) arg0
+								.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+			Firebase fIngredientsList3 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/23/courses_appetizer_pastry_Cinnamon_Rolls_ingredients_list3");
+			fIngredientsList3.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvIngredientsList3.setVisibility(View.GONE);
+					} else {
+						tvIngredientsList3.setText((CharSequence) arg0
+								.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+			Firebase fIngredientsList4 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/23/courses_appetizer_pastry_Cinnamon_Rolls_ingredients_list4");
+			fIngredientsList4.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvIngredientsList4.setVisibility(View.GONE);
+					} else {
+						tvIngredientsList4.setText((CharSequence) arg0
+								.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+			Firebase fIngredientsList5 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/23/courses_appetizer_pastry_Cinnamon_Rolls_ingredients_list5");
+			fIngredientsList5.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvIngredientsList5.setVisibility(View.GONE);
+					} else {
+						tvIngredientsList5.setText((CharSequence) arg0
+								.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+			Firebase fIngredientsList6 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/23/courses_appetizer_pastry_Cinnamon_Rolls_ingredients_list6");
+			fIngredientsList6.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvIngredientsList6.setVisibility(View.GONE);
+					} else {
+						tvIngredientsList6.setText((CharSequence) arg0
+								.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+			// Direction lists
+			final Firebase fDirectionList1 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/23/courses_appetizer_pastry_Cinnamon_Rolls_directions_list1");
+			fDirectionList1.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvDirectionList1.setVisibility(View.GONE);
+					} else {
+						tvDirectionList1.setText((CharSequence) arg0.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+
+			final Firebase fDirectionList2 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/23/courses_appetizer_pastry_Cinnamon_Rolls_directions_list2");
+			fDirectionList2.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvDirectionList2.setVisibility(View.GONE);
+					} else {
+						tvDirectionList2.setText((CharSequence) arg0.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+
+			final Firebase fDirectionList3 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/23/courses_appetizer_pastry_Cinnamon_Rolls_directions_list3");
+			fDirectionList3.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvDirectionList3.setVisibility(View.GONE);
+					} else {
+						tvDirectionList3.setText((CharSequence) arg0.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+
+			final Firebase fDirectionList4 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/23/courses_appetizer_pastry_Cinnamon_Rolls_directions_list4");
+			fDirectionList4.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvDirectionList4.setVisibility(View.GONE);
+					} else {
+						tvDirectionList4.setText((CharSequence) arg0.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+
+			final Firebase fDirectionList5 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/23/courses_appetizer_pastry_Cinnamon_Rolls_directions_list5");
+			fDirectionList5.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvDirectionList5.setVisibility(View.GONE);
+					} else {
+						tvDirectionList5.setText((CharSequence) arg0.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+
+			final Firebase fDirectionList6 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/23/courses_appetizer_pastry_Cinnamon_Rolls_directions_list6");
+			fDirectionList6.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvDirectionList6.setVisibility(View.GONE);
+					} else {
+						tvDirectionList6.setText((CharSequence) arg0.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+		} else if (item.equals("Danish Kringle")) {
+			// Action Bar Text
+			setTitle("Danish Kringle");
+			// Image Code
+			Firebase fImageDetailRecipe = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/24/courses_appetizer_pastry_Danish_Kringle_image");
+			fImageDetailRecipe.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					String tempImage = (String) arg0.getValue();
+					// Logo image for this page (will be same for all menus)
+					UrlImageViewHelper.setUrlDrawable(imgDetailRecipe,
+							tempImage);
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+			// Image Detail
+			Firebase fImageDetail = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/24/courses_appetizer_pastry_Danish_Kringle_image_detail");
+			fImageDetail.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvImgDetail.setVisibility(View.GONE);
+					} else {
+						tvImgDetail.setText((CharSequence) arg0.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+			// Ingredients 6 Lists
+			Firebase fIngredientsList1 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/24/courses_appetizer_pastry_Danish_Kringle_ingredients_list1");
+			fIngredientsList1.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvIngredientsList1.setVisibility(View.GONE);
+					} else {
+						tvIngredientsList1.setText((CharSequence) arg0
+								.getValue());
+					}
+
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+
+			Firebase fIngredientsList2 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/24/courses_appetizer_pastry_Danish_Kringle_ingredients_list2");
+			fIngredientsList2.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvIngredientsList2.setVisibility(View.GONE);
+					} else {
+						tvIngredientsList2.setText((CharSequence) arg0
+								.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+			Firebase fIngredientsList3 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/24/courses_appetizer_pastry_Danish_Kringle_ingredients_list3");
+			fIngredientsList3.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvIngredientsList3.setVisibility(View.GONE);
+					} else {
+						tvIngredientsList3.setText((CharSequence) arg0
+								.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+			Firebase fIngredientsList4 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/24/courses_appetizer_pastry_Danish_Kringle_ingredients_list4");
+			fIngredientsList4.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvIngredientsList4.setVisibility(View.GONE);
+					} else {
+						tvIngredientsList4.setText((CharSequence) arg0
+								.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+			Firebase fIngredientsList5 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/24/courses_appetizer_pastry_Danish_Kringle_ingredients_list5");
+			fIngredientsList5.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvIngredientsList5.setVisibility(View.GONE);
+					} else {
+						tvIngredientsList5.setText((CharSequence) arg0
+								.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+			Firebase fIngredientsList6 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/24/courses_appetizer_pastry_Danish_Kringle_ingredients_list6");
+			fIngredientsList6.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvIngredientsList6.setVisibility(View.GONE);
+					} else {
+						tvIngredientsList6.setText((CharSequence) arg0
+								.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+			// Direction lists
+			final Firebase fDirectionList1 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/24/courses_appetizer_pastry_Danish_Kringle_directions_list1");
+			fDirectionList1.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvDirectionList1.setVisibility(View.GONE);
+					} else {
+						tvDirectionList1.setText((CharSequence) arg0.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+
+			final Firebase fDirectionList2 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/24/courses_appetizer_pastry_Danish_Kringle_directions_list2");
+			fDirectionList2.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvDirectionList2.setVisibility(View.GONE);
+					} else {
+						tvDirectionList2.setText((CharSequence) arg0.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+
+			final Firebase fDirectionList3 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/24/courses_appetizer_pastry_Danish_Kringle_directions_list3");
+			fDirectionList3.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvDirectionList3.setVisibility(View.GONE);
+					} else {
+						tvDirectionList3.setText((CharSequence) arg0.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+
+			final Firebase fDirectionList4 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/24/courses_appetizer_pastry_Danish_Kringle_directions_list4");
+			fDirectionList4.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvDirectionList4.setVisibility(View.GONE);
+					} else {
+						tvDirectionList4.setText((CharSequence) arg0.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+
+			final Firebase fDirectionList5 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/24/courses_appetizer_pastry_Danish_Kringle_directions_list5");
+			fDirectionList5.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvDirectionList5.setVisibility(View.GONE);
+					} else {
+						tvDirectionList5.setText((CharSequence) arg0.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+
+			final Firebase fDirectionList6 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/24/courses_appetizer_pastry_Danish_Kringle_directions_list6");
+			fDirectionList6.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvDirectionList6.setVisibility(View.GONE);
+					} else {
+						tvDirectionList6.setText((CharSequence) arg0.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+		} else if (item.equals("Blueberry Turnovers")) {
+			// Action Bar Text
+			setTitle("Blueberry Turnovers");
+			// Image Code
+			Firebase fImageDetailRecipe = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/25/courses_appetizer_pastry_Blueberry_Turnovers_image");
+			fImageDetailRecipe.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					String tempImage = (String) arg0.getValue();
+					// Logo image for this page (will be same for all menus)
+					UrlImageViewHelper.setUrlDrawable(imgDetailRecipe,
+							tempImage);
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+			// Image Detail
+			Firebase fImageDetail = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/25/courses_appetizer_pastry_Blueberry_Turnovers_image_detail");
+			fImageDetail.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvImgDetail.setVisibility(View.GONE);
+					} else {
+						tvImgDetail.setText((CharSequence) arg0.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+			// Ingredients 6 Lists
+			Firebase fIngredientsList1 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/25/courses_appetizer_pastry_Blueberry_Turnovers_ingredients_list1");
+			fIngredientsList1.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvIngredientsList1.setVisibility(View.GONE);
+					} else {
+						tvIngredientsList1.setText((CharSequence) arg0
+								.getValue());
+					}
+
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+
+			Firebase fIngredientsList2 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/25/courses_appetizer_pastry_Blueberry_Turnovers_ingredients_list2");
+			fIngredientsList2.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvIngredientsList2.setVisibility(View.GONE);
+					} else {
+						tvIngredientsList2.setText((CharSequence) arg0
+								.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+			Firebase fIngredientsList3 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/25/courses_appetizer_pastry_Blueberry_Turnovers_ingredients_list3");
+			fIngredientsList3.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvIngredientsList3.setVisibility(View.GONE);
+					} else {
+						tvIngredientsList3.setText((CharSequence) arg0
+								.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+			Firebase fIngredientsList4 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/25/courses_appetizer_pastry_Blueberry_Turnovers_ingredients_list4");
+			fIngredientsList4.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvIngredientsList4.setVisibility(View.GONE);
+					} else {
+						tvIngredientsList4.setText((CharSequence) arg0
+								.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+			Firebase fIngredientsList5 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/25/courses_appetizer_pastry_Blueberry_Turnovers_ingredients_list5");
+			fIngredientsList5.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvIngredientsList5.setVisibility(View.GONE);
+					} else {
+						tvIngredientsList5.setText((CharSequence) arg0
+								.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+			Firebase fIngredientsList6 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/25/courses_appetizer_pastry_Blueberry_Turnovers_ingredients_list6");
+			fIngredientsList6.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvIngredientsList6.setVisibility(View.GONE);
+					} else {
+						tvIngredientsList6.setText((CharSequence) arg0
+								.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+			// Direction lists
+			final Firebase fDirectionList1 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/25/courses_appetizer_pastry_Blueberry_Turnovers_directions_list1");
+			fDirectionList1.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvDirectionList1.setVisibility(View.GONE);
+					} else {
+						tvDirectionList1.setText((CharSequence) arg0.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+
+			final Firebase fDirectionList2 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/25/courses_appetizer_pastry_Blueberry_Turnovers_directions_list2");
+			fDirectionList2.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvDirectionList2.setVisibility(View.GONE);
+					} else {
+						tvDirectionList2.setText((CharSequence) arg0.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+
+			final Firebase fDirectionList3 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/25/courses_appetizer_pastry_Blueberry_Turnovers_directions_list3");
+			fDirectionList3.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvDirectionList3.setVisibility(View.GONE);
+					} else {
+						tvDirectionList3.setText((CharSequence) arg0.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+
+			final Firebase fDirectionList4 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/25/courses_appetizer_pastry_Blueberry_Turnovers_directions_list4");
+			fDirectionList4.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvDirectionList4.setVisibility(View.GONE);
+					} else {
+						tvDirectionList4.setText((CharSequence) arg0.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+
+			final Firebase fDirectionList5 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/25/courses_appetizer_pastry_Blueberry_Turnovers_directions_list5");
+			fDirectionList5.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvDirectionList5.setVisibility(View.GONE);
+					} else {
+						tvDirectionList5.setText((CharSequence) arg0.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+
+			final Firebase fDirectionList6 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/25/courses_appetizer_pastry_Blueberry_Turnovers_directions_list6");
+			fDirectionList6.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvDirectionList6.setVisibility(View.GONE);
+					} else {
+						tvDirectionList6.setText((CharSequence) arg0.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+		} else if (item.equals("Land of Nod Cinnamon Buns")) {
+			// Action Bar Text
+			setTitle("Land of Nod Cinnamon Buns");
+			// Image Code
+			Firebase fImageDetailRecipe = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/26/courses_appetizer_pastry_Land_ofNod_Cinnamon_Buns_image");
+			fImageDetailRecipe.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					String tempImage = (String) arg0.getValue();
+					// Logo image for this page (will be same for all menus)
+					UrlImageViewHelper.setUrlDrawable(imgDetailRecipe,
+							tempImage);
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+			// Image Detail
+			Firebase fImageDetail = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/26/courses_appetizer_pastry_Land_ofNod_Cinnamon_Buns_image_detail");
+			fImageDetail.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvImgDetail.setVisibility(View.GONE);
+					} else {
+						tvImgDetail.setText((CharSequence) arg0.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+			// Ingredients 6 Lists
+			Firebase fIngredientsList1 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/26/courses_appetizer_pastry_Land_ofNod_Cinnamon_Buns_ingredients_list1");
+			fIngredientsList1.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvIngredientsList1.setVisibility(View.GONE);
+					} else {
+						tvIngredientsList1.setText((CharSequence) arg0
+								.getValue());
+					}
+
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+
+			Firebase fIngredientsList2 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/26/courses_appetizer_pastry_Land_ofNod_Cinnamon_Buns_ingredients_list2");
+			fIngredientsList2.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvIngredientsList2.setVisibility(View.GONE);
+					} else {
+						tvIngredientsList2.setText((CharSequence) arg0
+								.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+			Firebase fIngredientsList3 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/26/courses_appetizer_pastry_Land_ofNod_Cinnamon_Buns_ingredients_list3");
+			fIngredientsList3.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvIngredientsList3.setVisibility(View.GONE);
+					} else {
+						tvIngredientsList3.setText((CharSequence) arg0
+								.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+			Firebase fIngredientsList4 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/26/courses_appetizer_pastry_Land_ofNod_Cinnamon_Buns_ingredients_list4");
+			fIngredientsList4.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvIngredientsList4.setVisibility(View.GONE);
+					} else {
+						tvIngredientsList4.setText((CharSequence) arg0
+								.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+			Firebase fIngredientsList5 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/26/courses_appetizer_pastry_Land_ofNod_Cinnamon_Buns_ingredients_list5");
+			fIngredientsList5.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvIngredientsList5.setVisibility(View.GONE);
+					} else {
+						tvIngredientsList5.setText((CharSequence) arg0
+								.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+			Firebase fIngredientsList6 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/26/courses_appetizer_pastry_Land_ofNod_Cinnamon_Buns_ingredients_list6");
+			fIngredientsList6.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvIngredientsList6.setVisibility(View.GONE);
+					} else {
+						tvIngredientsList6.setText((CharSequence) arg0
+								.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+			// Direction lists
+			final Firebase fDirectionList1 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/26/courses_appetizer_pastry_Land_ofNod_Cinnamon_Buns_directions_list1");
+			fDirectionList1.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvDirectionList1.setVisibility(View.GONE);
+					} else {
+						tvDirectionList1.setText((CharSequence) arg0.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+
+			final Firebase fDirectionList2 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/26/courses_appetizer_pastry_Land_ofNod_Cinnamon_Buns_directions_list2");
+			fDirectionList2.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvDirectionList2.setVisibility(View.GONE);
+					} else {
+						tvDirectionList2.setText((CharSequence) arg0.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+
+			final Firebase fDirectionList3 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/26/courses_appetizer_pastry_Land_ofNod_Cinnamon_Buns_directions_list3");
+			fDirectionList3.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvDirectionList3.setVisibility(View.GONE);
+					} else {
+						tvDirectionList3.setText((CharSequence) arg0.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+
+			final Firebase fDirectionList4 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/26/courses_appetizer_pastry_Land_ofNod_Cinnamon_Buns_directions_list4");
+			fDirectionList4.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvDirectionList4.setVisibility(View.GONE);
+					} else {
+						tvDirectionList4.setText((CharSequence) arg0.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+
+			final Firebase fDirectionList5 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/26/courses_appetizer_pastry_Land_ofNod_Cinnamon_Buns_directions_list5");
+			fDirectionList5.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvDirectionList5.setVisibility(View.GONE);
+					} else {
+						tvDirectionList5.setText((CharSequence) arg0.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+
+			final Firebase fDirectionList6 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/26/courses_appetizer_pastry_Land_ofNod_Cinnamon_Buns_directions_list6");
+			fDirectionList6.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvDirectionList6.setVisibility(View.GONE);
+					} else {
+						tvDirectionList6.setText((CharSequence) arg0.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+		} else if (item.equals("Easy Apple Strudel")) {
+			// Action Bar Text
+			setTitle("Easy Apple Strudel");
+			// Image Code
+			Firebase fImageDetailRecipe = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/27/courses_appetizer_pastry_Easy_Apple_Strudel_image");
+			fImageDetailRecipe.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					String tempImage = (String) arg0.getValue();
+					// Logo image for this page (will be same for all menus)
+					UrlImageViewHelper.setUrlDrawable(imgDetailRecipe,
+							tempImage);
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+			// Image Detail
+			Firebase fImageDetail = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/27/courses_appetizer_pastry_Easy_Apple_Strudel_image_detail");
+			fImageDetail.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvImgDetail.setVisibility(View.GONE);
+					} else {
+						tvImgDetail.setText((CharSequence) arg0.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+			// Ingredients 6 Lists
+			Firebase fIngredientsList1 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/27/courses_appetizer_pastry_Easy_Apple_Strudel_ingredients_list1");
+			fIngredientsList1.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvIngredientsList1.setVisibility(View.GONE);
+					} else {
+						tvIngredientsList1.setText((CharSequence) arg0
+								.getValue());
+					}
+
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+
+			Firebase fIngredientsList2 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/27/courses_appetizer_pastry_Easy_Apple_Strudel_ingredients_list2");
+			fIngredientsList2.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvIngredientsList2.setVisibility(View.GONE);
+					} else {
+						tvIngredientsList2.setText((CharSequence) arg0
+								.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+			Firebase fIngredientsList3 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/27/courses_appetizer_pastry_Easy_Apple_Strudel_ingredients_list3");
+			fIngredientsList3.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvIngredientsList3.setVisibility(View.GONE);
+					} else {
+						tvIngredientsList3.setText((CharSequence) arg0
+								.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+			Firebase fIngredientsList4 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/27/courses_appetizer_pastry_Easy_Apple_Strudel_ingredients_list4");
+			fIngredientsList4.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvIngredientsList4.setVisibility(View.GONE);
+					} else {
+						tvIngredientsList4.setText((CharSequence) arg0
+								.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+			Firebase fIngredientsList5 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/27/courses_appetizer_pastry_Easy_Apple_Strudel_ingredients_list5");
+			fIngredientsList5.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvIngredientsList5.setVisibility(View.GONE);
+					} else {
+						tvIngredientsList5.setText((CharSequence) arg0
+								.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+			Firebase fIngredientsList6 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/27/courses_appetizer_pastry_Easy_Apple_Strudel_ingredients_list6");
+			fIngredientsList6.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvIngredientsList6.setVisibility(View.GONE);
+					} else {
+						tvIngredientsList6.setText((CharSequence) arg0
+								.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+			// Direction lists
+			final Firebase fDirectionList1 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/27/courses_appetizer_pastry_Easy_Apple_Strudel_directions_list1");
+			fDirectionList1.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvDirectionList1.setVisibility(View.GONE);
+					} else {
+						tvDirectionList1.setText((CharSequence) arg0.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+
+			final Firebase fDirectionList2 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/27/courses_appetizer_pastry_Easy_Apple_Strudel_directions_list2");
+			fDirectionList2.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvDirectionList2.setVisibility(View.GONE);
+					} else {
+						tvDirectionList2.setText((CharSequence) arg0.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+
+			final Firebase fDirectionList3 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/27/courses_appetizer_pastry_Easy_Apple_Strudel_directions_list3");
+			fDirectionList3.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvDirectionList3.setVisibility(View.GONE);
+					} else {
+						tvDirectionList3.setText((CharSequence) arg0.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+
+			final Firebase fDirectionList4 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/27/courses_appetizer_pastry_Easy_Apple_Strudel_directions_list4");
+			fDirectionList4.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvDirectionList4.setVisibility(View.GONE);
+					} else {
+						tvDirectionList4.setText((CharSequence) arg0.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+
+			final Firebase fDirectionList5 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/27/courses_appetizer_pastry_Easy_Apple_Strudel_directions_list5");
+			fDirectionList5.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvDirectionList5.setVisibility(View.GONE);
+					} else {
+						tvDirectionList5.setText((CharSequence) arg0.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+
+			final Firebase fDirectionList6 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/27/courses_appetizer_pastry_Easy_Apple_Strudel_directions_list6");
+			fDirectionList6.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvDirectionList6.setVisibility(View.GONE);
+					} else {
+						tvDirectionList6.setText((CharSequence) arg0.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
 		}
 	}
 
