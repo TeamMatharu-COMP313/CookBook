@@ -665,4 +665,13 @@ public class MainDetailRecipePage extends Activity {
 		}
 		return super.onOptionsItemSelected(item);
 	}
+
+	@Override
+	public void onBackPressed() {
+		// TODO Auto-generated method stub
+		Intent activityIntent = new Intent(MainDetailRecipePage.this,
+				MainLandingPage.class);
+		MainDetailRecipePage.this.startActivity(activityIntent);
+		finish();
+	}
 }
