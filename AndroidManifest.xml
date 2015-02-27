@@ -40,12 +40,12 @@
             android:label="@string/title_activity_main__recipe__page" >
         </activity>
         <activity
-            android:name="com.teammatharu.recipefragments.MainRecipeFragment"
-            android:label="@string/title_activity_main_recipe_fragment" >
-        </activity>
-        <activity
             android:name=".MainDetailRecipePage"
             android:label="@string/title_activity_main_detail_recipe_page" >
+        </activity>
+        <activity
+            android:name="com.teammatharu.recipefragments.MainRecipeFragment"
+            android:label="@string/title_activity_main_recipe_fragment" >
         </activity>
     </application>
 
