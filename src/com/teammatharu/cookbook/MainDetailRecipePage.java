@@ -6624,31 +6624,31 @@ public class MainDetailRecipePage extends Activity {
 
 				}
 			});
-		} else if (item.equals("")) {
+		} else if (item.equals("Wheat Crackers")) {
 
-		} else if (item.equals("")) {
+		} else if (item.equals("Alabama Fire Crackers")) {
 
-		} else if (item.equals("")) {
+		} else if (item.equals("Ranch Style Oyster Crackers")) {
 
-		} else if (item.equals("")) {
+		} else if (item.equals("Bacon Crackers")) {
 
-		} else if (item.equals("")) {
+		} else if (item.equals("Crackers a la Yvette")) {
 
-		} else if (item.equals("")) {
+		} else if (item.equals("Seasoned Crackers")) {
 
-		} else if (item.equals("")) {
+		} else if (item.equals("Cheddar Pennies")) {
 
-		} else if (item.equals("")) {
+		} else if (item.equals("Cheddar Crackers")) {
 
-		} else if (item.equals("")) {
+		} else if (item.equals("Seasoned Oyester Crackers")) {
 
-		} else if (item.equals("")) {
+		} else if (item.equals("Cheddar Pecan Wafers")) {
 
-		} else if (item.equals("")) {
+		} else if (item.equals("Cheese Crackers")) {
 
-		} else if (item.equals("")) {
+		} else if (item.equals("Firecracker Crackers")) {
 
-		} else if (item.equals("")) {
+		} else if (item.equals("Herb Oyster Crackers")) {
 
 		}
 	}
