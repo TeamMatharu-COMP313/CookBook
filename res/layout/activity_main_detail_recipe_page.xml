@@ -35,7 +35,8 @@
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
                 android:textColor="#ffffff"
-                android:textSize="15sp" />
+                android:textSize="15sp" 
+                android:textStyle="italic"/>
 
             <!-- Ingredients list 1 - 6 -->
 
