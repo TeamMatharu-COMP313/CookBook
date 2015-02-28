@@ -3,6 +3,11 @@ package com.teammatharu.cookbook;
 import java.util.ArrayList;
 import java.util.List;
 
+import com.firebase.client.DataSnapshot;
+import com.firebase.client.Firebase;
+import com.firebase.client.FirebaseError;
+import com.firebase.client.ValueEventListener;
+import com.koushikdutta.urlimageviewhelper.UrlImageViewHelper;
 import com.teammatharu.recipefragments.MainRecipeFragment;
 
 import android.content.Intent;
@@ -15,6 +20,7 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.AdapterView.OnItemSelectedListener;
 import android.widget.ArrayAdapter;
+import android.widget.ImageView;
 import android.widget.Spinner;
 
 public class Main_Recipe_Page extends Activity {
@@ -29,6 +35,31 @@ public class Main_Recipe_Page extends Activity {
 		// yest
 		Spinner spinner = (Spinner) findViewById(R.id.spinner1);
 
+		// Fire Base
+				Firebase.setAndroidContext(this);
+
+				// Fetching Image from Cloud
+				final ImageView imgLogo = (ImageView) findViewById(R.id.imageView1);
+				Firebase fImageMain_Recipe_Page = new Firebase(
+						"https://cookbook-teammatharu.firebaseio.com/0/ImageMainLandingPage");
+
+				fImageMain_Recipe_Page.addValueEventListener(new ValueEventListener() {
+
+					@Override
+					public void onDataChange(DataSnapshot arg0) {
+						// TODO Auto-generated method stub
+						String tempImage = (String) arg0.getValue();
+						// Assigning Image to Image view
+						UrlImageViewHelper.setUrlDrawable(imgLogo, tempImage);
+					}
+
+					@Override
+					public void onCancelled(FirebaseError arg0) {
+						// TODO Auto-generated method stub
+
+					}
+				});
+		
 		// 1. get passed intent
 		Intent intent = getIntent();
 		// 2. get message value from intent
