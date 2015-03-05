@@ -14697,6 +14697,34 @@ public class MainDetailRecipePage extends Activity {
 
 				}
 			});
+		} else if (item.equals("Chai Tea Mix")) {
+
+		} else if (item.equals("Smooth Sweet Tea")) {
+
+		} else if (item.equals("Boston Iced Tea")) {
+
+		} else if (item.equals("Coffeebar Chai")) {
+
+		} else if (item.equals("Mint Tea Punch")) {
+
+		} else if (item.equals("Honey Lemon Tea")) {
+
+		} else if (item.equals("Russian Tea")) {
+
+		} else if (item.equals("Sweet Lime Iced Tea")) {
+
+		} else if (item.equals("Hot Cranberry Tea")) {
+
+		} else if (item.equals("Lemonade-Mint Iced Tea")) {
+
+		} else if (item.equals("Spiced Tea Mix")) {
+
+		} else if (item.equals("Peach Tea")) {
+
+		} else if (item.equals("Masala Chai")) {
+
+		} else if (item.equals("Green Tea Berry Delight")) {
+
 		}
 	}
 
