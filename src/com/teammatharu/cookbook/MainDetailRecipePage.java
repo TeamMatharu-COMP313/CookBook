@@ -10511,6 +10511,4192 @@ public class MainDetailRecipePage extends Activity {
 
 				}
 			});
+		} else if (item.equals("Mojito")) {
+			// Action Bar Text
+			setTitle("Mojito");
+			// Image Code
+			Firebase fImageDetailRecipe = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/46/courses_drink_cocktails_Mojito_image");
+			fImageDetailRecipe.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					String tempImage = (String) arg0.getValue();
+					// Logo image for this page (will be same for all menus)
+					UrlImageViewHelper.setUrlDrawable(imgDetailRecipe,
+							tempImage);
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+			// Image Detail
+			Firebase fImageDetail = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/46/courses_drink_cocktails_Mojito_image_detail");
+			fImageDetail.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvImgDetail.setVisibility(View.GONE);
+					} else {
+						tvImgDetail.setText((CharSequence) arg0.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+			// Ingredients 6 Lists
+			Firebase fIngredientsList1 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/46/courses_drink_cocktails_Mojito_ingredients_list1");
+			fIngredientsList1.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvIngredientsList1.setVisibility(View.GONE);
+					} else {
+						tvIngredientsList1.setText((CharSequence) arg0
+								.getValue());
+					}
+
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+
+			Firebase fIngredientsList2 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/46/courses_drink_cocktails_Mojito_ingredients_list2");
+			fIngredientsList2.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvIngredientsList2.setVisibility(View.GONE);
+					} else {
+						tvIngredientsList2.setText((CharSequence) arg0
+								.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+			Firebase fIngredientsList3 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/46/courses_drink_cocktails_Mojito_ingredients_list3");
+			fIngredientsList3.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvIngredientsList3.setVisibility(View.GONE);
+					} else {
+						tvIngredientsList3.setText((CharSequence) arg0
+								.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+			Firebase fIngredientsList4 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/46/courses_drink_cocktails_Mojito_ingredients_list4");
+			fIngredientsList4.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvIngredientsList4.setVisibility(View.GONE);
+					} else {
+						tvIngredientsList4.setText((CharSequence) arg0
+								.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+			Firebase fIngredientsList5 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/46/courses_drink_cocktails_Mojito_ingredients_list5");
+			fIngredientsList5.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvIngredientsList5.setVisibility(View.GONE);
+					} else {
+						tvIngredientsList5.setText((CharSequence) arg0
+								.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+			Firebase fIngredientsList6 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/46/courses_drink_cocktails_Mojito_ingredients_list6");
+			fIngredientsList6.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvIngredientsList6.setVisibility(View.GONE);
+					} else {
+						tvIngredientsList6.setText((CharSequence) arg0
+								.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+			// Direction lists
+			final Firebase fDirectionList1 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/46/courses_drink_cocktails_Mojito_directions_list1");
+			fDirectionList1.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvDirectionList1.setVisibility(View.GONE);
+					} else {
+						tvDirectionList1.setText((CharSequence) arg0.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+
+			final Firebase fDirectionList2 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/46/courses_drink_cocktails_Mojito_directions_list2");
+			fDirectionList2.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvDirectionList2.setVisibility(View.GONE);
+					} else {
+						tvDirectionList2.setText((CharSequence) arg0.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+
+			final Firebase fDirectionList3 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/46/courses_drink_cocktails_Mojito_directions_list3");
+			fDirectionList3.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvDirectionList3.setVisibility(View.GONE);
+					} else {
+						tvDirectionList3.setText((CharSequence) arg0.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+
+			final Firebase fDirectionList4 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/46/courses_drink_cocktails_Mojito_directions_list4");
+			fDirectionList4.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvDirectionList4.setVisibility(View.GONE);
+					} else {
+						tvDirectionList4.setText((CharSequence) arg0.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+
+			final Firebase fDirectionList5 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/46/courses_drink_cocktails_Mojito_directions_list5");
+			fDirectionList5.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvDirectionList5.setVisibility(View.GONE);
+					} else {
+						tvDirectionList5.setText((CharSequence) arg0.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+
+			final Firebase fDirectionList6 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/46/courses_drink_cocktails_Mojito_directions_list6");
+			fDirectionList6.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvDirectionList6.setVisibility(View.GONE);
+					} else {
+						tvDirectionList6.setText((CharSequence) arg0.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+		} else if (item.equals("Tanning Bed Drink")) {
+			// Action Bar Text
+			setTitle("Tanning Bed Drink");
+			// Image Code
+			Firebase fImageDetailRecipe = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/47/courses_drink_cocktails_Tanning_Bed_Drink_image");
+			fImageDetailRecipe.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					String tempImage = (String) arg0.getValue();
+					// Logo image for this page (will be same for all menus)
+					UrlImageViewHelper.setUrlDrawable(imgDetailRecipe,
+							tempImage);
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+			// Image Detail
+			Firebase fImageDetail = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/47/courses_drink_cocktails_Tanning_Bed_Drink_image_detail");
+			fImageDetail.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvImgDetail.setVisibility(View.GONE);
+					} else {
+						tvImgDetail.setText((CharSequence) arg0.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+			// Ingredients 6 Lists
+			Firebase fIngredientsList1 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/47/courses_drink_cocktails_Tanning_Bed_Drink_ingredients_list1");
+			fIngredientsList1.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvIngredientsList1.setVisibility(View.GONE);
+					} else {
+						tvIngredientsList1.setText((CharSequence) arg0
+								.getValue());
+					}
+
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+
+			Firebase fIngredientsList2 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/47/courses_drink_cocktails_Tanning_Bed_Drink_ingredients_list2");
+			fIngredientsList2.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvIngredientsList2.setVisibility(View.GONE);
+					} else {
+						tvIngredientsList2.setText((CharSequence) arg0
+								.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+			Firebase fIngredientsList3 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/47/courses_drink_cocktails_Tanning_Bed_Drink_ingredients_list3");
+			fIngredientsList3.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvIngredientsList3.setVisibility(View.GONE);
+					} else {
+						tvIngredientsList3.setText((CharSequence) arg0
+								.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+			Firebase fIngredientsList4 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/47/courses_drink_cocktails_Tanning_Bed_Drink_ingredients_list4");
+			fIngredientsList4.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvIngredientsList4.setVisibility(View.GONE);
+					} else {
+						tvIngredientsList4.setText((CharSequence) arg0
+								.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+			Firebase fIngredientsList5 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/47/courses_drink_cocktails_Tanning_Bed_Drink_ingredients_list5");
+			fIngredientsList5.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvIngredientsList5.setVisibility(View.GONE);
+					} else {
+						tvIngredientsList5.setText((CharSequence) arg0
+								.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+			Firebase fIngredientsList6 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/47/courses_drink_cocktails_Tanning_Bed_Drink_ingredients_list6");
+			fIngredientsList6.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvIngredientsList6.setVisibility(View.GONE);
+					} else {
+						tvIngredientsList6.setText((CharSequence) arg0
+								.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+			// Direction lists
+			final Firebase fDirectionList1 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/47/courses_drink_cocktails_Tanning_Bed_Drink_directions_list1");
+			fDirectionList1.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvDirectionList1.setVisibility(View.GONE);
+					} else {
+						tvDirectionList1.setText((CharSequence) arg0.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+
+			final Firebase fDirectionList2 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/47/courses_drink_cocktails_Tanning_Bed_Drink_directions_list2");
+			fDirectionList2.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvDirectionList2.setVisibility(View.GONE);
+					} else {
+						tvDirectionList2.setText((CharSequence) arg0.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+
+			final Firebase fDirectionList3 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/47/courses_drink_cocktails_Tanning_Bed_Drink_directions_list3");
+			fDirectionList3.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvDirectionList3.setVisibility(View.GONE);
+					} else {
+						tvDirectionList3.setText((CharSequence) arg0.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+
+			final Firebase fDirectionList4 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/47/courses_drink_cocktails_Tanning_Bed_Drink_directions_list4");
+			fDirectionList4.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvDirectionList4.setVisibility(View.GONE);
+					} else {
+						tvDirectionList4.setText((CharSequence) arg0.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+
+			final Firebase fDirectionList5 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/47/courses_drink_cocktails_Tanning_Bed_Drink_directions_list5");
+			fDirectionList5.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvDirectionList5.setVisibility(View.GONE);
+					} else {
+						tvDirectionList5.setText((CharSequence) arg0.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+
+			final Firebase fDirectionList6 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/47/courses_drink_cocktails_Tanning_Bed_Drink_directions_list6");
+			fDirectionList6.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvDirectionList6.setVisibility(View.GONE);
+					} else {
+						tvDirectionList6.setText((CharSequence) arg0.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+		} else if (item.equals("Easy Frozen Margaritas")) {
+			// Action Bar Text
+			setTitle("Easy Frozen Margaritas");
+			// Image Code
+			Firebase fImageDetailRecipe = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/48/courses_drink_cocktails_Easy_Frozen_Margaritas_image");
+			fImageDetailRecipe.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					String tempImage = (String) arg0.getValue();
+					// Logo image for this page (will be same for all menus)
+					UrlImageViewHelper.setUrlDrawable(imgDetailRecipe,
+							tempImage);
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+			// Image Detail
+			Firebase fImageDetail = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/48/courses_drink_cocktails_Easy_Frozen_Margaritas_image_detail");
+			fImageDetail.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvImgDetail.setVisibility(View.GONE);
+					} else {
+						tvImgDetail.setText((CharSequence) arg0.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+			// Ingredients 6 Lists
+			Firebase fIngredientsList1 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/48/courses_drink_cocktails_Easy_Frozen_Margaritas_ingredients_list1");
+			fIngredientsList1.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvIngredientsList1.setVisibility(View.GONE);
+					} else {
+						tvIngredientsList1.setText((CharSequence) arg0
+								.getValue());
+					}
+
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+
+			Firebase fIngredientsList2 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/48/courses_drink_cocktails_Easy_Frozen_Margaritas_ingredients_list2");
+			fIngredientsList2.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvIngredientsList2.setVisibility(View.GONE);
+					} else {
+						tvIngredientsList2.setText((CharSequence) arg0
+								.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+			Firebase fIngredientsList3 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/48/courses_drink_cocktails_Easy_Frozen_Margaritas_ingredients_list3");
+			fIngredientsList3.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvIngredientsList3.setVisibility(View.GONE);
+					} else {
+						tvIngredientsList3.setText((CharSequence) arg0
+								.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+			Firebase fIngredientsList4 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/48/courses_drink_cocktails_Easy_Frozen_Margaritas_ingredients_list4");
+			fIngredientsList4.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvIngredientsList4.setVisibility(View.GONE);
+					} else {
+						tvIngredientsList4.setText((CharSequence) arg0
+								.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+			Firebase fIngredientsList5 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/48/courses_drink_cocktails_Easy_Frozen_Margaritas_ingredients_list5");
+			fIngredientsList5.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvIngredientsList5.setVisibility(View.GONE);
+					} else {
+						tvIngredientsList5.setText((CharSequence) arg0
+								.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+			Firebase fIngredientsList6 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/48/courses_drink_cocktails_Easy_Frozen_Margaritas_ingredients_list6");
+			fIngredientsList6.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvIngredientsList6.setVisibility(View.GONE);
+					} else {
+						tvIngredientsList6.setText((CharSequence) arg0
+								.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+			// Direction lists
+			final Firebase fDirectionList1 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/48/courses_drink_cocktails_Easy_Frozen_Margaritas_directions_list1");
+			fDirectionList1.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvDirectionList1.setVisibility(View.GONE);
+					} else {
+						tvDirectionList1.setText((CharSequence) arg0.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+
+			final Firebase fDirectionList2 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/48/courses_drink_cocktails_Easy_Frozen_Margaritas_directions_list2");
+			fDirectionList2.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvDirectionList2.setVisibility(View.GONE);
+					} else {
+						tvDirectionList2.setText((CharSequence) arg0.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+
+			final Firebase fDirectionList3 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/48/courses_drink_cocktails_Easy_Frozen_Margaritas_directions_list3");
+			fDirectionList3.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvDirectionList3.setVisibility(View.GONE);
+					} else {
+						tvDirectionList3.setText((CharSequence) arg0.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+
+			final Firebase fDirectionList4 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/48/courses_drink_cocktails_Easy_Frozen_Margaritas_directions_list4");
+			fDirectionList4.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvDirectionList4.setVisibility(View.GONE);
+					} else {
+						tvDirectionList4.setText((CharSequence) arg0.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+
+			final Firebase fDirectionList5 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/48/courses_drink_cocktails_Easy_Frozen_Margaritas_directions_list5");
+			fDirectionList5.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvDirectionList5.setVisibility(View.GONE);
+					} else {
+						tvDirectionList5.setText((CharSequence) arg0.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+
+			final Firebase fDirectionList6 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/48/courses_drink_cocktails_Easy_Frozen_Margaritas_directions_list6");
+			fDirectionList6.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvDirectionList6.setVisibility(View.GONE);
+					} else {
+						tvDirectionList6.setText((CharSequence) arg0.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+		} else if (item.equals("Cranberry Martini")) {
+			// Action Bar Text
+			setTitle("Cranberry Martini");
+			// Image Code
+			Firebase fImageDetailRecipe = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/49/courses_drink_cocktails_Cranberry_Martini_image");
+			fImageDetailRecipe.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					String tempImage = (String) arg0.getValue();
+					// Logo image for this page (will be same for all menus)
+					UrlImageViewHelper.setUrlDrawable(imgDetailRecipe,
+							tempImage);
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+			// Image Detail
+			Firebase fImageDetail = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/49/courses_drink_cocktails_Cranberry_Martini_image_detail");
+			fImageDetail.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvImgDetail.setVisibility(View.GONE);
+					} else {
+						tvImgDetail.setText((CharSequence) arg0.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+			// Ingredients 6 Lists
+			Firebase fIngredientsList1 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/49/courses_drink_cocktails_Cranberry_Martini_ingredients_list1");
+			fIngredientsList1.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvIngredientsList1.setVisibility(View.GONE);
+					} else {
+						tvIngredientsList1.setText((CharSequence) arg0
+								.getValue());
+					}
+
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+
+			Firebase fIngredientsList2 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/49/courses_drink_cocktails_Cranberry_Martini_ingredients_list2");
+			fIngredientsList2.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvIngredientsList2.setVisibility(View.GONE);
+					} else {
+						tvIngredientsList2.setText((CharSequence) arg0
+								.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+			Firebase fIngredientsList3 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/49/courses_drink_cocktails_Cranberry_Martini_ingredients_list3");
+			fIngredientsList3.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvIngredientsList3.setVisibility(View.GONE);
+					} else {
+						tvIngredientsList3.setText((CharSequence) arg0
+								.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+			Firebase fIngredientsList4 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/49/courses_drink_cocktails_Cranberry_Martini_ingredients_list4");
+			fIngredientsList4.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvIngredientsList4.setVisibility(View.GONE);
+					} else {
+						tvIngredientsList4.setText((CharSequence) arg0
+								.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+			Firebase fIngredientsList5 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/49/courses_drink_cocktails_Cranberry_Martini_ingredients_list5");
+			fIngredientsList5.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvIngredientsList5.setVisibility(View.GONE);
+					} else {
+						tvIngredientsList5.setText((CharSequence) arg0
+								.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+			Firebase fIngredientsList6 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/49/courses_drink_cocktails_Cranberry_Martini_ingredients_list6");
+			fIngredientsList6.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvIngredientsList6.setVisibility(View.GONE);
+					} else {
+						tvIngredientsList6.setText((CharSequence) arg0
+								.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+			// Direction lists
+			final Firebase fDirectionList1 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/49/courses_drink_cocktails_Cranberry_Martini_directions_list1");
+			fDirectionList1.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvDirectionList1.setVisibility(View.GONE);
+					} else {
+						tvDirectionList1.setText((CharSequence) arg0.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+
+			final Firebase fDirectionList2 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/49/courses_drink_cocktails_Cranberry_Martini_directions_list2");
+			fDirectionList2.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvDirectionList2.setVisibility(View.GONE);
+					} else {
+						tvDirectionList2.setText((CharSequence) arg0.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+
+			final Firebase fDirectionList3 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/49/courses_drink_cocktails_Cranberry_Martini_directions_list3");
+			fDirectionList3.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvDirectionList3.setVisibility(View.GONE);
+					} else {
+						tvDirectionList3.setText((CharSequence) arg0.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+
+			final Firebase fDirectionList4 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/49/courses_drink_cocktails_Cranberry_Martini_directions_list4");
+			fDirectionList4.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvDirectionList4.setVisibility(View.GONE);
+					} else {
+						tvDirectionList4.setText((CharSequence) arg0.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+
+			final Firebase fDirectionList5 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/49/courses_drink_cocktails_Cranberry_Martini_directions_list5");
+			fDirectionList5.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvDirectionList5.setVisibility(View.GONE);
+					} else {
+						tvDirectionList5.setText((CharSequence) arg0.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+
+			final Firebase fDirectionList6 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/49/courses_drink_cocktails_Cranberry_Martini_directions_list6");
+			fDirectionList6.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvDirectionList6.setVisibility(View.GONE);
+					} else {
+						tvDirectionList6.setText((CharSequence) arg0.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+		} else if (item.equals("Tainted Fruit Shots")) {
+			// Action Bar Text
+			setTitle("Tainted Fruit Shots");
+			// Image Code
+			Firebase fImageDetailRecipe = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/50/courses_drink_cocktails_Tainted_Fruit_Shots_image");
+			fImageDetailRecipe.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					String tempImage = (String) arg0.getValue();
+					// Logo image for this page (will be same for all menus)
+					UrlImageViewHelper.setUrlDrawable(imgDetailRecipe,
+							tempImage);
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+			// Image Detail
+			Firebase fImageDetail = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/50/courses_drink_cocktails_Tainted_Fruit_Shots_image_detail");
+			fImageDetail.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvImgDetail.setVisibility(View.GONE);
+					} else {
+						tvImgDetail.setText((CharSequence) arg0.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+			// Ingredients 6 Lists
+			Firebase fIngredientsList1 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/50/courses_drink_cocktails_Tainted_Fruit_Shots_ingredients_list1");
+			fIngredientsList1.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvIngredientsList1.setVisibility(View.GONE);
+					} else {
+						tvIngredientsList1.setText((CharSequence) arg0
+								.getValue());
+					}
+
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+
+			Firebase fIngredientsList2 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/50/courses_drink_cocktails_Tainted_Fruit_Shots_ingredients_list2");
+			fIngredientsList2.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvIngredientsList2.setVisibility(View.GONE);
+					} else {
+						tvIngredientsList2.setText((CharSequence) arg0
+								.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+			Firebase fIngredientsList3 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/50/courses_drink_cocktails_Tainted_Fruit_Shots_ingredients_list3");
+			fIngredientsList3.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvIngredientsList3.setVisibility(View.GONE);
+					} else {
+						tvIngredientsList3.setText((CharSequence) arg0
+								.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+			Firebase fIngredientsList4 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/50/courses_drink_cocktails_Tainted_Fruit_Shots_ingredients_list4");
+			fIngredientsList4.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvIngredientsList4.setVisibility(View.GONE);
+					} else {
+						tvIngredientsList4.setText((CharSequence) arg0
+								.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+			Firebase fIngredientsList5 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/50/courses_drink_cocktails_Tainted_Fruit_Shots_ingredients_list5");
+			fIngredientsList5.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvIngredientsList5.setVisibility(View.GONE);
+					} else {
+						tvIngredientsList5.setText((CharSequence) arg0
+								.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+			Firebase fIngredientsList6 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/50/courses_drink_cocktails_Tainted_Fruit_Shots_ingredients_list6");
+			fIngredientsList6.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvIngredientsList6.setVisibility(View.GONE);
+					} else {
+						tvIngredientsList6.setText((CharSequence) arg0
+								.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+			// Direction lists
+			final Firebase fDirectionList1 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/50/courses_drink_cocktails_Tainted_Fruit_Shots_directions_list1");
+			fDirectionList1.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvDirectionList1.setVisibility(View.GONE);
+					} else {
+						tvDirectionList1.setText((CharSequence) arg0.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+
+			final Firebase fDirectionList2 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/50/courses_drink_cocktails_Tainted_Fruit_Shots_directions_list2");
+			fDirectionList2.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvDirectionList2.setVisibility(View.GONE);
+					} else {
+						tvDirectionList2.setText((CharSequence) arg0.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+
+			final Firebase fDirectionList3 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/50/courses_drink_cocktails_Tainted_Fruit_Shots_directions_list3");
+			fDirectionList3.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvDirectionList3.setVisibility(View.GONE);
+					} else {
+						tvDirectionList3.setText((CharSequence) arg0.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+
+			final Firebase fDirectionList4 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/50/courses_drink_cocktails_Tainted_Fruit_Shots_directions_list4");
+			fDirectionList4.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvDirectionList4.setVisibility(View.GONE);
+					} else {
+						tvDirectionList4.setText((CharSequence) arg0.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+
+			final Firebase fDirectionList5 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/50/courses_drink_cocktails_Tainted_Fruit_Shots_directions_list5");
+			fDirectionList5.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvDirectionList5.setVisibility(View.GONE);
+					} else {
+						tvDirectionList5.setText((CharSequence) arg0.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+
+			final Firebase fDirectionList6 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/50/courses_drink_cocktails_Tainted_Fruit_Shots_directions_list6");
+			fDirectionList6.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvDirectionList6.setVisibility(View.GONE);
+					} else {
+						tvDirectionList6.setText((CharSequence) arg0.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+		} else if (item.equals("Dirty Martini")) {
+			// Action Bar Text
+			setTitle("Dirty Martini");
+			// Image Code
+			Firebase fImageDetailRecipe = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/51/courses_drink_cocktails_Dirty_Martini_image");
+			fImageDetailRecipe.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					String tempImage = (String) arg0.getValue();
+					// Logo image for this page (will be same for all menus)
+					UrlImageViewHelper.setUrlDrawable(imgDetailRecipe,
+							tempImage);
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+			// Image Detail
+			Firebase fImageDetail = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/51/courses_drink_cocktails_Dirty_Martini_image_detail");
+			fImageDetail.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvImgDetail.setVisibility(View.GONE);
+					} else {
+						tvImgDetail.setText((CharSequence) arg0.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+			// Ingredients 6 Lists
+			Firebase fIngredientsList1 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/51/courses_drink_cocktails_Dirty_Martini_ingredients_list1");
+			fIngredientsList1.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvIngredientsList1.setVisibility(View.GONE);
+					} else {
+						tvIngredientsList1.setText((CharSequence) arg0
+								.getValue());
+					}
+
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+
+			Firebase fIngredientsList2 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/51/courses_drink_cocktails_Dirty_Martini_ingredients_list2");
+			fIngredientsList2.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvIngredientsList2.setVisibility(View.GONE);
+					} else {
+						tvIngredientsList2.setText((CharSequence) arg0
+								.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+			Firebase fIngredientsList3 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/51/courses_drink_cocktails_Dirty_Martini_ingredients_list3");
+			fIngredientsList3.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvIngredientsList3.setVisibility(View.GONE);
+					} else {
+						tvIngredientsList3.setText((CharSequence) arg0
+								.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+			Firebase fIngredientsList4 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/51/courses_drink_cocktails_Dirty_Martini_ingredients_list4");
+			fIngredientsList4.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvIngredientsList4.setVisibility(View.GONE);
+					} else {
+						tvIngredientsList4.setText((CharSequence) arg0
+								.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+			Firebase fIngredientsList5 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/51/courses_drink_cocktails_Dirty_Martini_ingredients_list5");
+			fIngredientsList5.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvIngredientsList5.setVisibility(View.GONE);
+					} else {
+						tvIngredientsList5.setText((CharSequence) arg0
+								.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+			Firebase fIngredientsList6 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/51/courses_drink_cocktails_Dirty_Martini_ingredients_list6");
+			fIngredientsList6.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvIngredientsList6.setVisibility(View.GONE);
+					} else {
+						tvIngredientsList6.setText((CharSequence) arg0
+								.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+			// Direction lists
+			final Firebase fDirectionList1 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/51/courses_drink_cocktails_Dirty_Martini_directions_list1");
+			fDirectionList1.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvDirectionList1.setVisibility(View.GONE);
+					} else {
+						tvDirectionList1.setText((CharSequence) arg0.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+
+			final Firebase fDirectionList2 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/51/courses_drink_cocktails_Dirty_Martini_directions_list2");
+			fDirectionList2.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvDirectionList2.setVisibility(View.GONE);
+					} else {
+						tvDirectionList2.setText((CharSequence) arg0.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+
+			final Firebase fDirectionList3 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/51/courses_drink_cocktails_Dirty_Martini_directions_list3");
+			fDirectionList3.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvDirectionList3.setVisibility(View.GONE);
+					} else {
+						tvDirectionList3.setText((CharSequence) arg0.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+
+			final Firebase fDirectionList4 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/51/courses_drink_cocktails_Dirty_Martini_directions_list4");
+			fDirectionList4.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvDirectionList4.setVisibility(View.GONE);
+					} else {
+						tvDirectionList4.setText((CharSequence) arg0.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+
+			final Firebase fDirectionList5 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/51/courses_drink_cocktails_Dirty_Martini_directions_list5");
+			fDirectionList5.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvDirectionList5.setVisibility(View.GONE);
+					} else {
+						tvDirectionList5.setText((CharSequence) arg0.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+
+			final Firebase fDirectionList6 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/51/courses_drink_cocktails_Dirty_Martini_directions_list6");
+			fDirectionList6.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvDirectionList6.setVisibility(View.GONE);
+					} else {
+						tvDirectionList6.setText((CharSequence) arg0.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+		} else if (item.equals("Lava Lamps")) {
+			// Action Bar Text
+			setTitle("Lava Lamps");
+			// Image Code
+			Firebase fImageDetailRecipe = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/52/courses_drink_cocktails_Lava_Lamps_image");
+			fImageDetailRecipe.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					String tempImage = (String) arg0.getValue();
+					// Logo image for this page (will be same for all menus)
+					UrlImageViewHelper.setUrlDrawable(imgDetailRecipe,
+							tempImage);
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+			// Image Detail
+			Firebase fImageDetail = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/52/courses_drink_cocktails_Lava_Lamps_image_detail");
+			fImageDetail.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvImgDetail.setVisibility(View.GONE);
+					} else {
+						tvImgDetail.setText((CharSequence) arg0.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+			// Ingredients 6 Lists
+			Firebase fIngredientsList1 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/52/courses_drink_cocktails_Lava_Lamps_ingredients_list1");
+			fIngredientsList1.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvIngredientsList1.setVisibility(View.GONE);
+					} else {
+						tvIngredientsList1.setText((CharSequence) arg0
+								.getValue());
+					}
+
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+
+			Firebase fIngredientsList2 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/52/courses_drink_cocktails_Lava_Lamps_ingredients_list2");
+			fIngredientsList2.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvIngredientsList2.setVisibility(View.GONE);
+					} else {
+						tvIngredientsList2.setText((CharSequence) arg0
+								.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+			Firebase fIngredientsList3 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/52/courses_drink_cocktails_Lava_Lamps_ingredients_list3");
+			fIngredientsList3.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvIngredientsList3.setVisibility(View.GONE);
+					} else {
+						tvIngredientsList3.setText((CharSequence) arg0
+								.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+			Firebase fIngredientsList4 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/52/courses_drink_cocktails_Lava_Lamps_ingredients_list4");
+			fIngredientsList4.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvIngredientsList4.setVisibility(View.GONE);
+					} else {
+						tvIngredientsList4.setText((CharSequence) arg0
+								.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+			Firebase fIngredientsList5 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/52/courses_drink_cocktails_Lava_Lamps_ingredients_list5");
+			fIngredientsList5.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvIngredientsList5.setVisibility(View.GONE);
+					} else {
+						tvIngredientsList5.setText((CharSequence) arg0
+								.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+			Firebase fIngredientsList6 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/52/courses_drink_cocktails_Lava_Lamps_ingredients_list6");
+			fIngredientsList6.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvIngredientsList6.setVisibility(View.GONE);
+					} else {
+						tvIngredientsList6.setText((CharSequence) arg0
+								.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+			// Direction lists
+			final Firebase fDirectionList1 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/52/courses_drink_cocktails_Lava_Lamps_directions_list1");
+			fDirectionList1.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvDirectionList1.setVisibility(View.GONE);
+					} else {
+						tvDirectionList1.setText((CharSequence) arg0.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+
+			final Firebase fDirectionList2 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/52/courses_drink_cocktails_Lava_Lamps_directions_list2");
+			fDirectionList2.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvDirectionList2.setVisibility(View.GONE);
+					} else {
+						tvDirectionList2.setText((CharSequence) arg0.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+
+			final Firebase fDirectionList3 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/52/courses_drink_cocktails_Lava_Lamps_directions_list3");
+			fDirectionList3.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvDirectionList3.setVisibility(View.GONE);
+					} else {
+						tvDirectionList3.setText((CharSequence) arg0.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+
+			final Firebase fDirectionList4 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/52/courses_drink_cocktails_Lava_Lamps_directions_list4");
+			fDirectionList4.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvDirectionList4.setVisibility(View.GONE);
+					} else {
+						tvDirectionList4.setText((CharSequence) arg0.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+
+			final Firebase fDirectionList5 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/52/courses_drink_cocktails_Lava_Lamps_directions_list5");
+			fDirectionList5.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvDirectionList5.setVisibility(View.GONE);
+					} else {
+						tvDirectionList5.setText((CharSequence) arg0.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+
+			final Firebase fDirectionList6 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/52/courses_drink_cocktails_Lava_Lamps_directions_list6");
+			fDirectionList6.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvDirectionList6.setVisibility(View.GONE);
+					} else {
+						tvDirectionList6.setText((CharSequence) arg0.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+		} else if (item.equals("Bloody Mary Mix")) {
+			// Action Bar Text
+			setTitle("Bloody Mary Mix");
+			// Image Code
+			Firebase fImageDetailRecipe = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/53/courses_drink_cocktails_Bloody_Mary_Mix_image");
+			fImageDetailRecipe.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					String tempImage = (String) arg0.getValue();
+					// Logo image for this page (will be same for all menus)
+					UrlImageViewHelper.setUrlDrawable(imgDetailRecipe,
+							tempImage);
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+			// Image Detail
+			Firebase fImageDetail = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/53/courses_drink_cocktails_Bloody_Mary_Mix_image_detail");
+			fImageDetail.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvImgDetail.setVisibility(View.GONE);
+					} else {
+						tvImgDetail.setText((CharSequence) arg0.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+			// Ingredients 6 Lists
+			Firebase fIngredientsList1 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/53/courses_drink_cocktails_Bloody_Mary_Mix_ingredients_list1");
+			fIngredientsList1.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvIngredientsList1.setVisibility(View.GONE);
+					} else {
+						tvIngredientsList1.setText((CharSequence) arg0
+								.getValue());
+					}
+
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+
+			Firebase fIngredientsList2 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/53/courses_drink_cocktails_Bloody_Mary_Mix_ingredients_list2");
+			fIngredientsList2.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvIngredientsList2.setVisibility(View.GONE);
+					} else {
+						tvIngredientsList2.setText((CharSequence) arg0
+								.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+			Firebase fIngredientsList3 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/53/courses_drink_cocktails_Bloody_Mary_Mix_ingredients_list3");
+			fIngredientsList3.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvIngredientsList3.setVisibility(View.GONE);
+					} else {
+						tvIngredientsList3.setText((CharSequence) arg0
+								.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+			Firebase fIngredientsList4 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/53/courses_drink_cocktails_Bloody_Mary_Mix_ingredients_list4");
+			fIngredientsList4.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvIngredientsList4.setVisibility(View.GONE);
+					} else {
+						tvIngredientsList4.setText((CharSequence) arg0
+								.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+			Firebase fIngredientsList5 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/53/courses_drink_cocktails_Bloody_Mary_Mix_ingredients_list5");
+			fIngredientsList5.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvIngredientsList5.setVisibility(View.GONE);
+					} else {
+						tvIngredientsList5.setText((CharSequence) arg0
+								.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+			Firebase fIngredientsList6 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/53/courses_drink_cocktails_Bloody_Mary_Mix_ingredients_list6");
+			fIngredientsList6.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvIngredientsList6.setVisibility(View.GONE);
+					} else {
+						tvIngredientsList6.setText((CharSequence) arg0
+								.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+			// Direction lists
+			final Firebase fDirectionList1 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/53/courses_drink_cocktails_Bloody_Mary_Mix_directions_list1");
+			fDirectionList1.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvDirectionList1.setVisibility(View.GONE);
+					} else {
+						tvDirectionList1.setText((CharSequence) arg0.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+
+			final Firebase fDirectionList2 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/53/courses_drink_cocktails_Bloody_Mary_Mix_directions_list2");
+			fDirectionList2.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvDirectionList2.setVisibility(View.GONE);
+					} else {
+						tvDirectionList2.setText((CharSequence) arg0.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+
+			final Firebase fDirectionList3 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/53/courses_drink_cocktails_Bloody_Mary_Mix_directions_list3");
+			fDirectionList3.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvDirectionList3.setVisibility(View.GONE);
+					} else {
+						tvDirectionList3.setText((CharSequence) arg0.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+
+			final Firebase fDirectionList4 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/53/courses_drink_cocktails_Bloody_Mary_Mix_directions_list4");
+			fDirectionList4.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvDirectionList4.setVisibility(View.GONE);
+					} else {
+						tvDirectionList4.setText((CharSequence) arg0.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+
+			final Firebase fDirectionList5 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/53/courses_drink_cocktails_Bloody_Mary_Mix_directions_list5");
+			fDirectionList5.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvDirectionList5.setVisibility(View.GONE);
+					} else {
+						tvDirectionList5.setText((CharSequence) arg0.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+
+			final Firebase fDirectionList6 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/53/courses_drink_cocktails_Bloody_Mary_Mix_directions_list6");
+			fDirectionList6.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvDirectionList6.setVisibility(View.GONE);
+					} else {
+						tvDirectionList6.setText((CharSequence) arg0.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+		} else if (item.equals("Whiskey Slush")) {
+			// Action Bar Text
+			setTitle("Whiskey Slush");
+			// Image Code
+			Firebase fImageDetailRecipe = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/54/courses_drink_cocktails_Whiskey_Slush_image");
+			fImageDetailRecipe.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					String tempImage = (String) arg0.getValue();
+					// Logo image for this page (will be same for all menus)
+					UrlImageViewHelper.setUrlDrawable(imgDetailRecipe,
+							tempImage);
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+			// Image Detail
+			Firebase fImageDetail = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/54/courses_drink_cocktails_Whiskey_Slush_image_detail");
+			fImageDetail.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvImgDetail.setVisibility(View.GONE);
+					} else {
+						tvImgDetail.setText((CharSequence) arg0.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+			// Ingredients 6 Lists
+			Firebase fIngredientsList1 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/54/courses_drink_cocktails_Whiskey_Slush_ingredients_list1");
+			fIngredientsList1.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvIngredientsList1.setVisibility(View.GONE);
+					} else {
+						tvIngredientsList1.setText((CharSequence) arg0
+								.getValue());
+					}
+
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+
+			Firebase fIngredientsList2 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/54/courses_drink_cocktails_Whiskey_Slush_ingredients_list2");
+			fIngredientsList2.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvIngredientsList2.setVisibility(View.GONE);
+					} else {
+						tvIngredientsList2.setText((CharSequence) arg0
+								.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+			Firebase fIngredientsList3 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/54/courses_drink_cocktails_Whiskey_Slush_ingredients_list3");
+			fIngredientsList3.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvIngredientsList3.setVisibility(View.GONE);
+					} else {
+						tvIngredientsList3.setText((CharSequence) arg0
+								.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+			Firebase fIngredientsList4 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/54/courses_drink_cocktails_Whiskey_Slush_ingredients_list4");
+			fIngredientsList4.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvIngredientsList4.setVisibility(View.GONE);
+					} else {
+						tvIngredientsList4.setText((CharSequence) arg0
+								.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+			Firebase fIngredientsList5 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/54/courses_drink_cocktails_Whiskey_Slush_ingredients_list5");
+			fIngredientsList5.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvIngredientsList5.setVisibility(View.GONE);
+					} else {
+						tvIngredientsList5.setText((CharSequence) arg0
+								.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+			Firebase fIngredientsList6 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/54/courses_drink_cocktails_Whiskey_Slush_ingredients_list6");
+			fIngredientsList6.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvIngredientsList6.setVisibility(View.GONE);
+					} else {
+						tvIngredientsList6.setText((CharSequence) arg0
+								.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+			// Direction lists
+			final Firebase fDirectionList1 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/54/courses_drink_cocktails_Whiskey_Slush_directions_list1");
+			fDirectionList1.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvDirectionList1.setVisibility(View.GONE);
+					} else {
+						tvDirectionList1.setText((CharSequence) arg0.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+
+			final Firebase fDirectionList2 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/54/courses_drink_cocktails_Whiskey_Slush_directions_list2");
+			fDirectionList2.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvDirectionList2.setVisibility(View.GONE);
+					} else {
+						tvDirectionList2.setText((CharSequence) arg0.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+
+			final Firebase fDirectionList3 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/54/courses_drink_cocktails_Whiskey_Slush_directions_list3");
+			fDirectionList3.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvDirectionList3.setVisibility(View.GONE);
+					} else {
+						tvDirectionList3.setText((CharSequence) arg0.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+
+			final Firebase fDirectionList4 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/54/courses_drink_cocktails_Whiskey_Slush_directions_list4");
+			fDirectionList4.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvDirectionList4.setVisibility(View.GONE);
+					} else {
+						tvDirectionList4.setText((CharSequence) arg0.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+
+			final Firebase fDirectionList5 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/54/courses_drink_cocktails_Whiskey_Slush_directions_list5");
+			fDirectionList5.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvDirectionList5.setVisibility(View.GONE);
+					} else {
+						tvDirectionList5.setText((CharSequence) arg0.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+
+			final Firebase fDirectionList6 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/54/courses_drink_cocktails_Whiskey_Slush_directions_list6");
+			fDirectionList6.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvDirectionList6.setVisibility(View.GONE);
+					} else {
+						tvDirectionList6.setText((CharSequence) arg0.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+		} else if (item.equals("Strawberry Mojito")) {
+			// Action Bar Text
+			setTitle("Strawberry Mojito");
+			// Image Code
+			Firebase fImageDetailRecipe = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/55/courses_drink_cocktails_Strawberry_Mojito_image");
+			fImageDetailRecipe.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					String tempImage = (String) arg0.getValue();
+					// Logo image for this page (will be same for all menus)
+					UrlImageViewHelper.setUrlDrawable(imgDetailRecipe,
+							tempImage);
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+			// Image Detail
+			Firebase fImageDetail = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/55/courses_drink_cocktails_Strawberry_Mojito_image_detail");
+			fImageDetail.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvImgDetail.setVisibility(View.GONE);
+					} else {
+						tvImgDetail.setText((CharSequence) arg0.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+			// Ingredients 6 Lists
+			Firebase fIngredientsList1 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/55/courses_drink_cocktails_Strawberry_Mojito_ingredients_list1");
+			fIngredientsList1.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvIngredientsList1.setVisibility(View.GONE);
+					} else {
+						tvIngredientsList1.setText((CharSequence) arg0
+								.getValue());
+					}
+
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+
+			Firebase fIngredientsList2 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/55/courses_drink_cocktails_Strawberry_Mojito_ingredients_list2");
+			fIngredientsList2.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvIngredientsList2.setVisibility(View.GONE);
+					} else {
+						tvIngredientsList2.setText((CharSequence) arg0
+								.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+			Firebase fIngredientsList3 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/55/courses_drink_cocktails_Strawberry_Mojito_ingredients_list3");
+			fIngredientsList3.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvIngredientsList3.setVisibility(View.GONE);
+					} else {
+						tvIngredientsList3.setText((CharSequence) arg0
+								.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+			Firebase fIngredientsList4 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/55/courses_drink_cocktails_Strawberry_Mojito_ingredients_list4");
+			fIngredientsList4.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvIngredientsList4.setVisibility(View.GONE);
+					} else {
+						tvIngredientsList4.setText((CharSequence) arg0
+								.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+			Firebase fIngredientsList5 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/55/courses_drink_cocktails_Strawberry_Mojito_ingredients_list5");
+			fIngredientsList5.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvIngredientsList5.setVisibility(View.GONE);
+					} else {
+						tvIngredientsList5.setText((CharSequence) arg0
+								.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+			Firebase fIngredientsList6 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/55/courses_drink_cocktails_Strawberry_Mojito_ingredients_list6");
+			fIngredientsList6.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvIngredientsList6.setVisibility(View.GONE);
+					} else {
+						tvIngredientsList6.setText((CharSequence) arg0
+								.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+			// Direction lists
+			final Firebase fDirectionList1 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/55/courses_drink_cocktails_Strawberry_Mojito_directions_list1");
+			fDirectionList1.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvDirectionList1.setVisibility(View.GONE);
+					} else {
+						tvDirectionList1.setText((CharSequence) arg0.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+
+			final Firebase fDirectionList2 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/55/courses_drink_cocktails_Strawberry_Mojito_directions_list2");
+			fDirectionList2.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvDirectionList2.setVisibility(View.GONE);
+					} else {
+						tvDirectionList2.setText((CharSequence) arg0.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+
+			final Firebase fDirectionList3 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/55/courses_drink_cocktails_Strawberry_Mojito_directions_list3");
+			fDirectionList3.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvDirectionList3.setVisibility(View.GONE);
+					} else {
+						tvDirectionList3.setText((CharSequence) arg0.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+
+			final Firebase fDirectionList4 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/55/courses_drink_cocktails_Strawberry_Mojito_directions_list4");
+			fDirectionList4.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvDirectionList4.setVisibility(View.GONE);
+					} else {
+						tvDirectionList4.setText((CharSequence) arg0.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+
+			final Firebase fDirectionList5 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/55/courses_drink_cocktails_Strawberry_Mojito_directions_list5");
+			fDirectionList5.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvDirectionList5.setVisibility(View.GONE);
+					} else {
+						tvDirectionList5.setText((CharSequence) arg0.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+
+			final Firebase fDirectionList6 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/55/courses_drink_cocktails_Strawberry_Mojito_directions_list6");
+			fDirectionList6.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvDirectionList6.setVisibility(View.GONE);
+					} else {
+						tvDirectionList6.setText((CharSequence) arg0.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+		} else if (item.equals("Berry Shooters")) {
+			// Action Bar Text
+			setTitle("Berry Shooters");
+			// Image Code
+			Firebase fImageDetailRecipe = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/56/courses_drink_cocktails_Berry_Shooters_image");
+			fImageDetailRecipe.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					String tempImage = (String) arg0.getValue();
+					// Logo image for this page (will be same for all menus)
+					UrlImageViewHelper.setUrlDrawable(imgDetailRecipe,
+							tempImage);
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+			// Image Detail
+			Firebase fImageDetail = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/56/courses_drink_cocktails_Berry_Shooters_image_detail");
+			fImageDetail.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvImgDetail.setVisibility(View.GONE);
+					} else {
+						tvImgDetail.setText((CharSequence) arg0.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+			// Ingredients 6 Lists
+			Firebase fIngredientsList1 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/56/courses_drink_cocktails_Berry_Shooters_ingredients_list1");
+			fIngredientsList1.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvIngredientsList1.setVisibility(View.GONE);
+					} else {
+						tvIngredientsList1.setText((CharSequence) arg0
+								.getValue());
+					}
+
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+
+			Firebase fIngredientsList2 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/56/courses_drink_cocktails_Berry_Shooters_ingredients_list2");
+			fIngredientsList2.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvIngredientsList2.setVisibility(View.GONE);
+					} else {
+						tvIngredientsList2.setText((CharSequence) arg0
+								.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+			Firebase fIngredientsList3 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/56/courses_drink_cocktails_Berry_Shooters_ingredients_list3");
+			fIngredientsList3.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvIngredientsList3.setVisibility(View.GONE);
+					} else {
+						tvIngredientsList3.setText((CharSequence) arg0
+								.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+			Firebase fIngredientsList4 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/56/courses_drink_cocktails_Berry_Shooters_ingredients_list4");
+			fIngredientsList4.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvIngredientsList4.setVisibility(View.GONE);
+					} else {
+						tvIngredientsList4.setText((CharSequence) arg0
+								.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+			Firebase fIngredientsList5 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/56/courses_drink_cocktails_Berry_Shooters_ingredients_list5");
+			fIngredientsList5.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvIngredientsList5.setVisibility(View.GONE);
+					} else {
+						tvIngredientsList5.setText((CharSequence) arg0
+								.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+			Firebase fIngredientsList6 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/56/courses_drink_cocktails_Berry_Shooters_ingredients_list6");
+			fIngredientsList6.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvIngredientsList6.setVisibility(View.GONE);
+					} else {
+						tvIngredientsList6.setText((CharSequence) arg0
+								.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+			// Direction lists
+			final Firebase fDirectionList1 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/56/courses_drink_cocktails_Berry_Shooters_directions_list1");
+			fDirectionList1.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvDirectionList1.setVisibility(View.GONE);
+					} else {
+						tvDirectionList1.setText((CharSequence) arg0.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+
+			final Firebase fDirectionList2 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/56/courses_drink_cocktails_Berry_Shooters_directions_list2");
+			fDirectionList2.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvDirectionList2.setVisibility(View.GONE);
+					} else {
+						tvDirectionList2.setText((CharSequence) arg0.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+
+			final Firebase fDirectionList3 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/56/courses_drink_cocktails_Berry_Shooters_directions_list3");
+			fDirectionList3.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvDirectionList3.setVisibility(View.GONE);
+					} else {
+						tvDirectionList3.setText((CharSequence) arg0.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+
+			final Firebase fDirectionList4 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/56/courses_drink_cocktails_Berry_Shooters_directions_list4");
+			fDirectionList4.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvDirectionList4.setVisibility(View.GONE);
+					} else {
+						tvDirectionList4.setText((CharSequence) arg0.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+
+			final Firebase fDirectionList5 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/56/courses_drink_cocktails_Berry_Shooters_directions_list5");
+			fDirectionList5.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvDirectionList5.setVisibility(View.GONE);
+					} else {
+						tvDirectionList5.setText((CharSequence) arg0.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+
+			final Firebase fDirectionList6 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/56/courses_drink_cocktails_Berry_Shooters_directions_list6");
+			fDirectionList6.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvDirectionList6.setVisibility(View.GONE);
+					} else {
+						tvDirectionList6.setText((CharSequence) arg0.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+		} else if (item.equals("Frozen Mojito")) {
+			// Action Bar Text
+			setTitle("Frozen Mojito");
+			// Image Code
+			Firebase fImageDetailRecipe = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/57/courses_drink_cocktails_Frozen_Mojito_image");
+			fImageDetailRecipe.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					String tempImage = (String) arg0.getValue();
+					// Logo image for this page (will be same for all menus)
+					UrlImageViewHelper.setUrlDrawable(imgDetailRecipe,
+							tempImage);
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+			// Image Detail
+			Firebase fImageDetail = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/57/courses_drink_cocktails_Frozen_Mojito_image_detail");
+			fImageDetail.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvImgDetail.setVisibility(View.GONE);
+					} else {
+						tvImgDetail.setText((CharSequence) arg0.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+			// Ingredients 6 Lists
+			Firebase fIngredientsList1 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/57/courses_drink_cocktails_Frozen_Mojito_ingredients_list1");
+			fIngredientsList1.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvIngredientsList1.setVisibility(View.GONE);
+					} else {
+						tvIngredientsList1.setText((CharSequence) arg0
+								.getValue());
+					}
+
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+
+			Firebase fIngredientsList2 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/57/courses_drink_cocktails_Frozen_Mojito_ingredients_list2");
+			fIngredientsList2.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvIngredientsList2.setVisibility(View.GONE);
+					} else {
+						tvIngredientsList2.setText((CharSequence) arg0
+								.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+			Firebase fIngredientsList3 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/57/courses_drink_cocktails_Frozen_Mojito_ingredients_list3");
+			fIngredientsList3.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvIngredientsList3.setVisibility(View.GONE);
+					} else {
+						tvIngredientsList3.setText((CharSequence) arg0
+								.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+			Firebase fIngredientsList4 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/57/courses_drink_cocktails_Frozen_Mojito_ingredients_list4");
+			fIngredientsList4.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvIngredientsList4.setVisibility(View.GONE);
+					} else {
+						tvIngredientsList4.setText((CharSequence) arg0
+								.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+			Firebase fIngredientsList5 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/57/courses_drink_cocktails_Frozen_Mojito_ingredients_list5");
+			fIngredientsList5.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvIngredientsList5.setVisibility(View.GONE);
+					} else {
+						tvIngredientsList5.setText((CharSequence) arg0
+								.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+			Firebase fIngredientsList6 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/57/courses_drink_cocktails_Frozen_Mojito_ingredients_list6");
+			fIngredientsList6.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvIngredientsList6.setVisibility(View.GONE);
+					} else {
+						tvIngredientsList6.setText((CharSequence) arg0
+								.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+			// Direction lists
+			final Firebase fDirectionList1 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/57/courses_drink_cocktails_Frozen_Mojito_directions_list1");
+			fDirectionList1.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvDirectionList1.setVisibility(View.GONE);
+					} else {
+						tvDirectionList1.setText((CharSequence) arg0.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+
+			final Firebase fDirectionList2 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/57/courses_drink_cocktails_Frozen_Mojito_directions_list2");
+			fDirectionList2.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvDirectionList2.setVisibility(View.GONE);
+					} else {
+						tvDirectionList2.setText((CharSequence) arg0.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+
+			final Firebase fDirectionList3 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/57/courses_drink_cocktails_Frozen_Mojito_directions_list3");
+			fDirectionList3.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvDirectionList3.setVisibility(View.GONE);
+					} else {
+						tvDirectionList3.setText((CharSequence) arg0.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+
+			final Firebase fDirectionList4 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/57/courses_drink_cocktails_Frozen_Mojito_directions_list4");
+			fDirectionList4.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvDirectionList4.setVisibility(View.GONE);
+					} else {
+						tvDirectionList4.setText((CharSequence) arg0.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+
+			final Firebase fDirectionList5 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/57/courses_drink_cocktails_Frozen_Mojito_directions_list5");
+			fDirectionList5.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvDirectionList5.setVisibility(View.GONE);
+					} else {
+						tvDirectionList5.setText((CharSequence) arg0.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+
+			final Firebase fDirectionList6 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/57/courses_drink_cocktails_Frozen_Mojito_directions_list6");
+			fDirectionList6.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvDirectionList6.setVisibility(View.GONE);
+					} else {
+						tvDirectionList6.setText((CharSequence) arg0.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+		} else if (item.equals("White Russian")) {
+			// Action Bar Text
+			setTitle("White Russian");
+			// Image Code
+			Firebase fImageDetailRecipe = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/58/courses_drink_cocktails_White_Russian_image");
+			fImageDetailRecipe.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					String tempImage = (String) arg0.getValue();
+					// Logo image for this page (will be same for all menus)
+					UrlImageViewHelper.setUrlDrawable(imgDetailRecipe,
+							tempImage);
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+			// Image Detail
+			Firebase fImageDetail = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/58/courses_drink_cocktails_White_Russian_image_detail");
+			fImageDetail.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvImgDetail.setVisibility(View.GONE);
+					} else {
+						tvImgDetail.setText((CharSequence) arg0.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+			// Ingredients 6 Lists
+			Firebase fIngredientsList1 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/58/courses_drink_cocktails_White_Russian_ingredients_list1");
+			fIngredientsList1.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvIngredientsList1.setVisibility(View.GONE);
+					} else {
+						tvIngredientsList1.setText((CharSequence) arg0
+								.getValue());
+					}
+
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+
+			Firebase fIngredientsList2 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/58/courses_drink_cocktails_White_Russian_ingredients_list2");
+			fIngredientsList2.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvIngredientsList2.setVisibility(View.GONE);
+					} else {
+						tvIngredientsList2.setText((CharSequence) arg0
+								.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+			Firebase fIngredientsList3 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/58/courses_drink_cocktails_White_Russian_ingredients_list3");
+			fIngredientsList3.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvIngredientsList3.setVisibility(View.GONE);
+					} else {
+						tvIngredientsList3.setText((CharSequence) arg0
+								.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+			Firebase fIngredientsList4 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/58/courses_drink_cocktails_White_Russian_ingredients_list4");
+			fIngredientsList4.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvIngredientsList4.setVisibility(View.GONE);
+					} else {
+						tvIngredientsList4.setText((CharSequence) arg0
+								.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+			Firebase fIngredientsList5 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/58/courses_drink_cocktails_White_Russian_ingredients_list5");
+			fIngredientsList5.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvIngredientsList5.setVisibility(View.GONE);
+					} else {
+						tvIngredientsList5.setText((CharSequence) arg0
+								.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+			Firebase fIngredientsList6 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/58/courses_drink_cocktails_White_Russian_ingredients_list6");
+			fIngredientsList6.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvIngredientsList6.setVisibility(View.GONE);
+					} else {
+						tvIngredientsList6.setText((CharSequence) arg0
+								.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+			// Direction lists
+			final Firebase fDirectionList1 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/58/courses_drink_cocktails_White_Russian_directions_list1");
+			fDirectionList1.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvDirectionList1.setVisibility(View.GONE);
+					} else {
+						tvDirectionList1.setText((CharSequence) arg0.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+
+			final Firebase fDirectionList2 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/58/courses_drink_cocktails_White_Russian_directions_list2");
+			fDirectionList2.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvDirectionList2.setVisibility(View.GONE);
+					} else {
+						tvDirectionList2.setText((CharSequence) arg0.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+
+			final Firebase fDirectionList3 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/58/courses_drink_cocktails_White_Russian_directions_list3");
+			fDirectionList3.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvDirectionList3.setVisibility(View.GONE);
+					} else {
+						tvDirectionList3.setText((CharSequence) arg0.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+
+			final Firebase fDirectionList4 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/58/courses_drink_cocktails_White_Russian_directions_list4");
+			fDirectionList4.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvDirectionList4.setVisibility(View.GONE);
+					} else {
+						tvDirectionList4.setText((CharSequence) arg0.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+
+			final Firebase fDirectionList5 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/58/courses_drink_cocktails_White_Russian_directions_list5");
+			fDirectionList5.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvDirectionList5.setVisibility(View.GONE);
+					} else {
+						tvDirectionList5.setText((CharSequence) arg0.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+
+			final Firebase fDirectionList6 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/58/courses_drink_cocktails_White_Russian_directions_list6");
+			fDirectionList6.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvDirectionList6.setVisibility(View.GONE);
+					} else {
+						tvDirectionList6.setText((CharSequence) arg0.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+		} else if (item.equals("Malibu Bay Breeze")) {
+			// Action Bar Text
+			setTitle("White Russian");
+			// Image Code
+			Firebase fImageDetailRecipe = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/59/courses_drink_cocktails_Malibu_Bay_Breeze_image");
+			fImageDetailRecipe.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					String tempImage = (String) arg0.getValue();
+					// Logo image for this page (will be same for all menus)
+					UrlImageViewHelper.setUrlDrawable(imgDetailRecipe,
+							tempImage);
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+			// Image Detail
+			Firebase fImageDetail = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/59/courses_drink_cocktails_Malibu_Bay_Breeze_image_detail");
+			fImageDetail.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvImgDetail.setVisibility(View.GONE);
+					} else {
+						tvImgDetail.setText((CharSequence) arg0.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+			// Ingredients 6 Lists
+			Firebase fIngredientsList1 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/59/courses_drink_cocktails_Malibu_Bay_Breeze_ingredients_list1");
+			fIngredientsList1.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvIngredientsList1.setVisibility(View.GONE);
+					} else {
+						tvIngredientsList1.setText((CharSequence) arg0
+								.getValue());
+					}
+
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+
+			Firebase fIngredientsList2 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/59/courses_drink_cocktails_Malibu_Bay_Breeze_ingredients_list2");
+			fIngredientsList2.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvIngredientsList2.setVisibility(View.GONE);
+					} else {
+						tvIngredientsList2.setText((CharSequence) arg0
+								.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+			Firebase fIngredientsList3 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/59/courses_drink_cocktails_Malibu_Bay_Breeze_ingredients_list3");
+			fIngredientsList3.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvIngredientsList3.setVisibility(View.GONE);
+					} else {
+						tvIngredientsList3.setText((CharSequence) arg0
+								.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+			Firebase fIngredientsList4 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/59/courses_drink_cocktails_Malibu_Bay_Breeze_ingredients_list4");
+			fIngredientsList4.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvIngredientsList4.setVisibility(View.GONE);
+					} else {
+						tvIngredientsList4.setText((CharSequence) arg0
+								.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+			Firebase fIngredientsList5 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/59/courses_drink_cocktails_Malibu_Bay_Breeze_ingredients_list5");
+			fIngredientsList5.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvIngredientsList5.setVisibility(View.GONE);
+					} else {
+						tvIngredientsList5.setText((CharSequence) arg0
+								.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+			Firebase fIngredientsList6 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/59/courses_drink_cocktails_Malibu_Bay_Breeze_ingredients_list6");
+			fIngredientsList6.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvIngredientsList6.setVisibility(View.GONE);
+					} else {
+						tvIngredientsList6.setText((CharSequence) arg0
+								.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+			// Direction lists
+			final Firebase fDirectionList1 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/59/courses_drink_cocktails_Malibu_Bay_Breeze_directions_list1");
+			fDirectionList1.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvDirectionList1.setVisibility(View.GONE);
+					} else {
+						tvDirectionList1.setText((CharSequence) arg0.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+
+			final Firebase fDirectionList2 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/59/courses_drink_cocktails_Malibu_Bay_Breeze_directions_list2");
+			fDirectionList2.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvDirectionList2.setVisibility(View.GONE);
+					} else {
+						tvDirectionList2.setText((CharSequence) arg0.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+
+			final Firebase fDirectionList3 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/59/courses_drink_cocktails_Malibu_Bay_Breeze_directions_list3");
+			fDirectionList3.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvDirectionList3.setVisibility(View.GONE);
+					} else {
+						tvDirectionList3.setText((CharSequence) arg0.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+
+			final Firebase fDirectionList4 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/59/courses_drink_cocktails_Malibu_Bay_Breeze_directions_list4");
+			fDirectionList4.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvDirectionList4.setVisibility(View.GONE);
+					} else {
+						tvDirectionList4.setText((CharSequence) arg0.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+
+			final Firebase fDirectionList5 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/59/courses_drink_cocktails_Malibu_Bay_Breeze_directions_list5");
+			fDirectionList5.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvDirectionList5.setVisibility(View.GONE);
+					} else {
+						tvDirectionList5.setText((CharSequence) arg0.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+
+			final Firebase fDirectionList6 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/59/courses_drink_cocktails_Malibu_Bay_Breeze_directions_list6");
+			fDirectionList6.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvDirectionList6.setVisibility(View.GONE);
+					} else {
+						tvDirectionList6.setText((CharSequence) arg0.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
 		}
 	}
 
