@@ -18883,6 +18883,3295 @@ public class MainDetailRecipePage extends Activity {
 
 				}
 			});
+		} else if (item.equals("Chicken Fried Chicken")) {
+			// Action Bar Text
+			setTitle("Chicken Fried Chicken");
+			// Image Code
+			Firebase fImageDetailRecipe = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/74/courses_maindish_deepfried_Chicken_Fried_Chicken_image");
+			fImageDetailRecipe.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					String tempImage = (String) arg0.getValue();
+					// Logo image for this page (will be same for all menus)
+					UrlImageViewHelper.setUrlDrawable(imgDetailRecipe,
+							tempImage);
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+			// Image Detail
+			Firebase fImageDetail = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/74/courses_maindish_deepfried_Chicken_Fried_Chicken_image_detail");
+			fImageDetail.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvImgDetail.setVisibility(View.GONE);
+					} else {
+						tvImgDetail.setText((CharSequence) arg0.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+			// Ingredients 6 Lists
+			Firebase fIngredientsList1 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/74/courses_maindish_deepfried_Chicken_Fried_Chicken_ingredients_list1");
+			fIngredientsList1.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvIngredientsList1.setVisibility(View.GONE);
+					} else {
+						tvIngredientsList1.setText((CharSequence) arg0
+								.getValue());
+					}
+
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+
+			Firebase fIngredientsList2 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/74/courses_maindish_deepfried_Chicken_Fried_Chicken_ingredients_list2");
+			fIngredientsList2.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvIngredientsList2.setVisibility(View.GONE);
+					} else {
+						tvIngredientsList2.setText((CharSequence) arg0
+								.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+			Firebase fIngredientsList3 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/74/courses_maindish_deepfried_Chicken_Fried_Chicken_ingredients_list3");
+			fIngredientsList3.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvIngredientsList3.setVisibility(View.GONE);
+					} else {
+						tvIngredientsList3.setText((CharSequence) arg0
+								.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+			Firebase fIngredientsList4 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/74/courses_maindish_deepfried_Chicken_Fried_Chicken_ingredients_list4");
+			fIngredientsList4.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvIngredientsList4.setVisibility(View.GONE);
+					} else {
+						tvIngredientsList4.setText((CharSequence) arg0
+								.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+			Firebase fIngredientsList5 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/74/courses_maindish_deepfried_Chicken_Fried_Chicken_ingredients_list5");
+			fIngredientsList5.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvIngredientsList5.setVisibility(View.GONE);
+					} else {
+						tvIngredientsList5.setText((CharSequence) arg0
+								.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+			Firebase fIngredientsList6 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/74/courses_maindish_deepfried_Chicken_Fried_Chicken_ingredients_list6");
+			fIngredientsList6.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvIngredientsList6.setVisibility(View.GONE);
+					} else {
+						tvIngredientsList6.setText((CharSequence) arg0
+								.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+			// Direction lists
+			final Firebase fDirectionList1 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/74/courses_maindish_deepfried_Chicken_Fried_Chicken_directions_list1");
+			fDirectionList1.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvDirectionList1.setVisibility(View.GONE);
+					} else {
+						tvDirectionList1.setText((CharSequence) arg0.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+
+			final Firebase fDirectionList2 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/74/courses_maindish_deepfried_Chicken_Fried_Chicken_directions_list2");
+			fDirectionList2.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvDirectionList2.setVisibility(View.GONE);
+					} else {
+						tvDirectionList2.setText((CharSequence) arg0.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+
+			final Firebase fDirectionList3 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/74/courses_maindish_deepfried_Chicken_Fried_Chicken_directions_list3");
+			fDirectionList3.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvDirectionList3.setVisibility(View.GONE);
+					} else {
+						tvDirectionList3.setText((CharSequence) arg0.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+
+			final Firebase fDirectionList4 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/74/courses_maindish_deepfried_Chicken_Fried_Chicken_directions_list4");
+			fDirectionList4.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvDirectionList4.setVisibility(View.GONE);
+					} else {
+						tvDirectionList4.setText((CharSequence) arg0.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+
+			final Firebase fDirectionList5 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/74/courses_maindish_deepfried_Chicken_Fried_Chicken_directions_list5");
+			fDirectionList5.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvDirectionList5.setVisibility(View.GONE);
+					} else {
+						tvDirectionList5.setText((CharSequence) arg0.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+
+			final Firebase fDirectionList6 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/74/courses_maindish_deepfried_Chicken_Fried_Chicken_directions_list6");
+			fDirectionList6.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvDirectionList6.setVisibility(View.GONE);
+					} else {
+						tvDirectionList6.setText((CharSequence) arg0.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+		} else if (item.equals("Fish Tacos")) {
+			// Action Bar Text
+			setTitle("Fish Tacos");
+			// Image Code
+			Firebase fImageDetailRecipe = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/75/courses_maindish_deepfried_Fish_Tacos_image");
+			fImageDetailRecipe.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					String tempImage = (String) arg0.getValue();
+					// Logo image for this page (will be same for all menus)
+					UrlImageViewHelper.setUrlDrawable(imgDetailRecipe,
+							tempImage);
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+			// Image Detail
+			Firebase fImageDetail = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/75/courses_maindish_deepfried_Fish_Tacos_image_detail");
+			fImageDetail.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvImgDetail.setVisibility(View.GONE);
+					} else {
+						tvImgDetail.setText((CharSequence) arg0.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+			// Ingredients 6 Lists
+			Firebase fIngredientsList1 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/75/courses_maindish_deepfried_Fish_Tacos_ingredients_list1");
+			fIngredientsList1.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvIngredientsList1.setVisibility(View.GONE);
+					} else {
+						tvIngredientsList1.setText((CharSequence) arg0
+								.getValue());
+					}
+
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+
+			Firebase fIngredientsList2 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/75/courses_maindish_deepfried_Fish_Tacos_ingredients_list2");
+			fIngredientsList2.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvIngredientsList2.setVisibility(View.GONE);
+					} else {
+						tvIngredientsList2.setText((CharSequence) arg0
+								.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+			Firebase fIngredientsList3 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/75/courses_maindish_deepfried_Fish_Tacos_ingredients_list3");
+			fIngredientsList3.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvIngredientsList3.setVisibility(View.GONE);
+					} else {
+						tvIngredientsList3.setText((CharSequence) arg0
+								.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+			Firebase fIngredientsList4 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/75/courses_maindish_deepfried_Fish_Tacos_ingredients_list4");
+			fIngredientsList4.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvIngredientsList4.setVisibility(View.GONE);
+					} else {
+						tvIngredientsList4.setText((CharSequence) arg0
+								.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+			Firebase fIngredientsList5 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/75/courses_maindish_deepfried_Fish_Tacos_ingredients_list5");
+			fIngredientsList5.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvIngredientsList5.setVisibility(View.GONE);
+					} else {
+						tvIngredientsList5.setText((CharSequence) arg0
+								.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+			Firebase fIngredientsList6 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/75/courses_maindish_deepfried_Fish_Tacos_ingredients_list6");
+			fIngredientsList6.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvIngredientsList6.setVisibility(View.GONE);
+					} else {
+						tvIngredientsList6.setText((CharSequence) arg0
+								.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+			// Direction lists
+			final Firebase fDirectionList1 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/75/courses_maindish_deepfried_Fish_Tacos_directions_list1");
+			fDirectionList1.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvDirectionList1.setVisibility(View.GONE);
+					} else {
+						tvDirectionList1.setText((CharSequence) arg0.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+
+			final Firebase fDirectionList2 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/75/courses_maindish_deepfried_Fish_Tacos_directions_list2");
+			fDirectionList2.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvDirectionList2.setVisibility(View.GONE);
+					} else {
+						tvDirectionList2.setText((CharSequence) arg0.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+
+			final Firebase fDirectionList3 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/75/courses_maindish_deepfried_Fish_Tacos_directions_list3");
+			fDirectionList3.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvDirectionList3.setVisibility(View.GONE);
+					} else {
+						tvDirectionList3.setText((CharSequence) arg0.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+
+			final Firebase fDirectionList4 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/75/courses_maindish_deepfried_Fish_Tacos_directions_list4");
+			fDirectionList4.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvDirectionList4.setVisibility(View.GONE);
+					} else {
+						tvDirectionList4.setText((CharSequence) arg0.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+
+			final Firebase fDirectionList5 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/75/courses_maindish_deepfried_Fish_Tacos_directions_list5");
+			fDirectionList5.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvDirectionList5.setVisibility(View.GONE);
+					} else {
+						tvDirectionList5.setText((CharSequence) arg0.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+
+			final Firebase fDirectionList6 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/75/courses_maindish_deepfried_Fish_Tacos_directions_list6");
+			fDirectionList6.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvDirectionList6.setVisibility(View.GONE);
+					} else {
+						tvDirectionList6.setText((CharSequence) arg0.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+		} else if (item.equals("The Best Chicken Fried Steak")) {
+			// Action Bar Text
+			setTitle("The Best Chicken Fried Steak");
+			// Image Code
+			Firebase fImageDetailRecipe = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/76/courses_maindish_deepfried_The_Best_Chicken_Fried_Steak_image");
+			fImageDetailRecipe.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					String tempImage = (String) arg0.getValue();
+					// Logo image for this page (will be same for all menus)
+					UrlImageViewHelper.setUrlDrawable(imgDetailRecipe,
+							tempImage);
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+			// Image Detail
+			Firebase fImageDetail = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/76/courses_maindish_deepfried_The_Best_Chicken_Fried_Steak_image_detail");
+			fImageDetail.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvImgDetail.setVisibility(View.GONE);
+					} else {
+						tvImgDetail.setText((CharSequence) arg0.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+			// Ingredients 6 Lists
+			Firebase fIngredientsList1 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/76/courses_maindish_deepfried_The_Best_Chicken_Fried_Steak_ingredients_list1");
+			fIngredientsList1.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvIngredientsList1.setVisibility(View.GONE);
+					} else {
+						tvIngredientsList1.setText((CharSequence) arg0
+								.getValue());
+					}
+
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+
+			Firebase fIngredientsList2 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/76/courses_maindish_deepfried_The_Best_Chicken_Fried_Steak_ingredients_list2");
+			fIngredientsList2.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvIngredientsList2.setVisibility(View.GONE);
+					} else {
+						tvIngredientsList2.setText((CharSequence) arg0
+								.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+			Firebase fIngredientsList3 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/76/courses_maindish_deepfried_The_Best_Chicken_Fried_Steak_ingredients_list3");
+			fIngredientsList3.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvIngredientsList3.setVisibility(View.GONE);
+					} else {
+						tvIngredientsList3.setText((CharSequence) arg0
+								.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+			Firebase fIngredientsList4 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/76/courses_maindish_deepfried_The_Best_Chicken_Fried_Steak_ingredients_list4");
+			fIngredientsList4.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvIngredientsList4.setVisibility(View.GONE);
+					} else {
+						tvIngredientsList4.setText((CharSequence) arg0
+								.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+			Firebase fIngredientsList5 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/76/courses_maindish_deepfried_The_Best_Chicken_Fried_Steak_ingredients_list5");
+			fIngredientsList5.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvIngredientsList5.setVisibility(View.GONE);
+					} else {
+						tvIngredientsList5.setText((CharSequence) arg0
+								.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+			Firebase fIngredientsList6 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/76/courses_maindish_deepfried_The_Best_Chicken_Fried_Steak_ingredients_list6");
+			fIngredientsList6.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvIngredientsList6.setVisibility(View.GONE);
+					} else {
+						tvIngredientsList6.setText((CharSequence) arg0
+								.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+			// Direction lists
+			final Firebase fDirectionList1 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/76/courses_maindish_deepfried_The_Best_Chicken_Fried_Steak_directions_list1");
+			fDirectionList1.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvDirectionList1.setVisibility(View.GONE);
+					} else {
+						tvDirectionList1.setText((CharSequence) arg0.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+
+			final Firebase fDirectionList2 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/76/courses_maindish_deepfried_The_Best_Chicken_Fried_Steak_directions_list2");
+			fDirectionList2.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvDirectionList2.setVisibility(View.GONE);
+					} else {
+						tvDirectionList2.setText((CharSequence) arg0.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+
+			final Firebase fDirectionList3 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/76/courses_maindish_deepfried_The_Best_Chicken_Fried_Steak_directions_list3");
+			fDirectionList3.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvDirectionList3.setVisibility(View.GONE);
+					} else {
+						tvDirectionList3.setText((CharSequence) arg0.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+
+			final Firebase fDirectionList4 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/76/courses_maindish_deepfried_The_Best_Chicken_Fried_Steak_directions_list4");
+			fDirectionList4.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvDirectionList4.setVisibility(View.GONE);
+					} else {
+						tvDirectionList4.setText((CharSequence) arg0.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+
+			final Firebase fDirectionList5 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/76/courses_maindish_deepfried_The_Best_Chicken_Fried_Steak_directions_list5");
+			fDirectionList5.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvDirectionList5.setVisibility(View.GONE);
+					} else {
+						tvDirectionList5.setText((CharSequence) arg0.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+
+			final Firebase fDirectionList6 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/76/courses_maindish_deepfried_The_Best_Chicken_Fried_Steak_directions_list6");
+			fDirectionList6.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvDirectionList6.setVisibility(View.GONE);
+					} else {
+						tvDirectionList6.setText((CharSequence) arg0.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+		} else if (item.equals("Corn Dogs")) {
+			// Action Bar Text
+			setTitle("Corn Dogs");
+			// Image Code
+			Firebase fImageDetailRecipe = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/77/courses_maindish_deepfried_Corn_Dogs_image");
+			fImageDetailRecipe.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					String tempImage = (String) arg0.getValue();
+					// Logo image for this page (will be same for all menus)
+					UrlImageViewHelper.setUrlDrawable(imgDetailRecipe,
+							tempImage);
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+			// Image Detail
+			Firebase fImageDetail = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/77/courses_maindish_deepfried_Corn_Dogs_image_detail");
+			fImageDetail.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvImgDetail.setVisibility(View.GONE);
+					} else {
+						tvImgDetail.setText((CharSequence) arg0.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+			// Ingredients 6 Lists
+			Firebase fIngredientsList1 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/77/courses_maindish_deepfried_Corn_Dogs_ingredients_list1");
+			fIngredientsList1.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvIngredientsList1.setVisibility(View.GONE);
+					} else {
+						tvIngredientsList1.setText((CharSequence) arg0
+								.getValue());
+					}
+
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+
+			Firebase fIngredientsList2 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/77/courses_maindish_deepfried_Corn_Dogs_ingredients_list2");
+			fIngredientsList2.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvIngredientsList2.setVisibility(View.GONE);
+					} else {
+						tvIngredientsList2.setText((CharSequence) arg0
+								.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+			Firebase fIngredientsList3 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/77/courses_maindish_deepfried_Corn_Dogs_ingredients_list3");
+			fIngredientsList3.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvIngredientsList3.setVisibility(View.GONE);
+					} else {
+						tvIngredientsList3.setText((CharSequence) arg0
+								.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+			Firebase fIngredientsList4 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/77/courses_maindish_deepfried_Corn_Dogs_ingredients_list4");
+			fIngredientsList4.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvIngredientsList4.setVisibility(View.GONE);
+					} else {
+						tvIngredientsList4.setText((CharSequence) arg0
+								.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+			Firebase fIngredientsList5 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/77/courses_maindish_deepfried_Corn_Dogs_ingredients_list5");
+			fIngredientsList5.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvIngredientsList5.setVisibility(View.GONE);
+					} else {
+						tvIngredientsList5.setText((CharSequence) arg0
+								.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+			Firebase fIngredientsList6 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/77/courses_maindish_deepfried_Corn_Dogs_ingredients_list6");
+			fIngredientsList6.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvIngredientsList6.setVisibility(View.GONE);
+					} else {
+						tvIngredientsList6.setText((CharSequence) arg0
+								.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+			// Direction lists
+			final Firebase fDirectionList1 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/77/courses_maindish_deepfried_Corn_Dogs_directions_list1");
+			fDirectionList1.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvDirectionList1.setVisibility(View.GONE);
+					} else {
+						tvDirectionList1.setText((CharSequence) arg0.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+
+			final Firebase fDirectionList2 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/77/courses_maindish_deepfried_Corn_Dogs_directions_list2");
+			fDirectionList2.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvDirectionList2.setVisibility(View.GONE);
+					} else {
+						tvDirectionList2.setText((CharSequence) arg0.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+
+			final Firebase fDirectionList3 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/77/courses_maindish_deepfried_Corn_Dogs_directions_list3");
+			fDirectionList3.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvDirectionList3.setVisibility(View.GONE);
+					} else {
+						tvDirectionList3.setText((CharSequence) arg0.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+
+			final Firebase fDirectionList4 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/77/courses_maindish_deepfried_Corn_Dogs_directions_list4");
+			fDirectionList4.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvDirectionList4.setVisibility(View.GONE);
+					} else {
+						tvDirectionList4.setText((CharSequence) arg0.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+
+			final Firebase fDirectionList5 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/77/courses_maindish_deepfried_Corn_Dogs_directions_list5");
+			fDirectionList5.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvDirectionList5.setVisibility(View.GONE);
+					} else {
+						tvDirectionList5.setText((CharSequence) arg0.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+
+			final Firebase fDirectionList6 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/77/courses_maindish_deepfried_Corn_Dogs_directions_list6");
+			fDirectionList6.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvDirectionList6.setVisibility(View.GONE);
+					} else {
+						tvDirectionList6.setText((CharSequence) arg0.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+		} else if (item.equals("Beer Batter Fish Made Great")) {
+			// Action Bar Text
+			setTitle("Beer Batter Fish Made Great");
+			// Image Code
+			Firebase fImageDetailRecipe = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/78/courses_maindish_deepfried_Beer_Batter_Fish_Made_Great_image");
+			fImageDetailRecipe.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					String tempImage = (String) arg0.getValue();
+					// Logo image for this page (will be same for all menus)
+					UrlImageViewHelper.setUrlDrawable(imgDetailRecipe,
+							tempImage);
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+			// Image Detail
+			Firebase fImageDetail = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/78/courses_maindish_deepfried_Beer_Batter_Fish_Made_Great_image_detail");
+			fImageDetail.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvImgDetail.setVisibility(View.GONE);
+					} else {
+						tvImgDetail.setText((CharSequence) arg0.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+			// Ingredients 6 Lists
+			Firebase fIngredientsList1 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/78/courses_maindish_deepfried_Beer_Batter_Fish_Made_Great_ingredients_list1");
+			fIngredientsList1.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvIngredientsList1.setVisibility(View.GONE);
+					} else {
+						tvIngredientsList1.setText((CharSequence) arg0
+								.getValue());
+					}
+
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+
+			Firebase fIngredientsList2 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/78/courses_maindish_deepfried_Beer_Batter_Fish_Made_Great_ingredients_list2");
+			fIngredientsList2.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvIngredientsList2.setVisibility(View.GONE);
+					} else {
+						tvIngredientsList2.setText((CharSequence) arg0
+								.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+			Firebase fIngredientsList3 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/78/courses_maindish_deepfried_Beer_Batter_Fish_Made_Great_ingredients_list3");
+			fIngredientsList3.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvIngredientsList3.setVisibility(View.GONE);
+					} else {
+						tvIngredientsList3.setText((CharSequence) arg0
+								.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+			Firebase fIngredientsList4 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/78/courses_maindish_deepfried_Beer_Batter_Fish_Made_Great_ingredients_list4");
+			fIngredientsList4.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvIngredientsList4.setVisibility(View.GONE);
+					} else {
+						tvIngredientsList4.setText((CharSequence) arg0
+								.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+			Firebase fIngredientsList5 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/78/courses_maindish_deepfried_Beer_Batter_Fish_Made_Great_ingredients_list5");
+			fIngredientsList5.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvIngredientsList5.setVisibility(View.GONE);
+					} else {
+						tvIngredientsList5.setText((CharSequence) arg0
+								.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+			Firebase fIngredientsList6 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/78/courses_maindish_deepfried_Beer_Batter_Fish_Made_Great_ingredients_list6");
+			fIngredientsList6.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvIngredientsList6.setVisibility(View.GONE);
+					} else {
+						tvIngredientsList6.setText((CharSequence) arg0
+								.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+			// Direction lists
+			final Firebase fDirectionList1 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/78/courses_maindish_deepfried_Beer_Batter_Fish_Made_Great_directions_list1");
+			fDirectionList1.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvDirectionList1.setVisibility(View.GONE);
+					} else {
+						tvDirectionList1.setText((CharSequence) arg0.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+
+			final Firebase fDirectionList2 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/78/courses_maindish_deepfried_Beer_Batter_Fish_Made_Great_directions_list2");
+			fDirectionList2.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvDirectionList2.setVisibility(View.GONE);
+					} else {
+						tvDirectionList2.setText((CharSequence) arg0.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+
+			final Firebase fDirectionList3 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/78/courses_maindish_deepfried_Beer_Batter_Fish_Made_Great_directions_list3");
+			fDirectionList3.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvDirectionList3.setVisibility(View.GONE);
+					} else {
+						tvDirectionList3.setText((CharSequence) arg0.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+
+			final Firebase fDirectionList4 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/78/courses_maindish_deepfried_Beer_Batter_Fish_Made_Great_directions_list4");
+			fDirectionList4.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvDirectionList4.setVisibility(View.GONE);
+					} else {
+						tvDirectionList4.setText((CharSequence) arg0.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+
+			final Firebase fDirectionList5 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/78/courses_maindish_deepfried_Beer_Batter_Fish_Made_Great_directions_list5");
+			fDirectionList5.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvDirectionList5.setVisibility(View.GONE);
+					} else {
+						tvDirectionList5.setText((CharSequence) arg0.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+
+			final Firebase fDirectionList6 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/78/courses_maindish_deepfried_Beer_Batter_Fish_Made_Great_directions_list6");
+			fDirectionList6.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvDirectionList6.setVisibility(View.GONE);
+					} else {
+						tvDirectionList6.setText((CharSequence) arg0.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+		} else if (item.equals("Crispy Fried Chicken")) {
+			// Action Bar Text
+			setTitle("Crispy Fried Chicken");
+			// Image Code
+			Firebase fImageDetailRecipe = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/79/courses_maindish_deepfried_Crispy_Fried_Chicken_image");
+			fImageDetailRecipe.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					String tempImage = (String) arg0.getValue();
+					// Logo image for this page (will be same for all menus)
+					UrlImageViewHelper.setUrlDrawable(imgDetailRecipe,
+							tempImage);
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+			// Image Detail
+			Firebase fImageDetail = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/79/courses_maindish_deepfried_Crispy_Fried_Chicken_image_detail");
+			fImageDetail.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvImgDetail.setVisibility(View.GONE);
+					} else {
+						tvImgDetail.setText((CharSequence) arg0.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+			// Ingredients 6 Lists
+			Firebase fIngredientsList1 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/79/courses_maindish_deepfried_Crispy_Fried_Chicken_ingredients_list1");
+			fIngredientsList1.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvIngredientsList1.setVisibility(View.GONE);
+					} else {
+						tvIngredientsList1.setText((CharSequence) arg0
+								.getValue());
+					}
+
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+
+			Firebase fIngredientsList2 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/79/courses_maindish_deepfried_Crispy_Fried_Chicken_ingredients_list2");
+			fIngredientsList2.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvIngredientsList2.setVisibility(View.GONE);
+					} else {
+						tvIngredientsList2.setText((CharSequence) arg0
+								.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+			Firebase fIngredientsList3 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/79/courses_maindish_deepfried_Crispy_Fried_Chicken_ingredients_list3");
+			fIngredientsList3.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvIngredientsList3.setVisibility(View.GONE);
+					} else {
+						tvIngredientsList3.setText((CharSequence) arg0
+								.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+			Firebase fIngredientsList4 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/79/courses_maindish_deepfried_Crispy_Fried_Chicken_ingredients_list4");
+			fIngredientsList4.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvIngredientsList4.setVisibility(View.GONE);
+					} else {
+						tvIngredientsList4.setText((CharSequence) arg0
+								.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+			Firebase fIngredientsList5 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/79/courses_maindish_deepfried_Crispy_Fried_Chicken_ingredients_list5");
+			fIngredientsList5.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvIngredientsList5.setVisibility(View.GONE);
+					} else {
+						tvIngredientsList5.setText((CharSequence) arg0
+								.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+			Firebase fIngredientsList6 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/79/courses_maindish_deepfried_Crispy_Fried_Chicken_ingredients_list6");
+			fIngredientsList6.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvIngredientsList6.setVisibility(View.GONE);
+					} else {
+						tvIngredientsList6.setText((CharSequence) arg0
+								.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+			// Direction lists
+			final Firebase fDirectionList1 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/79/courses_maindish_deepfried_Crispy_Fried_Chicken_directions_list1");
+			fDirectionList1.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvDirectionList1.setVisibility(View.GONE);
+					} else {
+						tvDirectionList1.setText((CharSequence) arg0.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+
+			final Firebase fDirectionList2 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/79/courses_maindish_deepfried_Crispy_Fried_Chicken_directions_list2");
+			fDirectionList2.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvDirectionList2.setVisibility(View.GONE);
+					} else {
+						tvDirectionList2.setText((CharSequence) arg0.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+
+			final Firebase fDirectionList3 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/79/courses_maindish_deepfried_Crispy_Fried_Chicken_directions_list3");
+			fDirectionList3.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvDirectionList3.setVisibility(View.GONE);
+					} else {
+						tvDirectionList3.setText((CharSequence) arg0.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+
+			final Firebase fDirectionList4 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/79/courses_maindish_deepfried_Crispy_Fried_Chicken_directions_list4");
+			fDirectionList4.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvDirectionList4.setVisibility(View.GONE);
+					} else {
+						tvDirectionList4.setText((CharSequence) arg0.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+
+			final Firebase fDirectionList5 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/79/courses_maindish_deepfried_Crispy_Fried_Chicken_directions_list5");
+			fDirectionList5.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvDirectionList5.setVisibility(View.GONE);
+					} else {
+						tvDirectionList5.setText((CharSequence) arg0.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+
+			final Firebase fDirectionList6 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/79/courses_maindish_deepfried_Crispy_Fried_Chicken_directions_list6");
+			fDirectionList6.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvDirectionList6.setVisibility(View.GONE);
+					} else {
+						tvDirectionList6.setText((CharSequence) arg0.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+		} else if (item.equals("Perfect Sesame Chicken")) {
+			// Action Bar Text
+			setTitle("Perfect Sesame Chicken");
+			// Image Code
+			Firebase fImageDetailRecipe = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/80/courses_maindish_deepfried_Perfect_Sesame_Chicken_image");
+			fImageDetailRecipe.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					String tempImage = (String) arg0.getValue();
+					// Logo image for this page (will be same for all menus)
+					UrlImageViewHelper.setUrlDrawable(imgDetailRecipe,
+							tempImage);
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+			// Image Detail
+			Firebase fImageDetail = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/80/courses_maindish_deepfried_Perfect_Sesame_Chicken_image_detail");
+			fImageDetail.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvImgDetail.setVisibility(View.GONE);
+					} else {
+						tvImgDetail.setText((CharSequence) arg0.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+			// Ingredients 6 Lists
+			Firebase fIngredientsList1 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/80/courses_maindish_deepfried_Perfect_Sesame_Chicken_ingredients_list1");
+			fIngredientsList1.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvIngredientsList1.setVisibility(View.GONE);
+					} else {
+						tvIngredientsList1.setText((CharSequence) arg0
+								.getValue());
+					}
+
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+
+			Firebase fIngredientsList2 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/80/courses_maindish_deepfried_Perfect_Sesame_Chicken_ingredients_list2");
+			fIngredientsList2.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvIngredientsList2.setVisibility(View.GONE);
+					} else {
+						tvIngredientsList2.setText((CharSequence) arg0
+								.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+			Firebase fIngredientsList3 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/80/courses_maindish_deepfried_Perfect_Sesame_Chicken_ingredients_list3");
+			fIngredientsList3.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvIngredientsList3.setVisibility(View.GONE);
+					} else {
+						tvIngredientsList3.setText((CharSequence) arg0
+								.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+			Firebase fIngredientsList4 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/80/courses_maindish_deepfried_Perfect_Sesame_Chicken_ingredients_list4");
+			fIngredientsList4.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvIngredientsList4.setVisibility(View.GONE);
+					} else {
+						tvIngredientsList4.setText((CharSequence) arg0
+								.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+			Firebase fIngredientsList5 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/80/courses_maindish_deepfried_Perfect_Sesame_Chicken_ingredients_list5");
+			fIngredientsList5.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvIngredientsList5.setVisibility(View.GONE);
+					} else {
+						tvIngredientsList5.setText((CharSequence) arg0
+								.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+			Firebase fIngredientsList6 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/80/courses_maindish_deepfried_Perfect_Sesame_Chicken_ingredients_list6");
+			fIngredientsList6.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvIngredientsList6.setVisibility(View.GONE);
+					} else {
+						tvIngredientsList6.setText((CharSequence) arg0
+								.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+			// Direction lists
+			final Firebase fDirectionList1 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/80/courses_maindish_deepfried_Perfect_Sesame_Chicken_directions_list1");
+			fDirectionList1.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvDirectionList1.setVisibility(View.GONE);
+					} else {
+						tvDirectionList1.setText((CharSequence) arg0.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+
+			final Firebase fDirectionList2 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/80/courses_maindish_deepfried_Perfect_Sesame_Chicken_directions_list2");
+			fDirectionList2.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvDirectionList2.setVisibility(View.GONE);
+					} else {
+						tvDirectionList2.setText((CharSequence) arg0.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+
+			final Firebase fDirectionList3 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/80/courses_maindish_deepfried_Perfect_Sesame_Chicken_directions_list3");
+			fDirectionList3.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvDirectionList3.setVisibility(View.GONE);
+					} else {
+						tvDirectionList3.setText((CharSequence) arg0.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+
+			final Firebase fDirectionList4 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/80/courses_maindish_deepfried_Perfect_Sesame_Chicken_directions_list4");
+			fDirectionList4.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvDirectionList4.setVisibility(View.GONE);
+					} else {
+						tvDirectionList4.setText((CharSequence) arg0.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+
+			final Firebase fDirectionList5 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/80/courses_maindish_deepfried_Perfect_Sesame_Chicken_directions_list5");
+			fDirectionList5.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvDirectionList5.setVisibility(View.GONE);
+					} else {
+						tvDirectionList5.setText((CharSequence) arg0.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+
+			final Firebase fDirectionList6 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/80/courses_maindish_deepfried_Perfect_Sesame_Chicken_directions_list6");
+			fDirectionList6.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvDirectionList6.setVisibility(View.GONE);
+					} else {
+						tvDirectionList6.setText((CharSequence) arg0.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+		} else if (item.equals("Southern Fried Chicken")) {
+			// Action Bar Text
+			setTitle("Southern Fried Chicken");
+			// Image Code
+			Firebase fImageDetailRecipe = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/81/courses_maindish_deepfried_Southern_Fried_Chicken_image");
+			fImageDetailRecipe.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					String tempImage = (String) arg0.getValue();
+					// Logo image for this page (will be same for all menus)
+					UrlImageViewHelper.setUrlDrawable(imgDetailRecipe,
+							tempImage);
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+			// Image Detail
+			Firebase fImageDetail = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/81/courses_maindish_deepfried_Southern_Fried_Chicken_image_detail");
+			fImageDetail.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvImgDetail.setVisibility(View.GONE);
+					} else {
+						tvImgDetail.setText((CharSequence) arg0.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+			// Ingredients 6 Lists
+			Firebase fIngredientsList1 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/81/courses_maindish_deepfried_Southern_Fried_Chicken_ingredients_list1");
+			fIngredientsList1.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvIngredientsList1.setVisibility(View.GONE);
+					} else {
+						tvIngredientsList1.setText((CharSequence) arg0
+								.getValue());
+					}
+
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+
+			Firebase fIngredientsList2 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/81/courses_maindish_deepfried_Southern_Fried_Chicken_ingredients_list2");
+			fIngredientsList2.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvIngredientsList2.setVisibility(View.GONE);
+					} else {
+						tvIngredientsList2.setText((CharSequence) arg0
+								.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+			Firebase fIngredientsList3 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/81/courses_maindish_deepfried_Southern_Fried_Chicken_ingredients_list3");
+			fIngredientsList3.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvIngredientsList3.setVisibility(View.GONE);
+					} else {
+						tvIngredientsList3.setText((CharSequence) arg0
+								.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+			Firebase fIngredientsList4 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/81/courses_maindish_deepfried_Southern_Fried_Chicken_ingredients_list4");
+			fIngredientsList4.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvIngredientsList4.setVisibility(View.GONE);
+					} else {
+						tvIngredientsList4.setText((CharSequence) arg0
+								.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+			Firebase fIngredientsList5 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/81/courses_maindish_deepfried_Southern_Fried_Chicken_ingredients_list5");
+			fIngredientsList5.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvIngredientsList5.setVisibility(View.GONE);
+					} else {
+						tvIngredientsList5.setText((CharSequence) arg0
+								.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+			Firebase fIngredientsList6 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/81/courses_maindish_deepfried_Southern_Fried_Chicken_ingredients_list6");
+			fIngredientsList6.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvIngredientsList6.setVisibility(View.GONE);
+					} else {
+						tvIngredientsList6.setText((CharSequence) arg0
+								.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+			// Direction lists
+			final Firebase fDirectionList1 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/81/courses_maindish_deepfried_Southern_Fried_Chicken_directions_list1");
+			fDirectionList1.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvDirectionList1.setVisibility(View.GONE);
+					} else {
+						tvDirectionList1.setText((CharSequence) arg0.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+
+			final Firebase fDirectionList2 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/81/courses_maindish_deepfried_Southern_Fried_Chicken_directions_list2");
+			fDirectionList2.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvDirectionList2.setVisibility(View.GONE);
+					} else {
+						tvDirectionList2.setText((CharSequence) arg0.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+
+			final Firebase fDirectionList3 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/81/courses_maindish_deepfried_Southern_Fried_Chicken_directions_list3");
+			fDirectionList3.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvDirectionList3.setVisibility(View.GONE);
+					} else {
+						tvDirectionList3.setText((CharSequence) arg0.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+
+			final Firebase fDirectionList4 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/81/courses_maindish_deepfried_Southern_Fried_Chicken_directions_list4");
+			fDirectionList4.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvDirectionList4.setVisibility(View.GONE);
+					} else {
+						tvDirectionList4.setText((CharSequence) arg0.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+
+			final Firebase fDirectionList5 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/81/courses_maindish_deepfried_Southern_Fried_Chicken_directions_list5");
+			fDirectionList5.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvDirectionList5.setVisibility(View.GONE);
+					} else {
+						tvDirectionList5.setText((CharSequence) arg0.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+
+			final Firebase fDirectionList6 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/81/courses_maindish_deepfried_Southern_Fried_Chicken_directions_list6");
+			fDirectionList6.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvDirectionList6.setVisibility(View.GONE);
+					} else {
+						tvDirectionList6.setText((CharSequence) arg0.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+		} else if (item.equals("Spicy Crispy Beef")) {
+			// Action Bar Text
+			setTitle("Spicy Crispy Beef");
+			// Image Code
+			Firebase fImageDetailRecipe = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/82/courses_maindish_deepfried_Spicy_Crispy_Beef_image");
+			fImageDetailRecipe.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					String tempImage = (String) arg0.getValue();
+					// Logo image for this page (will be same for all menus)
+					UrlImageViewHelper.setUrlDrawable(imgDetailRecipe,
+							tempImage);
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+			// Image Detail
+			Firebase fImageDetail = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/82/courses_maindish_deepfried_Spicy_Crispy_Beef_image_detail");
+			fImageDetail.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvImgDetail.setVisibility(View.GONE);
+					} else {
+						tvImgDetail.setText((CharSequence) arg0.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+			// Ingredients 6 Lists
+			Firebase fIngredientsList1 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/82/courses_maindish_deepfried_Spicy_Crispy_Beef_ingredients_list1");
+			fIngredientsList1.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvIngredientsList1.setVisibility(View.GONE);
+					} else {
+						tvIngredientsList1.setText((CharSequence) arg0
+								.getValue());
+					}
+
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+
+			Firebase fIngredientsList2 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/82/courses_maindish_deepfried_Spicy_Crispy_Beef_ingredients_list2");
+			fIngredientsList2.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvIngredientsList2.setVisibility(View.GONE);
+					} else {
+						tvIngredientsList2.setText((CharSequence) arg0
+								.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+			Firebase fIngredientsList3 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/82/courses_maindish_deepfried_Spicy_Crispy_Beef_ingredients_list3");
+			fIngredientsList3.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvIngredientsList3.setVisibility(View.GONE);
+					} else {
+						tvIngredientsList3.setText((CharSequence) arg0
+								.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+			Firebase fIngredientsList4 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/82/courses_maindish_deepfried_Spicy_Crispy_Beef_ingredients_list4");
+			fIngredientsList4.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvIngredientsList4.setVisibility(View.GONE);
+					} else {
+						tvIngredientsList4.setText((CharSequence) arg0
+								.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+			Firebase fIngredientsList5 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/82/courses_maindish_deepfried_Spicy_Crispy_Beef_ingredients_list5");
+			fIngredientsList5.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvIngredientsList5.setVisibility(View.GONE);
+					} else {
+						tvIngredientsList5.setText((CharSequence) arg0
+								.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+			Firebase fIngredientsList6 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/82/courses_maindish_deepfried_Spicy_Crispy_Beef_ingredients_list6");
+			fIngredientsList6.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvIngredientsList6.setVisibility(View.GONE);
+					} else {
+						tvIngredientsList6.setText((CharSequence) arg0
+								.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+			// Direction lists
+			final Firebase fDirectionList1 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/82/courses_maindish_deepfried_Spicy_Crispy_Beef_directions_list1");
+			fDirectionList1.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvDirectionList1.setVisibility(View.GONE);
+					} else {
+						tvDirectionList1.setText((CharSequence) arg0.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+
+			final Firebase fDirectionList2 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/82/courses_maindish_deepfried_Spicy_Crispy_Beef_directions_list2");
+			fDirectionList2.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvDirectionList2.setVisibility(View.GONE);
+					} else {
+						tvDirectionList2.setText((CharSequence) arg0.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+
+			final Firebase fDirectionList3 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/82/courses_maindish_deepfried_Spicy_Crispy_Beef_directions_list3");
+			fDirectionList3.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvDirectionList3.setVisibility(View.GONE);
+					} else {
+						tvDirectionList3.setText((CharSequence) arg0.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+
+			final Firebase fDirectionList4 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/82/courses_maindish_deepfried_Spicy_Crispy_Beef_directions_list4");
+			fDirectionList4.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvDirectionList4.setVisibility(View.GONE);
+					} else {
+						tvDirectionList4.setText((CharSequence) arg0.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+
+			final Firebase fDirectionList5 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/82/courses_maindish_deepfried_Spicy_Crispy_Beef_directions_list5");
+			fDirectionList5.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvDirectionList5.setVisibility(View.GONE);
+					} else {
+						tvDirectionList5.setText((CharSequence) arg0.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+
+			final Firebase fDirectionList6 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/82/courses_maindish_deepfried_Spicy_Crispy_Beef_directions_list6");
+			fDirectionList6.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvDirectionList6.setVisibility(View.GONE);
+					} else {
+						tvDirectionList6.setText((CharSequence) arg0.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+		} else if (item.equals("Jeanie's Falafel")) {
+			// Action Bar Text
+			setTitle("Jeanie's Falafel");
+			// Image Code
+			Firebase fImageDetailRecipe = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/83/courses_maindish_deepfried_Jeanie's_Falafel_image");
+			fImageDetailRecipe.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					String tempImage = (String) arg0.getValue();
+					// Logo image for this page (will be same for all menus)
+					UrlImageViewHelper.setUrlDrawable(imgDetailRecipe,
+							tempImage);
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+			// Image Detail
+			Firebase fImageDetail = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/83/courses_maindish_deepfried_Jeanie's_Falafel_image_detail");
+			fImageDetail.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvImgDetail.setVisibility(View.GONE);
+					} else {
+						tvImgDetail.setText((CharSequence) arg0.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+			// Ingredients 6 Lists
+			Firebase fIngredientsList1 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/83/courses_maindish_deepfried_Jeanie's_Falafel_ingredients_list1");
+			fIngredientsList1.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvIngredientsList1.setVisibility(View.GONE);
+					} else {
+						tvIngredientsList1.setText((CharSequence) arg0
+								.getValue());
+					}
+
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+
+			Firebase fIngredientsList2 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/83/courses_maindish_deepfried_Jeanie's_Falafel_ingredients_list2");
+			fIngredientsList2.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvIngredientsList2.setVisibility(View.GONE);
+					} else {
+						tvIngredientsList2.setText((CharSequence) arg0
+								.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+			Firebase fIngredientsList3 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/83/courses_maindish_deepfried_Jeanie's_Falafel_ingredients_list3");
+			fIngredientsList3.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvIngredientsList3.setVisibility(View.GONE);
+					} else {
+						tvIngredientsList3.setText((CharSequence) arg0
+								.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+			Firebase fIngredientsList4 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/83/courses_maindish_deepfried_Jeanie's_Falafel_ingredients_list4");
+			fIngredientsList4.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvIngredientsList4.setVisibility(View.GONE);
+					} else {
+						tvIngredientsList4.setText((CharSequence) arg0
+								.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+			Firebase fIngredientsList5 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/83/courses_maindish_deepfried_Jeanie's_Falafel_ingredients_list5");
+			fIngredientsList5.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvIngredientsList5.setVisibility(View.GONE);
+					} else {
+						tvIngredientsList5.setText((CharSequence) arg0
+								.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+			Firebase fIngredientsList6 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/83/courses_maindish_deepfried_Jeanie's_Falafel_ingredients_list6");
+			fIngredientsList6.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvIngredientsList6.setVisibility(View.GONE);
+					} else {
+						tvIngredientsList6.setText((CharSequence) arg0
+								.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+			// Direction lists
+			final Firebase fDirectionList1 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/83/courses_maindish_deepfried_Jeanie's_Falafel_directions_list1");
+			fDirectionList1.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvDirectionList1.setVisibility(View.GONE);
+					} else {
+						tvDirectionList1.setText((CharSequence) arg0.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+
+			final Firebase fDirectionList2 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/83/courses_maindish_deepfried_Jeanie's_Falafel_directions_list2");
+			fDirectionList2.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvDirectionList2.setVisibility(View.GONE);
+					} else {
+						tvDirectionList2.setText((CharSequence) arg0.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+
+			final Firebase fDirectionList3 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/83/courses_maindish_deepfried_Jeanie's_Falafel_directions_list3");
+			fDirectionList3.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvDirectionList3.setVisibility(View.GONE);
+					} else {
+						tvDirectionList3.setText((CharSequence) arg0.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+
+			final Firebase fDirectionList4 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/83/courses_maindish_deepfried_Jeanie's_Falafel_directions_list4");
+			fDirectionList4.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvDirectionList4.setVisibility(View.GONE);
+					} else {
+						tvDirectionList4.setText((CharSequence) arg0.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+
+			final Firebase fDirectionList5 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/83/courses_maindish_deepfried_Jeanie's_Falafel_directions_list5");
+			fDirectionList5.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvDirectionList5.setVisibility(View.GONE);
+					} else {
+						tvDirectionList5.setText((CharSequence) arg0.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+
+			final Firebase fDirectionList6 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/83/courses_maindish_deepfried_Jeanie's_Falafel_directions_list6");
+			fDirectionList6.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvDirectionList6.setVisibility(View.GONE);
+					} else {
+						tvDirectionList6.setText((CharSequence) arg0.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+		} else if (item.equals("Fried Butterflied Shrimp")) {
+			// Action Bar Text
+			setTitle("Fried Butterflied Shrimp");
+			// Image Code
+			Firebase fImageDetailRecipe = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/84/courses_maindish_deepfried_Fried_Butterflied_Shrimp_image");
+			fImageDetailRecipe.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					String tempImage = (String) arg0.getValue();
+					// Logo image for this page (will be same for all menus)
+					UrlImageViewHelper.setUrlDrawable(imgDetailRecipe,
+							tempImage);
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+			// Image Detail
+			Firebase fImageDetail = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/84/courses_maindish_deepfried_Fried_Butterflied_Shrimp_image_detail");
+			fImageDetail.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvImgDetail.setVisibility(View.GONE);
+					} else {
+						tvImgDetail.setText((CharSequence) arg0.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+			// Ingredients 6 Lists
+			Firebase fIngredientsList1 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/84/courses_maindish_deepfried_Fried_Butterflied_Shrimp_ingredients_list1");
+			fIngredientsList1.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvIngredientsList1.setVisibility(View.GONE);
+					} else {
+						tvIngredientsList1.setText((CharSequence) arg0
+								.getValue());
+					}
+
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+
+			Firebase fIngredientsList2 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/84/courses_maindish_deepfried_Fried_Butterflied_Shrimp_ingredients_list2");
+			fIngredientsList2.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvIngredientsList2.setVisibility(View.GONE);
+					} else {
+						tvIngredientsList2.setText((CharSequence) arg0
+								.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+			Firebase fIngredientsList3 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/84/courses_maindish_deepfried_Fried_Butterflied_Shrimp_ingredients_list3");
+			fIngredientsList3.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvIngredientsList3.setVisibility(View.GONE);
+					} else {
+						tvIngredientsList3.setText((CharSequence) arg0
+								.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+			Firebase fIngredientsList4 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/84/courses_maindish_deepfried_Fried_Butterflied_Shrimp_ingredients_list4");
+			fIngredientsList4.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvIngredientsList4.setVisibility(View.GONE);
+					} else {
+						tvIngredientsList4.setText((CharSequence) arg0
+								.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+			Firebase fIngredientsList5 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/84/courses_maindish_deepfried_Fried_Butterflied_Shrimp_ingredients_list5");
+			fIngredientsList5.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvIngredientsList5.setVisibility(View.GONE);
+					} else {
+						tvIngredientsList5.setText((CharSequence) arg0
+								.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+			Firebase fIngredientsList6 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/84/courses_maindish_deepfried_Fried_Butterflied_Shrimp_ingredients_list6");
+			fIngredientsList6.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvIngredientsList6.setVisibility(View.GONE);
+					} else {
+						tvIngredientsList6.setText((CharSequence) arg0
+								.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+			// Direction lists
+			final Firebase fDirectionList1 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/84/courses_maindish_deepfried_Fried_Butterflied_Shrimp_directions_list1");
+			fDirectionList1.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvDirectionList1.setVisibility(View.GONE);
+					} else {
+						tvDirectionList1.setText((CharSequence) arg0.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+
+			final Firebase fDirectionList2 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/84/courses_maindish_deepfried_Fried_Butterflied_Shrimp_directions_list2");
+			fDirectionList2.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvDirectionList2.setVisibility(View.GONE);
+					} else {
+						tvDirectionList2.setText((CharSequence) arg0.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+
+			final Firebase fDirectionList3 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/84/courses_maindish_deepfried_Fried_Butterflied_Shrimp_directions_list3");
+			fDirectionList3.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvDirectionList3.setVisibility(View.GONE);
+					} else {
+						tvDirectionList3.setText((CharSequence) arg0.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+
+			final Firebase fDirectionList4 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/84/courses_maindish_deepfried_Fried_Butterflied_Shrimp_directions_list4");
+			fDirectionList4.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvDirectionList4.setVisibility(View.GONE);
+					} else {
+						tvDirectionList4.setText((CharSequence) arg0.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+
+			final Firebase fDirectionList5 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/84/courses_maindish_deepfried_Fried_Butterflied_Shrimp_directions_list5");
+			fDirectionList5.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvDirectionList5.setVisibility(View.GONE);
+					} else {
+						tvDirectionList5.setText((CharSequence) arg0.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+
+			final Firebase fDirectionList6 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/84/courses_maindish_deepfried_Fried_Butterflied_Shrimp_directions_list6");
+			fDirectionList6.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvDirectionList6.setVisibility(View.GONE);
+					} else {
+						tvDirectionList6.setText((CharSequence) arg0.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
 		}
 	}
 
