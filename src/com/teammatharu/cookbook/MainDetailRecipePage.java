@@ -18883,6 +18883,28 @@ public class MainDetailRecipePage extends Activity {
 
 				}
 			});
+		} else if (item.equals("Chicken Fried Chicken")) {
+
+		} else if (item.equals("Fish Tacos")) {
+
+		} else if (item.equals("The Best Chicken Fried Steak")) {
+
+		} else if (item.equals("Corn Dogs")) {
+
+		} else if (item.equals("Beer Batter Fish Made Great")) {
+
+		} else if (item.equals("Crispy Fried Chicken")) {
+
+		} else if (item.equals("Perfect Sesame Chicken")) {
+
+		} else if (item.equals("Southern Fried Chicken")) {
+
+		} else if (item.equals("Spicy Crispy Beef")) {
+
+		} else if (item.equals("Jeanie's Falafel")) {
+
+		} else if (item.equals("Fried Butterflied Shrimp")) {
+
 		}
 	}
 
