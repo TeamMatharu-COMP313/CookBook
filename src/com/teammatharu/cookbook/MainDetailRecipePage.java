@@ -1,11 +1,5 @@
 package com.teammatharu.cookbook;
 
-import com.firebase.client.DataSnapshot;
-import com.firebase.client.Firebase;
-import com.firebase.client.FirebaseError;
-import com.firebase.client.ValueEventListener;
-import com.koushikdutta.urlimageviewhelper.UrlImageViewHelper;
-
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
@@ -14,6 +8,12 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
+
+import com.firebase.client.DataSnapshot;
+import com.firebase.client.Firebase;
+import com.firebase.client.FirebaseError;
+import com.firebase.client.ValueEventListener;
+import com.koushikdutta.urlimageviewhelper.UrlImageViewHelper;
 
 public class MainDetailRecipePage extends Activity {
 
@@ -22154,6 +22154,5089 @@ public class MainDetailRecipePage extends Activity {
 
 			final Firebase fDirectionList6 = new Firebase(
 					"https://cookbook-teammatharu.firebaseio.com/84/courses_maindish_deepfried_Fried_Butterflied_Shrimp_directions_list6");
+			fDirectionList6.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvDirectionList6.setVisibility(View.GONE);
+					} else {
+						tvDirectionList6.setText((CharSequence) arg0.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+		} else if (item.equals("Holiday Chicken Salad")) {
+			// Action Bar Text
+			setTitle("Holiday Chicken Salad");
+			// Image Code
+			Firebase fImageDetailRecipe = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/85/courses_salad_chickensalad_Holiday_Chicken_Salad_image");
+			fImageDetailRecipe.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					String tempImage = (String) arg0.getValue();
+					// Logo image for this page (will be same for all menus)
+					UrlImageViewHelper.setUrlDrawable(imgDetailRecipe,
+							tempImage);
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+			// Image Detail
+			Firebase fImageDetail = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/85/courses_salad_chickensalad_Holiday_Chicken_Salad_image_detail");
+			fImageDetail.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvImgDetail.setVisibility(View.GONE);
+					} else {
+						tvImgDetail.setText((CharSequence) arg0.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+			// Ingredients 6 Lists
+			Firebase fIngredientsList1 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/85/courses_salad_chickensalad_Holiday_Chicken_Salad_ingredients_list1");
+			fIngredientsList1.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvIngredientsList1.setVisibility(View.GONE);
+					} else {
+						tvIngredientsList1.setText((CharSequence) arg0
+								.getValue());
+					}
+
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+
+			Firebase fIngredientsList2 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/85/courses_salad_chickensalad_Holiday_Chicken_Salad_ingredients_list2");
+			fIngredientsList2.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvIngredientsList2.setVisibility(View.GONE);
+					} else {
+						tvIngredientsList2.setText((CharSequence) arg0
+								.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+			Firebase fIngredientsList3 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/85/courses_salad_chickensalad_Holiday_Chicken_Salad_ingredients_list3");
+			fIngredientsList3.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvIngredientsList3.setVisibility(View.GONE);
+					} else {
+						tvIngredientsList3.setText((CharSequence) arg0
+								.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+			Firebase fIngredientsList4 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/85/courses_salad_chickensalad_Holiday_Chicken_Salad_ingredients_list4");
+			fIngredientsList4.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvIngredientsList4.setVisibility(View.GONE);
+					} else {
+						tvIngredientsList4.setText((CharSequence) arg0
+								.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+			Firebase fIngredientsList5 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/85/courses_salad_chickensalad_Holiday_Chicken_Salad_ingredients_list5");
+			fIngredientsList5.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvIngredientsList5.setVisibility(View.GONE);
+					} else {
+						tvIngredientsList5.setText((CharSequence) arg0
+								.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+			Firebase fIngredientsList6 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/85/courses_salad_chickensalad_Holiday_Chicken_Salad_ingredients_list6");
+			fIngredientsList6.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvIngredientsList6.setVisibility(View.GONE);
+					} else {
+						tvIngredientsList6.setText((CharSequence) arg0
+								.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+			// Direction lists
+			final Firebase fDirectionList1 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/85/courses_salad_chickensalad_Holiday_Chicken_Salad_directions_list1");
+			fDirectionList1.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvDirectionList1.setVisibility(View.GONE);
+					} else {
+						tvDirectionList1.setText((CharSequence) arg0.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+
+			final Firebase fDirectionList2 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/85/courses_salad_chickensalad_Holiday_Chicken_Salad_directions_list2");
+			fDirectionList2.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvDirectionList2.setVisibility(View.GONE);
+					} else {
+						tvDirectionList2.setText((CharSequence) arg0.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+
+			final Firebase fDirectionList3 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/85/courses_salad_chickensalad_Holiday_Chicken_Salad_directions_list3");
+			fDirectionList3.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvDirectionList3.setVisibility(View.GONE);
+					} else {
+						tvDirectionList3.setText((CharSequence) arg0.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+
+			final Firebase fDirectionList4 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/85/courses_salad_chickensalad_Holiday_Chicken_Salad_directions_list4");
+			fDirectionList4.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvDirectionList4.setVisibility(View.GONE);
+					} else {
+						tvDirectionList4.setText((CharSequence) arg0.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+
+			final Firebase fDirectionList5 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/85/courses_salad_chickensalad_Holiday_Chicken_Salad_directions_list5");
+			fDirectionList5.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvDirectionList5.setVisibility(View.GONE);
+					} else {
+						tvDirectionList5.setText((CharSequence) arg0.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+
+			final Firebase fDirectionList6 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/85/courses_salad_chickensalad_Holiday_Chicken_Salad_directions_list6");
+			fDirectionList6.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvDirectionList6.setVisibility(View.GONE);
+					} else {
+						tvDirectionList6.setText((CharSequence) arg0.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+		} else if (item.equals("Sesame Pasta Chicken Salad")) {
+			// Action Bar Text
+			setTitle("Sesame Pasta Chicken Salad");
+			// Image Code
+			Firebase fImageDetailRecipe = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/86/courses_salad_chickensalad_Sesame_Pasta_Chicken_Salad_image");
+			fImageDetailRecipe.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					String tempImage = (String) arg0.getValue();
+					// Logo image for this page (will be same for all menus)
+					UrlImageViewHelper.setUrlDrawable(imgDetailRecipe,
+							tempImage);
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+			// Image Detail
+			Firebase fImageDetail = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/86/courses_salad_chickensalad_Sesame_Pasta_Chicken_Salad_image_detail");
+			fImageDetail.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvImgDetail.setVisibility(View.GONE);
+					} else {
+						tvImgDetail.setText((CharSequence) arg0.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+			// Ingredients 6 Lists
+			Firebase fIngredientsList1 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/86/courses_salad_chickensalad_Sesame_Pasta_Chicken_Salad_ingredients_list1");
+			fIngredientsList1.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvIngredientsList1.setVisibility(View.GONE);
+					} else {
+						tvIngredientsList1.setText((CharSequence) arg0
+								.getValue());
+					}
+
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+
+			Firebase fIngredientsList2 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/86/courses_salad_chickensalad_Sesame_Pasta_Chicken_Salad_ingredients_list2");
+			fIngredientsList2.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvIngredientsList2.setVisibility(View.GONE);
+					} else {
+						tvIngredientsList2.setText((CharSequence) arg0
+								.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+			Firebase fIngredientsList3 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/86/courses_salad_chickensalad_Sesame_Pasta_Chicken_Salad_ingredients_list3");
+			fIngredientsList3.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvIngredientsList3.setVisibility(View.GONE);
+					} else {
+						tvIngredientsList3.setText((CharSequence) arg0
+								.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+			Firebase fIngredientsList4 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/86/courses_salad_chickensalad_Sesame_Pasta_Chicken_Salad_ingredients_list4");
+			fIngredientsList4.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvIngredientsList4.setVisibility(View.GONE);
+					} else {
+						tvIngredientsList4.setText((CharSequence) arg0
+								.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+			Firebase fIngredientsList5 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/86/courses_salad_chickensalad_Sesame_Pasta_Chicken_Salad_ingredients_list5");
+			fIngredientsList5.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvIngredientsList5.setVisibility(View.GONE);
+					} else {
+						tvIngredientsList5.setText((CharSequence) arg0
+								.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+			Firebase fIngredientsList6 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/86/courses_salad_chickensalad_Sesame_Pasta_Chicken_Salad_ingredients_list6");
+			fIngredientsList6.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvIngredientsList6.setVisibility(View.GONE);
+					} else {
+						tvIngredientsList6.setText((CharSequence) arg0
+								.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+			// Direction lists
+			final Firebase fDirectionList1 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/86/courses_salad_chickensalad_Sesame_Pasta_Chicken_Salad_directions_list1");
+			fDirectionList1.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvDirectionList1.setVisibility(View.GONE);
+					} else {
+						tvDirectionList1.setText((CharSequence) arg0.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+
+			final Firebase fDirectionList2 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/86/courses_salad_chickensalad_Sesame_Pasta_Chicken_Salad_directions_list2");
+			fDirectionList2.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvDirectionList2.setVisibility(View.GONE);
+					} else {
+						tvDirectionList2.setText((CharSequence) arg0.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+
+			final Firebase fDirectionList3 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/86/courses_salad_chickensalad_Sesame_Pasta_Chicken_Salad_directions_list3");
+			fDirectionList3.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvDirectionList3.setVisibility(View.GONE);
+					} else {
+						tvDirectionList3.setText((CharSequence) arg0.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+
+			final Firebase fDirectionList4 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/86/courses_salad_chickensalad_Sesame_Pasta_Chicken_Salad_directions_list4");
+			fDirectionList4.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvDirectionList4.setVisibility(View.GONE);
+					} else {
+						tvDirectionList4.setText((CharSequence) arg0.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+
+			final Firebase fDirectionList5 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/86/courses_salad_chickensalad_Sesame_Pasta_Chicken_Salad_directions_list5");
+			fDirectionList5.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvDirectionList5.setVisibility(View.GONE);
+					} else {
+						tvDirectionList5.setText((CharSequence) arg0.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+
+			final Firebase fDirectionList6 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/86/courses_salad_chickensalad_Sesame_Pasta_Chicken_Salad_directions_list6");
+			fDirectionList6.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvDirectionList6.setVisibility(View.GONE);
+					} else {
+						tvDirectionList6.setText((CharSequence) arg0.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+		} else if (item.equals("Becky's Chicken Salad")) {
+			// Action Bar Text
+			setTitle("Becky's Chicken Salad");
+			// Image Code
+			Firebase fImageDetailRecipe = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/87/courses_salad_chickensalad_Becky's_Chicken_Salad_image");
+			fImageDetailRecipe.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					String tempImage = (String) arg0.getValue();
+					// Logo image for this page (will be same for all menus)
+					UrlImageViewHelper.setUrlDrawable(imgDetailRecipe,
+							tempImage);
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+			// Image Detail
+			Firebase fImageDetail = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/87/courses_salad_chickensalad_Becky's_Chicken_Salad_image_detail");
+			fImageDetail.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvImgDetail.setVisibility(View.GONE);
+					} else {
+						tvImgDetail.setText((CharSequence) arg0.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+			// Ingredients 6 Lists
+			Firebase fIngredientsList1 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/87/courses_salad_chickensalad_Becky's_Chicken_Salad_ingredients_list1");
+			fIngredientsList1.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvIngredientsList1.setVisibility(View.GONE);
+					} else {
+						tvIngredientsList1.setText((CharSequence) arg0
+								.getValue());
+					}
+
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+
+			Firebase fIngredientsList2 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/87/courses_salad_chickensalad_Becky's_Chicken_Salad_ingredients_list2");
+			fIngredientsList2.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvIngredientsList2.setVisibility(View.GONE);
+					} else {
+						tvIngredientsList2.setText((CharSequence) arg0
+								.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+			Firebase fIngredientsList3 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/87/courses_salad_chickensalad_Becky's_Chicken_Salad_ingredients_list3");
+			fIngredientsList3.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvIngredientsList3.setVisibility(View.GONE);
+					} else {
+						tvIngredientsList3.setText((CharSequence) arg0
+								.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+			Firebase fIngredientsList4 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/87/courses_salad_chickensalad_Becky's_Chicken_Salad_ingredients_list4");
+			fIngredientsList4.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvIngredientsList4.setVisibility(View.GONE);
+					} else {
+						tvIngredientsList4.setText((CharSequence) arg0
+								.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+			Firebase fIngredientsList5 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/87/courses_salad_chickensalad_Becky's_Chicken_Salad_ingredients_list5");
+			fIngredientsList5.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvIngredientsList5.setVisibility(View.GONE);
+					} else {
+						tvIngredientsList5.setText((CharSequence) arg0
+								.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+			Firebase fIngredientsList6 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/87/courses_salad_chickensalad_Becky's_Chicken_Salad_ingredients_list6");
+			fIngredientsList6.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvIngredientsList6.setVisibility(View.GONE);
+					} else {
+						tvIngredientsList6.setText((CharSequence) arg0
+								.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+			// Direction lists
+			final Firebase fDirectionList1 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/87/courses_salad_chickensalad_Becky's_Chicken_Salad_directions_list1");
+			fDirectionList1.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvDirectionList1.setVisibility(View.GONE);
+					} else {
+						tvDirectionList1.setText((CharSequence) arg0.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+
+			final Firebase fDirectionList2 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/87/courses_salad_chickensalad_Becky's_Chicken_Salad_directions_list2");
+			fDirectionList2.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvDirectionList2.setVisibility(View.GONE);
+					} else {
+						tvDirectionList2.setText((CharSequence) arg0.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+
+			final Firebase fDirectionList3 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/87/courses_salad_chickensalad_Becky's_Chicken_Salad_directions_list3");
+			fDirectionList3.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvDirectionList3.setVisibility(View.GONE);
+					} else {
+						tvDirectionList3.setText((CharSequence) arg0.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+
+			final Firebase fDirectionList4 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/87/courses_salad_chickensalad_Becky's_Chicken_Salad_directions_list4");
+			fDirectionList4.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvDirectionList4.setVisibility(View.GONE);
+					} else {
+						tvDirectionList4.setText((CharSequence) arg0.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+
+			final Firebase fDirectionList5 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/87/courses_salad_chickensalad_Becky's_Chicken_Salad_directions_list5");
+			fDirectionList5.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvDirectionList5.setVisibility(View.GONE);
+					} else {
+						tvDirectionList5.setText((CharSequence) arg0.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+
+			final Firebase fDirectionList6 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/87/courses_salad_chickensalad_Becky's_Chicken_Salad_directions_list6");
+			fDirectionList6.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvDirectionList6.setVisibility(View.GONE);
+					} else {
+						tvDirectionList6.setText((CharSequence) arg0.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+		} else if (item.equals("Fruity Curry Chicken Salad")) {
+			// Action Bar Text
+			setTitle("Fruity Curry Chicken Salad");
+			// Image Code
+			Firebase fImageDetailRecipe = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/88/courses_salad_chickensalad_Fruity_Curry_Chicken_Salad_image");
+			fImageDetailRecipe.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					String tempImage = (String) arg0.getValue();
+					// Logo image for this page (will be same for all menus)
+					UrlImageViewHelper.setUrlDrawable(imgDetailRecipe,
+							tempImage);
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+			// Image Detail
+			Firebase fImageDetail = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/88/courses_salad_chickensalad_Fruity_Curry_Chicken_Salad_image_detail");
+			fImageDetail.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvImgDetail.setVisibility(View.GONE);
+					} else {
+						tvImgDetail.setText((CharSequence) arg0.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+			// Ingredients 6 Lists
+			Firebase fIngredientsList1 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/88/courses_salad_chickensalad_Fruity_Curry_Chicken_Salad_ingredients_list1");
+			fIngredientsList1.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvIngredientsList1.setVisibility(View.GONE);
+					} else {
+						tvIngredientsList1.setText((CharSequence) arg0
+								.getValue());
+					}
+
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+
+			Firebase fIngredientsList2 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/88/courses_salad_chickensalad_Fruity_Curry_Chicken_Salad_ingredients_list2");
+			fIngredientsList2.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvIngredientsList2.setVisibility(View.GONE);
+					} else {
+						tvIngredientsList2.setText((CharSequence) arg0
+								.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+			Firebase fIngredientsList3 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/88/courses_salad_chickensalad_Fruity_Curry_Chicken_Salad_ingredients_list3");
+			fIngredientsList3.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvIngredientsList3.setVisibility(View.GONE);
+					} else {
+						tvIngredientsList3.setText((CharSequence) arg0
+								.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+			Firebase fIngredientsList4 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/88/courses_salad_chickensalad_Fruity_Curry_Chicken_Salad_ingredients_list4");
+			fIngredientsList4.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvIngredientsList4.setVisibility(View.GONE);
+					} else {
+						tvIngredientsList4.setText((CharSequence) arg0
+								.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+			Firebase fIngredientsList5 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/88/courses_salad_chickensalad_Fruity_Curry_Chicken_Salad_ingredients_list5");
+			fIngredientsList5.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvIngredientsList5.setVisibility(View.GONE);
+					} else {
+						tvIngredientsList5.setText((CharSequence) arg0
+								.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+			Firebase fIngredientsList6 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/88/courses_salad_chickensalad_Fruity_Curry_Chicken_Salad_ingredients_list6");
+			fIngredientsList6.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvIngredientsList6.setVisibility(View.GONE);
+					} else {
+						tvIngredientsList6.setText((CharSequence) arg0
+								.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+			// Direction lists
+			final Firebase fDirectionList1 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/88/courses_salad_chickensalad_Fruity_Curry_Chicken_Salad_directions_list1");
+			fDirectionList1.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvDirectionList1.setVisibility(View.GONE);
+					} else {
+						tvDirectionList1.setText((CharSequence) arg0.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+
+			final Firebase fDirectionList2 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/88/courses_salad_chickensalad_Fruity_Curry_Chicken_Salad_directions_list2");
+			fDirectionList2.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvDirectionList2.setVisibility(View.GONE);
+					} else {
+						tvDirectionList2.setText((CharSequence) arg0.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+
+			final Firebase fDirectionList3 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/88/courses_salad_chickensalad_Fruity_Curry_Chicken_Salad_directions_list3");
+			fDirectionList3.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvDirectionList3.setVisibility(View.GONE);
+					} else {
+						tvDirectionList3.setText((CharSequence) arg0.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+
+			final Firebase fDirectionList4 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/88/courses_salad_chickensalad_Fruity_Curry_Chicken_Salad_directions_list4");
+			fDirectionList4.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvDirectionList4.setVisibility(View.GONE);
+					} else {
+						tvDirectionList4.setText((CharSequence) arg0.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+
+			final Firebase fDirectionList5 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/88/courses_salad_chickensalad_Fruity_Curry_Chicken_Salad_directions_list5");
+			fDirectionList5.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvDirectionList5.setVisibility(View.GONE);
+					} else {
+						tvDirectionList5.setText((CharSequence) arg0.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+
+			final Firebase fDirectionList6 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/88/courses_salad_chickensalad_Fruity_Curry_Chicken_Salad_directions_list6");
+			fDirectionList6.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvDirectionList6.setVisibility(View.GONE);
+					} else {
+						tvDirectionList6.setText((CharSequence) arg0.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+		} else if (item.equals("Carol's Chicken Salad")) {
+			// Action Bar Text
+			setTitle("Carol's Chicken Salad");
+			// Image Code
+			Firebase fImageDetailRecipe = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/89/courses_salad_chickensalad_Carol's_Chicken_Salad_image");
+			fImageDetailRecipe.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					String tempImage = (String) arg0.getValue();
+					// Logo image for this page (will be same for all menus)
+					UrlImageViewHelper.setUrlDrawable(imgDetailRecipe,
+							tempImage);
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+			// Image Detail
+			Firebase fImageDetail = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/89/courses_salad_chickensalad_Carol's_Chicken_Salad_image_detail");
+			fImageDetail.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvImgDetail.setVisibility(View.GONE);
+					} else {
+						tvImgDetail.setText((CharSequence) arg0.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+			// Ingredients 6 Lists
+			Firebase fIngredientsList1 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/89/courses_salad_chickensalad_Carol's_Chicken_Salad_ingredients_list1");
+			fIngredientsList1.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvIngredientsList1.setVisibility(View.GONE);
+					} else {
+						tvIngredientsList1.setText((CharSequence) arg0
+								.getValue());
+					}
+
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+
+			Firebase fIngredientsList2 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/89/courses_salad_chickensalad_Carol's_Chicken_Salad_ingredients_list2");
+			fIngredientsList2.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvIngredientsList2.setVisibility(View.GONE);
+					} else {
+						tvIngredientsList2.setText((CharSequence) arg0
+								.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+			Firebase fIngredientsList3 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/89/courses_salad_chickensalad_Carol's_Chicken_Salad_ingredients_list3");
+			fIngredientsList3.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvIngredientsList3.setVisibility(View.GONE);
+					} else {
+						tvIngredientsList3.setText((CharSequence) arg0
+								.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+			Firebase fIngredientsList4 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/89/courses_salad_chickensalad_Carol's_Chicken_Salad_ingredients_list4");
+			fIngredientsList4.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvIngredientsList4.setVisibility(View.GONE);
+					} else {
+						tvIngredientsList4.setText((CharSequence) arg0
+								.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+			Firebase fIngredientsList5 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/89/courses_salad_chickensalad_Carol's_Chicken_Salad_ingredients_list5");
+			fIngredientsList5.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvIngredientsList5.setVisibility(View.GONE);
+					} else {
+						tvIngredientsList5.setText((CharSequence) arg0
+								.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+			Firebase fIngredientsList6 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/89/courses_salad_chickensalad_Carol's_Chicken_Salad_ingredients_list6");
+			fIngredientsList6.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvIngredientsList6.setVisibility(View.GONE);
+					} else {
+						tvIngredientsList6.setText((CharSequence) arg0
+								.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+			// Direction lists
+			final Firebase fDirectionList1 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/89/courses_salad_chickensalad_Carol's_Chicken_Salad_directions_list1");
+			fDirectionList1.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvDirectionList1.setVisibility(View.GONE);
+					} else {
+						tvDirectionList1.setText((CharSequence) arg0.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+
+			final Firebase fDirectionList2 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/89/courses_salad_chickensalad_Carol's_Chicken_Salad_directions_list2");
+			fDirectionList2.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvDirectionList2.setVisibility(View.GONE);
+					} else {
+						tvDirectionList2.setText((CharSequence) arg0.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+
+			final Firebase fDirectionList3 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/89/courses_salad_chickensalad_Carol's_Chicken_Salad_directions_list3");
+			fDirectionList3.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvDirectionList3.setVisibility(View.GONE);
+					} else {
+						tvDirectionList3.setText((CharSequence) arg0.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+
+			final Firebase fDirectionList4 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/89/courses_salad_chickensalad_Carol's_Chicken_Salad_directions_list4");
+			fDirectionList4.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvDirectionList4.setVisibility(View.GONE);
+					} else {
+						tvDirectionList4.setText((CharSequence) arg0.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+
+			final Firebase fDirectionList5 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/89/courses_salad_chickensalad_Carol's_Chicken_Salad_directions_list5");
+			fDirectionList5.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvDirectionList5.setVisibility(View.GONE);
+					} else {
+						tvDirectionList5.setText((CharSequence) arg0.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+
+			final Firebase fDirectionList6 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/89/courses_salad_chickensalad_Carol's_Chicken_Salad_directions_list6");
+			fDirectionList6.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvDirectionList6.setVisibility(View.GONE);
+					} else {
+						tvDirectionList6.setText((CharSequence) arg0.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+		} else if (item.equals("Fruited Curry Chicken Salad")) {
+			// Action Bar Text
+			setTitle("Fruited Curry Chicken Salad");
+			// Image Code
+			Firebase fImageDetailRecipe = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/90/courses_salad_chickensalad_Fruited%20Curry%20Chicken%20Salad_image");
+			fImageDetailRecipe.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					String tempImage = (String) arg0.getValue();
+					// Logo image for this page (will be same for all menus)
+					UrlImageViewHelper.setUrlDrawable(imgDetailRecipe,
+							tempImage);
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+			// Image Detail
+			Firebase fImageDetail = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/90/courses_salad_chickensalad_Fruited%20Curry%20Chicken%20Salad_image_detail");
+			fImageDetail.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvImgDetail.setVisibility(View.GONE);
+					} else {
+						tvImgDetail.setText((CharSequence) arg0.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+			// Ingredients 6 Lists
+			Firebase fIngredientsList1 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/90/courses_salad_chickensalad_Fruited%20Curry%20Chicken%20Salad_ingredients_list1");
+			fIngredientsList1.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvIngredientsList1.setVisibility(View.GONE);
+					} else {
+						tvIngredientsList1.setText((CharSequence) arg0
+								.getValue());
+					}
+
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+
+			Firebase fIngredientsList2 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/90/courses_salad_chickensalad_Fruited%20Curry%20Chicken%20Salad_ingredients_list2");
+			fIngredientsList2.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvIngredientsList2.setVisibility(View.GONE);
+					} else {
+						tvIngredientsList2.setText((CharSequence) arg0
+								.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+			Firebase fIngredientsList3 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/90/courses_salad_chickensalad_Fruited%20Curry%20Chicken%20Salad_ingredients_list3");
+			fIngredientsList3.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvIngredientsList3.setVisibility(View.GONE);
+					} else {
+						tvIngredientsList3.setText((CharSequence) arg0
+								.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+			Firebase fIngredientsList4 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/90/courses_salad_chickensalad_Fruited%20Curry%20Chicken%20Salad_ingredients_list4");
+			fIngredientsList4.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvIngredientsList4.setVisibility(View.GONE);
+					} else {
+						tvIngredientsList4.setText((CharSequence) arg0
+								.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+			Firebase fIngredientsList5 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/90/courses_salad_chickensalad_Fruited%20Curry%20Chicken%20Salad_ingredients_list5");
+			fIngredientsList5.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvIngredientsList5.setVisibility(View.GONE);
+					} else {
+						tvIngredientsList5.setText((CharSequence) arg0
+								.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+			Firebase fIngredientsList6 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/90/courses_salad_chickensalad_Fruited%20Curry%20Chicken%20Salad_ingredients_list6");
+			fIngredientsList6.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvIngredientsList6.setVisibility(View.GONE);
+					} else {
+						tvIngredientsList6.setText((CharSequence) arg0
+								.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+			// Direction lists
+			final Firebase fDirectionList1 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/90/courses_salad_chickensalad_Fruited%20Curry%20Chicken%20Salad_directions_list1");
+			fDirectionList1.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvDirectionList1.setVisibility(View.GONE);
+					} else {
+						tvDirectionList1.setText((CharSequence) arg0.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+
+			final Firebase fDirectionList2 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/90/courses_salad_chickensalad_Fruited%20Curry%20Chicken%20Salad_directions_list2");
+			fDirectionList2.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvDirectionList2.setVisibility(View.GONE);
+					} else {
+						tvDirectionList2.setText((CharSequence) arg0.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+
+			final Firebase fDirectionList3 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/90/courses_salad_chickensalad_Fruited%20Curry%20Chicken%20Salad_directions_list3");
+			fDirectionList3.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvDirectionList3.setVisibility(View.GONE);
+					} else {
+						tvDirectionList3.setText((CharSequence) arg0.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+
+			final Firebase fDirectionList4 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/90/courses_salad_chickensalad_Fruited%20Curry%20Chicken%20Salad_directions_list4");
+			fDirectionList4.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvDirectionList4.setVisibility(View.GONE);
+					} else {
+						tvDirectionList4.setText((CharSequence) arg0.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+
+			final Firebase fDirectionList5 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/90/courses_salad_chickensalad_Fruited%20Curry%20Chicken%20Salad_directions_list5");
+			fDirectionList5.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvDirectionList5.setVisibility(View.GONE);
+					} else {
+						tvDirectionList5.setText((CharSequence) arg0.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+
+			final Firebase fDirectionList6 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/90/courses_salad_chickensalad_Fruited%20Curry%20Chicken%20Salad_directions_list6");
+			fDirectionList6.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvDirectionList6.setVisibility(View.GONE);
+					} else {
+						tvDirectionList6.setText((CharSequence) arg0.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+		} else if (item.equals("Chicken Fiesta Salad")) {
+			// Action Bar Text
+			setTitle("Chicken Fiesta Salad");
+			// Image Code
+			Firebase fImageDetailRecipe = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/91/courses_salad_chickensalad_Chicken_Fiesta_Salad_image");
+			fImageDetailRecipe.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					String tempImage = (String) arg0.getValue();
+					// Logo image for this page (will be same for all menus)
+					UrlImageViewHelper.setUrlDrawable(imgDetailRecipe,
+							tempImage);
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+			// Image Detail
+			Firebase fImageDetail = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/91/courses_salad_chickensalad_Chicken_Fiesta_Salad_image_detail");
+			fImageDetail.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvImgDetail.setVisibility(View.GONE);
+					} else {
+						tvImgDetail.setText((CharSequence) arg0.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+			// Ingredients 6 Lists
+			Firebase fIngredientsList1 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/91/courses_salad_chickensalad_Chicken_Fiesta_Salad_ingredients_list1");
+			fIngredientsList1.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvIngredientsList1.setVisibility(View.GONE);
+					} else {
+						tvIngredientsList1.setText((CharSequence) arg0
+								.getValue());
+					}
+
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+
+			Firebase fIngredientsList2 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/91/courses_salad_chickensalad_Chicken_Fiesta_Salad_ingredients_list2");
+			fIngredientsList2.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvIngredientsList2.setVisibility(View.GONE);
+					} else {
+						tvIngredientsList2.setText((CharSequence) arg0
+								.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+			Firebase fIngredientsList3 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/91/courses_salad_chickensalad_Chicken_Fiesta_Salad_ingredients_list3");
+			fIngredientsList3.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvIngredientsList3.setVisibility(View.GONE);
+					} else {
+						tvIngredientsList3.setText((CharSequence) arg0
+								.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+			Firebase fIngredientsList4 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/91/courses_salad_chickensalad_Chicken_Fiesta_Salad_ingredients_list4");
+			fIngredientsList4.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvIngredientsList4.setVisibility(View.GONE);
+					} else {
+						tvIngredientsList4.setText((CharSequence) arg0
+								.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+			Firebase fIngredientsList5 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/91/courses_salad_chickensalad_Chicken_Fiesta_Salad_ingredients_list5");
+			fIngredientsList5.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvIngredientsList5.setVisibility(View.GONE);
+					} else {
+						tvIngredientsList5.setText((CharSequence) arg0
+								.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+			Firebase fIngredientsList6 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/91/courses_salad_chickensalad_Chicken_Fiesta_Salad_ingredients_list6");
+			fIngredientsList6.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvIngredientsList6.setVisibility(View.GONE);
+					} else {
+						tvIngredientsList6.setText((CharSequence) arg0
+								.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+			// Direction lists
+			final Firebase fDirectionList1 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/91/courses_salad_chickensalad_Chicken_Fiesta_Salad_directions_list1");
+			fDirectionList1.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvDirectionList1.setVisibility(View.GONE);
+					} else {
+						tvDirectionList1.setText((CharSequence) arg0.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+
+			final Firebase fDirectionList2 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/91/courses_salad_chickensalad_Chicken_Fiesta_Salad_directions_list2");
+			fDirectionList2.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvDirectionList2.setVisibility(View.GONE);
+					} else {
+						tvDirectionList2.setText((CharSequence) arg0.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+
+			final Firebase fDirectionList3 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/91/courses_salad_chickensalad_Chicken_Fiesta_Salad_directions_list3");
+			fDirectionList3.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvDirectionList3.setVisibility(View.GONE);
+					} else {
+						tvDirectionList3.setText((CharSequence) arg0.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+
+			final Firebase fDirectionList4 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/91/courses_salad_chickensalad_Chicken_Fiesta_Salad_directions_list4");
+			fDirectionList4.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvDirectionList4.setVisibility(View.GONE);
+					} else {
+						tvDirectionList4.setText((CharSequence) arg0.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+
+			final Firebase fDirectionList5 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/91/courses_salad_chickensalad_Chicken_Fiesta_Salad_directions_list5");
+			fDirectionList5.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvDirectionList5.setVisibility(View.GONE);
+					} else {
+						tvDirectionList5.setText((CharSequence) arg0.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+
+			final Firebase fDirectionList6 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/91/courses_salad_chickensalad_Chicken_Fiesta_Salad_directions_list6");
+			fDirectionList6.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvDirectionList6.setVisibility(View.GONE);
+					} else {
+						tvDirectionList6.setText((CharSequence) arg0.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+		} else if (item.equals("Asian Chicken Salad")) {
+			// Action Bar Text
+			setTitle("Asian Chicken Salad");
+			// Image Code
+			Firebase fImageDetailRecipe = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/92/courses_salad_chickensalad_Asian_Chicken_Salad_image");
+			fImageDetailRecipe.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					String tempImage = (String) arg0.getValue();
+					// Logo image for this page (will be same for all menus)
+					UrlImageViewHelper.setUrlDrawable(imgDetailRecipe,
+							tempImage);
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+			// Image Detail
+			Firebase fImageDetail = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/92/courses_salad_chickensalad_Asian_Chicken_Salad_image_detail");
+			fImageDetail.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvImgDetail.setVisibility(View.GONE);
+					} else {
+						tvImgDetail.setText((CharSequence) arg0.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+			// Ingredients 6 Lists
+			Firebase fIngredientsList1 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/92/courses_salad_chickensalad_Asian_Chicken_Salad_ingredients_list1");
+			fIngredientsList1.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvIngredientsList1.setVisibility(View.GONE);
+					} else {
+						tvIngredientsList1.setText((CharSequence) arg0
+								.getValue());
+					}
+
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+
+			Firebase fIngredientsList2 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/92/courses_salad_chickensalad_Asian_Chicken_Salad_ingredients_list2");
+			fIngredientsList2.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvIngredientsList2.setVisibility(View.GONE);
+					} else {
+						tvIngredientsList2.setText((CharSequence) arg0
+								.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+			Firebase fIngredientsList3 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/92/courses_salad_chickensalad_Asian_Chicken_Salad_ingredients_list3");
+			fIngredientsList3.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvIngredientsList3.setVisibility(View.GONE);
+					} else {
+						tvIngredientsList3.setText((CharSequence) arg0
+								.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+			Firebase fIngredientsList4 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/92/courses_salad_chickensalad_Asian_Chicken_Salad_ingredients_list4");
+			fIngredientsList4.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvIngredientsList4.setVisibility(View.GONE);
+					} else {
+						tvIngredientsList4.setText((CharSequence) arg0
+								.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+			Firebase fIngredientsList5 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/92/courses_salad_chickensalad_Asian_Chicken_Salad_ingredients_list5");
+			fIngredientsList5.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvIngredientsList5.setVisibility(View.GONE);
+					} else {
+						tvIngredientsList5.setText((CharSequence) arg0
+								.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+			Firebase fIngredientsList6 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/92/courses_salad_chickensalad_Asian_Chicken_Salad_ingredients_list6");
+			fIngredientsList6.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvIngredientsList6.setVisibility(View.GONE);
+					} else {
+						tvIngredientsList6.setText((CharSequence) arg0
+								.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+			// Direction lists
+			final Firebase fDirectionList1 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/92/courses_salad_chickensalad_Asian_Chicken_Salad_directions_list1");
+			fDirectionList1.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvDirectionList1.setVisibility(View.GONE);
+					} else {
+						tvDirectionList1.setText((CharSequence) arg0.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+
+			final Firebase fDirectionList2 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/92/courses_salad_chickensalad_Asian_Chicken_Salad_directions_list2");
+			fDirectionList2.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvDirectionList2.setVisibility(View.GONE);
+					} else {
+						tvDirectionList2.setText((CharSequence) arg0.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+
+			final Firebase fDirectionList3 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/92/courses_salad_chickensalad_Asian_Chicken_Salad_directions_list3");
+			fDirectionList3.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvDirectionList3.setVisibility(View.GONE);
+					} else {
+						tvDirectionList3.setText((CharSequence) arg0.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+
+			final Firebase fDirectionList4 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/92/courses_salad_chickensalad_Asian_Chicken_Salad_directions_list4");
+			fDirectionList4.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvDirectionList4.setVisibility(View.GONE);
+					} else {
+						tvDirectionList4.setText((CharSequence) arg0.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+
+			final Firebase fDirectionList5 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/92/courses_salad_chickensalad_Asian_Chicken_Salad_directions_list5");
+			fDirectionList5.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvDirectionList5.setVisibility(View.GONE);
+					} else {
+						tvDirectionList5.setText((CharSequence) arg0.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+
+			final Firebase fDirectionList6 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/92/courses_salad_chickensalad_Asian_Chicken_Salad_directions_list6");
+			fDirectionList6.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvDirectionList6.setVisibility(View.GONE);
+					} else {
+						tvDirectionList6.setText((CharSequence) arg0.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+		} else if (item.equals("Basic Chicken Salad")) {
+			// Action Bar Text
+			setTitle("Basic Chicken Salad");
+			// Image Code
+			Firebase fImageDetailRecipe = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/93/courses_salad_chickensalad_Basic_Chicken_Salad_image");
+			fImageDetailRecipe.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					String tempImage = (String) arg0.getValue();
+					// Logo image for this page (will be same for all menus)
+					UrlImageViewHelper.setUrlDrawable(imgDetailRecipe,
+							tempImage);
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+			// Image Detail
+			Firebase fImageDetail = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/93/courses_salad_chickensalad_Basic_Chicken_Salad_image_detail");
+			fImageDetail.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvImgDetail.setVisibility(View.GONE);
+					} else {
+						tvImgDetail.setText((CharSequence) arg0.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+			// Ingredients 6 Lists
+			Firebase fIngredientsList1 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/93/courses_salad_chickensalad_Basic_Chicken_Salad_ingredients_list1");
+			fIngredientsList1.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvIngredientsList1.setVisibility(View.GONE);
+					} else {
+						tvIngredientsList1.setText((CharSequence) arg0
+								.getValue());
+					}
+
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+
+			Firebase fIngredientsList2 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/93/courses_salad_chickensalad_Basic_Chicken_Salad_ingredients_list2");
+			fIngredientsList2.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvIngredientsList2.setVisibility(View.GONE);
+					} else {
+						tvIngredientsList2.setText((CharSequence) arg0
+								.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+			Firebase fIngredientsList3 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/93/courses_salad_chickensalad_Basic_Chicken_Salad_ingredients_list3");
+			fIngredientsList3.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvIngredientsList3.setVisibility(View.GONE);
+					} else {
+						tvIngredientsList3.setText((CharSequence) arg0
+								.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+			Firebase fIngredientsList4 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/93/courses_salad_chickensalad_Basic_Chicken_Salad_ingredients_list4");
+			fIngredientsList4.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvIngredientsList4.setVisibility(View.GONE);
+					} else {
+						tvIngredientsList4.setText((CharSequence) arg0
+								.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+			Firebase fIngredientsList5 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/93/courses_salad_chickensalad_Basic_Chicken_Salad_ingredients_list5");
+			fIngredientsList5.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvIngredientsList5.setVisibility(View.GONE);
+					} else {
+						tvIngredientsList5.setText((CharSequence) arg0
+								.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+			Firebase fIngredientsList6 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/93/courses_salad_chickensalad_Basic_Chicken_Salad_ingredients_list6");
+			fIngredientsList6.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvIngredientsList6.setVisibility(View.GONE);
+					} else {
+						tvIngredientsList6.setText((CharSequence) arg0
+								.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+			// Direction lists
+			final Firebase fDirectionList1 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/93/courses_salad_chickensalad_Basic_Chicken_Salad_directions_list1");
+			fDirectionList1.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvDirectionList1.setVisibility(View.GONE);
+					} else {
+						tvDirectionList1.setText((CharSequence) arg0.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+
+			final Firebase fDirectionList2 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/93/courses_salad_chickensalad_Basic_Chicken_Salad_directions_list2");
+			fDirectionList2.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvDirectionList2.setVisibility(View.GONE);
+					} else {
+						tvDirectionList2.setText((CharSequence) arg0.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+
+			final Firebase fDirectionList3 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/93/courses_salad_chickensalad_Basic_Chicken_Salad_directions_list3");
+			fDirectionList3.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvDirectionList3.setVisibility(View.GONE);
+					} else {
+						tvDirectionList3.setText((CharSequence) arg0.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+
+			final Firebase fDirectionList4 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/93/courses_salad_chickensalad_Basic_Chicken_Salad_directions_list4");
+			fDirectionList4.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvDirectionList4.setVisibility(View.GONE);
+					} else {
+						tvDirectionList4.setText((CharSequence) arg0.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+
+			final Firebase fDirectionList5 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/93/courses_salad_chickensalad_Basic_Chicken_Salad_directions_list5");
+			fDirectionList5.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvDirectionList5.setVisibility(View.GONE);
+					} else {
+						tvDirectionList5.setText((CharSequence) arg0.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+
+			final Firebase fDirectionList6 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/93/courses_salad_chickensalad_Basic_Chicken_Salad_directions_list6");
+			fDirectionList6.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvDirectionList6.setVisibility(View.GONE);
+					} else {
+						tvDirectionList6.setText((CharSequence) arg0.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+		} else if (item.equals("Mediterranean Quinoa Salad")) {
+			// Action Bar Text
+			setTitle("Mediterranean Quinoa Salad");
+			// Image Code
+			Firebase fImageDetailRecipe = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/94/courses_salad_chickensalad_Mediterranean_Quinoa_Salad_image");
+			fImageDetailRecipe.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					String tempImage = (String) arg0.getValue();
+					// Logo image for this page (will be same for all menus)
+					UrlImageViewHelper.setUrlDrawable(imgDetailRecipe,
+							tempImage);
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+			// Image Detail
+			Firebase fImageDetail = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/94/courses_salad_chickensalad_Mediterranean_Quinoa_Salad_image_detail");
+			fImageDetail.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvImgDetail.setVisibility(View.GONE);
+					} else {
+						tvImgDetail.setText((CharSequence) arg0.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+			// Ingredients 6 Lists
+			Firebase fIngredientsList1 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/94/courses_salad_chickensalad_Mediterranean_Quinoa_Salad_ingredients_list1");
+			fIngredientsList1.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvIngredientsList1.setVisibility(View.GONE);
+					} else {
+						tvIngredientsList1.setText((CharSequence) arg0
+								.getValue());
+					}
+
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+
+			Firebase fIngredientsList2 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/94/courses_salad_chickensalad_Mediterranean_Quinoa_Salad_ingredients_list2");
+			fIngredientsList2.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvIngredientsList2.setVisibility(View.GONE);
+					} else {
+						tvIngredientsList2.setText((CharSequence) arg0
+								.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+			Firebase fIngredientsList3 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/94/courses_salad_chickensalad_Mediterranean_Quinoa_Salad_ingredients_list3");
+			fIngredientsList3.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvIngredientsList3.setVisibility(View.GONE);
+					} else {
+						tvIngredientsList3.setText((CharSequence) arg0
+								.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+			Firebase fIngredientsList4 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/94/courses_salad_chickensalad_Mediterranean_Quinoa_Salad_ingredients_list4");
+			fIngredientsList4.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvIngredientsList4.setVisibility(View.GONE);
+					} else {
+						tvIngredientsList4.setText((CharSequence) arg0
+								.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+			Firebase fIngredientsList5 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/94/courses_salad_chickensalad_Mediterranean_Quinoa_Salad_ingredients_list5");
+			fIngredientsList5.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvIngredientsList5.setVisibility(View.GONE);
+					} else {
+						tvIngredientsList5.setText((CharSequence) arg0
+								.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+			Firebase fIngredientsList6 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/94/courses_salad_chickensalad_Mediterranean_Quinoa_Salad_ingredients_list6");
+			fIngredientsList6.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvIngredientsList6.setVisibility(View.GONE);
+					} else {
+						tvIngredientsList6.setText((CharSequence) arg0
+								.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+			// Direction lists
+			final Firebase fDirectionList1 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/94/courses_salad_chickensalad_Mediterranean_Quinoa_Salad_directions_list1");
+			fDirectionList1.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvDirectionList1.setVisibility(View.GONE);
+					} else {
+						tvDirectionList1.setText((CharSequence) arg0.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+
+			final Firebase fDirectionList2 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/94/courses_salad_chickensalad_Mediterranean_Quinoa_Salad_directions_list2");
+			fDirectionList2.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvDirectionList2.setVisibility(View.GONE);
+					} else {
+						tvDirectionList2.setText((CharSequence) arg0.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+
+			final Firebase fDirectionList3 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/94/courses_salad_chickensalad_Mediterranean_Quinoa_Salad_directions_list3");
+			fDirectionList3.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvDirectionList3.setVisibility(View.GONE);
+					} else {
+						tvDirectionList3.setText((CharSequence) arg0.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+
+			final Firebase fDirectionList4 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/94/courses_salad_chickensalad_Mediterranean_Quinoa_Salad_directions_list4");
+			fDirectionList4.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvDirectionList4.setVisibility(View.GONE);
+					} else {
+						tvDirectionList4.setText((CharSequence) arg0.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+
+			final Firebase fDirectionList5 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/94/courses_salad_chickensalad_Mediterranean_Quinoa_Salad_directions_list5");
+			fDirectionList5.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvDirectionList5.setVisibility(View.GONE);
+					} else {
+						tvDirectionList5.setText((CharSequence) arg0.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+
+			final Firebase fDirectionList6 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/94/courses_salad_chickensalad_Mediterranean_Quinoa_Salad_directions_list6");
+			fDirectionList6.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvDirectionList6.setVisibility(View.GONE);
+					} else {
+						tvDirectionList6.setText((CharSequence) arg0.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+		} else if (item.equals("Chinese Chicken Salad")) {
+			// Action Bar Text
+			setTitle("Chinese Chicken Salad");
+			// Image Code
+			Firebase fImageDetailRecipe = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/95/courses_salad_chickensalad_Chinese_Chicken_Salad_image");
+			fImageDetailRecipe.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					String tempImage = (String) arg0.getValue();
+					// Logo image for this page (will be same for all menus)
+					UrlImageViewHelper.setUrlDrawable(imgDetailRecipe,
+							tempImage);
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+			// Image Detail
+			Firebase fImageDetail = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/95/courses_salad_chickensalad_Chinese_Chicken_Salad_image_detail");
+			fImageDetail.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvImgDetail.setVisibility(View.GONE);
+					} else {
+						tvImgDetail.setText((CharSequence) arg0.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+			// Ingredients 6 Lists
+			Firebase fIngredientsList1 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/95/courses_salad_chickensalad_Chinese_Chicken_Salad_ingredients_list1");
+			fIngredientsList1.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvIngredientsList1.setVisibility(View.GONE);
+					} else {
+						tvIngredientsList1.setText((CharSequence) arg0
+								.getValue());
+					}
+
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+
+			Firebase fIngredientsList2 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/95/courses_salad_chickensalad_Chinese_Chicken_Salad_ingredients_list2");
+			fIngredientsList2.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvIngredientsList2.setVisibility(View.GONE);
+					} else {
+						tvIngredientsList2.setText((CharSequence) arg0
+								.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+			Firebase fIngredientsList3 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/95/courses_salad_chickensalad_Chinese_Chicken_Salad_ingredients_list3");
+			fIngredientsList3.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvIngredientsList3.setVisibility(View.GONE);
+					} else {
+						tvIngredientsList3.setText((CharSequence) arg0
+								.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+			Firebase fIngredientsList4 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/95/courses_salad_chickensalad_Chinese_Chicken_Salad_ingredients_list4");
+			fIngredientsList4.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvIngredientsList4.setVisibility(View.GONE);
+					} else {
+						tvIngredientsList4.setText((CharSequence) arg0
+								.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+			Firebase fIngredientsList5 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/95/courses_salad_chickensalad_Chinese_Chicken_Salad_ingredients_list5");
+			fIngredientsList5.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvIngredientsList5.setVisibility(View.GONE);
+					} else {
+						tvIngredientsList5.setText((CharSequence) arg0
+								.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+			Firebase fIngredientsList6 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/95/courses_salad_chickensalad_Chinese_Chicken_Salad_ingredients_list6");
+			fIngredientsList6.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvIngredientsList6.setVisibility(View.GONE);
+					} else {
+						tvIngredientsList6.setText((CharSequence) arg0
+								.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+			// Direction lists
+			final Firebase fDirectionList1 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/95/courses_salad_chickensalad_Chinese_Chicken_Salad_directions_list1");
+			fDirectionList1.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvDirectionList1.setVisibility(View.GONE);
+					} else {
+						tvDirectionList1.setText((CharSequence) arg0.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+
+			final Firebase fDirectionList2 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/95/courses_salad_chickensalad_Chinese_Chicken_Salad_directions_list2");
+			fDirectionList2.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvDirectionList2.setVisibility(View.GONE);
+					} else {
+						tvDirectionList2.setText((CharSequence) arg0.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+
+			final Firebase fDirectionList3 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/95/courses_salad_chickensalad_Chinese_Chicken_Salad_directions_list3");
+			fDirectionList3.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvDirectionList3.setVisibility(View.GONE);
+					} else {
+						tvDirectionList3.setText((CharSequence) arg0.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+
+			final Firebase fDirectionList4 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/95/courses_salad_chickensalad_Chinese_Chicken_Salad_directions_list4");
+			fDirectionList4.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvDirectionList4.setVisibility(View.GONE);
+					} else {
+						tvDirectionList4.setText((CharSequence) arg0.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+
+			final Firebase fDirectionList5 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/95/courses_salad_chickensalad_Chinese_Chicken_Salad_directions_list5");
+			fDirectionList5.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvDirectionList5.setVisibility(View.GONE);
+					} else {
+						tvDirectionList5.setText((CharSequence) arg0.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+
+			final Firebase fDirectionList6 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/95/courses_salad_chickensalad_Chinese_Chicken_Salad_directions_list6");
+			fDirectionList6.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvDirectionList6.setVisibility(View.GONE);
+					} else {
+						tvDirectionList6.setText((CharSequence) arg0.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+		} else if (item.equals("Cobb Salad")) {
+			// Action Bar Text
+			setTitle("Cobb Salad");
+			// Image Code
+			Firebase fImageDetailRecipe = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/96/courses_salad_chickensalad_Cobb_Salad_image");
+			fImageDetailRecipe.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					String tempImage = (String) arg0.getValue();
+					// Logo image for this page (will be same for all menus)
+					UrlImageViewHelper.setUrlDrawable(imgDetailRecipe,
+							tempImage);
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+			// Image Detail
+			Firebase fImageDetail = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/96/courses_salad_chickensalad_Cobb_Salad_image_detail");
+			fImageDetail.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvImgDetail.setVisibility(View.GONE);
+					} else {
+						tvImgDetail.setText((CharSequence) arg0.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+			// Ingredients 6 Lists
+			Firebase fIngredientsList1 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/96/courses_salad_chickensalad_Cobb_Salad_ingredients_list1");
+			fIngredientsList1.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvIngredientsList1.setVisibility(View.GONE);
+					} else {
+						tvIngredientsList1.setText((CharSequence) arg0
+								.getValue());
+					}
+
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+
+			Firebase fIngredientsList2 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/96/courses_salad_chickensalad_Cobb_Salad_ingredients_list2");
+			fIngredientsList2.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvIngredientsList2.setVisibility(View.GONE);
+					} else {
+						tvIngredientsList2.setText((CharSequence) arg0
+								.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+			Firebase fIngredientsList3 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/96/courses_salad_chickensalad_Cobb_Salad_ingredients_list3");
+			fIngredientsList3.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvIngredientsList3.setVisibility(View.GONE);
+					} else {
+						tvIngredientsList3.setText((CharSequence) arg0
+								.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+			Firebase fIngredientsList4 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/96/courses_salad_chickensalad_Cobb_Salad_ingredients_list4");
+			fIngredientsList4.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvIngredientsList4.setVisibility(View.GONE);
+					} else {
+						tvIngredientsList4.setText((CharSequence) arg0
+								.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+			Firebase fIngredientsList5 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/96/courses_salad_chickensalad_Cobb_Salad_ingredients_list5");
+			fIngredientsList5.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvIngredientsList5.setVisibility(View.GONE);
+					} else {
+						tvIngredientsList5.setText((CharSequence) arg0
+								.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+			Firebase fIngredientsList6 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/96/courses_salad_chickensalad_Cobb_Salad_ingredients_list6");
+			fIngredientsList6.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvIngredientsList6.setVisibility(View.GONE);
+					} else {
+						tvIngredientsList6.setText((CharSequence) arg0
+								.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+			// Direction lists
+			final Firebase fDirectionList1 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/96/courses_salad_chickensalad_Cobb_Salad_directions_list1");
+			fDirectionList1.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvDirectionList1.setVisibility(View.GONE);
+					} else {
+						tvDirectionList1.setText((CharSequence) arg0.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+
+			final Firebase fDirectionList2 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/96/courses_salad_chickensalad_Cobb_Salad_directions_list2");
+			fDirectionList2.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvDirectionList2.setVisibility(View.GONE);
+					} else {
+						tvDirectionList2.setText((CharSequence) arg0.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+
+			final Firebase fDirectionList3 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/96/courses_salad_chickensalad_Cobb_Salad_directions_list3");
+			fDirectionList3.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvDirectionList3.setVisibility(View.GONE);
+					} else {
+						tvDirectionList3.setText((CharSequence) arg0.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+
+			final Firebase fDirectionList4 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/96/courses_salad_chickensalad_Cobb_Salad_directions_list4");
+			fDirectionList4.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvDirectionList4.setVisibility(View.GONE);
+					} else {
+						tvDirectionList4.setText((CharSequence) arg0.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+
+			final Firebase fDirectionList5 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/96/courses_salad_chickensalad_Cobb_Salad_directions_list5");
+			fDirectionList5.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvDirectionList5.setVisibility(View.GONE);
+					} else {
+						tvDirectionList5.setText((CharSequence) arg0.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+
+			final Firebase fDirectionList6 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/96/courses_salad_chickensalad_Cobb_Salad_directions_list6");
+			fDirectionList6.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvDirectionList6.setVisibility(View.GONE);
+					} else {
+						tvDirectionList6.setText((CharSequence) arg0.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+		} else if (item.equals("Parmesan and Basil Chicken Salad")) {
+			// Action Bar Text
+			setTitle("Parmesan and Basil Chicken Salad");
+			// Image Code
+			Firebase fImageDetailRecipe = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/97/courses_salad_chickensalad_Parmesan_and_Basil_Chicken_Salad_image");
+			fImageDetailRecipe.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					String tempImage = (String) arg0.getValue();
+					// Logo image for this page (will be same for all menus)
+					UrlImageViewHelper.setUrlDrawable(imgDetailRecipe,
+							tempImage);
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+			// Image Detail
+			Firebase fImageDetail = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/97/courses_salad_chickensalad_Parmesan_and_Basil_Chicken_Salad_image_detail");
+			fImageDetail.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvImgDetail.setVisibility(View.GONE);
+					} else {
+						tvImgDetail.setText((CharSequence) arg0.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+			// Ingredients 6 Lists
+			Firebase fIngredientsList1 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/97/courses_salad_chickensalad_Parmesan_and_Basil_Chicken_Salad_ingredients_list1");
+			fIngredientsList1.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvIngredientsList1.setVisibility(View.GONE);
+					} else {
+						tvIngredientsList1.setText((CharSequence) arg0
+								.getValue());
+					}
+
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+
+			Firebase fIngredientsList2 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/97/courses_salad_chickensalad_Parmesan_and_Basil_Chicken_Salad_ingredients_list2");
+			fIngredientsList2.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvIngredientsList2.setVisibility(View.GONE);
+					} else {
+						tvIngredientsList2.setText((CharSequence) arg0
+								.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+			Firebase fIngredientsList3 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/97/courses_salad_chickensalad_Parmesan_and_Basil_Chicken_Salad_ingredients_list3");
+			fIngredientsList3.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvIngredientsList3.setVisibility(View.GONE);
+					} else {
+						tvIngredientsList3.setText((CharSequence) arg0
+								.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+			Firebase fIngredientsList4 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/97/courses_salad_chickensalad_Parmesan_and_Basil_Chicken_Salad_ingredients_list4");
+			fIngredientsList4.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvIngredientsList4.setVisibility(View.GONE);
+					} else {
+						tvIngredientsList4.setText((CharSequence) arg0
+								.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+			Firebase fIngredientsList5 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/97/courses_salad_chickensalad_Parmesan_and_Basil_Chicken_Salad_ingredients_list5");
+			fIngredientsList5.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvIngredientsList5.setVisibility(View.GONE);
+					} else {
+						tvIngredientsList5.setText((CharSequence) arg0
+								.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+			Firebase fIngredientsList6 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/97/courses_salad_chickensalad_Parmesan_and_Basil_Chicken_Salad_ingredients_list6");
+			fIngredientsList6.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvIngredientsList6.setVisibility(View.GONE);
+					} else {
+						tvIngredientsList6.setText((CharSequence) arg0
+								.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+			// Direction lists
+			final Firebase fDirectionList1 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/97/courses_salad_chickensalad_Parmesan_and_Basil_Chicken_Salad_directions_list1");
+			fDirectionList1.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvDirectionList1.setVisibility(View.GONE);
+					} else {
+						tvDirectionList1.setText((CharSequence) arg0.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+
+			final Firebase fDirectionList2 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/97/courses_salad_chickensalad_Parmesan_and_Basil_Chicken_Salad_directions_list2");
+			fDirectionList2.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvDirectionList2.setVisibility(View.GONE);
+					} else {
+						tvDirectionList2.setText((CharSequence) arg0.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+
+			final Firebase fDirectionList3 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/97/courses_salad_chickensalad_Parmesan_and_Basil_Chicken_Salad_directions_list3");
+			fDirectionList3.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvDirectionList3.setVisibility(View.GONE);
+					} else {
+						tvDirectionList3.setText((CharSequence) arg0.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+
+			final Firebase fDirectionList4 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/97/courses_salad_chickensalad_Parmesan_and_Basil_Chicken_Salad_directions_list4");
+			fDirectionList4.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvDirectionList4.setVisibility(View.GONE);
+					} else {
+						tvDirectionList4.setText((CharSequence) arg0.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+
+			final Firebase fDirectionList5 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/97/courses_salad_chickensalad_Parmesan_and_Basil_Chicken_Salad_directions_list5");
+			fDirectionList5.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvDirectionList5.setVisibility(View.GONE);
+					} else {
+						tvDirectionList5.setText((CharSequence) arg0.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+
+			final Firebase fDirectionList6 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/97/courses_salad_chickensalad_Parmesan_and_Basil_Chicken_Salad_directions_list6");
+			fDirectionList6.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvDirectionList6.setVisibility(View.GONE);
+					} else {
+						tvDirectionList6.setText((CharSequence) arg0.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+		} else if (item.equals("Amy's Barbecue Chicken Salad")) {
+			// Action Bar Text
+			setTitle("Amy's Barbecue Chicken Salad");
+			// Image Code
+			Firebase fImageDetailRecipe = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/98/courses_salad_chickensalad_Amy's_Barbecue_Chicken_Salad_image");
+			fImageDetailRecipe.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					String tempImage = (String) arg0.getValue();
+					// Logo image for this page (will be same for all menus)
+					UrlImageViewHelper.setUrlDrawable(imgDetailRecipe,
+							tempImage);
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+			// Image Detail
+			Firebase fImageDetail = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/98/courses_salad_chickensalad_Amy's_Barbecue_Chicken_Salad_image_detail");
+			fImageDetail.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvImgDetail.setVisibility(View.GONE);
+					} else {
+						tvImgDetail.setText((CharSequence) arg0.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+			// Ingredients 6 Lists
+			Firebase fIngredientsList1 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/98/courses_salad_chickensalad_Amy's_Barbecue_Chicken_Salad_ingredients_list1");
+			fIngredientsList1.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvIngredientsList1.setVisibility(View.GONE);
+					} else {
+						tvIngredientsList1.setText((CharSequence) arg0
+								.getValue());
+					}
+
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+
+			Firebase fIngredientsList2 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/98/courses_salad_chickensalad_Amy's_Barbecue_Chicken_Salad_ingredients_list2");
+			fIngredientsList2.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvIngredientsList2.setVisibility(View.GONE);
+					} else {
+						tvIngredientsList2.setText((CharSequence) arg0
+								.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+			Firebase fIngredientsList3 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/98/courses_salad_chickensalad_Amy's_Barbecue_Chicken_Salad_ingredients_list3");
+			fIngredientsList3.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvIngredientsList3.setVisibility(View.GONE);
+					} else {
+						tvIngredientsList3.setText((CharSequence) arg0
+								.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+			Firebase fIngredientsList4 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/98/courses_salad_chickensalad_Amy's_Barbecue_Chicken_Salad_ingredients_list4");
+			fIngredientsList4.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvIngredientsList4.setVisibility(View.GONE);
+					} else {
+						tvIngredientsList4.setText((CharSequence) arg0
+								.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+			Firebase fIngredientsList5 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/98/courses_salad_chickensalad_Amy's_Barbecue_Chicken_Salad_ingredients_list5");
+			fIngredientsList5.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvIngredientsList5.setVisibility(View.GONE);
+					} else {
+						tvIngredientsList5.setText((CharSequence) arg0
+								.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+			Firebase fIngredientsList6 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/98/courses_salad_chickensalad_Amy's_Barbecue_Chicken_Salad_ingredients_list6");
+			fIngredientsList6.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvIngredientsList6.setVisibility(View.GONE);
+					} else {
+						tvIngredientsList6.setText((CharSequence) arg0
+								.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+			// Direction lists
+			final Firebase fDirectionList1 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/98/courses_salad_chickensalad_Amy's_Barbecue_Chicken_Salad_directions_list1");
+			fDirectionList1.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvDirectionList1.setVisibility(View.GONE);
+					} else {
+						tvDirectionList1.setText((CharSequence) arg0.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+
+			final Firebase fDirectionList2 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/98/courses_salad_chickensalad_Amy's_Barbecue_Chicken_Salad_directions_list2");
+			fDirectionList2.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvDirectionList2.setVisibility(View.GONE);
+					} else {
+						tvDirectionList2.setText((CharSequence) arg0.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+
+			final Firebase fDirectionList3 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/98/courses_salad_chickensalad_Amy's_Barbecue_Chicken_Salad_directions_list3");
+			fDirectionList3.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvDirectionList3.setVisibility(View.GONE);
+					} else {
+						tvDirectionList3.setText((CharSequence) arg0.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+
+			final Firebase fDirectionList4 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/98/courses_salad_chickensalad_Amy's_Barbecue_Chicken_Salad_directions_list4");
+			fDirectionList4.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvDirectionList4.setVisibility(View.GONE);
+					} else {
+						tvDirectionList4.setText((CharSequence) arg0.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+
+			final Firebase fDirectionList5 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/98/courses_salad_chickensalad_Amy's_Barbecue_Chicken_Salad_directions_list5");
+			fDirectionList5.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvDirectionList5.setVisibility(View.GONE);
+					} else {
+						tvDirectionList5.setText((CharSequence) arg0.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+
+			final Firebase fDirectionList6 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/98/courses_salad_chickensalad_Amy's_Barbecue_Chicken_Salad_directions_list6");
+			fDirectionList6.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvDirectionList6.setVisibility(View.GONE);
+					} else {
+						tvDirectionList6.setText((CharSequence) arg0.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+		} else if (item.equals("Feta Chicken Salad")) {
+			// Action Bar Text
+			setTitle("Feta Chicken Salad");
+			// Image Code
+			Firebase fImageDetailRecipe = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/99/courses_salad_chickensalad_Feta_Chicken_Salad_image");
+			fImageDetailRecipe.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					String tempImage = (String) arg0.getValue();
+					// Logo image for this page (will be same for all menus)
+					UrlImageViewHelper.setUrlDrawable(imgDetailRecipe,
+							tempImage);
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+			// Image Detail
+			Firebase fImageDetail = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/99/courses_salad_chickensalad_Feta_Chicken_Salad_image_detail");
+			fImageDetail.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvImgDetail.setVisibility(View.GONE);
+					} else {
+						tvImgDetail.setText((CharSequence) arg0.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+			// Ingredients 6 Lists
+			Firebase fIngredientsList1 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/99/courses_salad_chickensalad_Feta_Chicken_Salad_ingredients_list1");
+			fIngredientsList1.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvIngredientsList1.setVisibility(View.GONE);
+					} else {
+						tvIngredientsList1.setText((CharSequence) arg0
+								.getValue());
+					}
+
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+
+			Firebase fIngredientsList2 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/99/courses_salad_chickensalad_Feta_Chicken_Salad_ingredients_list2");
+			fIngredientsList2.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvIngredientsList2.setVisibility(View.GONE);
+					} else {
+						tvIngredientsList2.setText((CharSequence) arg0
+								.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+			Firebase fIngredientsList3 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/99/courses_salad_chickensalad_Feta_Chicken_Salad_ingredients_list3");
+			fIngredientsList3.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvIngredientsList3.setVisibility(View.GONE);
+					} else {
+						tvIngredientsList3.setText((CharSequence) arg0
+								.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+			Firebase fIngredientsList4 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/99/courses_salad_chickensalad_Feta_Chicken_Salad_ingredients_list4");
+			fIngredientsList4.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvIngredientsList4.setVisibility(View.GONE);
+					} else {
+						tvIngredientsList4.setText((CharSequence) arg0
+								.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+			Firebase fIngredientsList5 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/99/courses_salad_chickensalad_Feta_Chicken_Salad_ingredients_list5");
+			fIngredientsList5.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvIngredientsList5.setVisibility(View.GONE);
+					} else {
+						tvIngredientsList5.setText((CharSequence) arg0
+								.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+			Firebase fIngredientsList6 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/99/courses_salad_chickensalad_Feta_Chicken_Salad_ingredients_list6");
+			fIngredientsList6.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvIngredientsList6.setVisibility(View.GONE);
+					} else {
+						tvIngredientsList6.setText((CharSequence) arg0
+								.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+			// Direction lists
+			final Firebase fDirectionList1 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/99/courses_salad_chickensalad_Feta_Chicken_Salad_directions_list1");
+			fDirectionList1.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvDirectionList1.setVisibility(View.GONE);
+					} else {
+						tvDirectionList1.setText((CharSequence) arg0.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+
+			final Firebase fDirectionList2 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/99/courses_salad_chickensalad_Feta_Chicken_Salad_directions_list2");
+			fDirectionList2.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvDirectionList2.setVisibility(View.GONE);
+					} else {
+						tvDirectionList2.setText((CharSequence) arg0.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+
+			final Firebase fDirectionList3 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/99/courses_salad_chickensalad_Feta_Chicken_Salad_directions_list3");
+			fDirectionList3.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvDirectionList3.setVisibility(View.GONE);
+					} else {
+						tvDirectionList3.setText((CharSequence) arg0.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+
+			final Firebase fDirectionList4 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/99/courses_salad_chickensalad_Feta_Chicken_Salad_directions_list4");
+			fDirectionList4.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvDirectionList4.setVisibility(View.GONE);
+					} else {
+						tvDirectionList4.setText((CharSequence) arg0.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+
+			final Firebase fDirectionList5 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/99/courses_salad_chickensalad_Feta_Chicken_Salad_directions_list5");
+			fDirectionList5.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvDirectionList5.setVisibility(View.GONE);
+					} else {
+						tvDirectionList5.setText((CharSequence) arg0.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+
+			final Firebase fDirectionList6 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/99/courses_salad_chickensalad_Feta_Chicken_Salad_directions_list6");
+			fDirectionList6.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvDirectionList6.setVisibility(View.GONE);
+					} else {
+						tvDirectionList6.setText((CharSequence) arg0.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+		} else if (item.equals("Asian Chicken Noodle Salad")) {
+			// Action Bar Text
+			setTitle("Asian Chicken Noodle Salad");
+			// Image Code
+			Firebase fImageDetailRecipe = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/100/courses_salad_chickensalad_Asian_Chicken_Noodle_Salad_image");
+			fImageDetailRecipe.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					String tempImage = (String) arg0.getValue();
+					// Logo image for this page (will be same for all menus)
+					UrlImageViewHelper.setUrlDrawable(imgDetailRecipe,
+							tempImage);
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+			// Image Detail
+			Firebase fImageDetail = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/100/courses_salad_chickensalad_Asian_Chicken_Noodle_Salad_image_detail");
+			fImageDetail.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvImgDetail.setVisibility(View.GONE);
+					} else {
+						tvImgDetail.setText((CharSequence) arg0.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+			// Ingredients 6 Lists
+			Firebase fIngredientsList1 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/100/courses_salad_chickensalad_Asian_Chicken_Noodle_Salad_ingredients_list1");
+			fIngredientsList1.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvIngredientsList1.setVisibility(View.GONE);
+					} else {
+						tvIngredientsList1.setText((CharSequence) arg0
+								.getValue());
+					}
+
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+
+			Firebase fIngredientsList2 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/100/courses_salad_chickensalad_Asian_Chicken_Noodle_Salad_ingredients_list2");
+			fIngredientsList2.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvIngredientsList2.setVisibility(View.GONE);
+					} else {
+						tvIngredientsList2.setText((CharSequence) arg0
+								.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+			Firebase fIngredientsList3 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/100/courses_salad_chickensalad_Asian_Chicken_Noodle_Salad_ingredients_list3");
+			fIngredientsList3.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvIngredientsList3.setVisibility(View.GONE);
+					} else {
+						tvIngredientsList3.setText((CharSequence) arg0
+								.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+			Firebase fIngredientsList4 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/100/courses_salad_chickensalad_Asian_Chicken_Noodle_Salad_ingredients_list4");
+			fIngredientsList4.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvIngredientsList4.setVisibility(View.GONE);
+					} else {
+						tvIngredientsList4.setText((CharSequence) arg0
+								.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+			Firebase fIngredientsList5 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/100/courses_salad_chickensalad_Asian_Chicken_Noodle_Salad_ingredients_list5");
+			fIngredientsList5.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvIngredientsList5.setVisibility(View.GONE);
+					} else {
+						tvIngredientsList5.setText((CharSequence) arg0
+								.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+			Firebase fIngredientsList6 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/100/courses_salad_chickensalad_Asian_Chicken_Noodle_Salad_ingredients_list6");
+			fIngredientsList6.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvIngredientsList6.setVisibility(View.GONE);
+					} else {
+						tvIngredientsList6.setText((CharSequence) arg0
+								.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+			// Direction lists
+			final Firebase fDirectionList1 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/100/courses_salad_chickensalad_Asian_Chicken_Noodle_Salad_directions_list1");
+			fDirectionList1.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvDirectionList1.setVisibility(View.GONE);
+					} else {
+						tvDirectionList1.setText((CharSequence) arg0.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+
+			final Firebase fDirectionList2 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/100/courses_salad_chickensalad_Asian_Chicken_Noodle_Salad_directions_list2");
+			fDirectionList2.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvDirectionList2.setVisibility(View.GONE);
+					} else {
+						tvDirectionList2.setText((CharSequence) arg0.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+
+			final Firebase fDirectionList3 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/100/courses_salad_chickensalad_Asian_Chicken_Noodle_Salad_directions_list3");
+			fDirectionList3.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvDirectionList3.setVisibility(View.GONE);
+					} else {
+						tvDirectionList3.setText((CharSequence) arg0.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+
+			final Firebase fDirectionList4 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/100/courses_salad_chickensalad_Asian_Chicken_Noodle_Salad_directions_list4");
+			fDirectionList4.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvDirectionList4.setVisibility(View.GONE);
+					} else {
+						tvDirectionList4.setText((CharSequence) arg0.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+
+			final Firebase fDirectionList5 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/100/courses_salad_chickensalad_Asian_Chicken_Noodle_Salad_directions_list5");
+			fDirectionList5.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvDirectionList5.setVisibility(View.GONE);
+					} else {
+						tvDirectionList5.setText((CharSequence) arg0.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+
+			final Firebase fDirectionList6 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/100/courses_salad_chickensalad_Asian_Chicken_Noodle_Salad_directions_list6");
+			fDirectionList6.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvDirectionList6.setVisibility(View.GONE);
+					} else {
+						tvDirectionList6.setText((CharSequence) arg0.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+		} else if (item.equals("Mandarin Chicken Pasta Salad")) {
+			// Action Bar Text
+			setTitle("Mandarin Chicken Pasta Salad");
+			// Image Code
+			Firebase fImageDetailRecipe = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/101/courses_salad_chickensalad_Mandarin_Chicken_Pasta_Salad_image");
+			fImageDetailRecipe.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					String tempImage = (String) arg0.getValue();
+					// Logo image for this page (will be same for all menus)
+					UrlImageViewHelper.setUrlDrawable(imgDetailRecipe,
+							tempImage);
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+			// Image Detail
+			Firebase fImageDetail = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/101/courses_salad_chickensalad_Mandarin_Chicken_Pasta_Salad_image_detail");
+			fImageDetail.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvImgDetail.setVisibility(View.GONE);
+					} else {
+						tvImgDetail.setText((CharSequence) arg0.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+			// Ingredients 6 Lists
+			Firebase fIngredientsList1 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/101/courses_salad_chickensalad_Mandarin_Chicken_Pasta_Salad_ingredients_list1");
+			fIngredientsList1.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvIngredientsList1.setVisibility(View.GONE);
+					} else {
+						tvIngredientsList1.setText((CharSequence) arg0
+								.getValue());
+					}
+
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+
+			Firebase fIngredientsList2 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/101/courses_salad_chickensalad_Mandarin_Chicken_Pasta_Salad_ingredients_list2");
+			fIngredientsList2.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvIngredientsList2.setVisibility(View.GONE);
+					} else {
+						tvIngredientsList2.setText((CharSequence) arg0
+								.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+			Firebase fIngredientsList3 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/101/courses_salad_chickensalad_Mandarin_Chicken_Pasta_Salad_ingredients_list3");
+			fIngredientsList3.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvIngredientsList3.setVisibility(View.GONE);
+					} else {
+						tvIngredientsList3.setText((CharSequence) arg0
+								.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+			Firebase fIngredientsList4 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/101/courses_salad_chickensalad_Mandarin_Chicken_Pasta_Salad_ingredients_list4");
+			fIngredientsList4.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvIngredientsList4.setVisibility(View.GONE);
+					} else {
+						tvIngredientsList4.setText((CharSequence) arg0
+								.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+			Firebase fIngredientsList5 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/101/courses_salad_chickensalad_Mandarin_Chicken_Pasta_Salad_ingredients_list5");
+			fIngredientsList5.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvIngredientsList5.setVisibility(View.GONE);
+					} else {
+						tvIngredientsList5.setText((CharSequence) arg0
+								.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+			Firebase fIngredientsList6 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/101/courses_salad_chickensalad_Mandarin_Chicken_Pasta_Salad_ingredients_list6");
+			fIngredientsList6.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvIngredientsList6.setVisibility(View.GONE);
+					} else {
+						tvIngredientsList6.setText((CharSequence) arg0
+								.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+			// Direction lists
+			final Firebase fDirectionList1 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/101/courses_salad_chickensalad_Mandarin_Chicken_Pasta_Salad_directions_list1");
+			fDirectionList1.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvDirectionList1.setVisibility(View.GONE);
+					} else {
+						tvDirectionList1.setText((CharSequence) arg0.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+
+			final Firebase fDirectionList2 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/101/courses_salad_chickensalad_Mandarin_Chicken_Pasta_Salad_directions_list2");
+			fDirectionList2.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvDirectionList2.setVisibility(View.GONE);
+					} else {
+						tvDirectionList2.setText((CharSequence) arg0.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+
+			final Firebase fDirectionList3 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/101/courses_salad_chickensalad_Mandarin_Chicken_Pasta_Salad_directions_list3");
+			fDirectionList3.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvDirectionList3.setVisibility(View.GONE);
+					} else {
+						tvDirectionList3.setText((CharSequence) arg0.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+
+			final Firebase fDirectionList4 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/101/courses_salad_chickensalad_Mandarin_Chicken_Pasta_Salad_directions_list4");
+			fDirectionList4.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvDirectionList4.setVisibility(View.GONE);
+					} else {
+						tvDirectionList4.setText((CharSequence) arg0.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+
+			final Firebase fDirectionList5 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/101/courses_salad_chickensalad_Mandarin_Chicken_Pasta_Salad_directions_list5");
+			fDirectionList5.addValueEventListener(new ValueEventListener() {
+
+				@Override
+				public void onDataChange(DataSnapshot arg0) {
+					// TODO Auto-generated method stub
+					if (arg0.getValue().equals("")) {
+						tvDirectionList5.setVisibility(View.GONE);
+					} else {
+						tvDirectionList5.setText((CharSequence) arg0.getValue());
+					}
+				}
+
+				@Override
+				public void onCancelled(FirebaseError arg0) {
+					// TODO Auto-generated method stub
+
+				}
+			});
+
+			final Firebase fDirectionList6 = new Firebase(
+					"https://cookbook-teammatharu.firebaseio.com/101/courses_salad_chickensalad_Mandarin_Chicken_Pasta_Salad_directions_list6");
 			fDirectionList6.addValueEventListener(new ValueEventListener() {
 
 				@Override
