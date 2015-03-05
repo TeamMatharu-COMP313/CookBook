@@ -4,6 +4,7 @@ import android.app.Activity;
 import android.app.AlertDialog;
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -11,6 +12,7 @@ import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
 import android.widget.ImageView;
+import android.widget.Toast;
 
 import com.firebase.client.DataSnapshot;
 import com.firebase.client.Firebase;
@@ -166,7 +168,7 @@ public class MainLandingPage extends Activity {
 	@Override
 	public boolean onCreateOptionsMenu(Menu menu) {
 		// Inflate the menu; this adds items to the action bar if it is present.
-		getMenuInflater().inflate(R.menu.main_landing_page, menu);
+		getMenuInflater().inflate(R.menu.content, menu);
 		return true;
 	}
 
@@ -202,6 +204,23 @@ public class MainLandingPage extends Activity {
 		if (id == R.id.action_settings) {
 			return true;
 		}
+		if(id==R.id.action_contactus){
+			Intent intent = new Intent(Intent.ACTION_SENDTO); // it's not ACTION_SEND
+			intent.setType("text/plain");
+			intent.putExtra(Intent.EXTRA_SUBJECT, "");
+			intent.putExtra(Intent.EXTRA_TEXT, "Message:");
+			intent.setData(Uri.parse("mailto:teammatharu@gmail.com")); // or just "mailto:" for blank
+			intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+			try {
+			    startActivity(Intent.createChooser(intent, "Send mail..."));
+			} catch (android.content.ActivityNotFoundException ex) {
+			    Toast.makeText(MainLandingPage.this, "There are no email clients installed.", Toast.LENGTH_SHORT).show();
+			}
+			return true;
+		}
 		return super.onOptionsItemSelected(item);
 	}
+	
+	
+	
 }

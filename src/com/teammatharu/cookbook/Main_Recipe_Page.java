@@ -6,6 +6,7 @@ import java.util.List;
 import com.teammatharu.recipefragments.MainRecipeFragment;
 
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.app.Activity;
 import android.util.Log;
@@ -16,6 +17,7 @@ import android.widget.AdapterView;
 import android.widget.AdapterView.OnItemSelectedListener;
 import android.widget.ArrayAdapter;
 import android.widget.Spinner;
+import android.widget.Toast;
 
 public class Main_Recipe_Page extends Activity {
 
@@ -211,7 +213,7 @@ public class Main_Recipe_Page extends Activity {
 	@Override
 	public boolean onCreateOptionsMenu(Menu menu) {
 		// Inflate the menu; this adds items to the action bar if it is present.
-		getMenuInflater().inflate(R.menu.main__recipe__page, menu);
+		getMenuInflater().inflate(R.menu.content, menu);
 		return true;
 	}
 
@@ -222,6 +224,20 @@ public class Main_Recipe_Page extends Activity {
 		// as you specify a parent activity in AndroidManifest.xml.
 		int id = item.getItemId();
 		if (id == R.id.action_settings) {
+			return true;
+		}
+		if(id==R.id.action_contactus){
+			Intent intent = new Intent(Intent.ACTION_SENDTO); // it's not ACTION_SEND
+			intent.setType("text/plain");
+			intent.putExtra(Intent.EXTRA_SUBJECT, "");
+			intent.putExtra(Intent.EXTRA_TEXT, "Message:");
+			intent.setData(Uri.parse("mailto:teammatharu@gmail.com")); // or just "mailto:" for blank
+			intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+			try {
+			    startActivity(Intent.createChooser(intent, "Send mail..."));
+			} catch (android.content.ActivityNotFoundException ex) {
+			    Toast.makeText(Main_Recipe_Page.this, "There are no email clients installed.", Toast.LENGTH_SHORT).show();
+			}
 			return true;
 		}
 		return super.onOptionsItemSelected(item);
