@@ -1,11 +1,5 @@
 package com.teammatharu.cookbook;
 
-import com.firebase.client.DataSnapshot;
-import com.firebase.client.Firebase;
-import com.firebase.client.FirebaseError;
-import com.firebase.client.ValueEventListener;
-import com.koushikdutta.urlimageviewhelper.UrlImageViewHelper;
-
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
@@ -14,6 +8,12 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
+
+import com.firebase.client.DataSnapshot;
+import com.firebase.client.Firebase;
+import com.firebase.client.FirebaseError;
+import com.firebase.client.ValueEventListener;
+import com.koushikdutta.urlimageviewhelper.UrlImageViewHelper;
 
 public class MainDetailRecipePage extends Activity {
 
@@ -22172,6 +22172,36 @@ public class MainDetailRecipePage extends Activity {
 
 				}
 			});
+		} else if (item.equals("Holiday Chicken Salad")) {
+
+		} else if (item.equals("Sesame Pasta Chicken Salad")) {
+
+		} else if (item.equals("Becky's Chicken Salad")) {
+
+		} else if (item.equals("Fruity Curry Chicken Salad")) {
+
+		} else if (item.equals("Carol's Chicken Salad")) {
+
+		} else if (item.equals("Fruited Curry Chicken Salad")) {
+
+		} else if (item.equals("Avocado Egg Salad")) {
+
+		} else if (item.equals("Magical Egg Salad")) {
+
+		} else if (item.equals("Awesome Pasta Salad")) {
+
+		} else if (item.equals("Asian Salad")) {
+
+		} else if (item.equals("Shrimp Couscous Salad")) {
+
+		} else if (item.equals("Tuna Salad With Fresh Dill")) {
+
+		} else if (item.equals("Avocado and Tuna Tapas")) {
+
+		} else if (item.equals("Cinnamon-Curry Tuna Salad")) {
+
+		} else if (item.equals("Salmon Salad")) {
+
 		}
 	}
 
