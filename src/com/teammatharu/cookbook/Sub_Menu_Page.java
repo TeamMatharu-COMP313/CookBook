@@ -2,6 +2,7 @@ package com.teammatharu.cookbook;
 
 import android.app.Activity;
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -9,6 +10,7 @@ import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
 import android.widget.ImageView;
+import android.widget.Toast;
 
 import com.firebase.client.DataSnapshot;
 import com.firebase.client.Firebase;
@@ -7190,7 +7192,7 @@ public class Sub_Menu_Page extends Activity {
 	@Override
 	public boolean onCreateOptionsMenu(Menu menu) {
 		// Inflate the menu; this adds items to the action bar if it is present.
-		getMenuInflater().inflate(R.menu.sub__menu__page, menu);
+		getMenuInflater().inflate(R.menu.content, menu);
 		return true;
 	}
 
@@ -7201,6 +7203,11 @@ public class Sub_Menu_Page extends Activity {
 		// as you specify a parent activity in AndroidManifest.xml.
 		int id = item.getItemId();
 		if (id == R.id.action_settings) {
+			return true;
+		}
+		if(id==R.id.action_contactus){
+			Intent i = new Intent(Sub_Menu_Page.this,ContactUs.class);
+			startActivity(i);
 			return true;
 		}
 		return super.onOptionsItemSelected(item);
