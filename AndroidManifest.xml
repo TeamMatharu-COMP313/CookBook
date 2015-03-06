@@ -47,6 +47,10 @@
             android:name="com.teammatharu.recipefragments.MainRecipeFragment"
             android:label="@string/title_activity_main_recipe_fragment" >
         </activity>
+        <activity
+            android:name=".ContactUs"
+            android:label="@string/title_activity_contact_us" >
+        </activity>
     </application>
 
 </manifest>

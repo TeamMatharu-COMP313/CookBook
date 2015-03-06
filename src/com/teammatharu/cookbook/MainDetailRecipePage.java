@@ -2,12 +2,14 @@ package com.teammatharu.cookbook;
 
 import android.app.Activity;
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.firebase.client.DataSnapshot;
 import com.firebase.client.Firebase;
@@ -27261,7 +27263,7 @@ public class MainDetailRecipePage extends Activity {
 	@Override
 	public boolean onCreateOptionsMenu(Menu menu) {
 		// Inflate the menu; this adds items to the action bar if it is present.
-		getMenuInflater().inflate(R.menu.main_detail_recipe_page, menu);
+		getMenuInflater().inflate(R.menu.content, menu);
 		return true;
 	}
 
@@ -27272,6 +27274,11 @@ public class MainDetailRecipePage extends Activity {
 		// as you specify a parent activity in AndroidManifest.xml.
 		int id = item.getItemId();
 		if (id == R.id.action_settings) {
+			return true;
+		}
+		if(id==R.id.action_contactus){
+			Intent i = new Intent(MainDetailRecipePage.this,ContactUs.class);
+			startActivity(i);
 			return true;
 		}
 		return super.onOptionsItemSelected(item);
