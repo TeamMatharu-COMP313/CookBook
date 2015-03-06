@@ -38,27 +38,7 @@ public class Main_Recipe_Page extends Activity {
 		// Fire Base
 				Firebase.setAndroidContext(this);
 
-				// Fetching Image from Cloud
-				final ImageView imgLogo = (ImageView) findViewById(R.id.imageView1);
-				Firebase fImageMain_Recipe_Page = new Firebase(
-						"https://cookbook-teammatharu.firebaseio.com/0/ImageMainLandingPage");
-
-				fImageMain_Recipe_Page.addValueEventListener(new ValueEventListener() {
-
-					@Override
-					public void onDataChange(DataSnapshot arg0) {
-						// TODO Auto-generated method stub
-						String tempImage = (String) arg0.getValue();
-						// Assigning Image to Image view
-						UrlImageViewHelper.setUrlDrawable(imgLogo, tempImage);
-					}
-
-					@Override
-					public void onCancelled(FirebaseError arg0) {
-						// TODO Auto-generated method stub
-
-					}
-				});
+			
 		
 		// 1. get passed intent
 		Intent intent = getIntent();
