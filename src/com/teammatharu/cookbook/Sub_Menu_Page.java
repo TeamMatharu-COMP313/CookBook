@@ -2,7 +2,6 @@ package com.teammatharu.cookbook;
 
 import android.app.Activity;
 import android.content.Intent;
-import android.net.Uri;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -10,7 +9,6 @@ import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
 import android.widget.ImageView;
-import android.widget.Toast;
 
 import com.firebase.client.DataSnapshot;
 import com.firebase.client.Firebase;
@@ -5472,20 +5470,20 @@ public class Sub_Menu_Page extends Activity {
 								Main_Recipe_Page.class);
 						// 2. put key/value data
 
-						activityCourse
-								.putExtra("list1_submenu", "Mocha Coffee");
+						activityCourse.putExtra("list1_submenu",
+								"Classic Waffles");
 						activityCourse.putExtra("list2_submenu",
-								"Easy Iced Coffee");
+								"Wonderful Waffles");
 						activityCourse.putExtra("list3_submenu",
-								"Pumpkin Spiced Latte");
+								"Cinnamon Belgian Waffles");
 						activityCourse.putExtra("list4_submenu",
-								"Iced Mocha Fusion Shake");
+								"Belgian Waffles");
 						activityCourse.putExtra("list5_submenu",
-								"Gunline Coffee");
-						activityCourse
-								.putExtra("list6_submenu", "Coffee Shake");
+								"Deluxe Waffles");
+						activityCourse.putExtra("list6_submenu",
+								"Mammaw's Waffles");
 						activityCourse.putExtra("list7_submenu",
-								"Peanut Buttercup Hot Chocolate");
+								"Yeast Waffles");
 						activityCourse.putExtra("list8_submenu", "none");
 						activityCourse.putExtra("list9_submenu", "none");
 						activityCourse.putExtra("list10_submenu", "none");
@@ -7205,8 +7203,8 @@ public class Sub_Menu_Page extends Activity {
 		if (id == R.id.action_settings) {
 			return true;
 		}
-		if(id==R.id.action_contactus){
-			Intent i = new Intent(Sub_Menu_Page.this,ContactUs.class);
+		if (id == R.id.action_contactus) {
+			Intent i = new Intent(Sub_Menu_Page.this, ContactUs.class);
 			startActivity(i);
 			return true;
 		}
