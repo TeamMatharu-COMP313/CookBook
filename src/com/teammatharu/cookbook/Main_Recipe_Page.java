@@ -3,6 +3,11 @@ package com.teammatharu.cookbook;
 import java.util.ArrayList;
 import java.util.List;
 
+import com.firebase.client.DataSnapshot;
+import com.firebase.client.Firebase;
+import com.firebase.client.FirebaseError;
+import com.firebase.client.ValueEventListener;
+import com.koushikdutta.urlimageviewhelper.UrlImageViewHelper;
 import com.teammatharu.recipefragments.MainRecipeFragment;
 
 import android.content.Intent;
@@ -16,6 +21,7 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.AdapterView.OnItemSelectedListener;
 import android.widget.ArrayAdapter;
+import android.widget.ImageView;
 import android.widget.Spinner;
 import android.widget.Toast;
 
@@ -31,6 +37,11 @@ public class Main_Recipe_Page extends Activity {
 		// yest
 		Spinner spinner = (Spinner) findViewById(R.id.spinner1);
 
+		// Fire Base
+				Firebase.setAndroidContext(this);
+
+			
+		
 		// 1. get passed intent
 		Intent intent = getIntent();
 		// 2. get message value from intent
