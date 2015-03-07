@@ -37,10 +37,12 @@
         </activity>
         <activity
             android:name=".Main_Recipe_Page"
+            android:screenOrientation="portrait"
             android:label="@string/title_activity_main__recipe__page" >
         </activity>
         <activity
             android:name=".MainDetailRecipePage"
+            android:screenOrientation="portrait"
             android:label="@string/title_activity_main_detail_recipe_page" >
         </activity>
         <activity
@@ -49,6 +51,7 @@
         </activity>
         <activity
             android:name=".ContactUs"
+            android:screenOrientation="portrait"
             android:label="@string/title_activity_contact_us" >
         </activity>
         <activity
