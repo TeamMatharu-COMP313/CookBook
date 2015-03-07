@@ -51,6 +51,13 @@
             android:name=".ContactUs"
             android:label="@string/title_activity_contact_us" >
         </activity>
+        <activity
+            android:name=".Video_Page"
+             android:configChanges="orientation|screenSize"
+            android:screenOrientation="landscape"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+            android:label="@string/title_activity_video__page" >
+        </activity>
     </application>
 
 </manifest>

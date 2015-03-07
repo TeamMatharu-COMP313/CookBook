@@ -26,7 +26,7 @@
                 android:layout_width="300dp"
                 android:layout_height="300dp"
                 android:layout_gravity="center"
-                android:layout_marginBottom="20dp" />
+                android:layout_marginBottom="10dp" />
 
             <!-- Details of image -->
 
@@ -35,10 +35,10 @@
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
                 android:textColor="#ffffff"
-                android:textSize="15sp" 
-                android:textStyle="italic"/>
+                android:textSize="15sp"
+                android:textStyle="italic" />
 
-            <!-- Ingredients list 1 - 6 -->
+            <!-- Ingredients list 1 -->
 
             <TextView
                 android:id="@+id/tvIngredients"
@@ -57,42 +57,7 @@
                 android:textColor="#ffffff"
                 android:textSize="15sp" />
 
-            <TextView
-                android:id="@+id/tvIngredientsList2"
-                android:layout_width="fill_parent"
-                android:layout_height="fill_parent"
-                android:textColor="#ffffff"
-                android:textSize="15sp" />
-
-            <TextView
-                android:id="@+id/tvIngredientsList3"
-                android:layout_width="fill_parent"
-                android:layout_height="fill_parent"
-                android:textColor="#ffffff"
-                android:textSize="15sp" />
-
-            <TextView
-                android:id="@+id/tvIngredientsList4"
-                android:layout_width="fill_parent"
-                android:layout_height="fill_parent"
-                android:textColor="#ffffff"
-                android:textSize="15sp" />
-
-            <TextView
-                android:id="@+id/tvIngredientsList5"
-                android:layout_width="fill_parent"
-                android:layout_height="fill_parent"
-                android:textColor="#ffffff"
-                android:textSize="15sp" />
-
-            <TextView
-                android:id="@+id/tvIngredientsList6"
-                android:layout_width="fill_parent"
-                android:layout_height="fill_parent"
-                android:textColor="#ffffff"
-                android:textSize="15sp" />
-
-            <!-- Direction 1 - 6 -->
+            <!-- Direction 1 -->
 
             <TextView
                 android:id="@+id/tvDirection"
@@ -106,41 +71,6 @@
 
             <TextView
                 android:id="@+id/tvDirectionList1"
-                android:layout_width="fill_parent"
-                android:layout_height="fill_parent"
-                android:textColor="#ffffff"
-                android:textSize="15sp" />
-
-            <TextView
-                android:id="@+id/tvDirectionList2"
-                android:layout_width="fill_parent"
-                android:layout_height="fill_parent"
-                android:textColor="#ffffff"
-                android:textSize="15sp" />
-
-            <TextView
-                android:id="@+id/tvDirectionList3"
-                android:layout_width="fill_parent"
-                android:layout_height="fill_parent"
-                android:textColor="#ffffff"
-                android:textSize="15sp" />
-
-            <TextView
-                android:id="@+id/tvDirectionList4"
-                android:layout_width="fill_parent"
-                android:layout_height="fill_parent"
-                android:textColor="#ffffff"
-                android:textSize="15sp" />
-
-            <TextView
-                android:id="@+id/tvDirectionList5"
-                android:layout_width="fill_parent"
-                android:layout_height="fill_parent"
-                android:textColor="#ffffff"
-                android:textSize="15sp" />
-
-            <TextView
-                android:id="@+id/tvDirectionList6"
                 android:layout_width="fill_parent"
                 android:layout_height="fill_parent"
                 android:textColor="#ffffff"
