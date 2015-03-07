@@ -87,11 +87,11 @@ public class MainDetailRecipePage extends Activity {
 							.getValue();
 					for (int i = 0; i < dirArray.size(); i++) {
 						tvDirectionList.append(dirArray.get(i).toString()
-								+ "\n");
+								+ "\n\n");
 					}
 				}
 				// Setting Ingredients
-				if (arg0.getKey().toString() == "Ingridents") {
+				if (arg0.getKey().toString() == "Ingreidents") {
 					@SuppressWarnings("unchecked")
 					ArrayList<String> dirArray = (ArrayList<String>) arg0
 							.getValue();
