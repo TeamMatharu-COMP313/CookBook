@@ -3,27 +3,18 @@ package com.teammatharu.cookbook;
 import java.util.ArrayList;
 import java.util.List;
 
-import com.firebase.client.DataSnapshot;
-import com.firebase.client.Firebase;
-import com.firebase.client.FirebaseError;
-import com.firebase.client.ValueEventListener;
-import com.koushikdutta.urlimageviewhelper.UrlImageViewHelper;
-import com.teammatharu.recipefragments.MainRecipeFragment;
-
-import android.content.Intent;
-import android.net.Uri;
-import android.os.Bundle;
 import android.app.Activity;
-import android.util.Log;
+import android.content.Intent;
+import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.AdapterView.OnItemSelectedListener;
 import android.widget.ArrayAdapter;
-import android.widget.ImageView;
 import android.widget.Spinner;
-import android.widget.Toast;
+
+import com.firebase.client.Firebase;
 
 public class Main_Recipe_Page extends Activity {
 
@@ -38,10 +29,8 @@ public class Main_Recipe_Page extends Activity {
 		Spinner spinner = (Spinner) findViewById(R.id.spinner1);
 
 		// Fire Base
-				Firebase.setAndroidContext(this);
+		Firebase.setAndroidContext(this);
 
-			
-		
 		// 1. get passed intent
 		Intent intent = getIntent();
 		// 2. get message value from intent
@@ -203,7 +192,8 @@ public class Main_Recipe_Page extends Activity {
 				// Log.d("on Select",count+"");
 				String item = parent.getItemAtPosition(position).toString();
 				if (item != "Please Select From This List") {
-					Intent i = new Intent(Main_Recipe_Page.this,MainDetailRecipePage.class);
+					Intent i = new Intent(Main_Recipe_Page.this,
+							MainDetailRecipePage.class);
 					i.putExtra("item", item);
 					startActivity(i);
 					finish();
@@ -237,8 +227,8 @@ public class Main_Recipe_Page extends Activity {
 		if (id == R.id.action_settings) {
 			return true;
 		}
-		if(id==R.id.action_contactus){
-			Intent i = new Intent(Main_Recipe_Page.this,ContactUs.class);
+		if (id == R.id.action_contactus) {
+			Intent i = new Intent(Main_Recipe_Page.this, ContactUs.class);
 			startActivity(i);
 			return true;
 		}

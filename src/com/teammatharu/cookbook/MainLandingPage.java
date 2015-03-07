@@ -4,7 +4,6 @@ import android.app.Activity;
 import android.app.AlertDialog;
 import android.content.DialogInterface;
 import android.content.Intent;
-import android.net.Uri;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -12,7 +11,6 @@ import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
 import android.widget.ImageView;
-import android.widget.Toast;
 
 import com.firebase.client.DataSnapshot;
 import com.firebase.client.Firebase;
@@ -204,14 +202,12 @@ public class MainLandingPage extends Activity {
 		if (id == R.id.action_settings) {
 			return true;
 		}
-		if(id==R.id.action_contactus){
-			Intent i = new Intent(MainLandingPage.this,ContactUs.class);
+		if (id == R.id.action_contactus) {
+			Intent i = new Intent(MainLandingPage.this, ContactUs.class);
 			startActivity(i);
 			return true;
 		}
 		return super.onOptionsItemSelected(item);
 	}
-	
-	
-	
+
 }

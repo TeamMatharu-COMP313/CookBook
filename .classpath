@@ -7,5 +7,6 @@
 	<classpathentry exported="true" kind="con" path="com.android.ide.eclipse.adt.DEPENDENCIES"/>
 	<classpathentry kind="lib" path="libs/urlimageviewhelper-1.0.4.jar"/>
 	<classpathentry kind="lib" path="libs/firebase-client-android-2.1.1.jar"/>
+	<classpathentry kind="lib" path="libs/YouTubeAndroidPlayerApi.jar"/>
 	<classpathentry kind="output" path="bin/classes"/>
 </classpath>
