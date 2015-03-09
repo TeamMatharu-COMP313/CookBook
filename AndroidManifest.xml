@@ -37,13 +37,13 @@
         </activity>
         <activity
             android:name=".Main_Recipe_Page"
-            android:screenOrientation="portrait"
-            android:label="@string/title_activity_main__recipe__page" >
+            android:label="@string/title_activity_main__recipe__page"
+            android:screenOrientation="portrait" >
         </activity>
         <activity
             android:name=".MainDetailRecipePage"
-            android:screenOrientation="portrait"
-            android:label="@string/title_activity_main_detail_recipe_page" >
+            android:label="@string/title_activity_main_detail_recipe_page"
+            android:screenOrientation="portrait" >
         </activity>
         <activity
             android:name="com.teammatharu.recipefragments.MainRecipeFragment"
@@ -51,15 +51,15 @@
         </activity>
         <activity
             android:name=".ContactUs"
-            android:screenOrientation="portrait"
-            android:label="@string/title_activity_contact_us" >
+            android:label="@string/title_activity_contact_us"
+            android:screenOrientation="portrait" >
         </activity>
         <activity
             android:name=".Video_Page"
-             android:configChanges="orientation|screenSize"
+            android:configChanges="orientation|screenSize"
+            android:label="@string/title_activity_video__page"
             android:screenOrientation="landscape"
-            android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
-            android:label="@string/title_activity_video__page" >
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" >
         </activity>
     </application>
 
