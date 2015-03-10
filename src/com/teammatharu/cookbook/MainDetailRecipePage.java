@@ -103,22 +103,28 @@ public class MainDetailRecipePage extends Activity {
 				// setting video
 				if (arg0.getKey().toString() == "Video") {
 					final String video = arg0.getValue().toString();
-					bVideo.setOnClickListener(new OnClickListener() {
 
-						@Override
-						public void onClick(View v) {
-							// TODO Auto-generated method stub
-							Intent activityIntent = new Intent(
-									MainDetailRecipePage.this, Video_Page.class);
-							activityIntent.putExtra("video", video);
-							Bundle extras = new Bundle();
-							// 4. add bundle to intent
-							activityIntent.putExtras(extras);
-							MainDetailRecipePage.this
-									.startActivity(activityIntent);
-							finish();
-						}
-					});
+					if (video.equals("")) {
+						bVideo.setVisibility(View.GONE);
+					} else {
+						bVideo.setOnClickListener(new OnClickListener() {
+
+							@Override
+							public void onClick(View v) {
+								// TODO Auto-generated method stub
+								Intent activityIntent = new Intent(
+										MainDetailRecipePage.this,
+										Video_Page.class);
+								activityIntent.putExtra("video", video);
+								Bundle extras = new Bundle();
+								// 4. add bundle to intent
+								activityIntent.putExtras(extras);
+								MainDetailRecipePage.this
+										.startActivity(activityIntent);
+								finish();
+							}
+						});
+					}
 				}
 
 			}
