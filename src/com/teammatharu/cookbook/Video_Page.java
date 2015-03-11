@@ -16,6 +16,7 @@ public class Video_Page extends YouTubeBaseActivity implements
 		YouTubePlayer.OnInitializedListener {
 	static private final String DEVELOPER_KEY = "AIzaSyBhOSgSIvhcd6czDACzHNKvNCWy-vlYlGA";
 	static private String VIDEO = null;
+	static private String ItemBack = null;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -26,6 +27,7 @@ public class Video_Page extends YouTubeBaseActivity implements
 		Intent intent = getIntent();
 		// 2. get message value from intent
 		VIDEO = intent.getStringExtra("video");
+		ItemBack = intent.getStringExtra("itemBack");
 		YouTubePlayerView youTubeView = (YouTubePlayerView) findViewById(R.id.youtube_view1);
 		youTubeView.initialize(DEVELOPER_KEY, this);
 	}
@@ -87,6 +89,10 @@ public class Video_Page extends YouTubeBaseActivity implements
 		// TODO Auto-generated method stub
 		Intent activityIntent = new Intent(Video_Page.this,
 				MainDetailRecipePage.class);
+		activityIntent.putExtra("item", ItemBack);
+		Bundle extras = new Bundle();
+		// 4. add bundle to intent
+		activityIntent.putExtras(extras);
 		Video_Page.this.startActivity(activityIntent);
 		finish();
 	}

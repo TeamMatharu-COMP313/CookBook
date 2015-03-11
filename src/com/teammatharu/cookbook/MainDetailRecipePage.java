@@ -33,7 +33,7 @@ public class MainDetailRecipePage extends Activity {
 
 		// 1. get passed intent
 		Intent intent = getIntent();
-		String recipeName = intent.getStringExtra("item");
+		final String recipeName = intent.getStringExtra("item");
 
 		// Action Bar Text
 		setTitle(recipeName);
@@ -116,6 +116,7 @@ public class MainDetailRecipePage extends Activity {
 										MainDetailRecipePage.this,
 										Video_Page.class);
 								activityIntent.putExtra("video", video);
+								activityIntent.putExtra("itemBack", recipeName);
 								Bundle extras = new Bundle();
 								// 4. add bundle to intent
 								activityIntent.putExtras(extras);
