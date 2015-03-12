@@ -203,6 +203,11 @@ public class SearchPage extends ListActivity {
 		if (id == R.id.action_settings) {
 			return true;
 		}
+		if (id == R.id.action_contactus) {
+			Intent i = new Intent(SearchPage.this, ContactUs.class);
+			startActivity(i);
+			return true;
+		}
 		return super.onOptionsItemSelected(item);
 	}
 
