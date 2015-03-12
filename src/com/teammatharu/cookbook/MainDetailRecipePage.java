@@ -165,9 +165,20 @@ public class MainDetailRecipePage extends Activity {
 	@Override
 	public void onBackPressed() {
 		// TODO Auto-generated method stub
-		Intent activityIntent = new Intent(MainDetailRecipePage.this,
-				MainLandingPage.class);
-		MainDetailRecipePage.this.startActivity(activityIntent);
-		finish();
+		// 1. get passed intent
+		Intent intent = getIntent();
+		final String backButton = intent.getStringExtra("backButton");
+
+		if (backButton.equals("mainRecipe")) {
+			Intent activityIntent = new Intent(MainDetailRecipePage.this,
+					MainLandingPage.class);
+			MainDetailRecipePage.this.startActivity(activityIntent);
+			finish();
+		} else if (backButton.equals("back")) {
+			Intent activityIntent = new Intent(MainDetailRecipePage.this,
+					SearchPage.class);
+			MainDetailRecipePage.this.startActivity(activityIntent);
+			finish();
+		}
 	}
 }
