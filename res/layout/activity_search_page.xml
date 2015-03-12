@@ -10,15 +10,15 @@
         android:id="@+id/EditText01"
         android:layout_height="wrap_content"
         android:layout_width="fill_parent"
-        android:fontFamily="sans-serif-medium"
+        android:fontFamily="sans-serif-light"
         android:hint="Enter Recipe Name Here"/>
  
     <ListView
         android:id="@+id/android:list"
         android:cacheColorHint="#00000000"
         android:textSize="30dp"
+        android:fontFamily="sans-serif-light"
         android:layout_width="fill_parent"
-        
         android:layout_height="wrap_content"/>
      
 </LinearLayout>   

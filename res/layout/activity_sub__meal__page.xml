@@ -32,6 +32,7 @@
                 android:layout_height="match_parent"
                 android:layout_gravity="center"
                 android:layout_marginBottom="5dp"
+                android:fontFamily="sans-serif-light"
                 android:background="@drawable/buttongradient"
                 android:textColor="#ffffff" />
 
@@ -39,6 +40,7 @@
                 android:id="@+id/btn2"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
+                android:fontFamily="sans-serif-light"
                 android:layout_marginBottom="5dp"
                 android:background="@drawable/buttongradient"
                 android:textColor="#ffffff" />
@@ -46,6 +48,7 @@
             <Button
                 android:id="@+id/btn3"
                 android:layout_width="match_parent"
+                android:fontFamily="sans-serif-light"
                 android:layout_height="match_parent"
                 android:layout_marginBottom="5dp"
                 android:background="@drawable/buttongradient"
@@ -55,6 +58,7 @@
                 android:id="@+id/btn4"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
+                android:fontFamily="sans-serif-light"
                 android:layout_marginBottom="5dp"
                 android:background="@drawable/buttongradient"
                 android:textColor="#ffffff" />
@@ -62,6 +66,7 @@
             <Button
                 android:id="@+id/btn5"
                 android:layout_width="match_parent"
+                android:fontFamily="sans-serif-light"
                 android:layout_height="match_parent"
                 android:layout_marginBottom="5dp"
                 android:background="@drawable/buttongradient"
@@ -72,12 +77,14 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_marginBottom="5dp"
+                android:fontFamily="sans-serif-light"
                 android:background="@drawable/buttongradient"
                 android:textColor="#ffffff" />
 
             <Button
                 android:id="@+id/btn7"
                 android:layout_width="match_parent"
+                android:fontFamily="sans-serif-light"
                 android:layout_height="match_parent"
                 android:layout_marginBottom="5dp"
                 android:background="@drawable/buttongradient"
@@ -85,6 +92,7 @@
 
             <Button
                 android:id="@+id/btn8"
+                android:fontFamily="sans-serif-light"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_marginBottom="5dp"

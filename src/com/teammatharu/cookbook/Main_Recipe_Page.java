@@ -34,7 +34,7 @@ public class Main_Recipe_Page extends Activity {
 		// 1. get passed intent
 		Intent intent = getIntent();
 		// 2. get message value from intent
-		String message0 = "Please Select From This List";
+		String message0 = "Select One Recipe";
 		String message1 = intent.getStringExtra("list1_submenu");
 		String message2 = intent.getStringExtra("list2_submenu");
 		String message3 = intent.getStringExtra("list3_submenu");
@@ -191,7 +191,7 @@ public class Main_Recipe_Page extends Activity {
 				// count++;
 				// Log.d("on Select",count+"");
 				String item = parent.getItemAtPosition(position).toString();
-				if (item != "Please Select From This List") {
+				if (item != "Select One Recipe") {
 					Intent i = new Intent(Main_Recipe_Page.this,
 							MainDetailRecipePage.class);
 					i.putExtra("item", item);
