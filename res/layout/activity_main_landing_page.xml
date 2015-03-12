@@ -71,6 +71,15 @@
                     android:background="@drawable/buttongradient"
                     android:text="Occasions and Cooking Style"
                     android:textColor="#ffffff" />
+                  <Button
+                    android:id="@+id/btnSearch"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="5dp"
+                    android:background="@drawable/buttongradient"
+                    android:text="Search Recipe"
+                    android:textColor="#ffffff" />
             </LinearLayout>
         </LinearLayout>
     </ScrollView>

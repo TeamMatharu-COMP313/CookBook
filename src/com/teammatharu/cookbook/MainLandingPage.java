@@ -161,6 +161,19 @@ public class MainLandingPage extends Activity {
 				finish();
 			}
 		});
+
+		Button btnSearch = (Button) findViewById(R.id.btnSearch);
+		btnSearch.setOnClickListener(new OnClickListener() {
+
+			@Override
+			public void onClick(View v) {
+				// TODO Auto-generated method stub
+				Intent activityCourse = new Intent(MainLandingPage.this,
+						SearchPage.class);
+				MainLandingPage.this.startActivity(activityCourse);
+				finish();
+			}
+		});
 	}
 
 	@Override

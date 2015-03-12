@@ -195,6 +195,7 @@ public class Main_Recipe_Page extends Activity {
 					Intent i = new Intent(Main_Recipe_Page.this,
 							MainDetailRecipePage.class);
 					i.putExtra("item", item);
+					i.putExtra("backButton", "mainRecipe");
 					startActivity(i);
 					finish();
 				}
