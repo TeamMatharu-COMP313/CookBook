@@ -34,7 +34,6 @@ public class MainDetailRecipePage extends Activity {
 		// 1. get passed intent
 		Intent intent = getIntent();
 		final String recipeName = intent.getStringExtra("item");
-		final String backSearch = intent.getStringExtra("backButton");
 
 		// Action Bar Text
 		setTitle(recipeName);
