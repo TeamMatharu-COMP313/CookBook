@@ -131,7 +131,7 @@ public class SearchPage extends ListActivity {
 				Intent activityIntent = new Intent(SearchPage.this,
 						MainDetailRecipePage.class);
 				activityIntent.putExtra("item", array_sort.get(position));
-				activityIntent.putExtra("backButton", "back");
+				activityIntent.putExtra("backButton", "backSearch");
 				startActivity(activityIntent);
 				finish();
 
