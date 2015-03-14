@@ -32,7 +32,7 @@
                     android:layout_height="match_parent"
                     android:layout_gravity="center"
                     android:layout_marginBottom="5dp"
-                    android:background="@drawable/buttongradient"
+                    android:background="@drawable/buttonshape"
                     android:fontFamily="sans-serif-light"
                     android:text="Search Recipe"
                     android:textColor="#ffffff" />
