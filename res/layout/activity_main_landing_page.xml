@@ -26,32 +26,43 @@
                 android:layout_height="match_parent"
                 android:orientation="vertical" >
 
+                <Button
+                    android:id="@+id/btnSearch"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="5dp"
+                    android:background="@drawable/buttongradient"
+                    android:fontFamily="sans-serif-light"
+                    android:text="Search Recipe"
+                    android:textColor="#ffffff" />
+
                 <ImageView
                     android:id="@+id/imageView1"
                     android:layout_width="300dp"
-                    android:fontFamily="sans-serif-light"
                     android:layout_height="300dp"
                     android:layout_gravity="center"
-                    android:layout_marginBottom="20dp" />
+                    android:layout_marginBottom="10dp"
+                    android:fontFamily="sans-serif-light" />
 
                 <Button
                     android:id="@+id/btnMeals"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:fontFamily="sans-serif-light"
                     android:layout_marginBottom="5dp"
                     android:background="@drawable/buttongradient"
+                    android:fontFamily="sans-serif-light"
                     android:text="Meals"
                     android:textColor="#ffffff" />
 
                 <Button
                     android:id="@+id/btnCourses"
                     android:layout_width="match_parent"
-                    android:fontFamily="sans-serif-light"
                     android:layout_height="match_parent"
                     android:layout_gravity="center"
                     android:layout_marginBottom="5dp"
                     android:background="@drawable/buttongradient"
+                    android:fontFamily="sans-serif-light"
                     android:text="Courses"
                     android:textColor="#ffffff" />
 
@@ -60,9 +71,9 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_gravity="center"
-                    android:fontFamily="sans-serif-light"
                     android:layout_marginBottom="5dp"
                     android:background="@drawable/buttongradient"
+                    android:fontFamily="sans-serif-light"
                     android:text="Main Ingredients"
                     android:textColor="#ffffff" />
 
@@ -70,21 +81,11 @@
                     android:id="@+id/btnOcc_Cooking"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:fontFamily="sans-serif-light"
                     android:layout_gravity="center"
                     android:layout_marginBottom="5dp"
                     android:background="@drawable/buttongradient"
+                    android:fontFamily="sans-serif-light"
                     android:text="Occasions and Cooking Style"
-                    android:textColor="#ffffff" />
-                  <Button
-                    android:id="@+id/btnSearch"
-                    android:layout_width="match_parent"
-                    android:fontFamily="sans-serif-light"
-                    android:layout_height="match_parent"
-                    android:layout_gravity="center"
-                    android:layout_marginBottom="5dp"
-                    android:background="@drawable/buttongradient"
-                    android:text="Search Recipe"
                     android:textColor="#ffffff" />
             </LinearLayout>
         </LinearLayout>
