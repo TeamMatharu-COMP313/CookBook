@@ -9,7 +9,14 @@ import android.view.MenuItem;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.Toast;
+
+import com.firebase.client.DataSnapshot;
+import com.firebase.client.Firebase;
+import com.firebase.client.FirebaseError;
+import com.firebase.client.ValueEventListener;
+import com.koushikdutta.urlimageviewhelper.UrlImageViewHelper;
 
 public class ContactUs extends Activity {
 	Button emailUs;
@@ -20,6 +27,132 @@ public class ContactUs extends Activity {
 		setContentView(R.layout.activity_contact_us);
 
 		emailUs = (Button) findViewById(R.id.emailus);
+
+		final ImageView iVJagdeep = (ImageView) findViewById(R.id.iVJagdeep);
+		Firebase fVJagdeep = new Firebase(
+				"https://cookbook-teammatharu.firebaseio.com/jmatharu");
+
+		fVJagdeep.addValueEventListener(new ValueEventListener() {
+
+			@Override
+			public void onDataChange(DataSnapshot arg0) {
+				// TODO Auto-generated method stub
+				String tempImage = (String) arg0.getValue();
+				// Assigning Image to Image view
+				UrlImageViewHelper.setUrlDrawable(iVJagdeep, tempImage);
+			}
+
+			@Override
+			public void onCancelled(FirebaseError arg0) {
+				// TODO Auto-generated method stub
+
+			}
+		});
+
+		final ImageView iVHiren = (ImageView) findViewById(R.id.iVHiren);
+		Firebase fVHiren = new Firebase(
+				"https://cookbook-teammatharu.firebaseio.com/hiren");
+
+		fVHiren.addValueEventListener(new ValueEventListener() {
+
+			@Override
+			public void onDataChange(DataSnapshot arg0) {
+				// TODO Auto-generated method stub
+				String tempImage = (String) arg0.getValue();
+				// Assigning Image to Image view
+				UrlImageViewHelper.setUrlDrawable(iVHiren, tempImage);
+			}
+
+			@Override
+			public void onCancelled(FirebaseError arg0) {
+				// TODO Auto-generated method stub
+
+			}
+		});
+
+		final ImageView iVUrvashi = (ImageView) findViewById(R.id.iVUrvashi);
+		Firebase fVUrvashi = new Firebase(
+				"https://cookbook-teammatharu.firebaseio.com/urvashi");
+
+		fVUrvashi.addValueEventListener(new ValueEventListener() {
+
+			@Override
+			public void onDataChange(DataSnapshot arg0) {
+				// TODO Auto-generated method stub
+				String tempImage = (String) arg0.getValue();
+				// Assigning Image to Image view
+				UrlImageViewHelper.setUrlDrawable(iVUrvashi, tempImage);
+			}
+
+			@Override
+			public void onCancelled(FirebaseError arg0) {
+				// TODO Auto-generated method stub
+
+			}
+		});
+
+		final ImageView iVParin = (ImageView) findViewById(R.id.iVParin);
+		Firebase fiVParin = new Firebase(
+				"https://cookbook-teammatharu.firebaseio.com/parin");
+
+		fiVParin.addValueEventListener(new ValueEventListener() {
+
+			@Override
+			public void onDataChange(DataSnapshot arg0) {
+				// TODO Auto-generated method stub
+				String tempImage = (String) arg0.getValue();
+				// Assigning Image to Image view
+				UrlImageViewHelper.setUrlDrawable(iVParin, tempImage);
+			}
+
+			@Override
+			public void onCancelled(FirebaseError arg0) {
+				// TODO Auto-generated method stub
+
+			}
+		});
+
+		final ImageView iVKartik = (ImageView) findViewById(R.id.iVKartik);
+		Firebase fiVKartik = new Firebase(
+				"https://cookbook-teammatharu.firebaseio.com/kartik");
+
+		fiVKartik.addValueEventListener(new ValueEventListener() {
+
+			@Override
+			public void onDataChange(DataSnapshot arg0) {
+				// TODO Auto-generated method stub
+				String tempImage = (String) arg0.getValue();
+				// Assigning Image to Image view
+				UrlImageViewHelper.setUrlDrawable(iVKartik, tempImage);
+			}
+
+			@Override
+			public void onCancelled(FirebaseError arg0) {
+				// TODO Auto-generated method stub
+
+			}
+		});
+
+		final ImageView iVAbhishek = (ImageView) findViewById(R.id.iVAbhishek);
+		Firebase fiVAbhishek = new Firebase(
+				"https://cookbook-teammatharu.firebaseio.com/abhishek");
+
+		fiVAbhishek.addValueEventListener(new ValueEventListener() {
+
+			@Override
+			public void onDataChange(DataSnapshot arg0) {
+				// TODO Auto-generated method stub
+				String tempImage = (String) arg0.getValue();
+				// Assigning Image to Image view
+				UrlImageViewHelper.setUrlDrawable(iVAbhishek, tempImage);
+			}
+
+			@Override
+			public void onCancelled(FirebaseError arg0) {
+				// TODO Auto-generated method stub
+
+			}
+		});
 
 		emailUs.setOnClickListener(new OnClickListener() {
 
