@@ -72,6 +72,9 @@ public class SearchPage extends ListActivity {
 		et = (EditText) findViewById(R.id.EditText01);
 		lv = (ListView) findViewById(android.R.id.list);
 
+		// Setting Focus
+		et.requestFocus();
+
 		array_sort = new ArrayList<String>(Arrays.asList(listview_names));
 		setListAdapter(new bsAdapter(this));
 
