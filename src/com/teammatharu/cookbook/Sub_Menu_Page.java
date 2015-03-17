@@ -1146,6 +1146,7 @@ public class Sub_Menu_Page extends Activity {
 								"Shrimp and Dill Deviled Eggs");
 						activityCourse.putExtra("list14_submenu", "none");
 						activityCourse.putExtra("list15_submenu", "none");
+						activityCourse.putExtra("list16_submenu", "none");
 						activityCourse.putExtra("list17_submenu", "none");
 						activityCourse.putExtra("list18_submenu", "none");
 						activityCourse.putExtra("list19_submenu", "none");
@@ -3082,6 +3083,7 @@ public class Sub_Menu_Page extends Activity {
 						activityCourse.putExtra("list13_submenu", "none");
 						activityCourse.putExtra("list14_submenu", "none");
 						activityCourse.putExtra("list15_submenu", "none");
+						activityCourse.putExtra("list16_submenu", "none");
 						activityCourse.putExtra("list17_submenu", "none");
 						activityCourse.putExtra("list18_submenu", "none");
 						activityCourse.putExtra("list19_submenu", "none");
