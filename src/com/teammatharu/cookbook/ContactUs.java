@@ -10,6 +10,7 @@ import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
 import android.widget.ImageView;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.firebase.client.DataSnapshot;
@@ -27,6 +28,10 @@ public class ContactUs extends Activity {
 		setContentView(R.layout.activity_contact_us);
 
 		emailUs = (Button) findViewById(R.id.emailus);
+
+		// textviews
+		TextView tvJmatharu = (TextView) findViewById(R.id.textView4);
+		TextView tvUrvashi = (TextView) findViewById(R.id.textView5);
 
 		final ImageView iVJagdeep = (ImageView) findViewById(R.id.iVJagdeep);
 		Firebase fVJagdeep = new Firebase(
@@ -46,6 +51,29 @@ public class ContactUs extends Activity {
 			public void onCancelled(FirebaseError arg0) {
 				// TODO Auto-generated method stub
 
+			}
+		});
+
+		iVJagdeep.setOnClickListener(new OnClickListener() {
+
+			@Override
+			public void onClick(View v) {
+				// TODO Auto-generated method stub
+				String url = "http://jmatharu.github.io/";
+				Intent i = new Intent(Intent.ACTION_VIEW);
+				i.setData(Uri.parse(url));
+				startActivity(i);
+			}
+		});
+		tvJmatharu.setOnClickListener(new OnClickListener() {
+
+			@Override
+			public void onClick(View v) {
+				// TODO Auto-generated method stub
+				String url = "http://jmatharu.github.io/";
+				Intent i = new Intent(Intent.ACTION_VIEW);
+				i.setData(Uri.parse(url));
+				startActivity(i);
 			}
 		});
 
@@ -88,6 +116,29 @@ public class ContactUs extends Activity {
 			public void onCancelled(FirebaseError arg0) {
 				// TODO Auto-generated method stub
 
+			}
+		});
+		iVUrvashi.setOnClickListener(new OnClickListener() {
+
+			@Override
+			public void onClick(View v) {
+				// TODO Auto-generated method stub
+				String url = "http://urvashi14.github.io/";
+				Intent i = new Intent(Intent.ACTION_VIEW);
+				i.setData(Uri.parse(url));
+				startActivity(i);
+			}
+		});
+
+		tvUrvashi.setOnClickListener(new OnClickListener() {
+
+			@Override
+			public void onClick(View v) {
+				// TODO Auto-generated method stub
+				String url = "http://urvashi14.github.io/";
+				Intent i = new Intent(Intent.ACTION_VIEW);
+				i.setData(Uri.parse(url));
+				startActivity(i);
 			}
 		});
 
