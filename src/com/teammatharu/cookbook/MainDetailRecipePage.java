@@ -34,6 +34,7 @@ public class MainDetailRecipePage extends Activity {
 		// 1. get passed intent
 		Intent intent = getIntent();
 		final String recipeName = intent.getStringExtra("item");
+		final String recipeImage = intent.getStringExtra("imageURL");
 
 		// Action Bar Text
 		setTitle(recipeName);
@@ -46,6 +47,8 @@ public class MainDetailRecipePage extends Activity {
 		final TextView tvIngredientsList = (TextView) findViewById(R.id.tvIngredientsList1);
 		final TextView tvDirectionList = (TextView) findViewById(R.id.tvDirectionList1);
 		final Button bVideo = (Button) findViewById(R.id.btnVideo);
+
+		UrlImageViewHelper.setUrlDrawable(imgDetailRecipe, recipeImage);
 
 		ref.addChildEventListener(new ChildEventListener() {
 
@@ -71,11 +74,7 @@ public class MainDetailRecipePage extends Activity {
 			public void onChildAdded(DataSnapshot arg0, String arg1) {
 				// TODO Auto-generated method stub
 				// Setting Image
-				if (arg0.getKey().toString() == "Image") {
-					String tempImage = arg0.getValue().toString();
-					UrlImageViewHelper.setUrlDrawable(imgDetailRecipe,
-							tempImage);
-				}
+
 				// setting image detail
 				if (arg0.getKey().toString() == "Description") {
 					tvImgDetail.setText(arg0.getValue().toString());
