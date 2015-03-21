@@ -14,7 +14,10 @@ import android.widget.AdapterView.OnItemSelectedListener;
 import android.widget.ArrayAdapter;
 import android.widget.Spinner;
 
+import com.firebase.client.ChildEventListener;
+import com.firebase.client.DataSnapshot;
 import com.firebase.client.Firebase;
+import com.firebase.client.FirebaseError;
 
 public class Main_Recipe_Page extends Activity {
 
@@ -190,14 +193,60 @@ public class Main_Recipe_Page extends Activity {
 				// On selecting a spinner item
 				// count++;
 				// Log.d("on Select",count+"");
-				String item = parent.getItemAtPosition(position).toString();
+				final String item = parent.getItemAtPosition(position)
+						.toString();
 				if (item != "Select One Recipe") {
-					Intent i = new Intent(Main_Recipe_Page.this,
-							MainDetailRecipePage.class);
-					i.putExtra("item", item);
-					i.putExtra("backButton", "mainRecipe");
-					startActivity(i);
-					finish();
+					String baseurl = "https://cookbookmatharunew.firebaseio.com/";
+
+					Firebase ref = new Firebase(baseurl + item);
+					ref.addChildEventListener(new ChildEventListener() {
+
+						@Override
+						public void onChildRemoved(DataSnapshot arg0) {
+							// TODO Auto-generated method stub
+
+						}
+
+						@Override
+						public void onChildMoved(DataSnapshot arg0, String arg1) {
+							// TODO Auto-generated method stub
+
+						}
+
+						@Override
+						public void onChildChanged(DataSnapshot arg0,
+								String arg1) {
+							// TODO Auto-generated method stub
+
+						}
+
+						@Override
+						public void onChildAdded(DataSnapshot arg0, String arg1) {
+							// TODO Auto-generated method stub
+							String tempImage = "";
+							if (arg0.getKey().toString() == "Image") {
+								tempImage = arg0.getValue().toString();
+
+							}
+							if (tempImage.equals("")) {
+
+							} else {
+								Intent i = new Intent(Main_Recipe_Page.this,
+										MainDetailRecipePage.class);
+								i.putExtra("imageURL", tempImage);
+								i.putExtra("item", item);
+								startActivity(i);
+								finish();
+							}
+						}
+
+						@Override
+						public void onCancelled(FirebaseError arg0) {
+							// TODO Auto-generated method stub
+
+						}
+					});
+
 				}
 
 			}

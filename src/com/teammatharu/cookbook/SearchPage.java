@@ -22,7 +22,10 @@ import android.widget.EditText;
 import android.widget.ListView;
 import android.widget.TextView;
 
+import com.firebase.client.ChildEventListener;
+import com.firebase.client.DataSnapshot;
 import com.firebase.client.Firebase;
+import com.firebase.client.FirebaseError;
 
 public class SearchPage extends ListActivity {
 	private EditText et;
@@ -599,13 +602,59 @@ public class SearchPage extends ListActivity {
 
 			@Override
 			public void onItemClick(AdapterView<?> arg0, View arg1,
-					int position, long arg3) {
-				Intent activityIntent = new Intent(SearchPage.this,
-						MainDetailRecipePage.class);
-				activityIntent.putExtra("item", array_sort.get(position));
-				activityIntent.putExtra("backButton", "backSearch");
-				startActivity(activityIntent);
-				finish();
+					final int position, long arg3) {
+
+				String baseurl = "https://cookbookmatharunew.firebaseio.com/";
+
+				Firebase ref = new Firebase(baseurl + array_sort.get(position));
+				ref.addChildEventListener(new ChildEventListener() {
+
+					@Override
+					public void onChildRemoved(DataSnapshot arg0) {
+						// TODO Auto-generated method stub
+
+					}
+
+					@Override
+					public void onChildMoved(DataSnapshot arg0, String arg1) {
+						// TODO Auto-generated method stub
+
+					}
+
+					@Override
+					public void onChildChanged(DataSnapshot arg0, String arg1) {
+						// TODO Auto-generated method stub
+
+					}
+
+					@Override
+					public void onChildAdded(DataSnapshot arg0, String arg1) {
+						// TODO Auto-generated method stub
+						String tempImage = "";
+						if (arg0.getKey().toString() == "Image") {
+							tempImage = arg0.getValue().toString();
+
+						}
+						if (tempImage.equals("")) {
+
+						} else {
+							Intent activityIntent = new Intent(SearchPage.this,
+									MainDetailRecipePage.class);
+							activityIntent.putExtra("imageURL", tempImage);
+							activityIntent.putExtra("item",
+									array_sort.get(position));
+							activityIntent.putExtra("backButton", "backSearch");
+							startActivity(activityIntent);
+							finish();
+						}
+					}
+
+					@Override
+					public void onCancelled(FirebaseError arg0) {
+						// TODO Auto-generated method stub
+
+					}
+				});
 
 			}
 		});
