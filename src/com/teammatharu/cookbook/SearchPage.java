@@ -357,7 +357,7 @@ public class SearchPage extends ListActivity {
 			"Mocha au Lait Mix", "Mock Champagne",
 			"Moist Lemon Poppy Seed Cake", "Mojito", "Mojito Fruit Salad",
 			"Mongolian Beef", "Monica's Baptist Sangria",
-			"Mouse's Macaroni and Cheese", "Mrinated Veggies", "Mulled Cider",
+			"Mouse's Macaroni and Cheese", "Marinated Veggies", "Mulled Cider",
 			"Mulled Cranberry Cider", "Mulligatawny Soup", "Munn Cookies",
 			"Mushroom Cheeseburger Calzones", "Mushroom Pork Chops",
 			"Mushroom Rice", "Mussels Mariniere",
