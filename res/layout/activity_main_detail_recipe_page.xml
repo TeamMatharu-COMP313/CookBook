@@ -33,6 +33,7 @@
             <TextView
                 android:id="@+id/tvImageDetail"
                 android:layout_width="fill_parent" 
+                android:gravity="center"
                 android:fontFamily="sans-serif-light"
                 android:layout_height="wrap_content"
                 android:textColor="#ffffff"
@@ -88,9 +89,9 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_gravity="center"
+                android:layout_marginTop="-10dp"
                 android:layout_marginBottom="5dp"
                 android:fontFamily="sans-serif-light"
-                android:layout_marginTop="15dp"
                 android:background="@drawable/buttongradient"
                 android:text="Watch Video"
                 android:textColor="#ffffff" />
