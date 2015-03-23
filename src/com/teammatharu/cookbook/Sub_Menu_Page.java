@@ -3909,7 +3909,7 @@ public class Sub_Menu_Page extends Activity {
 						activityCourse.putExtra("list2_submenu",
 								"Creme Brulee French Toast");
 						activityCourse.putExtra("list3_submenu",
-								"Pumpkin Spiced Latte");
+								"French Toast Souffle");
 						activityCourse.putExtra("list4_submenu",
 								"Orange Pecan French Toast");
 						activityCourse.putExtra("list5_submenu",
