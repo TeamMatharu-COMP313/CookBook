@@ -35,7 +35,7 @@ public class ContactUs extends Activity {
 
 		final ImageView iVJagdeep = (ImageView) findViewById(R.id.iVJagdeep);
 		Firebase fVJagdeep = new Firebase(
-				"https://cookbook-teammatharu.firebaseio.com/jmatharu");
+				"https://cookbook-teammatharu.firebaseio.com/teamPicture");
 
 		fVJagdeep.addValueEventListener(new ValueEventListener() {
 
@@ -54,76 +54,12 @@ public class ContactUs extends Activity {
 			}
 		});
 
-		iVJagdeep.setOnClickListener(new OnClickListener() {
-
-			@Override
-			public void onClick(View v) {
-				// TODO Auto-generated method stub
-				String url = "http://jmatharu.github.io/";
-				Intent i = new Intent(Intent.ACTION_VIEW);
-				i.setData(Uri.parse(url));
-				startActivity(i);
-			}
-		});
 		tvJmatharu.setOnClickListener(new OnClickListener() {
 
 			@Override
 			public void onClick(View v) {
 				// TODO Auto-generated method stub
 				String url = "http://jmatharu.github.io/";
-				Intent i = new Intent(Intent.ACTION_VIEW);
-				i.setData(Uri.parse(url));
-				startActivity(i);
-			}
-		});
-
-		final ImageView iVHiren = (ImageView) findViewById(R.id.iVHiren);
-		Firebase fVHiren = new Firebase(
-				"https://cookbook-teammatharu.firebaseio.com/hiren");
-
-		fVHiren.addValueEventListener(new ValueEventListener() {
-
-			@Override
-			public void onDataChange(DataSnapshot arg0) {
-				// TODO Auto-generated method stub
-				String tempImage = (String) arg0.getValue();
-				// Assigning Image to Image view
-				UrlImageViewHelper.setUrlDrawable(iVHiren, tempImage);
-			}
-
-			@Override
-			public void onCancelled(FirebaseError arg0) {
-				// TODO Auto-generated method stub
-
-			}
-		});
-
-		final ImageView iVUrvashi = (ImageView) findViewById(R.id.iVUrvashi);
-		Firebase fVUrvashi = new Firebase(
-				"https://cookbook-teammatharu.firebaseio.com/urvashi");
-
-		fVUrvashi.addValueEventListener(new ValueEventListener() {
-
-			@Override
-			public void onDataChange(DataSnapshot arg0) {
-				// TODO Auto-generated method stub
-				String tempImage = (String) arg0.getValue();
-				// Assigning Image to Image view
-				UrlImageViewHelper.setUrlDrawable(iVUrvashi, tempImage);
-			}
-
-			@Override
-			public void onCancelled(FirebaseError arg0) {
-				// TODO Auto-generated method stub
-
-			}
-		});
-		iVUrvashi.setOnClickListener(new OnClickListener() {
-
-			@Override
-			public void onClick(View v) {
-				// TODO Auto-generated method stub
-				String url = "http://urvashi14.github.io/";
 				Intent i = new Intent(Intent.ACTION_VIEW);
 				i.setData(Uri.parse(url));
 				startActivity(i);
@@ -139,69 +75,6 @@ public class ContactUs extends Activity {
 				Intent i = new Intent(Intent.ACTION_VIEW);
 				i.setData(Uri.parse(url));
 				startActivity(i);
-			}
-		});
-
-		final ImageView iVParin = (ImageView) findViewById(R.id.iVParin);
-		Firebase fiVParin = new Firebase(
-				"https://cookbook-teammatharu.firebaseio.com/parin");
-
-		fiVParin.addValueEventListener(new ValueEventListener() {
-
-			@Override
-			public void onDataChange(DataSnapshot arg0) {
-				// TODO Auto-generated method stub
-				String tempImage = (String) arg0.getValue();
-				// Assigning Image to Image view
-				UrlImageViewHelper.setUrlDrawable(iVParin, tempImage);
-			}
-
-			@Override
-			public void onCancelled(FirebaseError arg0) {
-				// TODO Auto-generated method stub
-
-			}
-		});
-
-		final ImageView iVKartik = (ImageView) findViewById(R.id.iVKartik);
-		Firebase fiVKartik = new Firebase(
-				"https://cookbook-teammatharu.firebaseio.com/kartik");
-
-		fiVKartik.addValueEventListener(new ValueEventListener() {
-
-			@Override
-			public void onDataChange(DataSnapshot arg0) {
-				// TODO Auto-generated method stub
-				String tempImage = (String) arg0.getValue();
-				// Assigning Image to Image view
-				UrlImageViewHelper.setUrlDrawable(iVKartik, tempImage);
-			}
-
-			@Override
-			public void onCancelled(FirebaseError arg0) {
-				// TODO Auto-generated method stub
-
-			}
-		});
-
-		final ImageView iVAbhishek = (ImageView) findViewById(R.id.iVAbhishek);
-		Firebase fiVAbhishek = new Firebase(
-				"https://cookbook-teammatharu.firebaseio.com/abhishek");
-
-		fiVAbhishek.addValueEventListener(new ValueEventListener() {
-
-			@Override
-			public void onDataChange(DataSnapshot arg0) {
-				// TODO Auto-generated method stub
-				String tempImage = (String) arg0.getValue();
-				// Assigning Image to Image view
-				UrlImageViewHelper.setUrlDrawable(iVAbhishek, tempImage);
-			}
-
-			@Override
-			public void onCancelled(FirebaseError arg0) {
-				// TODO Auto-generated method stub
-
 			}
 		});
 
