@@ -103,7 +103,7 @@
                 android:layout_below="@+id/textView6"
                 android:layout_marginBottom="5dp"
                 android:fontFamily="sans-serif-light"
-                android:text="Parin -Devleoper"
+                android:text="Parin - Devleoper"
                 android:textAppearance="?android:attr/textAppearanceMedium" />
 
             <TextView
