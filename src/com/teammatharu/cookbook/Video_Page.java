@@ -85,7 +85,9 @@ public class Video_Page extends YouTubeBaseActivity implements
 	public void onInitializationSuccess(Provider arg0, YouTubePlayer arg1,
 			boolean arg2) {
 		// TODO Auto-generated method stub
+		arg1.setFullscreen(true);
 		arg1.loadVideo(VIDEO);
+
 	}
 
 	@Override
