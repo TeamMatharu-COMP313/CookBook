@@ -39,7 +39,7 @@ public class Video_Page extends YouTubeBaseActivity implements
 	@Override
 	public boolean onCreateOptionsMenu(Menu menu) {
 		// Inflate the menu; this adds items to the action bar if it is present.
-		getMenuInflater().inflate(R.menu.video__page, menu);
+		getMenuInflater().inflate(R.menu.content, menu);
 		return true;
 	}
 
@@ -50,6 +50,11 @@ public class Video_Page extends YouTubeBaseActivity implements
 		// as you specify a parent activity in AndroidManifest.xml.
 		int id = item.getItemId();
 		if (id == R.id.action_settings) {
+			return true;
+		}
+		if (id == R.id.action_contactus) {
+			Intent i = new Intent(Video_Page.this, ContactUs.class);
+			startActivity(i);
 			return true;
 		}
 		return super.onOptionsItemSelected(item);
@@ -150,4 +155,5 @@ public class Video_Page extends YouTubeBaseActivity implements
 		});
 
 	}
+
 }
