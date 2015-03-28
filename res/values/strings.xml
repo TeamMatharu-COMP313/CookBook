@@ -14,7 +14,7 @@
     <string name="title_activity_main_recipe_fragment">CookBook</string>
     <string name="title_activity_main_detail_recipe_page">CookBook</string>
     <string name="title_activity_contact_us">ContactUs</string>
-    <string name="title_activity_video__page">Video_Page</string>
+    <string name="title_activity_video__page">CookBook</string>
     <string name="title_activity_search_page">SearchPage</string>
 
 </resources>
