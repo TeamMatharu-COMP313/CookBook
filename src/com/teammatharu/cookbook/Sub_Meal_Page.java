@@ -71,6 +71,17 @@ public class Sub_Meal_Page extends Activity {
 		final String cookbook_mainLanding = intent
 				.getStringExtra("cookbook_MainLanding");
 
+		// Action Bar
+		if (cookbook_mainLanding.equals("Meals")) {
+			setTitle("Meals");
+		} else if (cookbook_mainLanding.equals("Courses")) {
+			setTitle("Courses");
+		} else if (cookbook_mainLanding.equals("Main Ingredients")) {
+			setTitle("Main Ingredients");
+		} else if (cookbook_mainLanding.equals("Occasions and Cooking Style")) {
+			setTitle("Occasions and Cooking Style");
+		}
+
 		// show text on Button
 		bt1.setText(message1);
 		bt2.setText(message2);
