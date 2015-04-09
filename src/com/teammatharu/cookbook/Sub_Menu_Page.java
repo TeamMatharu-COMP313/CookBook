@@ -80,6 +80,17 @@ public class Sub_Menu_Page extends Activity {
 		final String cookbook_subMeal = intent
 				.getStringExtra("cookbook_SubMeal");
 
+		// // Action Bar
+		// if (message1.equals("Breakfast Drinks")) {
+		// setTitle("Breakfast and Brunch");
+		// } else if (message1.equals("Appetizers and Snacks")) {
+		// setTitle("Breakfast and Brunch");
+		// } else if (message1.equals("Fruits and Vegetables")) {
+		// setTitle("Breakfast and Brunch");
+		// } else if (message1.equals("Fruits and Vegetables")) {
+		// setTitle("Breakfast and Brunch");
+		// }
+
 		// show text on Button
 		bt1_submeal.setText(message1);
 		bt2_submeal.setText(message2);
